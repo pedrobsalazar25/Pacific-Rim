@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-display: 'Syne', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+
+    /* PRDD Historical & Industrial Blue Design System */
+    --prdd-navy: #123A63;
+    --prdd-deep-navy: #071B2D;
+    --prdd-blue: #2F6F9F;
+    --prdd-steel-blue: #DCE8EF;
+    --prdd-off-white: #F7F7F3;
+    --prdd-graphite: #20262B;
+    --prdd-green: #6D9F45;
+
+    /* Dark theme foundation */
+    --bg-dark-base: #071B2D;
+    --bg-dark-card: #0c263f;
+    --bg-dark-surface: #103252;
+    --border-dark-subtle: rgba(220, 232, 239, 0.12);
+    --border-dark-accent: rgba(47, 111, 159, 0.45);
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--prdd-deep-navy);
+    color: var(--prdd-off-white);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+    letter-spacing: -0.025em;
+  }
+}
+
+/* PRDD Precision Blueprint Grid */
+.tech-grid-pattern {
+  background-size: 48px 48px;
+  background-image: 
+    linear-gradient(to right, rgba(220, 232, 239, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(220, 232, 239, 0.04) 1px, transparent 1px);
+}
+
+.tech-grid-pattern-light {
+  background-size: 48px 48px;
+  background-image: 
+    linear-gradient(to right, rgba(18, 58, 99, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(18, 58, 99, 0.06) 1px, transparent 1px);
+}
+
+/* Hairline borders with steel-blue tint */
+.border-prdd-subtle {
+  border-color: rgba(220, 232, 239, 0.12);
+}
+
+.border-prdd-blue {
+  border-color: rgba(47, 111, 159, 0.4);
+}
+
+
