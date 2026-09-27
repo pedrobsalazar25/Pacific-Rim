@@ -4,6 +4,7 @@ import { FOUNDER_DATA, PRDD_IMAGES } from '../data/prddData';
 import { InteriorHero } from '../components/interior/InteriorHero';
 import { SectionIntro } from '../components/interior/SectionIntro';
 import { PageCTA } from '../components/interior/PageCTA';
+import { PrddImage } from '../components/PrddImage';
 
 interface AboutPageProps {
   onNavigate: (path: string, topic?: string) => void;
@@ -63,10 +64,11 @@ export const AboutPage: React.FC<AboutPageProps> = ({
 
           <div className="lg:col-span-5">
             <div className="relative border border-[#2F6F9F]/40 bg-[#0c263f] p-2 shadow-2xl">
-              <img
+              <PrddImage
                 src={PRDD_IMAGES.approachLab}
                 alt="Research and Process Development"
                 className="w-full h-80 object-cover object-center filter saturate-90 brightness-95"
+                loading="lazy"
               />
               <div className="p-4 bg-[#071B2D] border-t border-[#2F6F9F]/30 text-xs font-mono text-[#DCE8EF] flex items-center justify-between">
                 <span>RESEARCH &amp; PROCESS DEVELOPMENT</span>
@@ -84,10 +86,11 @@ export const AboutPage: React.FC<AboutPageProps> = ({
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
               <div className="lg:col-span-4">
                 <div className="border border-[#2F6F9F]/50 p-2 bg-[#0c263f]">
-                  <img
+                  <PrddImage
                     src={FOUNDER_DATA.image}
                     alt={FOUNDER_DATA.name}
                     className="w-full h-80 object-cover object-top filter saturate-95 brightness-95"
+                    loading="lazy"
                   />
                   <div className="p-3 bg-[#071B2D] border-t border-[#2F6F9F]/30 text-center">
                     <div className="font-display text-base font-bold text-white">

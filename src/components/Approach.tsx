@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ArrowRight, Check, Activity, Microscope, Sliders, Shield } from 'lucide-react';
 import { APPROACH_STEPS, PRDD_IMAGES } from '../data/prddData';
+import { PrddImage } from './PrddImage';
 
 export const Approach: React.FC = () => {
   const [activeStep, setActiveStep] = useState(0);
@@ -15,11 +16,11 @@ export const Approach: React.FC = () => {
           {/* Left Column: Visual Laboratory & Engineering Image with Overlays */}
           <div className="lg:col-span-6 relative">
             <div className="relative aspect-4/3 overflow-hidden bg-[#0c263f] border border-[#2F6F9F]/30 group">
-              <img
+              <PrddImage
                 src={PRDD_IMAGES.approachLab}
                 alt="Research and Process Development"
-                referrerPolicy="no-referrer"
                 className="w-full h-full object-cover object-center group-hover:scale-102 transition-transform duration-700"
+                loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#071B2D] via-transparent to-black/30" />
 

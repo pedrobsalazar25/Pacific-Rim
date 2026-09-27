@@ -4,16 +4,16 @@
  * Verified source content only.
  */
 
-// Image Assets
+// Image Assets - Production-safe root-relative paths from /public
 export const PRDD_IMAGES = {
-  hero: '/src/assets/images/prdd_hero_industrial_1790453962783.jpg',
-  co2Capture: '/src/assets/images/prdd_tech_co2_capture_1790453974162.jpg',
-  noxSox: '/src/assets/images/prdd_tech_nox_sox_1790453985913.jpg',
-  waterTreatment: '/src/assets/images/prdd_tech_water_treatment_1790453995124.jpg',
-  advancedMaterials: '/src/assets/images/prdd_tech_advanced_materials_1790454004489.jpg',
-  approachLab: '/src/assets/images/prdd_approach_laboratory_1790454014160.jpg',
-  founder: '/src/assets/images/prdd_founder_portrait_1790454023133.jpg',
-  finalCta: '/src/assets/images/prdd_final_cta_1790454033211.jpg',
+  hero: '/images/prdd/hero/prdd-hero-industrial.jpg',
+  co2Capture: '/images/prdd/technologies/prdd-tech-co2-capture.jpg',
+  noxSox: '/images/prdd/technologies/prdd-tech-nox-sox.jpg',
+  waterTreatment: '/images/prdd/technologies/prdd-tech-water-treatment.jpg',
+  advancedMaterials: '/images/prdd/technologies/prdd-tech-advanced-materials.jpg',
+  approachLab: '/images/prdd/technologies/prdd-approach-laboratory.jpg',
+  founder: '/images/prdd/people/prdd-founder-portrait.jpg',
+  finalCta: '/images/prdd/backgrounds/prdd-final-cta.jpg',
 } as const;
 
 export interface TechnologyItem {

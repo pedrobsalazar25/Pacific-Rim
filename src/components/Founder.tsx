@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowRight, Award, GraduationCap, HardHat, FileText } from 'lucide-react';
 import { PRDD_IMAGES } from '../data/prddData';
+import { PrddImage } from './PrddImage';
 
 interface FounderProps {
   onMeetFounder: () => void;
@@ -15,11 +16,11 @@ export const Founder: React.FC<FounderProps> = ({ onMeetFounder }) => {
           {/* Portrait Column */}
           <div className="lg:col-span-5 relative">
             <div className="relative aspect-3/4 max-w-md mx-auto lg:max-w-none overflow-hidden bg-[#0c263f] border border-[#2F6F9F]/30 group">
-              <img
+              <PrddImage
                 src={PRDD_IMAGES.founder}
                 alt="Dr. Robert Richardson - Founder & President of Pacific Rim Design & Development, Inc."
-                referrerPolicy="no-referrer"
                 className="w-full h-full object-cover object-top group-hover:scale-102 transition-transform duration-700"
+                loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#071B2D] via-transparent to-transparent opacity-80" />
 

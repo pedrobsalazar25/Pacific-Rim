@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowRight, ShieldCheck, Mail, Phone, MapPin } from 'lucide-react';
 import { PRDD_IMAGES } from '../data/prddData';
+import { PrddImage } from './PrddImage';
 
 interface CTASectionProps {
   onDiscussProject: () => void;
@@ -11,10 +12,10 @@ export const CTASection: React.FC<CTASectionProps> = ({ onDiscussProject }) => {
     <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-[#071B2D] py-24 sm:py-32 lg:py-36 border-t border-[#2F6F9F]/20">
       {/* Background Image Container */}
       <div className="absolute inset-0 z-0 pointer-events-none select-none">
-        <img
+        <PrddImage
           src={PRDD_IMAGES.finalCta}
           alt="PRDD Heavy Industrial Engineering and Process Infrastructure"
-          referrerPolicy="no-referrer"
+          loading="lazy"
           className="w-full h-full object-cover object-center"
         />
         {/* Deep Navy Overlays for High Contrast & Legibility */}

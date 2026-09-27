@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowDown, ArrowUpRight, ShieldCheck, Flame, Droplets, Layers } from 'lucide-react';
 import { PRDD_IMAGES } from '../data/prddData';
+import { PrddImage } from './PrddImage';
 
 interface HeroProps {
   onExploreTechnologies: () => void;
@@ -15,10 +16,10 @@ export const Hero: React.FC<HeroProps> = ({ onExploreTechnologies, onAboutPrdd }
     >
       {/* Background Cinematic Industrial Image Container with Scrim */}
       <div className="absolute inset-0 z-0 select-none pointer-events-none">
-        <img
+        <PrddImage
           src={PRDD_IMAGES.hero}
           alt="PRDD Advanced Industrial Chemical and Environmental Processing Plant"
-          referrerPolicy="no-referrer"
+          priority
           className="w-full h-full object-cover object-center scale-100 transition-transform duration-1000 ease-out"
         />
         {/* Layered cinematic gradient scrims in PRDD Deep Navy */}

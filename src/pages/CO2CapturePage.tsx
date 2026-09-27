@@ -18,6 +18,7 @@ import {
 } from 'lucide-react';
 import { Breadcrumbs } from '../components/interior/Breadcrumbs';
 import { RelatedContent, RelatedItem } from '../components/interior/RelatedContent';
+import { PrddImage } from '../components/PrddImage';
 import { PRDD_IMAGES } from '../data/prddData';
 
 interface CO2CapturePageProps {
@@ -93,9 +94,10 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
         <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden min-h-[560px] sm:min-h-[640px] lg:min-h-[700px] flex flex-col justify-between p-6 sm:p-10 lg:p-16 shadow-2xl border border-[#2F6F9F]/20">
           {/* Photographic Background with Deep Navy Industrial Gradient Overlay */}
           <div className="absolute inset-0 bg-[#071B2D]">
-            <img
+            <PrddImage
               src={PRDD_IMAGES.hero}
               alt="Industrial emissions facility and process engineering"
+              priority
               className="w-full h-full object-cover object-center filter saturate-75 contrast-110 brightness-60"
             />
             {/* Multi-layered cinematic gradient overlay for high editorial legibility */}
@@ -171,7 +173,7 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
             {/* Supporting Image A: Large Top Process Facility Visual (Rounded Container) */}
             <div className="rounded-2xl sm:rounded-3xl overflow-hidden border border-[#DCE8EF] shadow-lg bg-[#071B2D] relative group">
               <div className="aspect-[16/9] w-full overflow-hidden relative">
-                <img
+                <PrddImage
                   src={PRDD_IMAGES.co2Capture}
                   alt="Industrial CO2 source and processing facility"
                   className="w-full h-full object-cover object-center filter saturate-90 brightness-95 group-hover:scale-102 transition-transform duration-700"
@@ -442,7 +444,7 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
               {/* Supporting Image B */}
               <div className="rounded-2xl overflow-hidden border border-[#DCE8EF] bg-[#071B2D] shadow-md group">
                 <div className="aspect-[4/3] w-full overflow-hidden relative">
-                  <img
+                  <PrddImage
                     src={PRDD_IMAGES.approachLab}
                     alt="Engineered capture and process equipment"
                     className="w-full h-full object-cover object-center filter saturate-85 brightness-95 group-hover:scale-102 transition-transform duration-700"
@@ -458,7 +460,7 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
               {/* Supporting Image C */}
               <div className="rounded-2xl overflow-hidden border border-[#DCE8EF] bg-[#071B2D] shadow-md group">
                 <div className="aspect-[4/3] w-full overflow-hidden relative">
-                  <img
+                  <PrddImage
                     src={PRDD_IMAGES.advancedMaterials}
                     alt="Scientific carbonate and material representation"
                     className="w-full h-full object-cover object-center filter saturate-85 brightness-95 group-hover:scale-102 transition-transform duration-700"
@@ -567,7 +569,7 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
               {/* Supporting Image D: Industrial emissions/process environment */}
               <div className="rounded-2xl overflow-hidden border border-[#DCE8EF] bg-[#071B2D] shadow-md group">
                 <div className="aspect-[16/9] w-full overflow-hidden relative">
-                  <img
+                  <PrddImage
                     src={PRDD_IMAGES.finalCta}
                     alt="Industrial process environment and piping"
                     className="w-full h-full object-cover object-center filter saturate-85 brightness-95 group-hover:scale-102 transition-transform duration-700"
@@ -846,7 +848,7 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
             <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden p-6 sm:p-8 text-white shadow-xl border border-[#2F6F9F]/30 bg-[#071B2D]">
               {/* Background with Dark Navy Industrial Imagery */}
               <div className="absolute inset-0">
-                <img
+                <PrddImage
                   src={PRDD_IMAGES.approachLab}
                   alt="PRDD engineering dialogue"
                   className="w-full h-full object-cover object-center filter saturate-50 brightness-40"

@@ -17,6 +17,7 @@ import {
   ShieldCheck,
 } from 'lucide-react';
 import { PRDD_IMAGES } from '../data/prddData';
+import { PrddImage } from './PrddImage';
 
 interface ContactPageProps {
   initialTopic?: string;
@@ -610,11 +611,11 @@ export const ContactPage: React.FC<ContactPageProps> = ({
               <div className="bg-[#0c263f] border border-[#2F6F9F]/30 p-6 sm:p-8 shadow-xl shadow-[#071B2D]">
                 <div className="flex items-start gap-4 mb-5">
                   <div className="w-20 h-24 shrink-0 overflow-hidden bg-[#071B2D] border border-[#2F6F9F]/40 shadow-inner">
-                    <img
+                    <PrddImage
                       src={PRDD_IMAGES.founder}
                       alt="Dr. Robert Richardson - President of Pacific Rim Design & Development, Inc."
-                      referrerPolicy="no-referrer"
                       className="w-full h-full object-cover object-top"
+                      loading="lazy"
                     />
                   </div>
 

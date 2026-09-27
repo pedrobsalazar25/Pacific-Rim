@@ -1,6 +1,7 @@
 import React from 'react';
 import { X, ArrowRight, GraduationCap, HardHat, Award, ShieldCheck } from 'lucide-react';
 import { PRDD_IMAGES } from '../data/prddData';
+import { PrddImage } from './PrddImage';
 
 interface FounderModalProps {
   isOpen: boolean;
@@ -50,10 +51,9 @@ export const FounderModal: React.FC<FounderModalProps> = ({
         <div className="p-6 sm:p-8 space-y-6 overflow-y-auto flex-1">
           <div className="flex flex-col sm:flex-row items-center gap-6 p-4 bg-[#0c263f] border border-[#2F6F9F]/20">
             <div className="w-24 h-28 shrink-0 overflow-hidden bg-black border border-white/10">
-              <img
+              <PrddImage
                 src={PRDD_IMAGES.founder}
                 alt="Dr. Robert Richardson"
-                referrerPolicy="no-referrer"
                 className="w-full h-full object-cover object-top"
               />
             </div>

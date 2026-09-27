@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowRight, Layers, Building2 } from 'lucide-react';
 import { ApplicationItem } from '../../data/prddData';
+import { PrddImage } from '../PrddImage';
 
 interface ApplicationCardProps {
   application: ApplicationItem;
@@ -27,7 +28,7 @@ export const ApplicationCard: React.FC<ApplicationCardProps> = ({
       <div>
         {/* Card Header Media */}
         <div className="relative aspect-[16/9] w-full overflow-hidden bg-[#071B2D]">
-          <img
+          <PrddImage
             src={application.image}
             alt={application.title}
             className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 filter saturate-90 brightness-95"

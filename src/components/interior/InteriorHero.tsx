@@ -1,5 +1,6 @@
 import React from 'react';
 import { Breadcrumbs, BreadcrumbItem } from './Breadcrumbs';
+import { PrddImage } from '../PrddImage';
 
 interface InteriorHeroProps {
   category: string;
@@ -90,11 +91,11 @@ export const InteriorHero: React.FC<InteriorHeroProps> = ({
             <div className="lg:col-span-5 relative">
               <div className="relative border border-[#2F6F9F]/40 bg-[#0c263f] p-2 shadow-2xl overflow-hidden group">
                 <div className="aspect-[4/3] w-full overflow-hidden bg-[#071B2D] relative">
-                  <img
+                  <PrddImage
                     src={image}
                     alt={title}
                     className="w-full h-full object-cover object-center filter saturate-90 brightness-95 group-hover:scale-105 transition-transform duration-500"
-                    loading="lazy"
+                    priority
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#071B2D]/80 via-transparent to-transparent pointer-events-none" />
                 </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { X, ArrowRight, CheckCircle2, Box, Cpu, Flame, Layers } from 'lucide-react';
 import { TechnologyItem } from '../data/prddData';
+import { PrddImage } from './PrddImage';
 
 interface TechModalProps {
   technology: TechnologyItem | null;
@@ -56,10 +57,9 @@ export const TechModal: React.FC<TechModalProps> = ({
         <div className="p-6 sm:p-8 space-y-6 overflow-y-auto flex-1">
           {/* Main Visual Frame */}
           <div className="relative aspect-16/9 w-full overflow-hidden bg-[#071B2D] border border-[#2F6F9F]/20">
-            <img
+            <PrddImage
               src={technology.image}
               alt={technology.title}
-              referrerPolicy="no-referrer"
               className="w-full h-full object-cover object-center"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#071B2D] via-transparent to-transparent" />

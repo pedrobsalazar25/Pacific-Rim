@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowRight, Sparkles, CheckCircle2 } from 'lucide-react';
 import { TECHNOLOGIES_DATA, TechnologyItem } from '../data/prddData';
+import { PrddImage } from './PrddImage';
 
 interface TechnologiesProps {
   onSelectTechnology: (tech: TechnologyItem) => void;
@@ -37,11 +38,11 @@ export const Technologies: React.FC<TechnologiesProps> = ({ onSelectTechnology }
             >
               {/* Image Frame with Aspect Ratio and Overlay */}
               <div className="relative w-full aspect-16/10 sm:aspect-16/9 overflow-hidden bg-[#071B2D]">
-                <img
+                <PrddImage
                   src={tech.image}
                   alt={tech.title}
-                  referrerPolicy="no-referrer"
                   className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0c263f] via-[#0c263f]/40 to-transparent" />
                 

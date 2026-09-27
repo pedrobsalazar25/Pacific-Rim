@@ -4,6 +4,7 @@ import { TECHNOLOGIES_DATA, TechnologyItem } from '../data/prddData';
 import { InteriorHero } from '../components/interior/InteriorHero';
 import { SectionIntro } from '../components/interior/SectionIntro';
 import { PageCTA } from '../components/interior/PageCTA';
+import { PrddImage } from '../components/PrddImage';
 
 interface TechnologiesPageProps {
   onNavigate: (path: string, topic?: string) => void;
@@ -126,7 +127,7 @@ export const TechnologiesPage: React.FC<TechnologiesPageProps> = ({
                     className="relative border border-[#2F6F9F]/40 bg-[#071B2D] p-2 shadow-2xl cursor-pointer group/img overflow-hidden"
                   >
                     <div className="aspect-[4/3] w-full overflow-hidden relative">
-                      <img
+                      <PrddImage
                         src={tech.image}
                         alt={tech.title}
                         className="w-full h-full object-cover object-center group-hover/img:scale-105 transition-transform duration-500 filter saturate-90 brightness-95"
