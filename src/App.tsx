@@ -23,8 +23,15 @@ import { ContactPage } from './components/ContactPage';
 import { TechnologiesPage } from './pages/TechnologiesPage';
 import { TechnologyDetailPage } from './pages/TechnologyDetailPage';
 import { CO2CapturePage } from './pages/CO2CapturePage';
+import { NoxSoxPage } from './pages/NoxSoxPage';
+import { WaterTreatmentPage } from './pages/WaterTreatmentPage';
+import { AdvancedMaterialsPage } from './pages/AdvancedMaterialsPage';
 import { ApplicationsPage } from './pages/ApplicationsPage';
 import { ApplicationDetailPage } from './pages/ApplicationDetailPage';
+import { IndustrialEmissionsPage } from './pages/IndustrialEmissionsPage';
+import { WaterWastewaterPage } from './pages/WaterWastewaterPage';
+import { ConcreteMaterialsPage } from './pages/ConcreteMaterialsPage';
+import { ResourceRecoveryPage } from './pages/ResourceRecoveryPage';
 import { ProjectsPage } from './pages/ProjectsPage';
 import { AboutPage } from './pages/AboutPage';
 import { FounderDetailPage } from './pages/FounderDetailPage';
@@ -124,6 +131,27 @@ export default function App() {
           />
         );
       }
+      if (techId === 'nox-sox') {
+        return (
+          <NoxSoxPage
+            onNavigate={navigateTo}
+          />
+        );
+      }
+      if (techId === 'water-treatment') {
+        return (
+          <WaterTreatmentPage
+            onNavigate={navigateTo}
+          />
+        );
+      }
+      if (techId === 'advanced-materials') {
+        return (
+          <AdvancedMaterialsPage
+            onNavigate={navigateTo}
+          />
+        );
+      }
       return (
         <TechnologyDetailPage
           techId={techId}
@@ -144,6 +172,34 @@ export default function App() {
     // 5. Application Detail Pages: /applications/:id
     if (currentPath.startsWith('/applications/')) {
       const appId = currentPath.replace('/applications/', '');
+      if (appId === 'industrial-emissions') {
+        return (
+          <IndustrialEmissionsPage
+            onNavigate={navigateTo}
+          />
+        );
+      }
+      if (appId === 'water-wastewater') {
+        return (
+          <WaterWastewaterPage
+            onNavigate={navigateTo}
+          />
+        );
+      }
+      if (appId === 'concrete-materials') {
+        return (
+          <ConcreteMaterialsPage
+            onNavigate={navigateTo}
+          />
+        );
+      }
+      if (appId === 'resource-recovery') {
+        return (
+          <ResourceRecoveryPage
+            onNavigate={navigateTo}
+          />
+        );
+      }
       return (
         <ApplicationDetailPage
           appId={appId}
