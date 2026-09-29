@@ -185,7 +185,7 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
                   <span className="w-2 h-2 rounded-full bg-[#6D9F45]" />
                   <span className="font-semibold text-[#123A63]">INDUSTRIAL CO₂ SOURCE / PROCESSING FACILITY</span>
                 </span>
-                <span className="text-slate-500">[ IMAGE SLOT A ]</span>
+                <span className="text-slate-500">[ PROCESS CONTEXT ]</span>
               </div>
             </div>
 
@@ -265,7 +265,7 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
                   <div className="bg-[#103252] border-2 border-[#2F6F9F] p-6 rounded-xl text-center shadow-xl shadow-[#071B2D]">
                     <div className="inline-flex items-center gap-1.5 text-[10px] font-mono uppercase tracking-widest text-[#89B3D3] mb-1.5">
                       <span className="w-1.5 h-1.5 rounded-full bg-[#6D9F45]" />
-                      <span>PRDD PROPRIETARY PROCESS</span>
+                      <span>PRDD PROCESS ARCHITECTURE</span>
                     </div>
                     <div className="font-display text-base sm:text-lg font-bold text-white tracking-wide">
                       PRDD CO₂ CAPTURE &amp; REPURPOSE PROCESS
@@ -453,7 +453,7 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
                 </div>
                 <div className="p-3.5 bg-white border-t border-[#DCE8EF] text-xs font-mono text-[#20262B] flex items-center justify-between">
                   <span className="font-semibold text-[#123A63]">CAPTURE &amp; PROCESS EQUIPMENT</span>
-                  <span className="text-slate-500">[ IMAGE SLOT B ]</span>
+                  <span className="text-slate-500">[ REACTION UNIT ]</span>
                 </div>
               </div>
 
@@ -469,7 +469,7 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
                 </div>
                 <div className="p-3.5 bg-white border-t border-[#DCE8EF] text-xs font-mono text-[#20262B] flex items-center justify-between">
                   <span className="font-semibold text-[#123A63]">CARBONATE MATERIAL FORMATION</span>
-                  <span className="text-slate-500">[ IMAGE SLOT C ]</span>
+                  <span className="text-slate-500">[ MINERAL CONVERSION ]</span>
                 </div>
               </div>
             </div>
@@ -578,7 +578,7 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
                 </div>
                 <div className="p-3.5 bg-white border-t border-[#DCE8EF] text-xs font-mono text-[#20262B] flex items-center justify-between">
                   <span className="font-semibold text-[#123A63]">INDUSTRIAL EMISSIONS / PROCESS ENVIRONMENT</span>
-                  <span className="text-slate-500">[ IMAGE SLOT D ]</span>
+                  <span className="text-slate-500">[ FIELD IMPLEMENTATION ]</span>
                 </div>
               </div>
 

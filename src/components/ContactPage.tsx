@@ -201,22 +201,38 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                       <CheckCircle2 className="w-9 h-9" />
                     </div>
                     <div className="text-xs font-mono uppercase tracking-widest text-[#89B3D3]">
-                      INQUIRY RECEIVED
+                      INQUIRY DETAILS PREPARED
                     </div>
                     <h3 className="font-display text-2xl sm:text-3xl font-bold text-white">
                       Thank You, {formData.firstName}.
                     </h3>
                     <p className="text-sm text-slate-300 max-w-md mx-auto leading-relaxed">
-                      Your inquiry regarding <strong className="text-[#DCE8EF]">{formData.areaOfInterest}</strong> has been received by Pacific Rim Design &amp; Development. Our engineering leadership will review your submission and follow up at <strong className="text-[#DCE8EF]">{formData.email}</strong>.
+                      Your inquiry details regarding <strong className="text-[#DCE8EF]">{formData.areaOfInterest}</strong> are prepared. To send directly to PRDD engineering leadership, you can dispatch via your email client or contact Dr. Richardson directly:
                     </p>
-                    <div className="pt-6">
+                    <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-3">
+                      <a
+                        href={`mailto:robert@prdd.net?subject=${encodeURIComponent(`PRDD Inquiry: ${formData.areaOfInterest} (${formData.company || formData.firstName + ' ' + formData.lastName})`)}&body=${encodeURIComponent(`Name: ${formData.firstName} ${formData.lastName}\nCompany: ${formData.company}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nIndustry: ${formData.industry}\nArea of Interest: ${formData.areaOfInterest}\nPreferred Contact: ${formData.preferredContact}\n\nProject Challenge / Specifications:\n${formData.challenge}`)}`}
+                        className="inline-flex items-center justify-center gap-2 px-6 py-3.5 text-xs font-mono font-semibold uppercase tracking-wider text-white bg-[#123A63] border border-[#2F6F9F] hover:bg-[#2F6F9F] hover:border-[#DCE8EF] transition-all cursor-pointer shadow-md shadow-[#071B2D] rounded-xl"
+                      >
+                        <Mail className="w-4 h-4 text-[#6D9F45]" />
+                        <span>DISPATCH VIA EMAIL (ROBERT@PRDD.NET)</span>
+                      </a>
+                      <a
+                        href="tel:530-474-4819"
+                        className="inline-flex items-center justify-center gap-2 px-6 py-3.5 text-xs font-mono uppercase tracking-wider text-[#DCE8EF] hover:text-white bg-[#071B2D] border border-white/20 hover:border-[#2F6F9F] transition-all cursor-pointer rounded-xl"
+                      >
+                        <Phone className="w-4 h-4 text-[#2F6F9F]" />
+                        <span>CALL 530-474-4819</span>
+                      </a>
+                    </div>
+                    <div className="pt-4">
                       <button
                         type="button"
                         onClick={handleResetForm}
-                        className="inline-flex items-center justify-center gap-2 px-8 py-3.5 text-xs font-mono font-semibold uppercase tracking-wider text-white bg-[#123A63] border border-[#2F6F9F] hover:bg-[#2F6F9F] hover:border-[#DCE8EF] transition-all cursor-pointer shadow-md shadow-[#071B2D]"
+                        className="inline-flex items-center justify-center gap-2 text-xs font-mono uppercase tracking-wider text-slate-400 hover:text-white transition-colors cursor-pointer"
                       >
-                        <span>SUBMIT ANOTHER INQUIRY</span>
-                        <ArrowRight className="w-4 h-4 text-[#DCE8EF]" />
+                        <span>RESET OR EDIT FORM</span>
+                        <ArrowRight className="w-3.5 h-3.5" />
                       </button>
                     </div>
                   </div>

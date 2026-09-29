@@ -184,7 +184,7 @@ export const NoxSoxPage: React.FC<NoxSoxPageProps> = ({ onNavigate }) => {
                   <span className="w-2 h-2 rounded-full bg-[#6D9F45]" />
                   <span className="font-semibold text-[#123A63]">INDUSTRIAL EMISSIONS ABATEMENT / GAS TREATMENT</span>
                 </span>
-                <span className="text-slate-500">[ IMAGE SLOT A ]</span>
+                <span className="text-slate-500">[ PROCESS ARCHITECTURE ]</span>
               </div>
             </div>
 
@@ -496,7 +496,7 @@ export const NoxSoxPage: React.FC<NoxSoxPageProps> = ({ onNavigate }) => {
                 </div>
                 <div className="p-3.5 bg-white border-t border-[#DCE8EF] text-xs font-mono text-[#20262B] flex items-center justify-between">
                   <span className="font-semibold text-[#123A63]">EMISSIONS TESTING &amp; PROCESS ENGINEERING</span>
-                  <span className="text-slate-500">[ IMAGE SLOT B ]</span>
+                  <span className="text-slate-500">[ TEST &amp; EVALUATION ]</span>
                 </div>
               </div>
 
@@ -512,7 +512,7 @@ export const NoxSoxPage: React.FC<NoxSoxPageProps> = ({ onNavigate }) => {
                 </div>
                 <div className="p-3.5 bg-white border-t border-[#DCE8EF] text-xs font-mono text-[#20262B] flex items-center justify-between">
                   <span className="font-semibold text-[#123A63]">SURFACE CHEMISTRY &amp; MINERALIZATION</span>
-                  <span className="text-slate-500">[ IMAGE SLOT C ]</span>
+                  <span className="text-slate-500">[ MINERAL FORMATION ]</span>
                 </div>
               </div>
             </div>
@@ -612,7 +612,7 @@ export const NoxSoxPage: React.FC<NoxSoxPageProps> = ({ onNavigate }) => {
                 </div>
                 <div className="p-3.5 bg-white border-t border-[#DCE8EF] text-xs font-mono text-[#20262B] flex items-center justify-between">
                   <span className="font-semibold text-[#123A63]">INDUSTRIAL EMISSIONS &amp; AIR-QUALITY CONTROL ENVIRONMENT</span>
-                  <span className="text-slate-500">[ IMAGE SLOT D ]</span>
+                  <span className="text-slate-500">[ FIELD IMPLEMENTATION ]</span>
                 </div>
               </div>
 

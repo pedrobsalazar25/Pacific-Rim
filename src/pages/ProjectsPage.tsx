@@ -102,7 +102,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
           SECTION 2: HERO — EDITORIAL PROJECT OPENING
       ================================================== */}
       <section className="pt-28 sm:pt-32 pb-8 sm:pb-12 px-4 sm:px-6 lg:px-8 max-w-[1440px] mx-auto">
-        <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden min-h-[560px] sm:min-h-[640px] lg:min-h-[700px] flex flex-col justify-between p-6 sm:p-10 lg:p-16 shadow-2xl border border-[#2F6F9F]/20">
+        <div className="relative overflow-hidden min-h-[560px] sm:min-h-[640px] lg:min-h-[700px] flex flex-col justify-between p-6 sm:p-10 lg:p-16 shadow-2xl border border-[#2F6F9F]/30">
           {/* Photographic Background with Deep Navy Scrim */}
           <div className="absolute inset-0 bg-[#071B2D]">
             <PrddImage
@@ -122,7 +122,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
             <div className="mb-4">
               <Breadcrumbs items={breadcrumbs} className="text-white/80" />
             </div>
-            <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#123A63]/80 border border-[#2F6F9F]/60 rounded-full text-xs font-mono tracking-widest text-[#DCE8EF] uppercase backdrop-blur-sm">
+            <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#123A63]/80 border border-[#2F6F9F]/60 text-xs font-mono tracking-widest text-[#DCE8EF] uppercase backdrop-blur-sm">
               <span className="w-1.5 h-1.5 rounded-full bg-[#6D9F45]" />
               <span>PRDD PROJECT EXPERIENCE</span>
             </div>
@@ -149,7 +149,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
                 <button
                   type="button"
                   onClick={handleScrollToOverview}
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-[#123A63] border border-[#2F6F9F] hover:bg-[#2F6F9F] hover:border-white text-white text-xs font-mono font-semibold tracking-wider uppercase rounded-xl transition-all duration-200 active:scale-95 shadow-xl shadow-black/40 cursor-pointer"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-[#123A63] border border-[#2F6F9F] hover:bg-[#2F6F9F] hover:border-[#DCE8EF] text-white text-xs font-mono font-semibold tracking-wider uppercase transition-all duration-200 active:scale-95 shadow-xl shadow-black/40 cursor-pointer"
                 >
                   <span>EXPLORE PROJECT EXPERIENCE</span>
                   <ArrowDown className="w-4 h-4 text-[#89B3D3]" />
@@ -158,7 +158,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
                 <button
                   type="button"
                   onClick={() => onNavigate('/contact', 'Project Discussion')}
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-5 py-3.5 bg-black/40 backdrop-blur-md border border-white/20 hover:border-white text-slate-200 hover:text-white text-xs font-mono uppercase tracking-wider rounded-xl transition-colors cursor-pointer"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-5 py-3.5 bg-black/40 backdrop-blur-md border border-white/20 hover:border-white text-slate-200 hover:text-white text-xs font-mono uppercase tracking-wider transition-colors cursor-pointer"
                 >
                   <span>DISCUSS YOUR CHALLENGE</span>
                   <ArrowRight className="w-3.5 h-3.5 text-[#6D9F45]" />
@@ -196,7 +196,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
             </div>
 
             {/* Supporting Statement */}
-            <div className="my-8 p-6 sm:p-8 bg-white border border-[#DCE8EF] rounded-2xl shadow-sm">
+            <div className="my-8 p-6 sm:p-8 bg-white border border-[#DCE8EF] shadow-sm">
               <div className="text-[11px] font-mono uppercase tracking-widest text-[#2F6F9F] mb-3">
                 INTEGRATED WORKING SCOPE
               </div>
@@ -212,9 +212,9 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
             </div>
 
             {/* Context Note (Mandatory, Elegant, Visible) */}
-            <div className="p-5 sm:p-6 bg-[#FFFDF5] border border-[#DCE8EF] rounded-2xl">
+            <div className="p-5 sm:p-6 bg-[#FFFDF5] border border-[#DCE8EF]">
               <div className="flex items-start gap-3">
-                <div className="w-6 h-6 rounded-full bg-[#123A63] text-white flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-mono font-bold">
+                <div className="w-6 h-6 bg-[#123A63] text-white flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-mono font-bold">
                   i
                 </div>
                 <div className="space-y-1">
@@ -231,24 +231,24 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
 
           {/* Right Rail: Environment Summary Sidebar */}
           <div className="lg:col-span-4 space-y-6">
-            <div className="bg-white border border-[#DCE8EF] rounded-2xl sm:rounded-3xl p-6 sm:p-8 shadow-sm">
+            <div className="bg-white border border-[#DCE8EF] p-6 sm:p-8 shadow-sm">
               <div className="font-display text-base font-bold text-[#123A63] mb-4 pb-3 border-b border-[#DCE8EF]">
                 Documented Environments
               </div>
               <div className="space-y-4 text-xs font-mono">
-                <div className="p-3 bg-[#F7F7F3] rounded-xl border border-[#DCE8EF]">
+                <div className="p-3 bg-[#F7F7F3] border border-[#DCE8EF]">
                   <div className="text-[10px] text-slate-500 uppercase tracking-wider mb-1">01 · INDUSTRIAL</div>
                   <div className="font-bold text-[#123A63]">Industrial Emissions &amp; Process Development</div>
                 </div>
-                <div className="p-3 bg-[#F7F7F3] rounded-xl border border-[#DCE8EF]">
+                <div className="p-3 bg-[#F7F7F3] border border-[#DCE8EF]">
                   <div className="text-[10px] text-slate-500 uppercase tracking-wider mb-1">02 · MUNICIPAL</div>
                   <div className="font-bold text-[#123A63]">Municipal Sanitation &amp; Environmental Engineering</div>
                 </div>
-                <div className="p-3 bg-[#F7F7F3] rounded-xl border border-[#DCE8EF]">
+                <div className="p-3 bg-[#F7F7F3] border border-[#DCE8EF]">
                   <div className="text-[10px] text-slate-500 uppercase tracking-wider mb-1">03 · SPECIALIZED</div>
                   <div className="font-bold text-[#123A63]">Specialized Operating Environments</div>
                 </div>
-                <div className="p-3 bg-[#F7F7F3] rounded-xl border border-[#DCE8EF]">
+                <div className="p-3 bg-[#F7F7F3] border border-[#DCE8EF]">
                   <div className="text-[10px] text-slate-500 uppercase tracking-wider mb-1">04 · RESOURCE RECOVERY</div>
                   <div className="font-bold text-[#123A63]">CO₂ Capture &amp; Resource Recovery</div>
                 </div>
@@ -263,7 +263,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
           SECTION 4: PROJECT EXPERIENCE OVERVIEW
       ================================================== */}
       <section className="py-8 px-4 sm:px-6 lg:px-8 max-w-[1440px] mx-auto">
-        <div className="p-8 sm:p-10 bg-[#071B2D] text-white rounded-2xl sm:rounded-3xl border border-[#2F6F9F]/30 shadow-xl">
+        <div className="p-8 sm:p-10 bg-[#071B2D] text-white border border-[#2F6F9F]/30 shadow-xl">
           <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[#89B3D3] mb-3">
             <span className="w-1.5 h-1.5 rounded-full bg-[#6D9F45]" />
             <span>OPERATING ENVIRONMENT OVERVIEW</span>
@@ -346,12 +346,12 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
         {/* --------------------------------------------------
             FEATURED PROJECT 01: INTEL (Section 5)
         -------------------------------------------------- */}
-        <div className="p-8 sm:p-12 lg:p-14 bg-white border border-[#DCE8EF] rounded-2xl sm:rounded-3xl shadow-sm hover:border-[#2F6F9F] transition-colors relative overflow-hidden">
+        <div className="p-8 sm:p-12 lg:p-14 bg-white border border-[#DCE8EF] shadow-sm hover:border-[#2F6F9F] transition-colors relative overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             
             <div className="lg:col-span-7 space-y-6">
               <div className="flex flex-wrap items-center gap-3">
-                <span className="px-3 py-1 bg-[#F7F7F3] border border-[#DCE8EF] rounded-full text-xs font-mono font-bold text-[#123A63] uppercase tracking-wider">
+                <span className="px-3 py-1 bg-[#F7F7F3] border border-[#DCE8EF] text-xs font-mono font-bold text-[#123A63] uppercase tracking-wider">
                   PROJECT 01
                 </span>
                 <span className="text-xs font-mono text-[#2F6F9F] uppercase tracking-widest font-semibold">
@@ -383,7 +383,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
                 <button
                   type="button"
                   onClick={() => onNavigate('/applications/industrial-emissions')}
-                  className="inline-flex items-center gap-2 px-5 py-3 bg-[#123A63] border border-[#2F6F9F] hover:bg-[#2F6F9F] hover:border-white text-white text-xs font-mono font-semibold uppercase tracking-wider rounded-xl transition-colors cursor-pointer"
+                  className="inline-flex items-center gap-2 px-5 py-3 bg-[#123A63] border border-[#2F6F9F] hover:bg-[#2F6F9F] hover:border-[#DCE8EF] text-white text-xs font-mono font-semibold uppercase tracking-wider transition-colors cursor-pointer"
                 >
                   <span>RELEVANT APPLICATION: INDUSTRIAL EMISSIONS</span>
                   <ArrowRight className="w-3.5 h-3.5 text-[#6D9F45]" />
@@ -401,7 +401,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
             </div>
 
             <div className="lg:col-span-5">
-              <div className="rounded-2xl overflow-hidden border border-[#DCE8EF] bg-[#071B2D] shadow-lg relative aspect-[4/3]">
+              <div className="overflow-hidden border border-[#DCE8EF] bg-[#071B2D] shadow-lg relative aspect-[4/3]">
                 <PrddImage
                   src="/images/prdd/projects/prdd-project-intel.jpg"
                   fallbackLabel="INTEL FACILITIES · ARIZONA / OREGON"
@@ -409,7 +409,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
                   className="w-full h-full object-cover object-center filter saturate-90 brightness-95"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#071B2D]/70 via-transparent to-transparent pointer-events-none" />
-                <div className="absolute bottom-3 left-3 right-3 p-3 bg-white/95 backdrop-blur-sm rounded-xl text-[11px] font-mono text-[#123A63] font-semibold border border-white/20">
+                <div className="absolute bottom-3 left-3 right-3 p-3 bg-white/95 backdrop-blur-sm text-[11px] font-mono text-[#123A63] font-semibold border border-[#DCE8EF]">
                   NOx &amp; Amine Process Development Context
                 </div>
               </div>
@@ -421,12 +421,12 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
         {/* --------------------------------------------------
             FEATURED PROJECT 02: JABIL (Section 6)
         -------------------------------------------------- */}
-        <div className="p-8 sm:p-12 lg:p-14 bg-white border border-[#DCE8EF] rounded-2xl sm:rounded-3xl shadow-sm hover:border-[#2F6F9F] transition-colors relative overflow-hidden">
+        <div className="p-8 sm:p-12 lg:p-14 bg-white border border-[#DCE8EF] shadow-sm hover:border-[#2F6F9F] transition-colors relative overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             
             <div className="lg:col-span-7 space-y-6">
               <div className="flex flex-wrap items-center gap-3">
-                <span className="px-3 py-1 bg-[#F7F7F3] border border-[#DCE8EF] rounded-full text-xs font-mono font-bold text-[#123A63] uppercase tracking-wider">
+                <span className="px-3 py-1 bg-[#F7F7F3] border border-[#DCE8EF] text-xs font-mono font-bold text-[#123A63] uppercase tracking-wider">
                   PROJECT 02
                 </span>
                 <span className="text-xs font-mono text-[#2F6F9F] uppercase tracking-widest font-semibold">
@@ -458,7 +458,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
                 <button
                   type="button"
                   onClick={() => onNavigate('/applications/industrial-emissions')}
-                  className="inline-flex items-center gap-2 px-5 py-3 bg-[#123A63] border border-[#2F6F9F] hover:bg-[#2F6F9F] hover:border-white text-white text-xs font-mono font-semibold uppercase tracking-wider rounded-xl transition-colors cursor-pointer"
+                  className="inline-flex items-center gap-2 px-5 py-3 bg-[#123A63] border border-[#2F6F9F] hover:bg-[#2F6F9F] hover:border-[#DCE8EF] text-white text-xs font-mono font-semibold uppercase tracking-wider transition-colors cursor-pointer"
                 >
                   <span>RELEVANT APPLICATION: INDUSTRIAL EMISSIONS</span>
                   <ArrowRight className="w-3.5 h-3.5 text-[#6D9F45]" />
@@ -467,7 +467,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
             </div>
 
             <div className="lg:col-span-5">
-              <div className="rounded-2xl overflow-hidden border border-[#DCE8EF] bg-[#071B2D] shadow-lg relative aspect-[4/3]">
+              <div className="overflow-hidden border border-[#DCE8EF] bg-[#071B2D] shadow-lg relative aspect-[4/3]">
                 <PrddImage
                   src="/images/prdd/projects/prdd-project-jabil.jpg"
                   fallbackLabel="JABIL · MEMPHIS"
@@ -475,7 +475,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
                   className="w-full h-full object-cover object-center filter saturate-90 brightness-95"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#071B2D]/70 via-transparent to-transparent pointer-events-none" />
-                <div className="absolute bottom-3 left-3 right-3 p-3 bg-white/95 backdrop-blur-sm rounded-xl text-[11px] font-mono text-[#123A63] font-semibold border border-white/20">
+                <div className="absolute bottom-3 left-3 right-3 p-3 bg-white/95 backdrop-blur-sm text-[11px] font-mono text-[#123A63] font-semibold border border-[#DCE8EF]">
                   Air-Quality Process Design &amp; Testing
                 </div>
               </div>
@@ -487,12 +487,12 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
         {/* --------------------------------------------------
             FEATURED PROJECT 03: SEA LAUNCH / BOEING (Section 7)
         -------------------------------------------------- */}
-        <div className="p-8 sm:p-12 lg:p-14 bg-white border border-[#DCE8EF] rounded-2xl sm:rounded-3xl shadow-sm hover:border-[#2F6F9F] transition-colors relative overflow-hidden">
+        <div className="p-8 sm:p-12 lg:p-14 bg-white border border-[#DCE8EF] shadow-sm hover:border-[#2F6F9F] transition-colors relative overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             
             <div className="lg:col-span-7 space-y-6">
               <div className="flex flex-wrap items-center gap-3">
-                <span className="px-3 py-1 bg-[#F7F7F3] border border-[#DCE8EF] rounded-full text-xs font-mono font-bold text-[#123A63] uppercase tracking-wider">
+                <span className="px-3 py-1 bg-[#F7F7F3] border border-[#DCE8EF] text-xs font-mono font-bold text-[#123A63] uppercase tracking-wider">
                   PROJECT 03
                 </span>
                 <span className="text-xs font-mono text-[#2F6F9F] uppercase tracking-widest font-semibold">
@@ -518,7 +518,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
                 <button
                   type="button"
                   onClick={() => onNavigate('/applications/industrial-emissions')}
-                  className="inline-flex items-center gap-2 px-5 py-3 bg-[#123A63] border border-[#2F6F9F] hover:bg-[#2F6F9F] hover:border-white text-white text-xs font-mono font-semibold uppercase tracking-wider rounded-xl transition-colors cursor-pointer"
+                  className="inline-flex items-center gap-2 px-5 py-3 bg-[#123A63] border border-[#2F6F9F] hover:bg-[#2F6F9F] hover:border-[#DCE8EF] text-white text-xs font-mono font-semibold uppercase tracking-wider transition-colors cursor-pointer"
                 >
                   <span>RELEVANT APPLICATION: INDUSTRIAL EMISSIONS</span>
                   <ArrowRight className="w-3.5 h-3.5 text-[#6D9F45]" />
@@ -527,7 +527,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
             </div>
 
             <div className="lg:col-span-5">
-              <div className="rounded-2xl overflow-hidden border border-[#DCE8EF] bg-[#071B2D] shadow-lg relative aspect-[4/3]">
+              <div className="overflow-hidden border border-[#DCE8EF] bg-[#071B2D] shadow-lg relative aspect-[4/3]">
                 <PrddImage
                   src="/images/prdd/projects/prdd-project-sea-launch.jpg"
                   fallbackLabel="SEA LAUNCH / BOEING · MOVING PLATFORM"
@@ -535,7 +535,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
                   className="w-full h-full object-cover object-center filter saturate-90 brightness-95"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#071B2D]/70 via-transparent to-transparent pointer-events-none" />
-                <div className="absolute bottom-3 left-3 right-3 p-3 bg-white/95 backdrop-blur-sm rounded-xl text-[11px] font-mono text-[#123A63] font-semibold border border-white/20">
+                <div className="absolute bottom-3 left-3 right-3 p-3 bg-white/95 backdrop-blur-sm text-[11px] font-mono text-[#123A63] font-semibold border border-[#DCE8EF]">
                   Toxic &amp; Explosive Gas Treatment Context
                 </div>
               </div>
@@ -547,12 +547,12 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
         {/* --------------------------------------------------
             FEATURED PROJECT 04: HAMPTON ROADS SANITATION (Section 8)
         -------------------------------------------------- */}
-        <div className="p-8 sm:p-12 lg:p-14 bg-white border border-[#DCE8EF] rounded-2xl sm:rounded-3xl shadow-sm hover:border-[#2F6F9F] transition-colors relative overflow-hidden">
+        <div className="p-8 sm:p-12 lg:p-14 bg-white border border-[#DCE8EF] shadow-sm hover:border-[#2F6F9F] transition-colors relative overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             
             <div className="lg:col-span-7 space-y-6">
               <div className="flex flex-wrap items-center gap-3">
-                <span className="px-3 py-1 bg-[#F7F7F3] border border-[#DCE8EF] rounded-full text-xs font-mono font-bold text-[#123A63] uppercase tracking-wider">
+                <span className="px-3 py-1 bg-[#F7F7F3] border border-[#DCE8EF] text-xs font-mono font-bold text-[#123A63] uppercase tracking-wider">
                   PROJECT 04
                 </span>
                 <span className="text-xs font-mono text-[#2F6F9F] uppercase tracking-widest font-semibold">
@@ -584,7 +584,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
                 <button
                   type="button"
                   onClick={() => onNavigate('/applications/water-wastewater')}
-                  className="inline-flex items-center gap-2 px-5 py-3 bg-[#123A63] border border-[#2F6F9F] hover:bg-[#2F6F9F] hover:border-white text-white text-xs font-mono font-semibold uppercase tracking-wider rounded-xl transition-colors cursor-pointer"
+                  className="inline-flex items-center gap-2 px-5 py-3 bg-[#123A63] border border-[#2F6F9F] hover:bg-[#2F6F9F] hover:border-[#DCE8EF] text-white text-xs font-mono font-semibold uppercase tracking-wider transition-colors cursor-pointer"
                 >
                   <span>RELEVANT APPLICATION: WATER &amp; WASTEWATER</span>
                   <ArrowRight className="w-3.5 h-3.5 text-[#6D9F45]" />
@@ -593,7 +593,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
             </div>
 
             <div className="lg:col-span-5">
-              <div className="rounded-2xl overflow-hidden border border-[#DCE8EF] bg-[#071B2D] shadow-lg relative aspect-[4/3]">
+              <div className="overflow-hidden border border-[#DCE8EF] bg-[#071B2D] shadow-lg relative aspect-[4/3]">
                 <PrddImage
                   src="/images/prdd/projects/prdd-project-hampton-roads.jpg"
                   fallbackLabel="HAMPTON ROADS SANITATION · WILLIAMSBURG, VIRGINIA"
@@ -601,7 +601,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
                   className="w-full h-full object-cover object-center filter saturate-90 brightness-95"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#071B2D]/70 via-transparent to-transparent pointer-events-none" />
-                <div className="absolute bottom-3 left-3 right-3 p-3 bg-white/95 backdrop-blur-sm rounded-xl text-[11px] font-mono text-[#123A63] font-semibold border border-white/20">
+                <div className="absolute bottom-3 left-3 right-3 p-3 bg-white/95 backdrop-blur-sm text-[11px] font-mono text-[#123A63] font-semibold border border-[#DCE8EF]">
                   Multiphase Odor Control &amp; Startup Testing
                 </div>
               </div>
@@ -623,10 +623,10 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             
             {/* Project 05: Orange County Sanitation District */}
-            <div className="p-8 bg-white border border-[#DCE8EF] rounded-2xl sm:rounded-3xl shadow-sm hover:border-[#2F6F9F] transition-colors flex flex-col justify-between">
+            <div className="p-8 bg-white border border-[#DCE8EF] shadow-sm hover:border-[#2F6F9F] transition-colors flex flex-col justify-between">
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
-                  <span className="px-2.5 py-1 bg-[#F7F7F3] border border-[#DCE8EF] rounded text-[10px] font-mono font-bold text-[#123A63] uppercase">
+                  <span className="px-2.5 py-1 bg-[#F7F7F3] border border-[#DCE8EF] text-[10px] font-mono font-bold text-[#123A63] uppercase">
                     PROJECT 05
                   </span>
                   <span className="text-[10px] font-mono text-[#2F6F9F] uppercase font-semibold">
@@ -660,10 +660,10 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
             </div>
 
             {/* Project 06: City of Oceanside */}
-            <div className="p-8 bg-white border border-[#DCE8EF] rounded-2xl sm:rounded-3xl shadow-sm hover:border-[#2F6F9F] transition-colors flex flex-col justify-between">
+            <div className="p-8 bg-white border border-[#DCE8EF] shadow-sm hover:border-[#2F6F9F] transition-colors flex flex-col justify-between">
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
-                  <span className="px-2.5 py-1 bg-[#F7F7F3] border border-[#DCE8EF] rounded text-[10px] font-mono font-bold text-[#123A63] uppercase">
+                  <span className="px-2.5 py-1 bg-[#F7F7F3] border border-[#DCE8EF] text-[10px] font-mono font-bold text-[#123A63] uppercase">
                     PROJECT 06
                   </span>
                   <span className="text-[10px] font-mono text-[#2F6F9F] uppercase font-semibold">
@@ -697,10 +697,10 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
             </div>
 
             {/* Project 07: Metro Biosolids Facility */}
-            <div className="p-8 bg-white border border-[#DCE8EF] rounded-2xl sm:rounded-3xl shadow-sm hover:border-[#2F6F9F] transition-colors flex flex-col justify-between">
+            <div className="p-8 bg-white border border-[#DCE8EF] shadow-sm hover:border-[#2F6F9F] transition-colors flex flex-col justify-between">
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
-                  <span className="px-2.5 py-1 bg-[#F7F7F3] border border-[#DCE8EF] rounded text-[10px] font-mono font-bold text-[#123A63] uppercase">
+                  <span className="px-2.5 py-1 bg-[#F7F7F3] border border-[#DCE8EF] text-[10px] font-mono font-bold text-[#123A63] uppercase">
                     PROJECT 07
                   </span>
                   <span className="text-[10px] font-mono text-[#2F6F9F] uppercase font-semibold">
@@ -745,12 +745,12 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
         {/* --------------------------------------------------
             FEATURED PROJECT 08: ROCK CANYON OIL (Section 12)
         -------------------------------------------------- */}
-        <div className="p-8 sm:p-12 lg:p-14 bg-white border border-[#DCE8EF] rounded-2xl sm:rounded-3xl shadow-sm hover:border-[#2F6F9F] transition-colors relative overflow-hidden">
+        <div className="p-8 sm:p-12 lg:p-14 bg-white border border-[#DCE8EF] shadow-sm hover:border-[#2F6F9F] transition-colors relative overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             
             <div className="lg:col-span-7 space-y-6">
               <div className="flex flex-wrap items-center gap-3">
-                <span className="px-3 py-1 bg-[#F7F7F3] border border-[#DCE8EF] rounded-full text-xs font-mono font-bold text-[#123A63] uppercase tracking-wider">
+                <span className="px-3 py-1 bg-[#F7F7F3] border border-[#DCE8EF] text-xs font-mono font-bold text-[#123A63] uppercase tracking-wider">
                   PROJECT 08
                 </span>
                 <span className="text-xs font-mono text-[#6D9F45] uppercase tracking-widest font-semibold">
@@ -776,7 +776,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
                 <button
                   type="button"
                   onClick={() => onNavigate('/applications/resource-recovery')}
-                  className="inline-flex items-center gap-2 px-5 py-3 bg-[#123A63] border border-[#2F6F9F] hover:bg-[#2F6F9F] hover:border-white text-white text-xs font-mono font-semibold uppercase tracking-wider rounded-xl transition-colors cursor-pointer"
+                  className="inline-flex items-center gap-2 px-5 py-3 bg-[#123A63] border border-[#2F6F9F] hover:bg-[#2F6F9F] hover:border-[#DCE8EF] text-white text-xs font-mono font-semibold uppercase tracking-wider transition-colors cursor-pointer"
                 >
                   <span>RELEVANT APPLICATION: RESOURCE RECOVERY</span>
                   <ArrowRight className="w-3.5 h-3.5 text-[#6D9F45]" />
@@ -794,7 +794,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
             </div>
 
             <div className="lg:col-span-5">
-              <div className="rounded-2xl overflow-hidden border border-[#DCE8EF] bg-[#071B2D] shadow-lg relative aspect-[4/3]">
+              <div className="overflow-hidden border border-[#DCE8EF] bg-[#071B2D] shadow-lg relative aspect-[4/3]">
                 <PrddImage
                   src="/images/prdd/projects/prdd-project-rock-canyon.jpg"
                   fallbackLabel="ROCK CANYON OIL · OIL RECOVERY"
@@ -802,7 +802,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
                   className="w-full h-full object-cover object-center filter saturate-90 brightness-95"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#071B2D]/70 via-transparent to-transparent pointer-events-none" />
-                <div className="absolute bottom-3 left-3 right-3 p-3 bg-white/95 backdrop-blur-sm rounded-xl text-[11px] font-mono text-[#123A63] font-semibold border border-white/20">
+                <div className="absolute bottom-3 left-3 right-3 p-3 bg-white/95 backdrop-blur-sm text-[11px] font-mono text-[#123A63] font-semibold border border-[#DCE8EF]">
                   CO₂ Capture &amp; Oil Recovery Context
                 </div>
               </div>
@@ -818,7 +818,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
           Typography and editorial hierarchy — NOT a logo wall
       ================================================== */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-[1440px] mx-auto">
-        <div className="bg-white border border-[#DCE8EF] rounded-2xl sm:rounded-3xl p-8 sm:p-12 lg:p-16 shadow-sm">
+        <div className="bg-white border border-[#DCE8EF] p-8 sm:p-12 lg:p-16 shadow-sm">
           
           <div className="max-w-3xl mb-10">
             <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[#123A63] mb-3">
@@ -837,7 +837,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
             {projectIndex.map((item, idx) => (
               <div
                 key={idx}
-                className="py-5 sm:py-6 grid grid-cols-1 md:grid-cols-12 gap-4 items-baseline hover:bg-[#F7F7F3] px-2 rounded-lg transition-colors"
+                className="py-5 sm:py-6 grid grid-cols-1 md:grid-cols-12 gap-4 items-baseline hover:bg-[#F7F7F3] px-2 transition-colors"
               >
                 <div className="md:col-span-1 font-mono text-xs text-slate-400 font-bold">
                   0{idx + 1}
@@ -883,7 +883,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {/* Group 01 */}
-          <div className="p-6 bg-white border border-[#DCE8EF] rounded-2xl shadow-sm space-y-4">
+          <div className="p-6 bg-white border border-[#DCE8EF] shadow-sm space-y-4">
             <div className="font-display text-3xl font-bold text-[#123A63]">01</div>
             <div className="font-mono text-xs font-bold uppercase text-[#123A63] tracking-wider">
               INDUSTRIAL FACILITIES
@@ -895,7 +895,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
           </div>
 
           {/* Group 02 */}
-          <div className="p-6 bg-white border border-[#DCE8EF] rounded-2xl shadow-sm space-y-4">
+          <div className="p-6 bg-white border border-[#DCE8EF] shadow-sm space-y-4">
             <div className="font-display text-3xl font-bold text-[#123A63]">02</div>
             <div className="font-mono text-xs font-bold uppercase text-[#123A63] tracking-wider">
               MUNICIPAL SANITATION
@@ -909,7 +909,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
           </div>
 
           {/* Group 03 */}
-          <div className="p-6 bg-white border border-[#DCE8EF] rounded-2xl shadow-sm space-y-4">
+          <div className="p-6 bg-white border border-[#DCE8EF] shadow-sm space-y-4">
             <div className="font-display text-3xl font-bold text-[#123A63]">03</div>
             <div className="font-mono text-xs font-bold uppercase text-[#123A63] tracking-wider">
               SPECIALIZED OPERATIONS
@@ -920,7 +920,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
           </div>
 
           {/* Group 04 */}
-          <div className="p-6 bg-white border border-[#DCE8EF] rounded-2xl shadow-sm space-y-4">
+          <div className="p-6 bg-white border border-[#DCE8EF] shadow-sm space-y-4">
             <div className="font-display text-3xl font-bold text-[#6D9F45]">04</div>
             <div className="font-mono text-xs font-bold uppercase text-[#123A63] tracking-wider">
               RESOURCE RECOVERY
@@ -937,7 +937,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
           Four Restrained Themes
       ================================================== */}
       <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-[1440px] mx-auto">
-        <div className="p-8 sm:p-12 lg:p-16 bg-[#071B2D] text-white rounded-2xl sm:rounded-3xl border border-[#2F6F9F]/30 shadow-xl space-y-8">
+        <div className="p-8 sm:p-12 lg:p-16 bg-[#071B2D] text-white border border-[#2F6F9F]/30 shadow-xl space-y-8">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[#89B3D3] mb-3">
               <span className="w-1.5 h-1.5 rounded-full bg-[#6D9F45]" />
@@ -953,8 +953,8 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
 
           {/* Four Restrained Themes */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 pt-6 border-t border-white/10">
-            <div className="p-5 bg-[#0c263f] border border-[#2F6F9F]/40 rounded-xl space-y-2">
-              <div className="w-7 h-7 rounded-lg bg-[#123A63] text-[#89B3D3] flex items-center justify-center font-mono text-xs font-bold">
+            <div className="p-5 bg-[#0c263f] border border-[#2F6F9F]/40 space-y-2">
+              <div className="w-7 h-7 bg-[#123A63] text-[#89B3D3] flex items-center justify-center font-mono text-xs font-bold">
                 01
               </div>
               <h4 className="font-mono text-xs font-bold uppercase tracking-wider text-white">
@@ -965,8 +965,8 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
               </p>
             </div>
 
-            <div className="p-5 bg-[#0c263f] border border-[#2F6F9F]/40 rounded-xl space-y-2">
-              <div className="w-7 h-7 rounded-lg bg-[#123A63] text-[#89B3D3] flex items-center justify-center font-mono text-xs font-bold">
+            <div className="p-5 bg-[#0c263f] border border-[#2F6F9F]/40 space-y-2">
+              <div className="w-7 h-7 bg-[#123A63] text-[#89B3D3] flex items-center justify-center font-mono text-xs font-bold">
                 02
               </div>
               <h4 className="font-mono text-xs font-bold uppercase tracking-wider text-white">
@@ -977,8 +977,8 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
               </p>
             </div>
 
-            <div className="p-5 bg-[#0c263f] border border-[#2F6F9F]/40 rounded-xl space-y-2">
-              <div className="w-7 h-7 rounded-lg bg-[#123A63] text-[#89B3D3] flex items-center justify-center font-mono text-xs font-bold">
+            <div className="p-5 bg-[#0c263f] border border-[#2F6F9F]/40 space-y-2">
+              <div className="w-7 h-7 bg-[#123A63] text-[#89B3D3] flex items-center justify-center font-mono text-xs font-bold">
                 03
               </div>
               <h4 className="font-mono text-xs font-bold uppercase tracking-wider text-white">
@@ -989,8 +989,8 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
               </p>
             </div>
 
-            <div className="p-5 bg-[#0c263f] border border-[#2F6F9F]/40 rounded-xl space-y-2">
-              <div className="w-7 h-7 rounded-lg bg-[#123A63] text-[#6D9F45] flex items-center justify-center font-mono text-xs font-bold">
+            <div className="p-5 bg-[#0c263f] border border-[#2F6F9F]/40 space-y-2">
+              <div className="w-7 h-7 bg-[#123A63] text-[#6D9F45] flex items-center justify-center font-mono text-xs font-bold">
                 04
               </div>
               <h4 className="font-mono text-xs font-bold uppercase tracking-wider text-white">
@@ -1010,7 +1010,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
       <section className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-[1440px] mx-auto space-y-16">
         
         {/* Section 16: Technologies Connection */}
-        <div className="p-8 sm:p-12 bg-white border border-[#DCE8EF] rounded-2xl sm:rounded-3xl shadow-sm space-y-8">
+        <div className="p-8 sm:p-12 bg-white border border-[#DCE8EF] shadow-sm space-y-8">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[#123A63] mb-3">
               <span className="w-1.5 h-1.5 rounded-full bg-[#6D9F45]" />
@@ -1027,7 +1027,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <div
               onClick={() => onNavigate('/technologies/co2-capture')}
-              className="p-6 bg-[#F7F7F3] border border-[#DCE8EF] hover:border-[#2F6F9F] rounded-2xl transition-all cursor-pointer group flex flex-col justify-between"
+              className="p-6 bg-[#F7F7F3] border border-[#DCE8EF] hover:border-[#2F6F9F] shadow-sm transition-all cursor-pointer group flex flex-col justify-between"
             >
               <div>
                 <div className="text-[10px] font-mono text-[#2F6F9F] uppercase mb-1 font-semibold">01 · TECHNOLOGY</div>
@@ -1046,7 +1046,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
 
             <div
               onClick={() => onNavigate('/technologies/nox-sox')}
-              className="p-6 bg-[#F7F7F3] border border-[#DCE8EF] hover:border-[#2F6F9F] rounded-2xl transition-all cursor-pointer group flex flex-col justify-between"
+              className="p-6 bg-[#F7F7F3] border border-[#DCE8EF] hover:border-[#2F6F9F] shadow-sm transition-all cursor-pointer group flex flex-col justify-between"
             >
               <div>
                 <div className="text-[10px] font-mono text-[#2F6F9F] uppercase mb-1 font-semibold">02 · TECHNOLOGY</div>
@@ -1065,7 +1065,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
 
             <div
               onClick={() => onNavigate('/technologies/water-treatment')}
-              className="p-6 bg-[#F7F7F3] border border-[#DCE8EF] hover:border-[#2F6F9F] rounded-2xl transition-all cursor-pointer group flex flex-col justify-between"
+              className="p-6 bg-[#F7F7F3] border border-[#DCE8EF] hover:border-[#2F6F9F] shadow-sm transition-all cursor-pointer group flex flex-col justify-between"
             >
               <div>
                 <div className="text-[10px] font-mono text-[#2F6F9F] uppercase mb-1 font-semibold">03 · TECHNOLOGY</div>
@@ -1084,7 +1084,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
 
             <div
               onClick={() => onNavigate('/technologies/advanced-materials')}
-              className="p-6 bg-[#F7F7F3] border border-[#DCE8EF] hover:border-[#2F6F9F] rounded-2xl transition-all cursor-pointer group flex flex-col justify-between"
+              className="p-6 bg-[#F7F7F3] border border-[#DCE8EF] hover:border-[#2F6F9F] shadow-sm transition-all cursor-pointer group flex flex-col justify-between"
             >
               <div>
                 <div className="text-[10px] font-mono text-[#2F6F9F] uppercase mb-1 font-semibold">04 · TECHNOLOGY</div>
@@ -1104,7 +1104,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
         </div>
 
         {/* Section 17: Applications Connection */}
-        <div className="p-8 sm:p-12 bg-white border border-[#DCE8EF] rounded-2xl sm:rounded-3xl shadow-sm space-y-8">
+        <div className="p-8 sm:p-12 bg-white border border-[#DCE8EF] shadow-sm space-y-8">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[#123A63] mb-3">
               <span className="w-1.5 h-1.5 rounded-full bg-[#6D9F45]" />
@@ -1118,7 +1118,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <div
               onClick={() => onNavigate('/applications/industrial-emissions')}
-              className="p-6 bg-[#F7F7F3] border border-[#DCE8EF] hover:border-[#2F6F9F] rounded-2xl transition-all cursor-pointer group flex flex-col justify-between"
+              className="p-6 bg-[#F7F7F3] border border-[#DCE8EF] hover:border-[#2F6F9F] shadow-sm transition-all cursor-pointer group flex flex-col justify-between"
             >
               <div>
                 <div className="text-[10px] font-mono text-[#2F6F9F] uppercase mb-1 font-semibold">APPLICATION 01</div>
@@ -1137,7 +1137,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
 
             <div
               onClick={() => onNavigate('/applications/water-wastewater')}
-              className="p-6 bg-[#F7F7F3] border border-[#DCE8EF] hover:border-[#2F6F9F] rounded-2xl transition-all cursor-pointer group flex flex-col justify-between"
+              className="p-6 bg-[#F7F7F3] border border-[#DCE8EF] hover:border-[#2F6F9F] shadow-sm transition-all cursor-pointer group flex flex-col justify-between"
             >
               <div>
                 <div className="text-[10px] font-mono text-[#2F6F9F] uppercase mb-1 font-semibold">APPLICATION 02</div>
@@ -1156,7 +1156,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
 
             <div
               onClick={() => onNavigate('/applications/concrete-materials')}
-              className="p-6 bg-[#F7F7F3] border border-[#DCE8EF] hover:border-[#2F6F9F] rounded-2xl transition-all cursor-pointer group flex flex-col justify-between"
+              className="p-6 bg-[#F7F7F3] border border-[#DCE8EF] hover:border-[#2F6F9F] shadow-sm transition-all cursor-pointer group flex flex-col justify-between"
             >
               <div>
                 <div className="text-[10px] font-mono text-[#2F6F9F] uppercase mb-1 font-semibold">APPLICATION 03</div>
@@ -1175,7 +1175,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
 
             <div
               onClick={() => onNavigate('/applications/resource-recovery')}
-              className="p-6 bg-[#F7F7F3] border border-[#DCE8EF] hover:border-[#2F6F9F] rounded-2xl transition-all cursor-pointer group flex flex-col justify-between"
+              className="p-6 bg-[#F7F7F3] border border-[#DCE8EF] hover:border-[#2F6F9F] shadow-sm transition-all cursor-pointer group flex flex-col justify-between"
             >
               <div>
                 <div className="text-[10px] font-mono text-[#2F6F9F] uppercase mb-1 font-semibold">APPLICATION 04</div>
@@ -1200,7 +1200,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
           SECTION 18: FINAL CTA
       ================================================== */}
       <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-[1440px] mx-auto">
-        <div className="rounded-2xl sm:rounded-3xl border border-[#2F6F9F]/30 bg-[#071B2D] text-white p-8 sm:p-12 lg:p-16 shadow-2xl relative overflow-hidden">
+        <div className="border border-[#2F6F9F]/30 bg-[#071B2D] text-white p-8 sm:p-12 lg:p-16 shadow-2xl relative overflow-hidden">
           <div className="absolute inset-0">
             <PrddImage
               src={PRDD_IMAGES.finalCta}
@@ -1231,7 +1231,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
               <button
                 type="button"
                 onClick={() => onNavigate('/contact', 'Project Discussion')}
-                className="inline-flex items-center gap-2.5 px-8 py-4 bg-[#123A63] border border-[#2F6F9F] hover:bg-[#2F6F9F] hover:border-white text-white text-xs font-mono font-semibold tracking-wider uppercase rounded-xl transition-all duration-200 active:scale-95 shadow-xl shadow-black/40 cursor-pointer"
+                className="inline-flex items-center gap-2.5 px-8 py-4 bg-[#123A63] border border-[#2F6F9F] hover:bg-[#2F6F9F] hover:border-[#DCE8EF] text-white text-xs font-mono font-semibold tracking-wider uppercase transition-all duration-200 active:scale-95 shadow-xl shadow-black/40 cursor-pointer"
               >
                 <span>DISCUSS YOUR PROJECT</span>
                 <ArrowRight className="w-4 h-4 text-[#6D9F45]" />

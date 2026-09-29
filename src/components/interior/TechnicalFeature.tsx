@@ -24,7 +24,7 @@ export const TechnicalFeature: React.FC<TechnicalFeatureProps> = ({
 
   return (
     <div
-      className={`relative p-6 sm:p-7 border transition-all duration-300 group hover:-translate-y-1 ${
+      className={`relative p-6 sm:p-7 border transition-all duration-300 group hover:-translate-y-0.5 ${
         isDark
           ? 'bg-[#0c263f] border-[#2F6F9F]/30 hover:border-[#2F6F9F]/70 shadow-lg shadow-[#071B2D]/50'
           : 'bg-white border-[#DCE8EF] hover:border-[#2F6F9F]/50 shadow-md shadow-slate-200/50'

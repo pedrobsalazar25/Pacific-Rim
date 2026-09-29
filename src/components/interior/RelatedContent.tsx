@@ -40,15 +40,15 @@ export const RelatedContent: React.FC<RelatedContentProps> = ({
             onClick={() => onNavigate(item.route)}
             className={`p-6 border transition-all duration-300 cursor-pointer group flex flex-col justify-between ${
               isDark
-                ? 'bg-[#0c263f] border-[#2F6F9F]/30 hover:border-[#2F6F9F] hover:-translate-y-1'
-                : 'bg-white border-[#DCE8EF] hover:border-[#2F6F9F] hover:-translate-y-1'
+                ? 'bg-[#0c263f] border-[#2F6F9F]/30 hover:border-[#2F6F9F] hover:-translate-y-0.5 shadow-lg'
+                : 'bg-white border-[#DCE8EF] hover:border-[#2F6F9F] hover:-translate-y-0.5 shadow-md'
             }`}
           >
             <div>
               <div className="flex items-center justify-between text-[11px] font-mono uppercase tracking-wider text-[#89B3D3] mb-2">
                 <span>{item.category}</span>
                 {item.tag && (
-                  <span className="px-2 py-0.5 bg-[#123A63] text-[#DCE8EF]">
+                  <span className="px-2 py-0.5 bg-[#123A63] border border-[#2F6F9F]/40 text-[#DCE8EF]">
                     {item.tag}
                   </span>
                 )}

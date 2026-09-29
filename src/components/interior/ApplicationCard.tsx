@@ -21,8 +21,8 @@ export const ApplicationCard: React.FC<ApplicationCardProps> = ({
       onClick={() => onSelect(application)}
       className={`group cursor-pointer border transition-all duration-300 flex flex-col justify-between overflow-hidden ${
         isDark
-          ? 'bg-[#0c263f] border-[#2F6F9F]/30 hover:border-[#2F6F9F] shadow-xl hover:-translate-y-1'
-          : 'bg-white border-[#DCE8EF] hover:border-[#2F6F9F] shadow-md hover:-translate-y-1'
+          ? 'bg-[#0c263f] border-[#2F6F9F]/30 hover:border-[#2F6F9F] shadow-xl hover:-translate-y-0.5'
+          : 'bg-white border-[#DCE8EF] hover:border-[#2F6F9F] shadow-md hover:-translate-y-0.5'
       }`}
     >
       <div>

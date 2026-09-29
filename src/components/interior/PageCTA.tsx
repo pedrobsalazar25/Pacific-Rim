@@ -23,7 +23,7 @@ export const PageCTA: React.FC<PageCTAProps> = ({
   secondaryAction
 }) => {
   return (
-    <section className="relative bg-[#071B2D] border-t border-[#2F6F9F]/30 py-20 overflow-hidden">
+    <section className="relative bg-[#071B2D] border-t border-[#2F6F9F]/30 py-16 sm:py-24 overflow-hidden">
       <div className="absolute inset-0 tech-grid-pattern opacity-25 pointer-events-none" />
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative">
         <div className="bg-gradient-to-r from-[#0c263f] via-[#103252] to-[#0c263f] border border-[#2F6F9F]/40 p-8 sm:p-12 lg:p-16 shadow-2xl relative">
@@ -62,6 +62,19 @@ export const PageCTA: React.FC<PageCTAProps> = ({
                   <span>{secondaryAction.text}</span>
                 </button>
               )}
+            </div>
+          </div>
+
+          <div className="mt-8 pt-6 border-t border-white/10 flex flex-wrap items-center justify-between gap-4 text-xs font-mono text-slate-400">
+            <span className="text-slate-300 font-semibold">Pacific Rim Design &amp; Development, Inc.</span>
+            <div className="flex items-center gap-4">
+              <a href="tel:530-474-4819" className="hover:text-white transition-colors">
+                530-474-4819
+              </a>
+              <span>·</span>
+              <a href="mailto:robert@prdd.net" className="hover:text-white transition-colors">
+                robert@prdd.net
+              </a>
             </div>
           </div>
         </div>

@@ -41,7 +41,7 @@ export const InteriorHero: React.FC<InteriorHeroProps> = ({
           {/* Left Column: Eyebrow, Title, Description */}
           <div className={image ? 'lg:col-span-7' : 'lg:col-span-9'}>
             {/* Category / Eyebrow */}
-            <div className="inline-flex items-center gap-2.5 px-3 py-1 bg-[#123A63]/60 border border-[#2F6F9F]/50 text-xs font-mono tracking-widest text-[#DCE8EF] uppercase mb-5">
+            <div className="inline-flex items-center gap-2.5 px-3 py-1 bg-[#123A63]/60 border border-[#2F6F9F]/50 text-xs font-mono tracking-widest text-[#DCE8EF] uppercase mb-5 backdrop-blur-sm">
               <span className="w-1.5 h-1.5 rounded-full bg-[#6D9F45]" />
               <span>{category}</span>
               {badgeText && (

@@ -60,12 +60,12 @@ export const Experience: React.FC = () => {
           ))}
         </div>
 
-        {/* Explanatory Note */}
-        <div className="mt-12 p-6 bg-[#071B2D] border border-[#2F6F9F]/25 flex flex-col sm:flex-row sm:items-center justify-between gap-4 text-xs font-mono text-slate-400">
+        {/* Explanatory Note with Approved Historical Disclaimer */}
+        <div className="mt-12 p-6 bg-[#071B2D] border border-[#2F6F9F]/25 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-4 text-xs font-mono text-slate-400">
           <div className="flex items-center gap-2.5">
             <Landmark className="w-4 h-4 text-[#2F6F9F] shrink-0" />
             <span className="text-slate-300">
-              Selected historical project experience developed and implemented in industrial and municipal environments.
+              The organizations shown represent selected historical PRDD project experience and should not be interpreted as current customer relationships or endorsements.
             </span>
           </div>
           <span className="text-slate-400 text-[11px] shrink-0">

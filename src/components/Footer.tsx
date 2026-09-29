@@ -54,13 +54,13 @@ export const Footer: React.FC<FooterProps> = ({
             </div>
 
             <p className="text-xs sm:text-sm text-slate-300 max-w-sm leading-relaxed mb-6 font-normal">
-              Developing and commercializing patented environmental technologies that transform complex industrial pollutants into useful, commercially viable resources.
+              Developing and commercializing environmental processes and engineering approaches that address complex industrial and municipal environmental challenges.
             </p>
 
             <div className="font-mono text-xs text-slate-300 space-y-2">
               <div className="flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#6D9F45]" />
-                <span>Chemistry-First Engineering</span>
+                <span>Chemistry-First Process Development</span>
               </div>
               <div className="flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#6D9F45]" />
@@ -68,7 +68,7 @@ export const Footer: React.FC<FooterProps> = ({
               </div>
               <div className="flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#6D9F45]" />
-                <span>Commercial Scale Implementation</span>
+                <span>Practical Field Implementation</span>
               </div>
             </div>
           </div>
@@ -138,7 +138,7 @@ export const Footer: React.FC<FooterProps> = ({
           {/* Group 3: Company & Direct Contact Info */}
           <div>
             <div className="text-xs font-mono font-bold uppercase tracking-widest text-[#DCE8EF] mb-5 flex items-center gap-2">
-              <span>PRDD DIRECT</span>
+              <span>COMPANY &amp; CONTACT</span>
               <span className="w-1 h-1 rounded-full bg-[#6D9F45]" />
             </div>
             <div className="space-y-3.5 text-xs font-mono text-slate-300">
@@ -147,7 +147,7 @@ export const Footer: React.FC<FooterProps> = ({
                   <button
                     type="button"
                     onClick={() => handleRouteClick('/about')}
-                    className="hover:text-white transition-colors"
+                    className="hover:text-white transition-colors cursor-pointer"
                   >
                     About PRDD Overview
                   </button>
@@ -156,7 +156,7 @@ export const Footer: React.FC<FooterProps> = ({
                   <button
                     type="button"
                     onClick={() => handleRouteClick('/about/robert-richardson')}
-                    className="hover:text-white transition-colors"
+                    className="hover:text-white transition-colors cursor-pointer"
                   >
                     Dr. Robert Richardson Profile
                   </button>
@@ -165,18 +165,18 @@ export const Footer: React.FC<FooterProps> = ({
                   <button
                     type="button"
                     onClick={() => handleRouteClick('/projects')}
-                    className="hover:text-white transition-colors"
+                    className="hover:text-white transition-colors cursor-pointer"
                   >
-                    Demonstrated Projects
+                    Project Experience
                   </button>
                 </div>
                 <div>
                   <button
                     type="button"
                     onClick={() => handleRouteClick('/insights')}
-                    className="hover:text-white transition-colors"
+                    className="hover:text-white transition-colors cursor-pointer"
                   >
-                    Technical Insights
+                    Insights &amp; Resources
                   </button>
                 </div>
               </div>
