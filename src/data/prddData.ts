@@ -1,6 +1,6 @@
 /**
  * PRDD Brand & Technology Data Registry
- * Pacific Rim Design & Development, Inc.
+ * Clean Scrub Technologies
  * Verified source content only.
  */
 
@@ -313,9 +313,9 @@ export const FOUNDER_DATA: FounderBio = {
   title: 'President',
   credentialsDisplay: 'Ph.D. Chemist · Licensed General Contractor · Inventor',
   image: PRDD_IMAGES.founder,
-  summary: 'Dr. Robert Richardson is the founder and president of Pacific Rim Design & Development, Inc. As a Ph.D. chemist, licensed general contractor, and inventor, Dr. Richardson conducts research and process development to address challenging industrial environmental problems.',
+  summary: 'Dr. Robert Richardson is the founder and president of Clean Scrub Technologies. As a Ph.D. chemist, licensed general contractor, and inventor, Dr. Richardson conducts research and process development to address challenging industrial environmental problems.',
   biography: [
-    'Dr. Robert Richardson is President of Pacific Rim Design & Development, Inc. (PRDD).',
+    'Dr. Robert Richardson is President of Clean Scrub Technologies (PRDD).',
     'As a Ph.D. chemist, licensed general contractor, and inventor, Dr. Richardson combines chemical research with practical engineering and construction experience.',
     'Dr. Richardson utilizes a personal laboratory for research and process development, focusing on practical technologies for emissions abatement, water treatment, and materials engineering.'
   ],
@@ -323,7 +323,7 @@ export const FOUNDER_DATA: FounderBio = {
     'Ph.D. Chemist',
     'Licensed General Contractor',
     'Inventor',
-    'President, Pacific Rim Design & Development, Inc.'
+    'President, Clean Scrub Technologies'
   ],
   philosophy: 'Environmental processes that address complex industrial problems through chemistry, engineering and practical implementation.'
 };

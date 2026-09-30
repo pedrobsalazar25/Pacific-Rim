@@ -39,7 +39,7 @@ export const PrddImage: React.FC<PrddImageProps> = ({
           {fallbackLabel}
         </div>
         <div className="text-[9px] font-mono text-[#89B3D3]/80 uppercase mt-0.5">
-          Pacific Rim Design &amp; Development
+          Clean Scrub Technologies
         </div>
       </div>
     );

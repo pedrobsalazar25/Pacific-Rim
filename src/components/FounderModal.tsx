@@ -65,7 +65,7 @@ export const FounderModal: React.FC<FounderModalProps> = ({
                 Ph.D. Chemist · Licensed General Contractor · Inventor
               </div>
               <p className="text-xs text-slate-300 mt-2">
-                President of Pacific Rim Design &amp; Development, Inc.
+                President of Clean Scrub Technologies
               </p>
             </div>
           </div>

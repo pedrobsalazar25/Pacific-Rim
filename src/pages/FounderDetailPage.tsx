@@ -41,7 +41,7 @@ export const FounderDetailPage: React.FC<FounderDetailPageProps> = ({ onNavigate
     if (metaDesc) {
       metaDesc.setAttribute(
         'content',
-        'Learn about Dr. Robert Richardson, President of Pacific Rim Design & Development, Inc., and his work in environmental process development, applied chemistry, technology development and practical implementation.'
+        'Learn about Dr. Robert Richardson, President of Clean Scrub Technologies, and his work in environmental process development, applied chemistry, technology development and practical implementation.'
       );
     }
 
@@ -329,7 +329,7 @@ export const FounderDetailPage: React.FC<FounderDetailPageProps> = ({ onNavigate
                   </div>
                   <div className="font-medium text-[#20262B]">
                     President<br />
-                    <span className="text-slate-500 text-xs">Pacific Rim Design &amp; Development, Inc.</span>
+                    <span className="text-slate-500 text-xs">Clean Scrub Technologies</span>
                   </div>
                 </div>
 
@@ -1022,7 +1022,7 @@ export const FounderDetailPage: React.FC<FounderDetailPageProps> = ({ onNavigate
             <div className="pt-8 border-t border-white/15 flex flex-wrap items-center justify-between gap-6 text-xs font-mono text-slate-300">
               <div>
                 <span className="text-white font-semibold">Dr. Robert Richardson</span>
-                <span className="text-slate-400 block sm:inline sm:ml-2">Pacific Rim Design &amp; Development, Inc.</span>
+                <span className="text-slate-400 block sm:inline sm:ml-2">Clean Scrub Technologies</span>
               </div>
               <div className="flex items-center gap-6">
                 <a href="tel:530-474-4819" className="hover:text-white transition-colors">

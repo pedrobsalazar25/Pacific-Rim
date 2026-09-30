@@ -88,7 +88,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({
           <div>
             <span className="text-[10px] font-mono uppercase tracking-widest text-[#89B3D3] block flex items-center gap-1.5">
               <span className="w-1.5 h-1.5 rounded-full bg-[#6D9F45]" />
-              PACIFIC RIM DESIGN &amp; DEVELOPMENT
+              CLEAN SCRUB TECHNOLOGIES
             </span>
             <h3 id="contact-modal-title" className="font-display text-xl font-bold text-white">
               Project Consultation &amp; Inquiry
@@ -115,7 +115,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({
                 Message Sent
               </h4>
               <p className="text-sm text-slate-300 max-w-md mx-auto leading-relaxed">
-                Thank you for contacting Pacific Rim Design &amp; Development. We will review your inquiry and follow up at <strong className="text-[#DCE8EF]">{formData.email}</strong>.
+                Thank you for contacting Clean Scrub Technologies. We will review your inquiry and follow up at <strong className="text-[#DCE8EF]">{formData.email}</strong>.
               </p>
               <div className="pt-6">
                 <button
@@ -300,7 +300,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({
               {/* Submit Buttons */}
               <div className="pt-4 flex items-center justify-between border-t border-[#2F6F9F]/20">
                 <span className="text-[11px] font-mono text-slate-400">
-                  Pacific Rim Design &amp; Development, Inc.
+                  Clean Scrub Technologies
                 </span>
                 <div className="flex items-center gap-3">
                   <button

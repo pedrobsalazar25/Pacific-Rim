@@ -32,14 +32,14 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
   // Update document title and meta description for SEO
   useEffect(() => {
     const prevTitle = document.title;
-    document.title = 'About Pacific Rim Design & Development | PRDD';
+    document.title = 'About Clean Scrub Technologies | PRDD';
 
     const metaDesc = document.querySelector('meta[name="description"]');
     const prevDesc = metaDesc ? metaDesc.getAttribute('content') : '';
     if (metaDesc) {
       metaDesc.setAttribute(
         'content',
-        'Learn about Pacific Rim Design & Development, Inc., its approach to environmental process development, applied chemistry, practical engineering and technology commercialization.'
+        'Learn about Clean Scrub Technologies, its approach to environmental process development, applied chemistry, practical engineering and technology commercialization.'
       );
     }
 
@@ -74,7 +74,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
           <div className="absolute inset-0 bg-[#071B2D]">
             <PrddImage
               src={PRDD_IMAGES.approachLab}
-              alt="Pacific Rim Design & Development environmental process development laboratory"
+              alt="Clean Scrub Technologies environmental process development laboratory"
               priority
               className="w-full h-full object-cover object-center filter saturate-75 contrast-110 brightness-55"
             />
@@ -108,7 +108,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
             <div className="mt-8 sm:mt-12 pt-8 border-t border-white/15 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-end">
               <div className="lg:col-span-7">
                 <p className="text-base sm:text-lg text-slate-200 font-normal leading-relaxed max-w-2xl drop-shadow">
-                  Pacific Rim Design &amp; Development, Inc. develops environmental processes and engineering approaches for challenging industrial and environmental problems.
+                  Clean Scrub Technologies develops environmental processes and engineering approaches for challenging industrial and environmental problems.
                 </p>
               </div>
 
@@ -148,7 +148,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
             <div className="space-y-4">
               <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[#123A63]">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#6D9F45]" />
-                <span>PACIFIC RIM DESIGN &amp; DEVELOPMENT</span>
+                <span>CLEAN SCRUB TECHNOLOGIES</span>
               </div>
 
               <h2 className="font-display text-3xl sm:text-5xl font-bold tracking-tight text-[#123A63] leading-[1.12]">
@@ -219,7 +219,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                     COMPANY
                   </div>
                   <div className="font-semibold text-[#123A63]">
-                    Pacific Rim Design &amp; Development, Inc.
+                    Clean Scrub Technologies
                   </div>
                 </div>
 
@@ -990,7 +990,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
 
             <div className="pt-8 border-t border-white/15 flex flex-wrap items-center justify-between gap-6 text-xs font-mono text-slate-300">
               <div>
-                <span className="text-white font-semibold">Pacific Rim Design &amp; Development, Inc.</span>
+                <span className="text-white font-semibold">Clean Scrub Technologies</span>
               </div>
               <div className="flex items-center gap-6">
                 <a href="tel:530-474-4819" className="hover:text-white transition-colors">

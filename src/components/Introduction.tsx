@@ -46,7 +46,7 @@ export const Introduction: React.FC<IntroductionProps> = () => {
 
             <div className="space-y-6 text-base sm:text-xl text-[#20262B] leading-relaxed font-normal">
               <p>
-                Pacific Rim Design &amp; Development develops environmental processes for problems where conventional solutions are unavailable or inappropriate. Our approach combines chemistry, engineering and practical construction knowledge to create solutions designed for real industrial environments.
+                Clean Scrub Technologies develops environmental processes for problems where conventional solutions are unavailable or inappropriate. Our approach combines chemistry, engineering and practical construction knowledge to create solutions designed for real industrial environments.
               </p>
             </div>
           </div>

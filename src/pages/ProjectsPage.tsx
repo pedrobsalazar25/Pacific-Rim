@@ -1240,7 +1240,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
 
             <div className="pt-8 border-t border-white/15 flex flex-wrap items-center justify-between gap-6 text-xs font-mono text-slate-300">
               <div>
-                <span className="text-white font-semibold">Pacific Rim Design &amp; Development, Inc.</span>
+                <span className="text-white font-semibold">Clean Scrub Technologies</span>
               </div>
               <div className="flex items-center gap-6">
                 <a href="tel:530-474-4819" className="hover:text-white transition-colors">

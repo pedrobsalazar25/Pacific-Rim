@@ -18,7 +18,7 @@ export const Founder: React.FC<FounderProps> = ({ onMeetFounder }) => {
             <div className="relative aspect-3/4 max-w-md mx-auto lg:max-w-none overflow-hidden bg-[#0c263f] border border-[#2F6F9F]/30 group">
               <PrddImage
                 src={PRDD_IMAGES.founder}
-                alt="Dr. Robert Richardson - Founder & President of Pacific Rim Design & Development, Inc."
+                alt="Dr. Robert Richardson - Founder & President of Clean Scrub Technologies"
                 className="w-full h-full object-cover object-top group-hover:scale-102 transition-transform duration-700"
                 loading="lazy"
               />

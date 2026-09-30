@@ -37,7 +37,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreTechnologies, onAboutPrdd }
           {/* Eyebrow / Small Technical Qualifier (Zero-pill clean typography) */}
           <div className="inline-flex items-center gap-3 text-xs sm:text-sm font-mono tracking-[0.2em] uppercase text-[#DCE8EF] mb-6">
             <span className="w-2 h-2 rounded-none bg-[#6D9F45]" />
-            <span>PACIFIC RIM DESIGN & DEVELOPMENT</span>
+            <span>CLEAN SCRUB TECHNOLOGIES</span>
             <span className="text-[#2F6F9F] font-normal">/</span>
             <span className="text-slate-300 hidden sm:inline">ENVIRONMENTAL TECHNOLOGY & INDUSTRIAL SOLUTIONS</span>
           </div>

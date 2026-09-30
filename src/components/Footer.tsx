@@ -45,10 +45,10 @@ export const Footer: React.FC<FooterProps> = ({
               </div>
               <div className="flex flex-col">
                 <span className="font-display text-lg font-bold tracking-tight text-white">
-                  PACIFIC RIM
+                  CLEAN SCRUB
                 </span>
                 <span className="text-[10px] tracking-[0.18em] uppercase text-[#DCE8EF]/70 -mt-1 font-mono">
-                  DESIGN &amp; DEVELOPMENT, INC.
+                  TECHNOLOGIES
                 </span>
               </div>
             </div>
@@ -216,7 +216,7 @@ export const Footer: React.FC<FooterProps> = ({
         {/* Bottom Bar: Copyright & Back to Top */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-slate-400">
           <div>
-            © {new Date().getFullYear()} Pacific Rim Design &amp; Development, Inc. All rights reserved.
+            © {new Date().getFullYear()} Clean Scrub Technologies. All rights reserved.
           </div>
 
           <div className="flex items-center gap-6">

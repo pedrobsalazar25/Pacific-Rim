@@ -66,7 +66,7 @@ export const PageCTA: React.FC<PageCTAProps> = ({
           </div>
 
           <div className="mt-8 pt-6 border-t border-white/10 flex flex-wrap items-center justify-between gap-4 text-xs font-mono text-slate-400">
-            <span className="text-slate-300 font-semibold">Pacific Rim Design &amp; Development, Inc.</span>
+            <span className="text-slate-300 font-semibold">Clean Scrub Technologies</span>
             <div className="flex items-center gap-4">
               <a href="tel:530-474-4819" className="hover:text-white transition-colors">
                 530-474-4819

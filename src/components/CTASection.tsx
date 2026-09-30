@@ -64,7 +64,7 @@ export const CTASection: React.FC<CTASectionProps> = ({ onDiscussProject }) => {
 
         {/* Engineering Consultation Note */}
         <div className="mt-12 pt-8 border-t border-white/10 max-w-xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-6 text-xs font-mono text-slate-400">
-          <span>Pacific Rim Design &amp; Development, Inc.</span>
+          <span>Clean Scrub Technologies</span>
           <span className="hidden sm:inline text-[#2F6F9F]">·</span>
           <span>Environmental Technology &amp; Industrial Solutions</span>
         </div>

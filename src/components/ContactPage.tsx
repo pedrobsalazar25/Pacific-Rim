@@ -550,7 +550,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                 </div>
 
                 <h3 className="font-display text-2xl sm:text-3xl font-bold tracking-tight text-white mb-6">
-                  Pacific Rim Design<br />&amp; Development, Inc.
+                  Clean Scrub Technologies
                 </h3>
 
                 <div className="space-y-6 text-sm font-mono">
@@ -629,7 +629,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                   <div className="w-20 h-24 shrink-0 overflow-hidden bg-[#071B2D] border border-[#2F6F9F]/40 shadow-inner">
                     <PrddImage
                       src={PRDD_IMAGES.founder}
-                      alt="Dr. Robert Richardson - President of Pacific Rim Design & Development, Inc."
+                      alt="Dr. Robert Richardson - President of Clean Scrub Technologies"
                       className="w-full h-full object-cover object-top"
                       loading="lazy"
                     />

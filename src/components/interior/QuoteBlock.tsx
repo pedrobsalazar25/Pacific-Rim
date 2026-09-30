@@ -13,7 +13,7 @@ export const QuoteBlock: React.FC<QuoteBlockProps> = ({
   quote,
   author,
   authorTitle,
-  authorAffiliation = 'Pacific Rim Design & Development, Inc.',
+  authorAffiliation = 'Clean Scrub Technologies',
   theme = 'dark'
 }) => {
   const isDark = theme === 'dark';

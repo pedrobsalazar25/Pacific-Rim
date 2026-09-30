@@ -875,7 +875,7 @@ export const NoxSoxPage: React.FC<NoxSoxPageProps> = ({ onNavigate }) => {
                 </h3>
 
                 <p className="text-xs font-mono text-[#DCE8EF]/90 mb-4">
-                  Pacific Rim Design &amp; Development, Inc.
+                  Clean Scrub Technologies
                 </p>
 
                 <div className="space-y-1 mb-6 text-sm font-mono text-slate-200">
@@ -942,7 +942,7 @@ export const NoxSoxPage: React.FC<NoxSoxPageProps> = ({ onNavigate }) => {
             </button>
 
             <div className="mt-8 pt-6 border-t border-white/10 flex flex-wrap items-center justify-center gap-6 text-xs font-mono text-slate-300">
-              <span className="text-white font-semibold">Pacific Rim Design &amp; Development, Inc.</span>
+              <span className="text-white font-semibold">Clean Scrub Technologies</span>
               <span>·</span>
               <a href="tel:530-474-4819" className="hover:text-white transition-colors">
                 530-474-4819

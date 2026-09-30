@@ -89,17 +89,17 @@ export const Header: React.FC<HeaderProps> = ({
             href="/"
             onClick={handleLogoClick}
             className="flex items-center gap-3 group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2F6F9F]"
-            aria-label="Pacific Rim Design & Development Home"
+            aria-label="Clean Scrub Technologies Home"
           >
             <div className="w-8 h-8 rounded bg-[#123A63] border border-[#2F6F9F]/60 flex items-center justify-center text-xs font-mono font-bold text-[#DCE8EF] group-hover:border-[#DCE8EF] group-hover:bg-[#2F6F9F] transition-all">
               PR
             </div>
             <div className="flex flex-col">
               <span className="font-display text-base sm:text-lg font-bold tracking-tight text-white group-hover:text-[#DCE8EF] transition-colors">
-                PACIFIC RIM
+                CLEAN SCRUB
               </span>
               <span className="text-[10px] tracking-[0.18em] uppercase text-[#DCE8EF]/70 -mt-1 font-mono">
-                DESIGN &amp; DEVELOPMENT
+                TECHNOLOGIES
               </span>
             </div>
           </a>
