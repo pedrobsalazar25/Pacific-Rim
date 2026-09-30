@@ -40,8 +40,8 @@ export const Footer: React.FC<FooterProps> = ({
           {/* Brand Info (2 columns on large screens) */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-8 h-8 rounded bg-[#123A63] border border-[#2F6F9F]/60 flex items-center justify-center text-xs font-mono font-bold text-[#DCE8EF]">
-                PR
+              <div className="w-8 h-8 bg-[#123A63] border border-[#2F6F9F]/60 flex items-center justify-center text-[11px] font-mono font-bold text-[#DCE8EF]">
+                CST
               </div>
               <div className="flex flex-col">
                 <span className="font-display text-lg font-bold tracking-tight text-white">

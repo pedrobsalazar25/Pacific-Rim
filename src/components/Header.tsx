@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Menu, X, ChevronDown, ArrowRight, Plus, Minus } from 'lucide-react';
 import { TECHNOLOGIES_DATA, APPLICATIONS_DATA, TechnologyItem } from '../data/prddData';
+import { CleanScrubLogo } from './CleanScrubLogo';
 
 interface HeaderProps {
   onOpenContact: () => void;
@@ -84,24 +85,14 @@ export const Header: React.FC<HeaderProps> = ({
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 flex items-center justify-between">
-          {/* Brand Zone: PRDD Monogram Wordmark */}
+          {/* Brand Zone: Clean Scrub Technologies Logo */}
           <a
             href="/"
             onClick={handleLogoClick}
-            className="flex items-center gap-3 group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2F6F9F]"
+            className="flex items-center group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2F6F9F] py-1"
             aria-label="Clean Scrub Technologies Home"
           >
-            <div className="w-8 h-8 rounded bg-[#123A63] border border-[#2F6F9F]/60 flex items-center justify-center text-xs font-mono font-bold text-[#DCE8EF] group-hover:border-[#DCE8EF] group-hover:bg-[#2F6F9F] transition-all">
-              PR
-            </div>
-            <div className="flex flex-col">
-              <span className="font-display text-base sm:text-lg font-bold tracking-tight text-white group-hover:text-[#DCE8EF] transition-colors">
-                CLEAN SCRUB
-              </span>
-              <span className="text-[10px] tracking-[0.18em] uppercase text-[#DCE8EF]/70 -mt-1 font-mono">
-                TECHNOLOGIES
-              </span>
-            </div>
+            <CleanScrubLogo className="h-8 sm:h-9 md:h-10 w-auto filter drop-shadow-sm group-hover:brightness-105 transition-all" />
           </a>
 
           {/* Desktop Navigation Links */}
@@ -350,26 +341,26 @@ export const Header: React.FC<HeaderProps> = ({
               }`}
             >
               <span>CONTACT US</span>
-              <span className="w-1.5 h-1.5 rounded-full bg-[#6D9F45]" />
+              <span className="w-1.5 h-1.5 rounded-none bg-[#6D9F45]" />
             </button>
           </div>
 
-          {/* Mobile Menu Toggle Button */}
+          {/* Mobile Menu Toggle Button with WCAG 44px touch target */}
           <div className="flex items-center gap-2 lg:hidden">
             <button
               type="button"
               onClick={() => handleRouteClick('/contact')}
-              className="px-3 py-1.5 text-[11px] font-mono uppercase text-white bg-[#123A63] border border-[#2F6F9F] sm:hidden cursor-pointer"
+              className="px-3.5 py-2 text-xs font-mono uppercase text-white bg-[#123A63] border border-[#2F6F9F] sm:hidden cursor-pointer min-h-[44px] flex items-center"
             >
               Contact
             </button>
             <button
               type="button"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 text-slate-300 hover:text-white focus:outline-none cursor-pointer"
+              className="p-2 text-slate-300 hover:text-white focus:outline-none cursor-pointer min-h-[44px] min-w-[44px] flex items-center justify-center"
               aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
             >
-              {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6 text-[#DCE8EF]" />}
             </button>
           </div>
         </div>
