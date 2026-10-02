@@ -25,14 +25,14 @@ export const WaterTreatmentPage: React.FC<WaterTreatmentPageProps> = ({ onNaviga
   // Update document title and meta description for SEO
   useEffect(() => {
     const prevTitle = document.title;
-    document.title = 'Advanced Water Treatment Technology | PRDD';
+    document.title = 'Advanced Water Treatment Technology | CST';
 
     const metaDesc = document.querySelector('meta[name="description"]');
     const prevDesc = metaDesc ? metaDesc.getAttribute('content') : '';
     if (metaDesc) {
       metaDesc.setAttribute(
         'content',
-        "Explore PRDD's water-treatment process development, including documented approaches to seawater treatment and water reclamation."
+        "Explore CST's water-treatment process development, including documented approaches to seawater treatment and water reclamation."
       );
     }
 
@@ -126,7 +126,7 @@ export const WaterTreatmentPage: React.FC<WaterTreatmentPageProps> = ({ onNaviga
             <div className="mt-8 sm:mt-12 pt-8 border-t border-white/15 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-end">
               <div className="lg:col-span-7">
                 <p className="text-base sm:text-lg text-slate-200 font-normal leading-relaxed max-w-2xl drop-shadow">
-                  PRDD has developed water-treatment approaches addressing seawater treatment and water reclamation, with an emphasis on energy-efficient process development.
+                  CST has developed water-treatment approaches addressing seawater treatment and water reclamation, with an emphasis on energy-efficient process development.
                 </p>
               </div>
 
@@ -199,10 +199,10 @@ export const WaterTreatmentPage: React.FC<WaterTreatmentPageProps> = ({ onNaviga
 
               <div className="text-base sm:text-lg text-[#20262B] leading-relaxed space-y-4 font-normal pt-2">
                 <p>
-                  PRDD's water-treatment work reflects the company's broader approach to environmental process development: evaluate the specific challenge and develop a practical process around the application.
+                  CST's water-treatment work reflects the company's broader approach to environmental process development: evaluate the specific challenge and develop a practical process around the application.
                 </p>
                 <p>
-                  Documented PRDD work includes seawater treatment for potable water and an energy-efficient water reclamation approach involving forward osmosis and chemical forced precipitation.
+                  Documented CST work includes seawater treatment for potable water and an energy-efficient water reclamation approach involving forward osmosis and chemical forced precipitation.
                 </p>
               </div>
 
@@ -237,7 +237,7 @@ export const WaterTreatmentPage: React.FC<WaterTreatmentPageProps> = ({ onNaviga
               </h2>
 
               <p className="text-base text-slate-600 leading-relaxed font-normal">
-                PRDD's documented water-treatment work encompasses two distinct technology directions, each developed for different source streams and operational objectives. These represent separate process-development efforts:
+                CST's documented water-treatment work encompasses two distinct technology directions, each developed for different source streams and operational objectives. These represent separate process-development efforts:
               </p>
 
               <div className="space-y-8 pt-2">
@@ -259,16 +259,16 @@ export const WaterTreatmentPage: React.FC<WaterTreatmentPageProps> = ({ onNaviga
 
                   <div className="space-y-4 text-base sm:text-lg text-[#20262B] leading-relaxed mb-6">
                     <p>
-                      PRDD documentation describes a process developed to produce potable water from seawater.
+                      CST documentation describes a process developed to produce potable water from seawater.
                     </p>
                     <p>
-                      PRDD's source material characterizes the process as using less energy and producing higher-quality water than reverse osmosis.
+                      CST's source material characterizes the process as using less energy and producing higher-quality water than reverse osmosis.
                     </p>
                   </div>
 
                   {/* Required Qualifier Callout */}
                   <div className="p-4 bg-[#F7F7F3] border-l-2 border-[#2F6F9F] rounded-r-xl text-xs font-mono text-slate-600 leading-relaxed">
-                    Performance characterization reflects PRDD source documentation; application-specific performance data is not presented here.
+                    Performance characterization reflects CST source documentation; application-specific performance data is not presented here.
                   </div>
 
                   {/* Editorial Spec Line */}
@@ -306,10 +306,10 @@ export const WaterTreatmentPage: React.FC<WaterTreatmentPageProps> = ({ onNaviga
 
                   <div className="space-y-4 text-base sm:text-lg text-[#20262B] leading-relaxed mb-6">
                     <p>
-                      PRDD documentation describes an energy-efficient water reclamation process using forward osmosis combined with chemical forced precipitation.
+                      CST documentation describes an energy-efficient water reclamation process using forward osmosis combined with chemical forced precipitation.
                     </p>
                     <p className="font-semibold text-[#123A63]">
-                      This process-development approach is identified separately from PRDD's seawater-to-potable-water work.
+                      This process-development approach is identified separately from CST's seawater-to-potable-water work.
                     </p>
                   </div>
 
@@ -334,7 +334,7 @@ export const WaterTreatmentPage: React.FC<WaterTreatmentPageProps> = ({ onNaviga
 
             {/* ==================================================
                 SECTION 6: CONCEPTUAL WATER PROCESS VISUALIZATION
-                Shows PRDD's overarching water process development philosophy
+                Shows CST's overarching water process development philosophy
             ================================================== */}
             <div id="process-overview" className="rounded-2xl sm:rounded-3xl border border-[#2F6F9F]/30 bg-[#071B2D] text-white p-6 sm:p-10 lg:p-12 shadow-xl relative overflow-hidden">
               <div className="absolute inset-0 tech-grid-pattern opacity-15 pointer-events-none" />
@@ -384,14 +384,14 @@ export const WaterTreatmentPage: React.FC<WaterTreatmentPageProps> = ({ onNaviga
                     <ArrowDown className="w-4 h-4 text-[#2F6F9F]" />
                   </div>
 
-                  {/* Step 3: PRDD Process Development */}
+                  {/* Step 3: CST Process Development */}
                   <div className="bg-[#103252] border-2 border-[#2F6F9F] p-6 rounded-xl text-center shadow-xl shadow-[#071B2D]">
                     <div className="inline-flex items-center gap-1.5 text-[10px] font-mono uppercase tracking-widest text-[#89B3D3] mb-1.5">
                       <span className="w-1.5 h-1.5 rounded-full bg-[#6D9F45]" />
                       <span>ENGINEERED METHODOLOGY</span>
                     </div>
                     <div className="font-display text-base sm:text-lg font-bold text-white tracking-wide">
-                      PRDD PROCESS DEVELOPMENT
+                      CST PROCESS DEVELOPMENT
                     </div>
                   </div>
 
@@ -451,10 +451,10 @@ export const WaterTreatmentPage: React.FC<WaterTreatmentPageProps> = ({ onNaviga
 
               <div className="text-base sm:text-lg text-[#20262B] leading-relaxed space-y-4 font-normal">
                 <p>
-                  One documented PRDD water reclamation approach combines forward osmosis with chemical forced precipitation.
+                  One documented CST water reclamation approach combines forward osmosis with chemical forced precipitation.
                 </p>
                 <p>
-                  The process reflects PRDD's focus on developing environmental treatment methods around the requirements of the specific application.
+                  The process reflects CST's focus on developing environmental treatment methods around the requirements of the specific application.
                 </p>
               </div>
 
@@ -567,7 +567,7 @@ export const WaterTreatmentPage: React.FC<WaterTreatmentPageProps> = ({ onNaviga
 
               <div className="text-base sm:text-lg text-[#20262B] leading-relaxed space-y-4 font-normal">
                 <p>
-                  PRDD's documented work spans water-treatment challenges including seawater conversion and water reclamation.
+                  CST's documented work spans water-treatment challenges including seawater conversion and water reclamation.
                 </p>
                 <p>
                   The company's broader environmental engineering experience also includes municipal wastewater and sanitation projects involving process evaluation, testing, odor control and related environmental systems.
@@ -610,7 +610,7 @@ export const WaterTreatmentPage: React.FC<WaterTreatmentPageProps> = ({ onNaviga
                 </h3>
 
                 <p className="text-sm sm:text-base text-slate-600 leading-relaxed mb-8">
-                  PRDD's engineering practice includes hands-on technical work across major municipal sanitation facilities and operating districts:
+                  CST's engineering practice includes hands-on technical work across major municipal sanitation facilities and operating districts:
                 </p>
 
                 {/* Clean Editorial List */}
@@ -625,7 +625,7 @@ export const WaterTreatmentPage: React.FC<WaterTreatmentPageProps> = ({ onNaviga
                     </div>
                     <div className="md:col-span-7">
                       <p className="text-sm text-[#20262B] leading-relaxed">
-                        PRDD project experience included multiphase odor control, control-system work, startup and testing.
+                        CST project experience included multiphase odor control, control-system work, startup and testing.
                       </p>
                     </div>
                   </div>
@@ -639,7 +639,7 @@ export const WaterTreatmentPage: React.FC<WaterTreatmentPageProps> = ({ onNaviga
                     </div>
                     <div className="md:col-span-7">
                       <p className="text-sm text-[#20262B] leading-relaxed">
-                        PRDD project experience included mobile laboratory work supporting environmental testing.
+                        CST project experience included mobile laboratory work supporting environmental testing.
                       </p>
                     </div>
                   </div>
@@ -653,7 +653,7 @@ export const WaterTreatmentPage: React.FC<WaterTreatmentPageProps> = ({ onNaviga
                     </div>
                     <div className="md:col-span-7">
                       <p className="text-sm text-[#20262B] leading-relaxed">
-                        PRDD project experience included automated mist odor control, laboratory ventilation and testing/maintenance work.
+                        CST project experience included automated mist odor control, laboratory ventilation and testing/maintenance work.
                       </p>
                     </div>
                   </div>
@@ -667,7 +667,7 @@ export const WaterTreatmentPage: React.FC<WaterTreatmentPageProps> = ({ onNaviga
                     </div>
                     <div className="md:col-span-7">
                       <p className="text-sm text-[#20262B] leading-relaxed">
-                        PRDD project experience included defects and performance testing.
+                        CST project experience included defects and performance testing.
                       </p>
                     </div>
                   </div>
@@ -675,7 +675,7 @@ export const WaterTreatmentPage: React.FC<WaterTreatmentPageProps> = ({ onNaviga
 
                 {/* Important Context Note */}
                 <div className="mt-6 p-4 bg-[#F7F7F3] border border-[#DCE8EF] rounded-xl text-xs font-mono text-slate-600 leading-relaxed">
-                  These projects demonstrate broader PRDD environmental engineering and municipal experience. They are presented as historical engineering project context.
+                  These projects demonstrate broader CST environmental engineering and municipal experience. They are presented as historical engineering project context.
                 </div>
 
                 <div className="mt-8">
@@ -692,7 +692,7 @@ export const WaterTreatmentPage: React.FC<WaterTreatmentPageProps> = ({ onNaviga
             </div>
 
             {/* ==================================================
-                SECTION 10: THE PRDD APPROACH (4 STAGES)
+                SECTION 10: THE CST APPROACH (4 STAGES)
             ================================================== */}
             <div className="space-y-8 pt-6">
               <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[#123A63]">
@@ -772,10 +772,10 @@ export const WaterTreatmentPage: React.FC<WaterTreatmentPageProps> = ({ onNaviga
 
               <div className="text-base text-slate-300 leading-relaxed space-y-4">
                 <p>
-                  PRDD's experience includes environmental process development as well as practical project work in municipal and industrial environments.
+                  CST's experience includes environmental process development as well as practical project work in municipal and industrial environments.
                 </p>
                 <p>
-                  This combination of scientific process development and implementation experience informs PRDD's approach to environmental challenges.
+                  This combination of scientific process development and implementation experience informs CST's approach to environmental challenges.
                 </p>
               </div>
             </div>
@@ -786,7 +786,7 @@ export const WaterTreatmentPage: React.FC<WaterTreatmentPageProps> = ({ onNaviga
             <div className="pt-8 border-t border-[#DCE8EF]">
               <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[#123A63] mb-6">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#6D9F45]" />
-                <span>RELATED PRDD TECHNOLOGIES</span>
+                <span>RELATED CST TECHNOLOGIES</span>
               </div>
               <h3 className="font-display text-2xl sm:text-3xl font-bold text-[#123A63] mb-8">
                 A Broader Environmental Technology Platform.
@@ -900,7 +900,7 @@ export const WaterTreatmentPage: React.FC<WaterTreatmentPageProps> = ({ onNaviga
               <div className="absolute inset-0">
                 <PrddImage
                   src={PRDD_IMAGES.approachLab}
-                  alt="PRDD water engineering dialogue"
+                  alt="CST water engineering dialogue"
                   className="w-full h-full object-cover object-center filter saturate-50 brightness-40"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#071B2D] via-[#071B2D]/85 to-[#071B2D]/60" />
@@ -938,7 +938,7 @@ export const WaterTreatmentPage: React.FC<WaterTreatmentPageProps> = ({ onNaviga
                   onClick={() => onNavigate('/contact', 'Advanced Water Treatment')}
                   className="w-full inline-flex items-center justify-center gap-2 py-3.5 px-4 bg-[#2F6F9F] hover:bg-[#123A63] text-white text-xs font-mono font-semibold uppercase tracking-wider rounded-xl transition-all duration-200 border border-white/20 cursor-pointer shadow-lg"
                 >
-                  <span>CONTACT PRDD</span>
+                  <span>CONTACT CST</span>
                   <ArrowRight className="w-3.5 h-3.5" />
                 </button>
               </div>
@@ -951,7 +951,7 @@ export const WaterTreatmentPage: React.FC<WaterTreatmentPageProps> = ({ onNaviga
 
       {/* ==================================================
           SECTION 13: LARGE CLOSING CTA
-          Wide rounded rectangular CTA in PRDD Deep Navy / Industrial Blue
+          Wide rounded rectangular CTA in CST Deep Navy / Industrial Blue
       ================================================== */}
       <section className="px-4 sm:px-6 lg:px-8 max-w-[1440px] mx-auto py-12 sm:py-20">
         <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden bg-gradient-to-r from-[#071B2D] via-[#0b243d] to-[#123A63] border border-[#2F6F9F]/40 p-8 sm:p-14 lg:p-20 text-center shadow-2xl">
@@ -971,7 +971,7 @@ export const WaterTreatmentPage: React.FC<WaterTreatmentPageProps> = ({ onNaviga
             </h2>
 
             <p className="text-base sm:text-lg text-slate-300 leading-relaxed mb-8 max-w-2xl mx-auto">
-              Talk with PRDD about water treatment, water reclamation or an environmental process-development challenge.
+              Talk with CST about water treatment, water reclamation or an environmental process-development challenge.
             </p>
 
             <button

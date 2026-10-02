@@ -18,11 +18,11 @@ export const Hero: React.FC<HeroProps> = ({ onExploreTechnologies, onAboutPrdd }
       <div className="absolute inset-0 z-0 select-none pointer-events-none">
         <PrddImage
           src={PRDD_IMAGES.hero}
-          alt="PRDD Advanced Industrial Chemical and Environmental Processing Plant"
+          alt="CST Advanced Industrial Chemical and Environmental Processing Plant"
           priority
           className="w-full h-full object-cover object-center scale-100 transition-transform duration-1000 ease-out"
         />
-        {/* Layered cinematic gradient scrims in PRDD Deep Navy */}
+        {/* Layered cinematic gradient scrims in CST Deep Navy */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#071B2D] via-[#071B2D]/85 to-[#071B2D]/60" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#071B2D] via-[#071B2D]/80 to-transparent" />
         <div className="absolute inset-0 tech-grid-pattern opacity-40 mix-blend-overlay" />
@@ -52,7 +52,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreTechnologies, onAboutPrdd }
 
           {/* Supporting Text: Restrained line length, highly readable */}
           <p className="text-base sm:text-xl lg:text-2xl text-slate-200 font-normal max-w-3xl leading-relaxed mb-10 sm:mb-12">
-            PRDD develops and commercializes patented environmental technologies that transform complex industrial pollutants into useful, commercially viable products.
+            CST develops and commercializes patented environmental technologies that transform complex industrial pollutants into useful, commercially viable products.
           </p>
 
           {/* Primary & Secondary CTAs - Blue/Navy primary treatment */}
@@ -71,7 +71,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreTechnologies, onAboutPrdd }
               onClick={onAboutPrdd}
               className="inline-flex items-center justify-center gap-2 px-8 py-4 text-xs sm:text-sm font-mono font-semibold tracking-wider uppercase text-[#DCE8EF] hover:text-white bg-[#0c263f]/80 hover:bg-[#123A63] border border-[#2F6F9F]/40 hover:border-[#2F6F9F] transition-all duration-200 cursor-pointer active:scale-98"
             >
-              <span>ABOUT PRDD</span>
+              <span>ABOUT CST</span>
               <ArrowUpRight className="w-4 h-4 text-[#2F6F9F]" />
             </button>
           </div>

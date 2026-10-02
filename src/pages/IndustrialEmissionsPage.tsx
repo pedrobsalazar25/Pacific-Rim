@@ -28,14 +28,14 @@ export const IndustrialEmissionsPage: React.FC<IndustrialEmissionsPageProps> = (
   // Update document title and meta description for SEO
   useEffect(() => {
     const prevTitle = document.title;
-    document.title = 'Industrial Emissions Applications | PRDD';
+    document.title = 'Industrial Emissions Applications | CST';
 
     const metaDesc = document.querySelector('meta[name="description"]');
     const prevDesc = metaDesc ? metaDesc.getAttribute('content') : '';
     if (metaDesc) {
       metaDesc.setAttribute(
         'content',
-        "Explore PRDD's application-driven approach to industrial emissions challenges involving CO₂, NOx, SOx and other complex air-quality problems."
+        "Explore CST's application-driven approach to industrial emissions challenges involving CO₂, NOx, SOx and other complex air-quality problems."
       );
     }
 
@@ -126,7 +126,7 @@ export const IndustrialEmissionsPage: React.FC<IndustrialEmissionsPageProps> = (
             <div className="mt-8 sm:mt-12 pt-8 border-t border-white/15 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-end">
               <div className="lg:col-span-7">
                 <p className="text-base sm:text-lg text-slate-200 font-normal leading-relaxed max-w-2xl drop-shadow">
-                  PRDD develops environmental process approaches around the specific pollutants, operating conditions and practical requirements of industrial emissions challenges.
+                  CST develops environmental process approaches around the specific pollutants, operating conditions and practical requirements of industrial emissions challenges.
                 </p>
               </div>
 
@@ -202,7 +202,7 @@ export const IndustrialEmissionsPage: React.FC<IndustrialEmissionsPageProps> = (
                   Industrial air emissions are not a single problem.
                 </p>
                 <p>
-                  PRDD's documented work spans carbon dioxide, nitrogen oxides, sulfur oxides and other challenging air-quality problems encountered in industrial environments.
+                  CST's documented work spans carbon dioxide, nitrogen oxides, sulfur oxides and other challenging air-quality problems encountered in industrial environments.
                 </p>
                 <p className="text-slate-600">
                   The appropriate process-development path depends on the pollutants and requirements of the specific application.
@@ -242,7 +242,7 @@ export const IndustrialEmissionsPage: React.FC<IndustrialEmissionsPageProps> = (
               </h2>
 
               <p className="text-base text-slate-600 leading-relaxed font-normal">
-                PRDD approaches emissions challenges by evaluating the chemical characteristics of the target stream. These represent distinct application categories:
+                CST approaches emissions challenges by evaluating the chemical characteristics of the target stream. These represent distinct application categories:
               </p>
 
               <div className="space-y-6 pt-2">
@@ -263,7 +263,7 @@ export const IndustrialEmissionsPage: React.FC<IndustrialEmissionsPageProps> = (
                   </h3>
 
                   <p className="text-base text-[#20262B] leading-relaxed mb-6 font-normal">
-                    PRDD has developed a patented CO₂ Capture &amp; Repurpose process designed to capture carbon dioxide and convert it into commercially useful products.
+                    CST has developed a patented CO₂ Capture &amp; Repurpose process designed to capture carbon dioxide and convert it into commercially useful products.
                   </p>
 
                   <div className="pt-4 border-t border-[#DCE8EF] flex flex-wrap items-center justify-between gap-4">
@@ -298,7 +298,7 @@ export const IndustrialEmissionsPage: React.FC<IndustrialEmissionsPageProps> = (
                   </h3>
 
                   <p className="text-base text-[#20262B] leading-relaxed mb-6 font-normal">
-                    PRDD documentation describes multiple process-development approaches for treating nitrogen oxides, including approaches designed to produce useful chemical products.
+                    CST documentation describes multiple process-development approaches for treating nitrogen oxides, including approaches designed to produce useful chemical products.
                   </p>
 
                   <div className="pt-4 border-t border-[#DCE8EF] flex flex-wrap items-center justify-between gap-4">
@@ -333,7 +333,7 @@ export const IndustrialEmissionsPage: React.FC<IndustrialEmissionsPageProps> = (
                   </h3>
 
                   <p className="text-base text-[#20262B] leading-relaxed mb-6 font-normal">
-                    PRDD documentation includes process-development work addressing sulfur oxides, including an approach treating NOx and SOx with mineral acids identified as resulting products.
+                    CST documentation includes process-development work addressing sulfur oxides, including an approach treating NOx and SOx with mineral acids identified as resulting products.
                   </p>
 
                   <div className="pt-4 border-t border-[#DCE8EF] flex flex-wrap items-center justify-between gap-4">
@@ -368,11 +368,11 @@ export const IndustrialEmissionsPage: React.FC<IndustrialEmissionsPageProps> = (
                   </h3>
 
                   <p className="text-base text-[#20262B] leading-relaxed mb-4 font-normal">
-                    PRDD's broader historical project experience includes work involving amine abatement and treatment of toxic and explosive gases in demanding industrial environments.
+                    CST's broader historical project experience includes work involving amine abatement and treatment of toxic and explosive gases in demanding industrial environments.
                   </p>
 
                   <div className="p-3.5 bg-[#F7F7F3] border border-[#DCE8EF] rounded-xl text-xs font-mono text-slate-600 leading-relaxed mb-4">
-                    These examples represent broader PRDD environmental engineering and process-development experience and should not be interpreted as one universal treatment technology.
+                    These examples represent broader CST environmental engineering and process-development experience and should not be interpreted as one universal treatment technology.
                   </div>
 
                   <div className="pt-4 border-t border-[#DCE8EF] flex flex-wrap items-center justify-between gap-4">
@@ -539,7 +539,7 @@ export const IndustrialEmissionsPage: React.FC<IndustrialEmissionsPageProps> = (
                   </div>
                   <div className="md:col-span-7">
                     <p className="text-sm text-[#20262B] leading-relaxed">
-                      PRDD developed novel NOx and amine abatement approaches associated with Intel facilities in Arizona and Oregon.
+                      CST developed novel NOx and amine abatement approaches associated with Intel facilities in Arizona and Oregon.
                     </p>
                   </div>
                 </div>
@@ -554,7 +554,7 @@ export const IndustrialEmissionsPage: React.FC<IndustrialEmissionsPageProps> = (
                   </div>
                   <div className="md:col-span-7">
                     <p className="text-sm text-[#20262B] leading-relaxed">
-                      PRDD developed treatment for toxic and explosive gases associated with a moving platform environment.
+                      CST developed treatment for toxic and explosive gases associated with a moving platform environment.
                     </p>
                   </div>
                 </div>
@@ -569,7 +569,7 @@ export const IndustrialEmissionsPage: React.FC<IndustrialEmissionsPageProps> = (
                   </div>
                   <div className="md:col-span-7">
                     <p className="text-sm text-[#20262B] leading-relaxed">
-                      PRDD project history includes CO₂ capture work associated with secondary oil recovery, with tertiary oil recovery and carbon-credit considerations documented in the project history.
+                      CST project history includes CO₂ capture work associated with secondary oil recovery, with tertiary oil recovery and carbon-credit considerations documented in the project history.
                     </p>
                   </div>
                 </div>
@@ -603,10 +603,10 @@ export const IndustrialEmissionsPage: React.FC<IndustrialEmissionsPageProps> = (
                   </h3>
                   <div className="text-sm sm:text-base text-[#20262B] leading-relaxed space-y-3 font-normal">
                     <p>
-                      PRDD's historical work associated with Intel facilities in Arizona and Oregon included development of novel approaches for NOx and amine abatement.
+                      CST's historical work associated with Intel facilities in Arizona and Oregon included development of novel approaches for NOx and amine abatement.
                     </p>
                     <p className="text-slate-600">
-                      This experience illustrates PRDD's application-driven approach to industrial air-quality challenges.
+                      This experience illustrates CST's application-driven approach to industrial air-quality challenges.
                     </p>
                   </div>
                 </div>
@@ -627,10 +627,10 @@ export const IndustrialEmissionsPage: React.FC<IndustrialEmissionsPageProps> = (
                   </h3>
                   <div className="text-sm sm:text-base text-[#20262B] leading-relaxed space-y-3 font-normal">
                     <p>
-                      PRDD's historical Sea Launch / Boeing work involved treatment of toxic and explosive gases associated with a moving platform environment.
+                      CST's historical Sea Launch / Boeing work involved treatment of toxic and explosive gases associated with a moving platform environment.
                     </p>
                     <p className="text-slate-600">
-                      The project reflects PRDD's broader experience translating environmental treatment requirements into practical engineering applications.
+                      The project reflects CST's broader experience translating environmental treatment requirements into practical engineering applications.
                     </p>
                   </div>
                 </div>
@@ -690,7 +690,7 @@ export const IndustrialEmissionsPage: React.FC<IndustrialEmissionsPageProps> = (
 
               <div className="text-base text-slate-300 leading-relaxed space-y-4 font-normal">
                 <p>
-                  PRDD has evaluated applications involving more than one emissions challenge.
+                  CST has evaluated applications involving more than one emissions challenge.
                 </p>
                 <p>
                   Its documented technology development includes an industrial energy application in which CO₂ capture was evaluated alongside NOx capture.
@@ -706,7 +706,7 @@ export const IndustrialEmissionsPage: React.FC<IndustrialEmissionsPageProps> = (
                   onClick={() => onNavigate('/technologies')}
                   className="inline-flex items-center gap-2.5 px-6 py-3.5 bg-[#123A63] border border-[#2F6F9F] hover:bg-[#2F6F9F] hover:border-white text-white text-xs font-mono font-semibold tracking-wider uppercase rounded-xl transition-colors cursor-pointer shadow-sm"
                 >
-                  <span>EXPLORE PRDD TECHNOLOGIES</span>
+                  <span>EXPLORE CST TECHNOLOGIES</span>
                   <ArrowRight className="w-4 h-4 text-[#6D9F45]" />
                 </button>
               </div>
@@ -748,7 +748,7 @@ export const IndustrialEmissionsPage: React.FC<IndustrialEmissionsPageProps> = (
                     EVALUATE
                   </h3>
                   <p className="text-xs text-[#20262B] leading-relaxed">
-                    Determine which PRDD technology or process-development direction may be relevant.
+                    Determine which CST technology or process-development direction may be relevant.
                   </p>
                 </div>
 
@@ -792,7 +792,7 @@ export const IndustrialEmissionsPage: React.FC<IndustrialEmissionsPageProps> = (
               </div>
 
               <h3 className="font-display text-2xl sm:text-3xl font-bold text-[#123A63]">
-                Relevant PRDD Technology Areas.
+                Relevant CST Technology Areas.
               </h3>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-2">
@@ -831,7 +831,7 @@ export const IndustrialEmissionsPage: React.FC<IndustrialEmissionsPageProps> = (
                       NOx &amp; SOx ABATEMENT
                     </h4>
                     <p className="text-xs text-[#20262B] leading-relaxed mb-4">
-                      Multiple PRDD process-development approaches addressing nitrogen and sulfur oxides.
+                      Multiple CST process-development approaches addressing nitrogen and sulfur oxides.
                     </p>
                   </div>
                   <div className="flex items-center gap-1.5 text-xs font-mono text-[#123A63] group-hover:text-[#2F6F9F] pt-2 border-t border-[#DCE8EF]">
@@ -991,7 +991,7 @@ export const IndustrialEmissionsPage: React.FC<IndustrialEmissionsPageProps> = (
                 </h3>
 
                 <p className="text-xs font-mono text-slate-300 mb-6 leading-relaxed">
-                  Connect with PRDD to evaluate your industrial emissions stream and treatment requirements.
+                  Connect with CST to evaluate your industrial emissions stream and treatment requirements.
                 </p>
 
                 <button
@@ -1053,7 +1053,7 @@ export const IndustrialEmissionsPage: React.FC<IndustrialEmissionsPageProps> = (
             </h2>
 
             <p className="text-base sm:text-lg text-slate-200 font-normal leading-relaxed mb-8 max-w-2xl">
-              Talk with PRDD about the pollutants, operating environment and environmental process challenge you are working to address.
+              Talk with CST about the pollutants, operating environment and environmental process challenge you are working to address.
             </p>
 
             <div className="flex flex-wrap items-center gap-4 mb-10">

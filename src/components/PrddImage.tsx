@@ -12,7 +12,7 @@ export const PrddImage: React.FC<PrddImageProps> = ({
   src,
   alt,
   className = '',
-  fallbackLabel = 'PRDD PROCESS VISUAL',
+  fallbackLabel = 'CST PROCESS VISUAL',
   priority = false,
   loading,
   decoding,

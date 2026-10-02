@@ -25,14 +25,14 @@ export const ConcreteMaterialsPage: React.FC<ConcreteMaterialsPageProps> = ({ on
   // Update document title and meta description for SEO
   useEffect(() => {
     const prevTitle = document.title;
-    document.title = 'Concrete & Materials Applications | PRDD';
+    document.title = 'Concrete & Materials Applications | CST';
 
     const metaDesc = document.querySelector('meta[name="description"]');
     const prevDesc = metaDesc ? metaDesc.getAttribute('content') : '';
     if (metaDesc) {
       metaDesc.setAttribute(
         'content',
-        "Explore PRDD's materials-development applications involving concrete, geopolymers, CO₂-derived products and high-surface-area polymer concrete."
+        "Explore CST's materials-development applications involving concrete, geopolymers, CO₂-derived products and high-surface-area polymer concrete."
       );
     }
 
@@ -123,7 +123,7 @@ export const ConcreteMaterialsPage: React.FC<ConcreteMaterialsPageProps> = ({ on
             <div className="mt-8 sm:mt-12 pt-8 border-t border-white/15 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-end">
               <div className="lg:col-span-7">
                 <p className="text-base sm:text-lg text-slate-200 font-normal leading-relaxed max-w-2xl drop-shadow">
-                  PRDD's documented materials work includes approaches involving concrete, geopolymers, CO₂-derived products and high-surface-area polymer concrete.
+                  CST's documented materials work includes approaches involving concrete, geopolymers, CO₂-derived products and high-surface-area polymer concrete.
                 </p>
               </div>
 
@@ -196,10 +196,10 @@ export const ConcreteMaterialsPage: React.FC<ConcreteMaterialsPageProps> = ({ on
 
               <div className="text-base sm:text-lg text-[#20262B] leading-relaxed space-y-4 font-normal pt-2">
                 <p>
-                  PRDD's environmental process development extends into materials applications where process chemistry and useful products may create opportunities for material development.
+                  CST's environmental process development extends into materials applications where process chemistry and useful products may create opportunities for material development.
                 </p>
                 <p className="text-slate-600">
-                  Documented PRDD work includes concrete and geopolymer approaches associated with products from CO₂ capture, together with a separate high-surface-area polymer concrete development direction.
+                  Documented CST work includes concrete and geopolymer approaches associated with products from CO₂ capture, together with a separate high-surface-area polymer concrete development direction.
                 </p>
               </div>
 
@@ -241,7 +241,7 @@ export const ConcreteMaterialsPage: React.FC<ConcreteMaterialsPageProps> = ({ on
               </h2>
 
               <p className="text-base text-slate-600 leading-relaxed font-normal">
-                PRDD's documented materials-development work addresses two distinct directions. These represent separate technical efforts and are not combined into a single material system:
+                CST's documented materials-development work addresses two distinct directions. These represent separate technical efforts and are not combined into a single material system:
               </p>
 
               <div className="space-y-8 pt-2">
@@ -263,10 +263,10 @@ export const ConcreteMaterialsPage: React.FC<ConcreteMaterialsPageProps> = ({ on
 
                   <div className="space-y-4 text-base sm:text-lg text-[#20262B] leading-relaxed mb-6 font-normal">
                     <p>
-                      PRDD documentation describes an approach to strengthening concrete and geopolymer materials using products associated with the company's CO₂ Capture &amp; Repurpose technology.
+                      CST documentation describes an approach to strengthening concrete and geopolymer materials using products associated with the company's CO₂ Capture &amp; Repurpose technology.
                     </p>
                     <p className="font-medium text-[#123A63]">
-                      This creates a documented connection between PRDD's emissions technology and its materials-development work.
+                      This creates a documented connection between CST's emissions technology and its materials-development work.
                     </p>
                   </div>
 
@@ -315,10 +315,10 @@ export const ConcreteMaterialsPage: React.FC<ConcreteMaterialsPageProps> = ({ on
 
                   <div className="space-y-4 text-base sm:text-lg text-[#20262B] leading-relaxed mb-6 font-normal">
                     <p>
-                      PRDD documentation identifies a process for producing high-surface-area polymer concrete.
+                      CST documentation identifies a process for producing high-surface-area polymer concrete.
                     </p>
                     <p className="font-medium text-[#123A63]">
-                      This is a separate materials-development direction from the concrete and geopolymer work associated with PRDD's CO₂ Capture &amp; Repurpose technology.
+                      This is a separate materials-development direction from the concrete and geopolymer work associated with CST's CO₂ Capture &amp; Repurpose technology.
                     </p>
                   </div>
 
@@ -433,7 +433,7 @@ export const ConcreteMaterialsPage: React.FC<ConcreteMaterialsPageProps> = ({ on
                       <div className="bg-[#071B2D] border border-[#2F6F9F]/40 p-5 rounded-xl text-center">
                         <div className="text-[9px] font-mono uppercase text-[#89B3D3] mb-1">DEVELOPMENT DOMAIN</div>
                         <div className="font-display text-sm sm:text-base font-bold text-white">
-                          PRDD MATERIALS DEVELOPMENT
+                          CST MATERIALS DEVELOPMENT
                         </div>
                       </div>
 
@@ -485,10 +485,10 @@ export const ConcreteMaterialsPage: React.FC<ConcreteMaterialsPageProps> = ({ on
 
               <div className="text-base sm:text-lg text-[#20262B] leading-relaxed space-y-4 font-normal">
                 <p>
-                  PRDD's documented technology portfolio connects CO₂ capture and repurposing with materials development.
+                  CST's documented technology portfolio connects CO₂ capture and repurposing with materials development.
                 </p>
                 <p className="text-slate-600">
-                  Products associated with PRDD's CO₂ Capture &amp; Repurpose process are identified in the company's documentation for use in approaches involving concrete and geopolymer materials.
+                  Products associated with CST's CO₂ Capture &amp; Repurpose process are identified in the company's documentation for use in approaches involving concrete and geopolymer materials.
                 </p>
               </div>
 
@@ -556,7 +556,7 @@ export const ConcreteMaterialsPage: React.FC<ConcreteMaterialsPageProps> = ({ on
 
               <div className="text-base sm:text-lg text-[#20262B] leading-relaxed space-y-4 font-normal">
                 <p>
-                  PRDD's CO₂ Capture &amp; Repurpose documentation identifies sodium carbonate and sodium bicarbonate as products of the process, together with hydrochloric acid.
+                  CST's CO₂ Capture &amp; Repurpose documentation identifies sodium carbonate and sodium bicarbonate as products of the process, together with hydrochloric acid.
                 </p>
                 <p className="text-slate-600">
                   The documentation also identifies calcium carbonate as a material that can be produced from sodium carbonate.
@@ -620,7 +620,7 @@ export const ConcreteMaterialsPage: React.FC<ConcreteMaterialsPageProps> = ({ on
 
               {/* Required Context Note */}
               <div className="p-4 bg-[#F7F7F3] border border-[#DCE8EF] rounded-xl text-xs font-mono text-slate-600 leading-relaxed">
-                The products shown reflect PRDD's documented CO₂ Capture &amp; Repurpose process. Their presentation here does not imply that every listed product is used in every materials application.
+                The products shown reflect CST's documented CO₂ Capture &amp; Repurpose process. Their presentation here does not imply that every listed product is used in every materials application.
               </div>
             </div>
 
@@ -644,7 +644,7 @@ export const ConcreteMaterialsPage: React.FC<ConcreteMaterialsPageProps> = ({ on
 
               <div className="text-base sm:text-lg text-[#20262B] leading-relaxed space-y-4 font-normal">
                 <p>
-                  PRDD President Dr. Robert Richardson combines a background as a Ph.D. chemist with experience as a Licensed General Contractor.
+                  CST President Dr. Robert Richardson combines a background as a Ph.D. chemist with experience as a Licensed General Contractor.
                 </p>
                 <p className="text-slate-600">
                   This combination provides scientific process-development and practical construction perspectives when evaluating material opportunities.
@@ -699,7 +699,7 @@ export const ConcreteMaterialsPage: React.FC<ConcreteMaterialsPageProps> = ({ on
                     EVALUATE
                   </h3>
                   <p className="text-xs text-[#20262B] leading-relaxed">
-                    Determine which PRDD technology or materials-development direction may be relevant.
+                    Determine which CST technology or materials-development direction may be relevant.
                   </p>
                 </div>
 
@@ -739,7 +739,7 @@ export const ConcreteMaterialsPage: React.FC<ConcreteMaterialsPageProps> = ({ on
             <div className="p-8 sm:p-10 bg-white border border-[#DCE8EF] rounded-2xl sm:rounded-3xl shadow-sm space-y-6">
               <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[#123A63]">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#6D9F45]" />
-                <span>RELEVANT PRDD TECHNOLOGIES</span>
+                <span>RELEVANT CST TECHNOLOGIES</span>
               </div>
 
               <h3 className="font-display text-2xl sm:text-3xl font-bold text-[#123A63]">
@@ -760,7 +760,7 @@ export const ConcreteMaterialsPage: React.FC<ConcreteMaterialsPageProps> = ({ on
                       ADVANCED MATERIALS
                     </h4>
                     <p className="text-xs text-[#20262B] leading-relaxed mb-4">
-                      PRDD's materials-development work includes concrete, geopolymers, CO₂-derived products and high-surface-area polymer concrete.
+                      CST's materials-development work includes concrete, geopolymers, CO₂-derived products and high-surface-area polymer concrete.
                     </p>
                   </div>
                   <div className="flex items-center gap-1.5 text-xs font-mono text-[#123A63] group-hover:text-[#2F6F9F] pt-2 border-t border-[#DCE8EF]">
@@ -782,7 +782,7 @@ export const ConcreteMaterialsPage: React.FC<ConcreteMaterialsPageProps> = ({ on
                       CO₂ CAPTURE &amp; REPURPOSING
                     </h4>
                     <p className="text-xs text-[#20262B] leading-relaxed mb-4">
-                      PRDD's patented CO₂ Capture &amp; Repurpose process captures carbon dioxide and converts it into identified useful products, with documented connections to materials development.
+                      CST's patented CO₂ Capture &amp; Repurpose process captures carbon dioxide and converts it into identified useful products, with documented connections to materials development.
                     </p>
                   </div>
                   <div className="flex items-center gap-1.5 text-xs font-mono text-[#123A63] group-hover:text-[#2F6F9F] pt-2 border-t border-[#DCE8EF]">
@@ -941,7 +941,7 @@ export const ConcreteMaterialsPage: React.FC<ConcreteMaterialsPageProps> = ({ on
                 </h3>
 
                 <p className="text-xs font-mono text-slate-300 mb-6 leading-relaxed">
-                  Connect with PRDD to evaluate process byproducts, material formulations, or specialty concrete opportunities.
+                  Connect with CST to evaluate process byproducts, material formulations, or specialty concrete opportunities.
                 </p>
 
                 <button
@@ -1003,7 +1003,7 @@ export const ConcreteMaterialsPage: React.FC<ConcreteMaterialsPageProps> = ({ on
             </h2>
 
             <p className="text-base sm:text-lg text-slate-200 font-normal leading-relaxed mb-8 max-w-2xl">
-              Talk with PRDD about the process, product, material or environmental application you are working to evaluate.
+              Talk with CST about the process, product, material or environmental application you are working to evaluate.
             </p>
 
             <div className="flex flex-wrap items-center gap-4 mb-10">

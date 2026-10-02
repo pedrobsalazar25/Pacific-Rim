@@ -72,10 +72,10 @@ export const FounderModal: React.FC<FounderModalProps> = ({
 
           <div className="space-y-4 text-sm text-slate-300 leading-relaxed">
             <p>
-              Dr. Richardson combines scientific process development with practical construction and implementation knowledge, allowing PRDD to bridge laboratory chemistry and industrial deployment.
+              Dr. Richardson combines scientific process development with practical construction and implementation knowledge, allowing CST to bridge laboratory chemistry and industrial deployment.
             </p>
             <p>
-              This combination of chemical science and general contracting experience enables PRDD to address complex environmental problems with practical, constructible solutions designed specifically for real industrial environments.
+              This combination of chemical science and general contracting experience enables CST to address complex environmental problems with practical, constructible solutions designed specifically for real industrial environments.
             </p>
           </div>
 
@@ -106,7 +106,7 @@ export const FounderModal: React.FC<FounderModalProps> = ({
         {/* Footer */}
         <div className="p-6 border-t border-[#2F6F9F]/20 bg-[#0c263f] flex items-center justify-between">
           <span className="text-xs font-mono text-slate-400">
-            PRDD Executive Leadership
+            CST Executive Leadership
           </span>
           <div className="flex items-center gap-3">
             <button
@@ -124,7 +124,7 @@ export const FounderModal: React.FC<FounderModalProps> = ({
               }}
               className="inline-flex items-center gap-2 px-6 py-2.5 text-xs font-mono font-bold uppercase tracking-wider text-white bg-[#123A63] border border-[#2F6F9F] hover:bg-[#2F6F9F] hover:border-[#DCE8EF] transition-all shadow-md shadow-[#071B2D]"
             >
-              <span>Consult with PRDD</span>
+              <span>Consult with CST</span>
               <ArrowRight className="w-3.5 h-3.5 text-[#DCE8EF]" />
             </button>
           </div>

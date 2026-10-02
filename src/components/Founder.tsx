@@ -39,7 +39,7 @@ export const Founder: React.FC<FounderProps> = ({ onMeetFounder }) => {
               </div>
             </div>
 
-            {/* Architectural frame accent in PRDD Blue */}
+            {/* Architectural frame accent in CST Blue */}
             <div className="hidden lg:block absolute -top-4 -left-4 w-24 h-24 border-t-2 border-l-2 border-[#2F6F9F]/50 pointer-events-none" />
           </div>
 
@@ -66,7 +66,7 @@ export const Founder: React.FC<FounderProps> = ({ onMeetFounder }) => {
             {/* Supporting Content */}
             <div className="space-y-5 text-base sm:text-lg text-slate-300 leading-relaxed font-normal">
               <p>
-                Dr. Richardson combines scientific process development with practical construction and implementation knowledge, allowing PRDD to bridge laboratory chemistry and industrial deployment.
+                Dr. Richardson combines scientific process development with practical construction and implementation knowledge, allowing CST to bridge laboratory chemistry and industrial deployment.
               </p>
               <p className="text-slate-400 text-sm sm:text-base">
                 This background brings together rigorous laboratory investigation and hands-on construction experience to design environmental technologies that can operate successfully in demanding industrial environments.

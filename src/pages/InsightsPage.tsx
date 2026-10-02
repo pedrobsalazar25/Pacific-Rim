@@ -45,14 +45,14 @@ export const InsightsPage: React.FC<InsightsPageProps> = ({ onNavigate }) => {
   // Update document title and meta description for SEO
   useEffect(() => {
     const prevTitle = document.title;
-    document.title = 'Insights & Technical Resources | PRDD';
+    document.title = 'Insights & Technical Resources | CST';
 
     const metaDesc = document.querySelector('meta[name="description"]');
     const prevDesc = metaDesc ? metaDesc.getAttribute('content') : '';
     if (metaDesc) {
       metaDesc.setAttribute(
         'content',
-        "Explore technical perspectives and resource topics related to PRDD's environmental process development, industrial emissions, water treatment, advanced materials and resource recovery work."
+        "Explore technical perspectives and resource topics related to CST's environmental process development, industrial emissions, water treatment, advanced materials and resource recovery work."
       );
     }
 
@@ -133,7 +133,7 @@ export const InsightsPage: React.FC<InsightsPageProps> = ({ onNavigate }) => {
       perspective:
         'The practical path from scientific process development through evaluation, engineering and implementation where appropriate.',
       links: [
-        { label: 'About PRDD', path: '/about' },
+        { label: 'About CST', path: '/about' },
         { label: 'Dr. Richardson Profile', path: '/about/robert-richardson' },
         { label: 'Project Experience', path: '/projects' }
       ]
@@ -185,7 +185,7 @@ export const InsightsPage: React.FC<InsightsPageProps> = ({ onNavigate }) => {
             <div className="mt-8 sm:mt-12 pt-8 border-t border-white/15 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-end">
               <div className="lg:col-span-7">
                 <p className="text-base sm:text-lg text-slate-200 font-normal leading-relaxed max-w-2xl drop-shadow">
-                  Explore technical perspectives, process-development themes and future resources connected to PRDD's environmental technology work.
+                  Explore technical perspectives, process-development themes and future resources connected to CST's environmental technology work.
                 </p>
               </div>
 
@@ -230,7 +230,7 @@ export const InsightsPage: React.FC<InsightsPageProps> = ({ onNavigate }) => {
 
           <div className="text-base sm:text-lg text-[#20262B] leading-relaxed space-y-4 font-normal pt-2">
             <p>
-              PRDD's work begins with difficult environmental and industrial problems.
+              CST's work begins with difficult environmental and industrial problems.
             </p>
             <p className="text-slate-600">
               The technical path may involve chemistry, process development, engineering evaluation, materials, field implementation or commercialization considerations depending on the application.
@@ -263,7 +263,7 @@ export const InsightsPage: React.FC<InsightsPageProps> = ({ onNavigate }) => {
           </h3>
 
           <p className="text-base sm:text-lg text-[#20262B] leading-relaxed font-normal max-w-3xl">
-            PRDD is developing this section as a resource for technical perspectives, process-development insights and application-focused content. In the meantime, explore the company's existing Technology, Applications and Project Experience sections.
+            CST is developing this section as a resource for technical perspectives, process-development insights and application-focused content. In the meantime, explore the company's existing Technology, Applications and Project Experience sections.
           </p>
 
           <div className="pt-4 border-t border-[#DCE8EF] flex flex-wrap items-center gap-4">
@@ -426,7 +426,7 @@ export const InsightsPage: React.FC<InsightsPageProps> = ({ onNavigate }) => {
       </section>
 
       {/* ==================================================
-          SECTION 7: EXPLORE PRDD TECHNOLOGY
+          SECTION 7: EXPLORE CST TECHNOLOGY
       ================================================== */}
       <section className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-[1440px] mx-auto border-t border-[#DCE8EF]">
         <div className="max-w-3xl mb-12">
@@ -628,7 +628,7 @@ export const InsightsPage: React.FC<InsightsPageProps> = ({ onNavigate }) => {
           </h3>
 
           <p className="text-base sm:text-lg text-[#20262B] leading-relaxed font-normal max-w-4xl">
-            PRDD's documented historical project experience provides context for how process development, testing, engineering and implementation can intersect with real operating environments.
+            CST's documented historical project experience provides context for how process development, testing, engineering and implementation can intersect with real operating environments.
           </p>
 
           {/* Restrained Reference Grid */}
@@ -645,7 +645,7 @@ export const InsightsPage: React.FC<InsightsPageProps> = ({ onNavigate }) => {
 
           {/* Context Note */}
           <div className="p-4 sm:p-5 bg-[#FFFDF5] border border-[#DCE8EF] rounded-xl text-xs font-mono text-slate-600 leading-relaxed">
-            The organizations shown represent selected historical PRDD project experience and should not be interpreted as current customer relationships or endorsements.
+            The organizations shown represent selected historical CST project experience and should not be interpreted as current customer relationships or endorsements.
           </div>
 
           <div className="pt-2">
@@ -674,7 +674,7 @@ export const InsightsPage: React.FC<InsightsPageProps> = ({ onNavigate }) => {
               <div className="rounded-2xl overflow-hidden border border-[#DCE8EF] bg-[#071B2D] p-2 shadow-lg">
                 <PrddImage
                   src={PRDD_IMAGES.founder}
-                  alt="Dr. Robert Richardson, President of PRDD"
+                  alt="Dr. Robert Richardson, President of CST"
                   className="w-full h-80 sm:h-96 object-cover object-top filter saturate-95 brightness-95 rounded-xl"
                 />
                 <div className="p-4 bg-[#071B2D] text-center rounded-b-xl border-t border-white/10 mt-2">
@@ -682,7 +682,7 @@ export const InsightsPage: React.FC<InsightsPageProps> = ({ onNavigate }) => {
                     Dr. Robert Richardson
                   </div>
                   <div className="text-xs font-mono text-[#89B3D3] mt-0.5">
-                    President · PRDD
+                    President · CST
                   </div>
                 </div>
               </div>
@@ -739,7 +739,7 @@ export const InsightsPage: React.FC<InsightsPageProps> = ({ onNavigate }) => {
           </h3>
 
           <p className="text-base text-[#20262B] leading-relaxed font-normal">
-            Future PRDD resources may include technical perspectives, application-focused discussions and process-development material as content becomes available.
+            Future CST resources may include technical perspectives, application-focused discussions and process-development material as content becomes available.
           </p>
 
           <div className="pt-2">
@@ -748,7 +748,7 @@ export const InsightsPage: React.FC<InsightsPageProps> = ({ onNavigate }) => {
               onClick={() => onNavigate('/contact', 'Technical Discussion')}
               className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-[#123A63] hover:text-[#2F6F9F] font-semibold transition-colors cursor-pointer"
             >
-              <span>CONTACT PRDD FOR A TECHNICAL DISCUSSION</span>
+              <span>CONTACT CST FOR A TECHNICAL DISCUSSION</span>
               <ArrowRight className="w-4 h-4 text-[#2F6F9F]" />
             </button>
           </div>
@@ -783,7 +783,7 @@ export const InsightsPage: React.FC<InsightsPageProps> = ({ onNavigate }) => {
             </h2>
 
             <p className="text-base sm:text-lg text-slate-200 font-normal leading-relaxed mb-8 max-w-2xl">
-              Talk with PRDD about the pollutant, process stream, water challenge, material opportunity or environmental problem you are evaluating.
+              Talk with CST about the pollutant, process stream, water challenge, material opportunity or environmental problem you are evaluating.
             </p>
 
             <div className="flex flex-wrap items-center gap-4 mb-10">

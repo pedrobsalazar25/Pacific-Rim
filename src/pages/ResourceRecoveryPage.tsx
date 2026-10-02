@@ -26,14 +26,14 @@ export const ResourceRecoveryPage: React.FC<ResourceRecoveryPageProps> = ({ onNa
   // Update document title and meta description for SEO
   useEffect(() => {
     const prevTitle = document.title;
-    document.title = 'Resource Recovery Applications | PRDD';
+    document.title = 'Resource Recovery Applications | CST';
 
     const metaDesc = document.querySelector('meta[name="description"]');
     const prevDesc = metaDesc ? metaDesc.getAttribute('content') : '';
     if (metaDesc) {
       metaDesc.setAttribute(
         'content',
-        "Explore PRDD's application-driven approach to resource recovery, including CO₂ repurposing, emissions process development and connections to useful materials."
+        "Explore CST's application-driven approach to resource recovery, including CO₂ repurposing, emissions process development and connections to useful materials."
       );
     }
 
@@ -124,7 +124,7 @@ export const ResourceRecoveryPage: React.FC<ResourceRecoveryPageProps> = ({ onNa
             <div className="mt-8 sm:mt-12 pt-8 border-t border-white/15 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-end">
               <div className="lg:col-span-7">
                 <p className="text-base sm:text-lg text-slate-200 font-normal leading-relaxed max-w-2xl drop-shadow">
-                  PRDD evaluates environmental challenges for opportunities to capture, convert or repurpose pollutants and process streams into useful products or materials where technically appropriate.
+                  CST evaluates environmental challenges for opportunities to capture, convert or repurpose pollutants and process streams into useful products or materials where technically appropriate.
                 </p>
               </div>
 
@@ -200,7 +200,7 @@ export const ResourceRecoveryPage: React.FC<ResourceRecoveryPageProps> = ({ onNa
                   Environmental process development does not always have to end with pollutant removal or disposal.
                 </p>
                 <p>
-                  A recurring theme in PRDD's documented work is evaluating whether an environmental problem can be addressed through a process that also creates a useful product or material.
+                  A recurring theme in CST's documented work is evaluating whether an environmental problem can be addressed through a process that also creates a useful product or material.
                 </p>
                 <p className="text-slate-600">
                   Whether that opportunity exists depends on the chemistry, process stream and requirements of the specific application.
@@ -223,7 +223,7 @@ export const ResourceRecoveryPage: React.FC<ResourceRecoveryPageProps> = ({ onNa
 
               {/* Supporting note */}
               <div className="pt-2 text-xs font-mono text-slate-500">
-                Not every pollutant or process stream is suitable for resource recovery, and not every PRDD application follows this path.
+                Not every pollutant or process stream is suitable for resource recovery, and not every CST application follows this path.
               </div>
             </div>
 
@@ -244,10 +244,10 @@ export const ResourceRecoveryPage: React.FC<ResourceRecoveryPageProps> = ({ onNa
 
               <div className="text-base sm:text-lg text-[#20262B] leading-relaxed space-y-4 font-normal">
                 <p>
-                  Resource recovery is not presented as one standalone PRDD treatment system.
+                  Resource recovery is not presented as one standalone CST treatment system.
                 </p>
                 <p>
-                  Instead, the concept appears across multiple areas of PRDD's technology-development work.
+                  Instead, the concept appears across multiple areas of CST's technology-development work.
                 </p>
                 <p className="text-slate-600">
                   The specific path depends on the pollutant or process stream being addressed.
@@ -278,10 +278,10 @@ export const ResourceRecoveryPage: React.FC<ResourceRecoveryPageProps> = ({ onNa
 
                 <div className="space-y-4 text-base sm:text-lg text-[#20262B] leading-relaxed mb-6 font-normal">
                   <p>
-                    PRDD's patented CO₂ Capture &amp; Repurpose process is designed to capture carbon dioxide and convert it into identified useful products.
+                    CST's patented CO₂ Capture &amp; Repurpose process is designed to capture carbon dioxide and convert it into identified useful products.
                   </p>
                   <p>
-                    PRDD documentation identifies sodium carbonate and sodium bicarbonate as products of the process, together with hydrochloric acid.
+                    CST documentation identifies sodium carbonate and sodium bicarbonate as products of the process, together with hydrochloric acid.
                   </p>
                   <p className="text-slate-600">
                     Calcium carbonate can also be produced from sodium carbonate.
@@ -321,7 +321,7 @@ export const ResourceRecoveryPage: React.FC<ResourceRecoveryPageProps> = ({ onNa
 
                 <div className="space-y-4 text-base sm:text-lg text-[#20262B] leading-relaxed mb-6 font-normal">
                   <p>
-                    PRDD documentation describes multiple process-development approaches for nitrogen and sulfur oxides, including approaches in which useful chemical products are identified as resulting products.
+                    CST documentation describes multiple process-development approaches for nitrogen and sulfur oxides, including approaches in which useful chemical products are identified as resulting products.
                   </p>
                   <p className="text-slate-600">
                     These approaches are distinct and should not be presented as one universal NOx / SOx process.
@@ -361,7 +361,7 @@ export const ResourceRecoveryPage: React.FC<ResourceRecoveryPageProps> = ({ onNa
 
                 <div className="space-y-4 text-base sm:text-lg text-[#20262B] leading-relaxed mb-6 font-normal">
                   <p>
-                    PRDD's documented technology portfolio also connects products associated with CO₂ capture and repurposing to materials-development work involving concrete and geopolymers.
+                    CST's documented technology portfolio also connects products associated with CO₂ capture and repurposing to materials-development work involving concrete and geopolymers.
                   </p>
                   <p className="text-slate-600">
                     This creates another potential resource-recovery path: connecting an environmental process product with a materials application where technically appropriate.
@@ -557,7 +557,7 @@ export const ResourceRecoveryPage: React.FC<ResourceRecoveryPageProps> = ({ onNa
               </h3>
 
               <p className="text-base sm:text-lg text-[#20262B] leading-relaxed font-normal">
-                PRDD documentation identifies these products in connection with its CO₂ Capture &amp; Repurpose process.
+                CST documentation identifies these products in connection with its CO₂ Capture &amp; Repurpose process.
               </p>
 
               {/* Technical Restrained Display */}
@@ -576,7 +576,7 @@ export const ResourceRecoveryPage: React.FC<ResourceRecoveryPageProps> = ({ onNa
                 <div className="text-center">
                   <div className="font-mono text-xs text-[#89B3D3] uppercase tracking-wider mb-2">PROCESS</div>
                   <div className="inline-block px-6 py-3 bg-[#123A63] border-2 border-[#2F6F9F] rounded-xl font-mono text-sm font-bold text-white shadow">
-                    PRDD CO₂ CAPTURE &amp; REPURPOSE PROCESS
+                    CST CO₂ CAPTURE &amp; REPURPOSE PROCESS
                   </div>
                 </div>
 
@@ -685,15 +685,15 @@ export const ResourceRecoveryPage: React.FC<ResourceRecoveryPageProps> = ({ onNa
 
               <div className="text-base sm:text-lg text-[#20262B] leading-relaxed space-y-4 font-normal">
                 <p>
-                  PRDD's documented environmental process-development work includes approaches intended not only to address pollutants, but also to identify useful products that may result from treatment.
+                  CST's documented environmental process-development work includes approaches intended not only to address pollutants, but also to identify useful products that may result from treatment.
                 </p>
                 <p className="text-slate-600">
-                  This product-oriented perspective appears in several areas of PRDD's technology portfolio.
+                  This product-oriented perspective appears in several areas of CST's technology portfolio.
                 </p>
               </div>
 
               <div className="pt-2 text-xs font-mono text-slate-500">
-                Product recovery depends on the specific process and application and should not be assumed for every PRDD technology or environmental challenge.
+                Product recovery depends on the specific process and application and should not be assumed for every CST technology or environmental challenge.
               </div>
             </div>
 
@@ -714,7 +714,7 @@ export const ResourceRecoveryPage: React.FC<ResourceRecoveryPageProps> = ({ onNa
 
               <div className="text-base sm:text-lg text-[#20262B] leading-relaxed space-y-4 font-normal">
                 <p>
-                  PRDD's broader development approach includes process development, engineering, implementation and commercialization considerations where appropriate.
+                  CST's broader development approach includes process development, engineering, implementation and commercialization considerations where appropriate.
                 </p>
                 <p>
                   For resource-recovery applications, the existence of an identified product does not by itself establish commercial viability.
@@ -791,7 +791,7 @@ export const ResourceRecoveryPage: React.FC<ResourceRecoveryPageProps> = ({ onNa
               </div>
 
               <h3 className="font-display text-2xl sm:text-3xl font-bold text-[#123A63]">
-                Resource Recovery in Historical PRDD Work.
+                Resource Recovery in Historical CST Work.
               </h3>
 
               <div className="p-6 bg-[#F7F7F3] border border-[#DCE8EF] rounded-2xl">
@@ -804,7 +804,7 @@ export const ResourceRecoveryPage: React.FC<ResourceRecoveryPageProps> = ({ onNa
                   </span>
                 </div>
                 <p className="text-sm text-[#20262B] leading-relaxed">
-                  PRDD project history includes CO₂ capture work associated with secondary oil recovery, with tertiary oil recovery and carbon-credit considerations documented in the project history.
+                  CST project history includes CO₂ capture work associated with secondary oil recovery, with tertiary oil recovery and carbon-credit considerations documented in the project history.
                 </p>
               </div>
 
@@ -830,7 +830,7 @@ export const ResourceRecoveryPage: React.FC<ResourceRecoveryPageProps> = ({ onNa
               </div>
 
               <h3 className="font-display text-2xl sm:text-3xl font-bold text-[#123A63]">
-                Resource Recovery Across PRDD's Portfolio.
+                Resource Recovery Across CST's Portfolio.
               </h3>
 
               <div className="space-y-4 pt-2">
@@ -1051,7 +1051,7 @@ export const ResourceRecoveryPage: React.FC<ResourceRecoveryPageProps> = ({ onNa
                 </h3>
 
                 <p className="text-xs font-mono text-slate-300 mb-6 leading-relaxed">
-                  Connect with PRDD to evaluate whether a useful product or material path may be technically appropriate for your process stream.
+                  Connect with CST to evaluate whether a useful product or material path may be technically appropriate for your process stream.
                 </p>
 
                 <button
@@ -1113,7 +1113,7 @@ export const ResourceRecoveryPage: React.FC<ResourceRecoveryPageProps> = ({ onNa
             </h2>
 
             <p className="text-base sm:text-lg text-slate-200 font-normal leading-relaxed mb-8 max-w-2xl">
-              Talk with PRDD about the pollutant, waste stream, process stream or material opportunity you are working to evaluate.
+              Talk with CST about the pollutant, waste stream, process stream or material opportunity you are working to evaluate.
             </p>
 
             <div className="flex flex-wrap items-center gap-4 mb-10">

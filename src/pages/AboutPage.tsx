@@ -32,7 +32,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
   // Update document title and meta description for SEO
   useEffect(() => {
     const prevTitle = document.title;
-    document.title = 'About Clean Scrub Technologies | PRDD';
+    document.title = 'About Clean Scrub Technologies | CST';
 
     const metaDesc = document.querySelector('meta[name="description"]');
     const prevDesc = metaDesc ? metaDesc.getAttribute('content') : '';
@@ -91,7 +91,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
             </div>
             <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#123A63]/80 border border-[#2F6F9F]/60 text-xs font-mono tracking-widest text-[#DCE8EF] uppercase backdrop-blur-sm">
               <span className="w-1.5 h-1.5 rounded-full bg-[#6D9F45]" />
-              <span>ABOUT PRDD</span>
+              <span>ABOUT CST</span>
             </div>
           </div>
 
@@ -118,7 +118,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                   onClick={handleScrollToOverview}
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-[#123A63] border border-[#2F6F9F] hover:bg-[#2F6F9F] hover:border-[#DCE8EF] text-white text-xs font-mono font-semibold tracking-wider uppercase transition-all duration-200 active:scale-95 shadow-xl shadow-black/40 cursor-pointer"
                 >
-                  <span>EXPLORE PRDD</span>
+                  <span>EXPLORE CST</span>
                   <ArrowDown className="w-4 h-4 text-[#89B3D3]" />
                 </button>
 
@@ -159,13 +159,13 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
 
             <div className="text-base sm:text-lg text-[#20262B] leading-relaxed space-y-4 font-normal">
               <p>
-                PRDD develops and commercializes environmental solutions for challenging industrial and environmental problems.
+                CST develops and commercializes environmental solutions for challenging industrial and environmental problems.
               </p>
               <p>
                 Its work combines chemistry, process development and practical engineering to develop approaches around the requirements of the specific environmental challenge.
               </p>
               <p className="text-slate-600">
-                PRDD's documented technology and project experience spans industrial emissions, water treatment, materials development, environmental testing and specialized operating environments.
+                CST's documented technology and project experience spans industrial emissions, water treatment, materials development, environmental testing and specialized operating environments.
               </p>
             </div>
 
@@ -190,7 +190,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
               <div className="aspect-[16/9] w-full overflow-hidden relative">
                 <PrddImage
                   src={PRDD_IMAGES.approachLab}
-                  alt="PRDD process chemistry and applied engineering laboratory"
+                  alt="CST process chemistry and applied engineering laboratory"
                   className="w-full h-full object-cover object-center filter saturate-90 brightness-95 group-hover:scale-102 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#071B2D]/80 via-transparent to-transparent pointer-events-none" />
@@ -200,7 +200,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                   <span className="w-2 h-2 rounded-full bg-[#6D9F45]" />
                   <span className="font-semibold text-[#123A63]">APPLIED PROCESS DEVELOPMENT &amp; TESTING ENVIRONMENT</span>
                 </span>
-                <span className="text-slate-500">[ PRDD RESEARCH ]</span>
+                <span className="text-slate-500">[ CST RESEARCH ]</span>
               </div>
             </div>
           </div>
@@ -289,14 +289,14 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
       </section>
 
       {/* ==================================================
-          SECTION 5: THE PRDD APPROACH
+          SECTION 5: THE CST APPROACH
           Four Restrained Stages
       ================================================== */}
       <section className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-[1440px] mx-auto border-t border-[#DCE8EF]">
         <div className="max-w-3xl mb-12">
           <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[#123A63] mb-3">
             <span className="w-1.5 h-1.5 rounded-full bg-[#6D9F45]" />
-            <span>HOW PRDD WORKS</span>
+            <span>HOW CST WORKS</span>
           </div>
 
           <h2 className="font-display text-3xl sm:text-5xl font-bold tracking-tight text-[#123A63]">
@@ -306,7 +306,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
 
           <div className="text-base sm:text-lg text-[#20262B] leading-relaxed space-y-3 font-normal mt-4">
             <p>
-              PRDD's approach begins with the specific pollutant, process stream, water challenge, material opportunity or operating environment.
+              CST's approach begins with the specific pollutant, process stream, water challenge, material opportunity or operating environment.
             </p>
             <p className="text-slate-600">
               From there, the company evaluates the problem scientifically and develops an application-specific process or engineering approach.
@@ -390,10 +390,10 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
 
             <div className="text-base sm:text-lg text-slate-200 leading-relaxed space-y-4 font-normal">
               <p>
-                A recurring theme in PRDD's documented environmental work is evaluating whether a pollutant or process stream can be treated in a way that also produces a useful product or material.
+                A recurring theme in CST's documented environmental work is evaluating whether a pollutant or process stream can be treated in a way that also produces a useful product or material.
               </p>
               <p className="text-slate-300">
-                This perspective appears across multiple areas of PRDD's technology development, including carbon capture, emissions treatment and materials applications.
+                This perspective appears across multiple areas of CST's technology development, including carbon capture, emissions treatment and materials applications.
               </p>
             </div>
 
@@ -457,7 +457,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
 
           <div className="text-base sm:text-lg text-[#20262B] leading-relaxed space-y-4 font-normal max-w-4xl">
             <p>
-              PRDD President Dr. Robert Richardson combines a background as a Ph.D. chemist with experience as a Licensed General Contractor.
+              CST President Dr. Robert Richardson combines a background as a Ph.D. chemist with experience as a Licensed General Contractor.
             </p>
             <p>
               His documented work includes environmental process development, multidisciplinary research, practical engineering and project implementation across industrial and municipal environments.
@@ -488,7 +488,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
         <div className="max-w-3xl mb-12">
           <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[#123A63] mb-3">
             <span className="w-1.5 h-1.5 rounded-full bg-[#6D9F45]" />
-            <span>PRDD TECHNOLOGY</span>
+            <span>CST TECHNOLOGY</span>
           </div>
 
           <h2 className="font-display text-3xl sm:text-5xl font-bold tracking-tight text-[#123A63]">
@@ -531,7 +531,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                 NOx &amp; SOx ABATEMENT
               </h3>
               <p className="text-xs text-[#20262B] leading-relaxed mb-4">
-                Multiple PRDD process-development approaches addressing nitrogen and sulfur oxides.
+                Multiple CST process-development approaches addressing nitrogen and sulfur oxides.
               </p>
             </div>
             <div className="flex items-center gap-1.5 text-xs font-mono text-[#123A63] group-hover:text-[#2F6F9F] pt-2 border-t border-[#DCE8EF]">
@@ -612,7 +612,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
           </h2>
 
           <p className="text-base sm:text-lg text-[#20262B] leading-relaxed font-normal mt-4">
-            PRDD's documented historical project experience includes work in industrial facilities, municipal sanitation environments and specialized operating conditions.
+            CST's documented historical project experience includes work in industrial facilities, municipal sanitation environments and specialized operating conditions.
           </p>
         </div>
 
@@ -690,7 +690,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
         {/* Mandatory Context Note */}
         <div className="mt-6 p-4 sm:p-5 bg-[#FFFDF5] border border-[#DCE8EF] text-xs font-mono text-slate-600 leading-relaxed flex items-center justify-between flex-wrap gap-4">
           <p>
-            The organizations shown represent selected historical PRDD project experience and should not be interpreted as current customer relationships or endorsements.
+            The organizations shown represent selected historical CST project experience and should not be interpreted as current customer relationships or endorsements.
           </p>
           <button
             type="button"
@@ -720,7 +720,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
 
           <div className="text-base sm:text-lg text-[#20262B] leading-relaxed space-y-3 font-normal mt-4">
             <p>
-              PRDD's work is organized around both technology development and the requirements of specific environmental applications.
+              CST's work is organized around both technology development and the requirements of specific environmental applications.
             </p>
             <p className="text-slate-600">
               The appropriate technical path depends on the pollutant, process stream, water challenge, material opportunity and operating environment.
@@ -835,7 +835,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
             </h2>
 
             <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal">
-              PRDD's documented work extends beyond laboratory process development into engineering, implementation and commercialization considerations where appropriate.
+              CST's documented work extends beyond laboratory process development into engineering, implementation and commercialization considerations where appropriate.
             </p>
           </div>
 
@@ -883,7 +883,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
               <div className="overflow-hidden border border-[#DCE8EF] bg-[#071B2D] p-2 shadow-lg">
                 <PrddImage
                   src={PRDD_IMAGES.founder}
-                  alt="Dr. Robert Richardson, President of PRDD"
+                  alt="Dr. Robert Richardson, President of CST"
                   className="w-full h-80 sm:h-96 object-cover object-top filter saturate-95 brightness-95"
                 />
                 <div className="p-4 bg-[#071B2D] text-center border-t border-white/10 mt-2">
@@ -891,7 +891,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                     Dr. Robert Richardson
                   </div>
                   <div className="text-xs font-mono text-[#89B3D3] mt-0.5">
-                    President · PRDD
+                    President · CST
                   </div>
                 </div>
               </div>
@@ -974,7 +974,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
             </h2>
 
             <p className="text-base sm:text-lg text-slate-200 font-normal leading-relaxed mb-8 max-w-2xl">
-              Talk with PRDD about the pollutant, process stream, water challenge, material opportunity or environmental engineering problem you are working to address.
+              Talk with CST about the pollutant, process stream, water challenge, material opportunity or environmental engineering problem you are working to address.
             </p>
 
             <div className="flex flex-wrap items-center gap-4 mb-10">

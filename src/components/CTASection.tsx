@@ -14,7 +14,7 @@ export const CTASection: React.FC<CTASectionProps> = ({ onDiscussProject }) => {
       <div className="absolute inset-0 z-0 pointer-events-none select-none">
         <PrddImage
           src={PRDD_IMAGES.finalCta}
-          alt="PRDD Heavy Industrial Engineering and Process Infrastructure"
+          alt="CST Heavy Industrial Engineering and Process Infrastructure"
           loading="lazy"
           className="w-full h-full object-cover object-center"
         />
@@ -47,10 +47,10 @@ export const CTASection: React.FC<CTASectionProps> = ({ onDiscussProject }) => {
 
         {/* Supporting Copy */}
         <p className="text-base sm:text-xl text-slate-200 max-w-2xl mx-auto leading-relaxed mb-10 sm:mb-12 font-normal">
-          Talk with PRDD about your emissions, water treatment, process engineering or environmental technology requirements.
+          Talk with CST about your emissions, water treatment, process engineering or environmental technology requirements.
         </p>
 
-        {/* Primary CTA - PRDD Navy / Blue treatment */}
+        {/* Primary CTA - CST Navy / Blue treatment */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
           <button
             type="button"

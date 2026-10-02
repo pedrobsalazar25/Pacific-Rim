@@ -25,14 +25,14 @@ export const AdvancedMaterialsPage: React.FC<AdvancedMaterialsPageProps> = ({ on
   // Update document title and meta description for SEO
   useEffect(() => {
     const prevTitle = document.title;
-    document.title = 'Advanced Materials Technology | PRDD';
+    document.title = 'Advanced Materials Technology | CST';
 
     const metaDesc = document.querySelector('meta[name="description"]');
     const prevDesc = metaDesc ? metaDesc.getAttribute('content') : '';
     if (metaDesc) {
       metaDesc.setAttribute(
         'content',
-        "Explore PRDD's materials-development work involving concrete, geopolymers, CO₂-derived products and high-surface-area polymer concrete."
+        "Explore CST's materials-development work involving concrete, geopolymers, CO₂-derived products and high-surface-area polymer concrete."
       );
     }
 
@@ -126,7 +126,7 @@ export const AdvancedMaterialsPage: React.FC<AdvancedMaterialsPageProps> = ({ on
             <div className="mt-8 sm:mt-12 pt-8 border-t border-white/15 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-end">
               <div className="lg:col-span-7">
                 <p className="text-base sm:text-lg text-slate-200 font-normal leading-relaxed max-w-2xl drop-shadow">
-                  PRDD's materials-development work includes approaches involving concrete, geopolymers, CO₂-derived products and high-surface-area polymer concrete.
+                  CST's materials-development work includes approaches involving concrete, geopolymers, CO₂-derived products and high-surface-area polymer concrete.
                 </p>
               </div>
 
@@ -199,10 +199,10 @@ export const AdvancedMaterialsPage: React.FC<AdvancedMaterialsPageProps> = ({ on
 
               <div className="text-base sm:text-lg text-[#20262B] leading-relaxed space-y-4 font-normal pt-2">
                 <p>
-                  PRDD's technology development extends beyond emissions and water treatment into materials applications.
+                  CST's technology development extends beyond emissions and water treatment into materials applications.
                 </p>
                 <p>
-                  Documented PRDD work includes approaches to strengthening concrete and geopolymer materials using products associated with CO₂ capture, as well as development of high-surface-area polymer concrete.
+                  Documented CST work includes approaches to strengthening concrete and geopolymer materials using products associated with CO₂ capture, as well as development of high-surface-area polymer concrete.
                 </p>
               </div>
 
@@ -237,7 +237,7 @@ export const AdvancedMaterialsPage: React.FC<AdvancedMaterialsPageProps> = ({ on
               </h2>
 
               <p className="text-base text-slate-600 leading-relaxed font-normal">
-                PRDD's documented materials-development work encompasses two distinct directions. These represent separate technical efforts and are not combined into a single material system:
+                CST's documented materials-development work encompasses two distinct directions. These represent separate technical efforts and are not combined into a single material system:
               </p>
 
               <div className="space-y-8 pt-2">
@@ -259,10 +259,10 @@ export const AdvancedMaterialsPage: React.FC<AdvancedMaterialsPageProps> = ({ on
 
                   <div className="space-y-4 text-base sm:text-lg text-[#20262B] leading-relaxed mb-6">
                     <p>
-                      PRDD documentation describes an approach to strengthening concrete and geopolymer materials using products associated with the company's CO₂ Capture &amp; Repurpose technology.
+                      CST documentation describes an approach to strengthening concrete and geopolymer materials using products associated with the company's CO₂ Capture &amp; Repurpose technology.
                     </p>
                     <p className="font-semibold text-[#123A63]">
-                      This creates a documented connection between PRDD's carbon-capture work and its materials-development activities.
+                      This creates a documented connection between CST's carbon-capture work and its materials-development activities.
                     </p>
                   </div>
 
@@ -301,7 +301,7 @@ export const AdvancedMaterialsPage: React.FC<AdvancedMaterialsPageProps> = ({ on
 
                   <div className="space-y-4 text-base sm:text-lg text-[#20262B] leading-relaxed mb-6">
                     <p>
-                      PRDD documentation also identifies a process for producing high-surface-area polymer concrete.
+                      CST documentation also identifies a process for producing high-surface-area polymer concrete.
                     </p>
                     <p className="font-semibold text-[#123A63]">
                       This represents a separate materials-development direction from the concrete and geopolymer work associated with CO₂ capture.
@@ -435,7 +435,7 @@ export const AdvancedMaterialsPage: React.FC<AdvancedMaterialsPageProps> = ({ on
                           DEVELOPMENT DOMAIN
                         </div>
                         <div className="font-display text-sm sm:text-base font-bold text-white">
-                          PRDD MATERIALS DEVELOPMENT
+                          CST MATERIALS DEVELOPMENT
                         </div>
                       </div>
 
@@ -485,10 +485,10 @@ export const AdvancedMaterialsPage: React.FC<AdvancedMaterialsPageProps> = ({ on
 
               <div className="text-base sm:text-lg text-[#20262B] leading-relaxed space-y-4 font-normal">
                 <p>
-                  PRDD's documented technology portfolio connects CO₂ capture and repurposing with materials development.
+                  CST's documented technology portfolio connects CO₂ capture and repurposing with materials development.
                 </p>
                 <p>
-                  Products associated with the CO₂ Capture &amp; Repurpose process are identified in PRDD documentation for use in approaches involving concrete and geopolymer materials.
+                  Products associated with the CO₂ Capture &amp; Repurpose process are identified in CST documentation for use in approaches involving concrete and geopolymer materials.
                 </p>
               </div>
 
@@ -555,7 +555,7 @@ export const AdvancedMaterialsPage: React.FC<AdvancedMaterialsPageProps> = ({ on
 
               <div className="text-base sm:text-lg text-[#20262B] leading-relaxed space-y-4 font-normal">
                 <p>
-                  PRDD's CO₂ Capture &amp; Repurpose documentation identifies sodium carbonate and sodium bicarbonate as products of the process and also identifies calcium carbonate as a material that can be produced from sodium carbonate.
+                  CST's CO₂ Capture &amp; Repurpose documentation identifies sodium carbonate and sodium bicarbonate as products of the process and also identifies calcium carbonate as a material that can be produced from sodium carbonate.
                 </p>
                 <p>
                   The materials-development work expands the broader concept of moving from captured emissions toward useful material applications.
@@ -576,7 +576,7 @@ export const AdvancedMaterialsPage: React.FC<AdvancedMaterialsPageProps> = ({ on
                     Na₂CO₃
                   </div>
                   <p className="text-xs text-[#20262B] leading-relaxed border-t border-[#DCE8EF] pt-3">
-                    Primary product documented in the PRDD CO₂ Capture &amp; Repurpose process.
+                    Primary product documented in the CST CO₂ Capture &amp; Repurpose process.
                   </p>
                 </div>
 
@@ -592,7 +592,7 @@ export const AdvancedMaterialsPage: React.FC<AdvancedMaterialsPageProps> = ({ on
                     NaHCO₃
                   </div>
                   <p className="text-xs text-[#20262B] leading-relaxed border-t border-[#DCE8EF] pt-3">
-                    Product documented in the PRDD CO₂ Capture &amp; Repurpose process.
+                    Product documented in the CST CO₂ Capture &amp; Repurpose process.
                   </p>
                 </div>
 
@@ -630,7 +630,7 @@ export const AdvancedMaterialsPage: React.FC<AdvancedMaterialsPageProps> = ({ on
 
               <div className="text-base sm:text-lg text-[#20262B] leading-relaxed space-y-4 font-normal">
                 <p>
-                  PRDD's materials work reflects the company's broader process-development approach: connect chemistry, engineering and practical implementation to explore useful applications for developed processes and products.
+                  CST's materials work reflects the company's broader process-development approach: connect chemistry, engineering and practical implementation to explore useful applications for developed processes and products.
                 </p>
               </div>
 
@@ -669,10 +669,10 @@ export const AdvancedMaterialsPage: React.FC<AdvancedMaterialsPageProps> = ({ on
                 </h3>
 
                 <p className="text-base sm:text-lg text-[#20262B] leading-relaxed mb-6">
-                  PRDD President Dr. Robert Richardson combines a background as a Ph.D. chemist with experience as a Licensed General Contractor.
+                  CST President Dr. Robert Richardson combines a background as a Ph.D. chemist with experience as a Licensed General Contractor.
                 </p>
                 <p className="text-base text-slate-600 leading-relaxed mb-8">
-                  That combination provides PRDD with both scientific process-development and practical construction perspectives when evaluating materials and their potential applications.
+                  That combination provides CST with both scientific process-development and practical construction perspectives when evaluating materials and their potential applications.
                 </p>
 
                 <div>
@@ -760,7 +760,7 @@ export const AdvancedMaterialsPage: React.FC<AdvancedMaterialsPageProps> = ({ on
             <div className="pt-8 border-t border-[#DCE8EF]">
               <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[#123A63] mb-6">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#6D9F45]" />
-                <span>RELATED PRDD TECHNOLOGIES</span>
+                <span>RELATED CST TECHNOLOGIES</span>
               </div>
               <h3 className="font-display text-2xl sm:text-3xl font-bold text-[#123A63] mb-8">
                 A Broader Environmental Technology Platform.
@@ -874,7 +874,7 @@ export const AdvancedMaterialsPage: React.FC<AdvancedMaterialsPageProps> = ({ on
               <div className="absolute inset-0">
                 <PrddImage
                   src={PRDD_IMAGES.approachLab}
-                  alt="PRDD materials engineering dialogue"
+                  alt="CST materials engineering dialogue"
                   className="w-full h-full object-cover object-center filter saturate-50 brightness-40"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#071B2D] via-[#071B2D]/85 to-[#071B2D]/60" />
@@ -912,7 +912,7 @@ export const AdvancedMaterialsPage: React.FC<AdvancedMaterialsPageProps> = ({ on
                   onClick={() => onNavigate('/contact', 'Advanced Materials')}
                   className="w-full inline-flex items-center justify-center gap-2 py-3.5 px-4 bg-[#2F6F9F] hover:bg-[#123A63] text-white text-xs font-mono font-semibold uppercase tracking-wider rounded-xl transition-all duration-200 border border-white/20 cursor-pointer shadow-lg"
                 >
-                  <span>CONTACT PRDD</span>
+                  <span>CONTACT CST</span>
                   <ArrowRight className="w-3.5 h-3.5" />
                 </button>
               </div>
@@ -925,7 +925,7 @@ export const AdvancedMaterialsPage: React.FC<AdvancedMaterialsPageProps> = ({ on
 
       {/* ==================================================
           SECTION 13: LARGE CLOSING CTA
-          Wide rounded rectangular CTA in PRDD Deep Navy / Industrial Blue
+          Wide rounded rectangular CTA in CST Deep Navy / Industrial Blue
       ================================================== */}
       <section className="px-4 sm:px-6 lg:px-8 max-w-[1440px] mx-auto py-12 sm:py-20">
         <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden bg-gradient-to-r from-[#071B2D] via-[#0b243d] to-[#123A63] border border-[#2F6F9F]/40 p-8 sm:p-14 lg:p-20 text-center shadow-2xl">
@@ -945,7 +945,7 @@ export const AdvancedMaterialsPage: React.FC<AdvancedMaterialsPageProps> = ({ on
             </h2>
 
             <p className="text-base sm:text-lg text-slate-300 leading-relaxed mb-8 max-w-2xl mx-auto">
-              Talk with PRDD about concrete, geopolymer, CO₂-derived material or environmental materials-development applications.
+              Talk with CST about concrete, geopolymer, CO₂-derived material or environmental materials-development applications.
             </p>
 
             <button

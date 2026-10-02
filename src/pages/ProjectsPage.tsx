@@ -26,14 +26,14 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
   // Update document title and meta description for SEO
   useEffect(() => {
     const prevTitle = document.title;
-    document.title = 'Environmental Project Experience | PRDD';
+    document.title = 'Environmental Project Experience | CST';
 
     const metaDesc = document.querySelector('meta[name="description"]');
     const prevDesc = metaDesc ? metaDesc.getAttribute('content') : '';
     if (metaDesc) {
       metaDesc.setAttribute(
         'content',
-        "Explore selected historical PRDD project experience spanning industrial emissions, municipal sanitation, environmental testing, specialized operations and CO₂ capture."
+        "Explore selected historical CST project experience spanning industrial emissions, municipal sanitation, environmental testing, specialized operations and CO₂ capture."
       );
     }
 
@@ -124,7 +124,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
             </div>
             <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#123A63]/80 border border-[#2F6F9F]/60 text-xs font-mono tracking-widest text-[#DCE8EF] uppercase backdrop-blur-sm">
               <span className="w-1.5 h-1.5 rounded-full bg-[#6D9F45]" />
-              <span>PRDD PROJECT EXPERIENCE</span>
+              <span>CST PROJECT EXPERIENCE</span>
             </div>
           </div>
 
@@ -141,7 +141,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
             <div className="mt-8 sm:mt-12 pt-8 border-t border-white/15 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-end">
               <div className="lg:col-span-7">
                 <p className="text-base sm:text-lg text-slate-200 font-normal leading-relaxed max-w-2xl drop-shadow">
-                  PRDD's historical project experience spans industrial emissions, municipal sanitation, environmental testing, process development and specialized operating environments.
+                  CST's historical project experience spans industrial emissions, municipal sanitation, environmental testing, process development and specialized operating environments.
                 </p>
               </div>
 
@@ -188,10 +188,10 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
 
             <div className="text-base sm:text-lg text-[#20262B] leading-relaxed space-y-4 font-normal pt-2">
               <p>
-                PRDD's documented project history includes environmental process development, testing, emissions-control work, odor control, facility engineering and specialized treatment challenges.
+                CST's documented project history includes environmental process development, testing, emissions-control work, odor control, facility engineering and specialized treatment challenges.
               </p>
               <p className="text-slate-600">
-                The projects span industrial and municipal operating environments and illustrate PRDD's experience translating scientific and engineering work into practical applications.
+                The projects span industrial and municipal operating environments and illustrate CST's experience translating scientific and engineering work into practical applications.
               </p>
             </div>
 
@@ -222,7 +222,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
                     HISTORICAL PROJECT CONTEXT NOTE
                   </div>
                   <p className="text-xs sm:text-sm text-[#20262B] leading-relaxed">
-                    The organizations and projects shown represent selected historical PRDD experience and should not be interpreted as current customer relationships or endorsements.
+                    The organizations and projects shown represent selected historical CST experience and should not be interpreted as current customer relationships or endorsements.
                   </p>
                 </div>
               </div>
@@ -376,7 +376,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
               </h4>
 
               <p className="text-base sm:text-lg text-[#20262B] leading-relaxed font-normal">
-                PRDD's historical work associated with Intel facilities in Arizona and Oregon included development of novel approaches for NOx and amine abatement.
+                CST's historical work associated with Intel facilities in Arizona and Oregon included development of novel approaches for NOx and amine abatement.
               </p>
 
               <div className="pt-6 border-t border-[#DCE8EF] flex flex-wrap items-center gap-4">
@@ -451,7 +451,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
               </h4>
 
               <p className="text-base sm:text-lg text-[#20262B] leading-relaxed font-normal">
-                PRDD's historical work associated with Jabil in Memphis included air-quality process design, testing and project management related to precious-metal recovery.
+                CST's historical work associated with Jabil in Memphis included air-quality process design, testing and project management related to precious-metal recovery.
               </p>
 
               <div className="pt-6 border-t border-[#DCE8EF] flex flex-wrap items-center gap-4">
@@ -511,7 +511,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
               </h4>
 
               <p className="text-base sm:text-lg text-[#20262B] leading-relaxed font-normal">
-                PRDD's historical Sea Launch / Boeing work involved treatment of toxic and explosive gases associated with a moving platform environment.
+                CST's historical Sea Launch / Boeing work involved treatment of toxic and explosive gases associated with a moving platform environment.
               </p>
 
               <div className="pt-6 border-t border-[#DCE8EF] flex flex-wrap items-center gap-4">
@@ -577,7 +577,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
               </h4>
 
               <p className="text-base sm:text-lg text-[#20262B] leading-relaxed font-normal">
-                PRDD's historical work associated with Hampton Roads Sanitation in Williamsburg, Virginia included multiphase odor control, related control-system work, startup and testing.
+                CST's historical work associated with Hampton Roads Sanitation in Williamsburg, Virginia included multiphase odor control, related control-system work, startup and testing.
               </p>
 
               <div className="pt-6 border-t border-[#DCE8EF] flex flex-wrap items-center gap-4">
@@ -643,7 +643,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
                 </h4>
 
                 <p className="text-sm text-[#20262B] leading-relaxed font-normal">
-                  PRDD's historical work associated with Orange County Sanitation District included mobile laboratory activities supporting environmental testing.
+                  CST's historical work associated with Orange County Sanitation District included mobile laboratory activities supporting environmental testing.
                 </p>
               </div>
 
@@ -680,7 +680,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
                 </h4>
 
                 <p className="text-sm text-[#20262B] leading-relaxed font-normal">
-                  PRDD's historical work associated with the City of Oceanside included automated mist odor control, laboratory ventilation, testing and maintenance activities.
+                  CST's historical work associated with the City of Oceanside included automated mist odor control, laboratory ventilation, testing and maintenance activities.
                 </p>
               </div>
 
@@ -723,7 +723,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
                 </h4>
 
                 <p className="text-sm text-[#20262B] leading-relaxed font-normal">
-                  PRDD's historical work associated with the Metro Biosolids Facility in San Diego included defects and performance testing.
+                  CST's historical work associated with the Metro Biosolids Facility in San Diego included defects and performance testing.
                 </p>
               </div>
 
@@ -769,7 +769,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
               </h4>
 
               <p className="text-base sm:text-lg text-[#20262B] leading-relaxed font-normal">
-                PRDD's project history includes CO₂ capture work associated with secondary oil recovery at Rock Canyon Oil, with tertiary oil recovery and carbon-credit considerations documented in the project history.
+                CST's project history includes CO₂ capture work associated with secondary oil recovery at Rock Canyon Oil, with tertiary oil recovery and carbon-credit considerations documented in the project history.
               </p>
 
               <div className="pt-6 border-t border-[#DCE8EF] flex flex-wrap items-center gap-4">
@@ -829,7 +829,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
               SELECTED HISTORICAL PROJECT EXPERIENCE
             </h3>
             <p className="text-sm font-mono text-slate-500 mt-2">
-              Concise index of documented PRDD historical project work and operating environments.
+              Concise index of documented CST historical project work and operating environments.
             </p>
           </div>
 
@@ -858,7 +858,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
           </div>
 
           <div className="mt-8 pt-4 text-xs font-mono text-slate-500">
-            Historical project index reflecting documented PRDD engineering, testing, and process evaluation work.
+            Historical project index reflecting documented CST engineering, testing, and process evaluation work.
           </div>
         </div>
       </section>
@@ -877,7 +877,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
             <span className="text-[#2F6F9F] font-light">Different Operating Conditions.</span>
           </h3>
           <p className="text-base text-slate-600 mt-4 leading-relaxed font-normal">
-            PRDD's historical experience spans different operating environments, reinforcing an application-driven approach rather than a single standardized solution.
+            CST's historical experience spans different operating environments, reinforcing an application-driven approach rather than a single standardized solution.
           </p>
         </div>
 
@@ -941,13 +941,13 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[#89B3D3] mb-3">
               <span className="w-1.5 h-1.5 rounded-full bg-[#6D9F45]" />
-              <span>PRDD'S WORKING APPROACH</span>
+              <span>CST'S WORKING APPROACH</span>
             </div>
             <h3 className="font-display text-2xl sm:text-4xl font-bold text-white mb-4">
               Science Connected to Practical Implementation.
             </h3>
             <p className="text-base text-slate-300 leading-relaxed font-normal">
-              Across its documented project history, PRDD's work has included process development, environmental testing, project management, control-system activities, startup support and practical engineering.
+              Across its documented project history, CST's work has included process development, environmental testing, project management, control-system activities, startup support and practical engineering.
             </p>
           </div>
 
@@ -1017,10 +1017,10 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
               <span>EXPLORE THE TECHNOLOGY</span>
             </div>
             <h3 className="font-display text-2xl sm:text-4xl font-bold text-[#123A63] mb-2">
-              From Historical Experience to PRDD Technology Development.
+              From Historical Experience to CST Technology Development.
             </h3>
             <p className="text-xs font-mono text-slate-500">
-              Explore PRDD's current technology areas.
+              Explore CST's current technology areas.
             </p>
           </div>
 
@@ -1224,7 +1224,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({ onNavigate }) => {
             </h2>
 
             <p className="text-base sm:text-lg text-slate-200 font-normal leading-relaxed mb-8 max-w-2xl">
-              Talk with PRDD about your pollutant stream, water challenge, process development need or environmental engineering problem.
+              Talk with CST about your pollutant stream, water challenge, process development need or environmental engineering problem.
             </p>
 
             <div className="flex flex-wrap items-center gap-4 mb-10">

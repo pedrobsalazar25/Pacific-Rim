@@ -1,5 +1,5 @@
 /**
- * PRDD Brand & Technology Data Registry
+ * CST Brand & Technology Data Registry
  * Clean Scrub Technologies
  * Verified source content only.
  */
@@ -49,7 +49,7 @@ export const TECHNOLOGIES_DATA: TechnologyItem[] = [
       'Engineered to transform waste streams into commercially viable resources'
     ],
     equipmentFocus: 'Industrial gas capture and chemical conversion process equipment.',
-    detailedOverview: 'PRDD develops chemical processes designed to capture CO₂ emissions from industrial flue gases and convert the gas into useful carbonate and bicarbonate products, with sodium carbonate also usable to produce calcium carbonate.',
+    detailedOverview: 'CST develops chemical processes designed to capture CO₂ emissions from industrial flue gases and convert the gas into useful carbonate and bicarbonate products, with sodium carbonate also usable to produce calcium carbonate.',
     applications: [
       { title: 'Industrial Emissions', route: '/applications/industrial-emissions', desc: 'Point-source emissions abatement for industrial facilities.' },
       { title: 'Concrete & Materials', route: '/applications/concrete-materials', desc: 'Processes involving concrete, geopolymer and CO₂-derived materials.' },
@@ -72,7 +72,7 @@ export const TECHNOLOGIES_DATA: TechnologyItem[] = [
       'Engineered for demanding industrial plant environments'
     ],
     equipmentFocus: 'Industrial emission abatement and conversion equipment.',
-    detailedOverview: 'PRDD develops chemical processes designed to remove harmful combustion emissions, including NOx and SOx, and convert pollutants into useful commercial products.',
+    detailedOverview: 'CST develops chemical processes designed to remove harmful combustion emissions, including NOx and SOx, and convert pollutants into useful commercial products.',
     applications: [
       { title: 'Industrial Emissions', route: '/applications/industrial-emissions', desc: 'Emissions abatement for industrial combustion and plant operations.' },
       { title: 'Resource Recovery', route: '/applications/resource-recovery', desc: 'Converting emissions into useful products and chemical byproducts.' }
@@ -94,7 +94,7 @@ export const TECHNOLOGIES_DATA: TechnologyItem[] = [
       'Designed for industrial and municipal water applications'
     ],
     equipmentFocus: 'Water treatment, reclamation, and desalination process equipment.',
-    detailedOverview: 'PRDD develops energy-efficient approaches to water reclamation, mineral separation, and desalination designed to address municipal and industrial water challenges.',
+    detailedOverview: 'CST develops energy-efficient approaches to water reclamation, mineral separation, and desalination designed to address municipal and industrial water challenges.',
     applications: [
       { title: 'Water & Wastewater', route: '/applications/water-wastewater', desc: 'Water reclamation, desalination, and process water treatment.' },
       { title: 'Resource Recovery', route: '/applications/resource-recovery', desc: 'Separation and recovery of mineral products from water streams.' }
@@ -116,7 +116,7 @@ export const TECHNOLOGIES_DATA: TechnologyItem[] = [
       'Bridges laboratory chemistry and physical construction materials'
     ],
     equipmentFocus: 'Materials processing and industrial application equipment.',
-    detailedOverview: 'PRDD develops processes utilizing CO₂-derived materials and proprietary methods for concrete and geopolymer applications.',
+    detailedOverview: 'CST develops processes utilizing CO₂-derived materials and proprietary methods for concrete and geopolymer applications.',
     applications: [
       { title: 'Concrete & Materials', route: '/applications/concrete-materials', desc: 'Processes involving concrete, geopolymer and CO₂-derived materials.' },
       { title: 'CO₂ Capture & Repurposing', route: '/technologies/co2-capture', desc: 'Utilization of materials derived from captured CO₂.' }
@@ -146,7 +146,7 @@ export const APPLICATIONS_DATA: ApplicationItem[] = [
     subtitle: 'Point-source emissions abatement and process solutions.',
     summary: 'Point-source emissions abatement for manufacturing, power generation, chemical plants, and heavy industrial facilities.',
     challenge: 'Industrial operations require dependable, effective systems to abate harmful combustion emissions and meet environmental standards.',
-    solution: 'PRDD develops chemical processes and equipment designed to capture emissions and convert pollutants into useful products.',
+    solution: 'CST develops chemical processes and equipment designed to capture emissions and convert pollutants into useful products.',
     compatibleTechIds: ['co2-capture', 'nox-sox'],
     industrialSectors: ['Power Generation', 'Industrial Manufacturing', 'Chemical Plants', 'Industrial Boilers'],
     fieldOutcomes: [
@@ -163,7 +163,7 @@ export const APPLICATIONS_DATA: ApplicationItem[] = [
     subtitle: 'Water reclamation, desalination, and process water treatment.',
     summary: 'Energy-efficient approaches to water reclamation, mineral separation, and desalination for municipal and industrial applications.',
     challenge: 'Municipalities and industrial operations face water treatment challenges requiring practical, energy-efficient solutions.',
-    solution: 'PRDD develops energy-efficient chemical and process approaches to reclaim water and separate minerals from complex water streams.',
+    solution: 'CST develops energy-efficient chemical and process approaches to reclaim water and separate minerals from complex water streams.',
     compatibleTechIds: ['water-treatment'],
     industrialSectors: ['Municipal Wastewater', 'Industrial Process Water', 'Desalination Facilities'],
     fieldOutcomes: [
@@ -180,7 +180,7 @@ export const APPLICATIONS_DATA: ApplicationItem[] = [
     subtitle: 'Processes involving concrete, geopolymer and CO₂-derived materials.',
     summary: 'Practical methods utilizing CO₂-derived materials and proprietary approaches for concrete and geopolymer applications.',
     challenge: 'Materials and construction applications require practical approaches to utilizing captured emissions and mineral streams.',
-    solution: 'PRDD bridges chemical research and physical materials, developing processes that integrate CO₂-derived materials into concrete and geopolymers.',
+    solution: 'CST bridges chemical research and physical materials, developing processes that integrate CO₂-derived materials into concrete and geopolymers.',
     compatibleTechIds: ['advanced-materials', 'co2-capture'],
     industrialSectors: ['Concrete Production', 'Materials Manufacturing', 'Construction Applications'],
     fieldOutcomes: [
@@ -197,7 +197,7 @@ export const APPLICATIONS_DATA: ApplicationItem[] = [
     subtitle: 'Converting emissions and byproduct streams into useful products.',
     summary: 'Approaches to transforming industrial emissions, waste streams, and process effluents into commercially useful resources.',
     challenge: 'Industrial operations generate emission streams and process byproducts that are traditionally treated as disposal burdens.',
-    solution: 'PRDD focuses on converting pollutants and waste streams into useful carbonate products, chemical byproducts, and reclaimed resources.',
+    solution: 'CST focuses on converting pollutants and waste streams into useful carbonate products, chemical byproducts, and reclaimed resources.',
     compatibleTechIds: ['co2-capture', 'nox-sox', 'water-treatment'],
     industrialSectors: ['Chemical Processing', 'Industrial Manufacturing', 'Resource Utilization'],
     fieldOutcomes: [
@@ -315,7 +315,7 @@ export const FOUNDER_DATA: FounderBio = {
   image: PRDD_IMAGES.founder,
   summary: 'Dr. Robert Richardson is the founder and president of Clean Scrub Technologies. As a Ph.D. chemist, licensed general contractor, and inventor, Dr. Richardson conducts research and process development to address challenging industrial environmental problems.',
   biography: [
-    'Dr. Robert Richardson is President of Clean Scrub Technologies (PRDD).',
+    'Dr. Robert Richardson is President of Clean Scrub Technologies (CST).',
     'As a Ph.D. chemist, licensed general contractor, and inventor, Dr. Richardson combines chemical research with practical engineering and construction experience.',
     'Dr. Richardson utilizes a personal laboratory for research and process development, focusing on practical technologies for emissions abatement, water treatment, and materials engineering.'
   ],

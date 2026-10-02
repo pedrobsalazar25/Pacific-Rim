@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Menu, X, ChevronDown, ArrowRight, Plus, Minus } from 'lucide-react';
 import { TECHNOLOGIES_DATA, APPLICATIONS_DATA, TechnologyItem } from '../data/prddData';
-import { CleanScrubLogo } from './CleanScrubLogo';
 
 interface HeaderProps {
   onOpenContact: () => void;
@@ -85,14 +84,24 @@ export const Header: React.FC<HeaderProps> = ({
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 flex items-center justify-between">
-          {/* Brand Zone: Clean Scrub Technologies Logo */}
+          {/* Brand Zone: CST Monogram Wordmark */}
           <a
             href="/"
             onClick={handleLogoClick}
-            className="flex items-center group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2F6F9F] py-1"
+            className="flex items-center gap-3 group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2F6F9F]"
             aria-label="Clean Scrub Technologies Home"
           >
-            <CleanScrubLogo className="h-8 sm:h-9 md:h-10 w-auto filter drop-shadow-sm group-hover:brightness-105 transition-all" />
+            <div className="w-8 h-8 bg-[#123A63] border border-[#2F6F9F]/60 flex items-center justify-center text-xs font-mono font-bold text-[#DCE8EF] group-hover:border-[#DCE8EF] group-hover:bg-[#2F6F9F] transition-all">
+              CST
+            </div>
+            <div className="flex flex-col">
+              <span className="font-display text-base sm:text-lg font-bold tracking-tight text-white group-hover:text-[#DCE8EF] transition-colors">
+                CLEAN SCRUB
+              </span>
+              <span className="text-[10px] tracking-[0.18em] uppercase text-[#DCE8EF]/70 -mt-1 font-mono">
+                TECHNOLOGIES
+              </span>
+            </div>
           </a>
 
           {/* Desktop Navigation Links */}
@@ -298,7 +307,7 @@ export const Header: React.FC<HeaderProps> = ({
                       onClick={() => handleRouteClick('/about')}
                       className="w-full text-left px-3 py-2.5 hover:bg-[#123A63]/60 transition-colors block cursor-pointer"
                     >
-                      <div className="text-xs font-semibold text-white">About PRDD</div>
+                      <div className="text-xs font-semibold text-white">About CST</div>
                       <div className="text-[11px] font-mono text-slate-300">Company Story &amp; Approach</div>
                     </button>
                     <button
@@ -329,7 +338,7 @@ export const Header: React.FC<HeaderProps> = ({
             </a>
           </nav>
 
-          {/* Action Zone: PRDD Blue/Navy CONTACT US Button */}
+          {/* Action Zone: CST Blue/Navy CONTACT US Button */}
           <div className="hidden sm:flex items-center gap-4">
             <button
               type="button"
@@ -372,7 +381,7 @@ export const Header: React.FC<HeaderProps> = ({
           <div className="text-xs font-mono tracking-widest text-[#89B3D3] uppercase mb-4 flex items-center justify-between pb-3 border-b border-[#2F6F9F]/30">
             <span className="flex items-center gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-[#6D9F45]" />
-              <span>PRDD Navigation Menu</span>
+              <span>CST Navigation Menu</span>
             </span>
             <button
               type="button"
@@ -504,7 +513,7 @@ export const Header: React.FC<HeaderProps> = ({
                     onClick={() => handleRouteClick('/about')}
                     className="w-full text-left py-2 px-2.5 text-xs text-slate-300 hover:text-white hover:bg-[#123A63]/50 rounded block font-mono"
                   >
-                    About PRDD Overview
+                    About CST Overview
                   </button>
                   <button
                     type="button"

@@ -137,7 +137,7 @@ export default function App() {
                   <div>
                     <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[#89B3D3] mb-3">
                       <span className="w-1.5 h-1.5 bg-[#6D9F45]" />
-                      <span>PRDD TECHNOLOGY PLATFORM</span>
+                      <span>CST TECHNOLOGY PLATFORM</span>
                     </div>
                     <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white">
                       Patented Chemical &amp;<br />

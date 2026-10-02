@@ -130,7 +130,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({
           ) : (
             <form onSubmit={handleSubmit} className="space-y-4 text-left">
               <p className="text-xs text-slate-300">
-                Talk with PRDD about your emissions, water treatment, process engineering or environmental technology requirements.
+                Talk with CST about your emissions, water treatment, process engineering or environmental technology requirements.
               </p>
 
               {/* Row 1: Name & Company/Organization */}

@@ -28,14 +28,14 @@ export const TechnologiesPage: React.FC<TechnologiesPageProps> = ({ onNavigate }
   // Update document title and meta description for SEO
   useEffect(() => {
     const prevTitle = document.title;
-    document.title = 'Environmental Technologies | PRDD';
+    document.title = 'Environmental Technologies | CST';
 
     const metaDesc = document.querySelector('meta[name="description"]');
     const prevDesc = metaDesc ? metaDesc.getAttribute('content') : '';
     if (metaDesc) {
       metaDesc.setAttribute(
         'content',
-        'Explore PRDD technologies for CO₂ capture and repurposing, NOx and SOx abatement, advanced water treatment and materials development.'
+        'Explore CST technologies for CO₂ capture and repurposing, NOx and SOx abatement, advanced water treatment and materials development.'
       );
     }
 
@@ -65,13 +65,13 @@ export const TechnologiesPage: React.FC<TechnologiesPageProps> = ({ onNavigate }
       category: 'CO₂ CAPTURE & REPURPOSING',
       title: 'Capture Carbon. Create Useful Products.',
       description:
-        'PRDD has developed a patented CO₂ Capture & Repurpose process designed to capture carbon dioxide and convert it into commercially useful products.',
+        'CST has developed a patented CO₂ Capture & Repurpose process designed to capture carbon dioxide and convert it into commercially useful products.',
       supportingLine:
         'Identified products include sodium carbonate, sodium bicarbonate and hydrochloric acid, with calcium carbonate also identified as a secondary material pathway.',
       cta: 'EXPLORE CO₂ TECHNOLOGY →',
       route: '/technologies/co2-capture',
       image: PRDD_IMAGES.co2Capture,
-      imageAlt: 'PRDD CO₂ Capture and repurposing industrial facility',
+      imageAlt: 'CST CO₂ Capture and repurposing industrial facility',
       icon: Factory,
       prefillTopic: 'CO₂ Capture & Repurposing'
     },
@@ -80,13 +80,13 @@ export const TechnologiesPage: React.FC<TechnologiesPageProps> = ({ onNavigate }
       category: 'NOx & SOx ABATEMENT',
       title: 'Treat Industrial Emissions. Recover Useful Products.',
       description:
-        'PRDD has developed multiple environmental process approaches addressing NOx, SOx and related industrial air pollutants.',
+        'CST has developed multiple environmental process approaches addressing NOx, SOx and related industrial air pollutants.',
       supportingLine:
         'Selected approaches are designed to treat pollutants and, where applicable, convert captured compounds into useful chemical products.',
       cta: 'EXPLORE EMISSIONS TECHNOLOGY →',
       route: '/technologies/nox-sox',
       image: PRDD_IMAGES.noxSox,
-      imageAlt: 'PRDD NOx and SOx emissions abatement and gas treatment infrastructure',
+      imageAlt: 'CST NOx and SOx emissions abatement and gas treatment infrastructure',
       icon: Wind,
       prefillTopic: 'NOx & SOx Abatement'
     },
@@ -95,7 +95,7 @@ export const TechnologiesPage: React.FC<TechnologiesPageProps> = ({ onNavigate }
       category: 'ADVANCED WATER TREATMENT',
       title: 'Rethinking Water Treatment & Recovery.',
       description:
-        "PRDD's documented water-treatment work includes approaches to seawater treatment for potable water and energy-efficient water reclamation.",
+        "CST's documented water-treatment work includes approaches to seawater treatment for potable water and energy-efficient water reclamation.",
       supportingLine:
         'Documented process-development work includes forward osmosis combined with chemical forced precipitation for water reclamation.',
       cta: 'EXPLORE WATER TECHNOLOGY →',
@@ -110,9 +110,9 @@ export const TechnologiesPage: React.FC<TechnologiesPageProps> = ({ onNavigate }
       category: 'ADVANCED MATERIALS',
       title: 'From Process Chemistry to Material Applications.',
       description:
-        "PRDD's materials-development work includes concrete, geopolymers, CO₂-derived products and high-surface-area polymer concrete.",
+        "CST's materials-development work includes concrete, geopolymers, CO₂-derived products and high-surface-area polymer concrete.",
       supportingLine:
-        "The portfolio includes documented connections between PRDD's CO₂ capture work and materials-development approaches.",
+        "The portfolio includes documented connections between CST's CO₂ capture work and materials-development approaches.",
       cta: 'EXPLORE MATERIALS TECHNOLOGY →',
       route: '/technologies/advanced-materials',
       image: PRDD_IMAGES.advancedMaterials,
@@ -150,7 +150,7 @@ export const TechnologiesPage: React.FC<TechnologiesPageProps> = ({ onNavigate }
             </div>
             <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#123A63]/80 border border-[#2F6F9F]/60 rounded-full text-xs font-mono tracking-widest text-[#DCE8EF] uppercase backdrop-blur-sm">
               <span className="w-1.5 h-1.5 rounded-full bg-[#6D9F45]" />
-              <span>PRDD TECHNOLOGIES</span>
+              <span>CST TECHNOLOGIES</span>
             </div>
           </div>
 
@@ -166,7 +166,7 @@ export const TechnologiesPage: React.FC<TechnologiesPageProps> = ({ onNavigate }
             <div className="mt-8 sm:mt-12 pt-8 border-t border-white/15 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-end">
               <div className="lg:col-span-7">
                 <p className="text-base sm:text-lg text-slate-200 font-normal leading-relaxed max-w-2xl drop-shadow">
-                  PRDD develops environmental processes designed to address difficult industrial challenges and, where possible, convert waste streams and pollutants into useful products or materials.
+                  CST develops environmental processes designed to address difficult industrial challenges and, where possible, convert waste streams and pollutants into useful products or materials.
                 </p>
               </div>
 
@@ -214,7 +214,7 @@ export const TechnologiesPage: React.FC<TechnologiesPageProps> = ({ onNavigate }
               Clean Scrub Technologies develops and commercializes environmental solutions for applications where conventional approaches may not provide the desired path forward.
             </p>
             <p className="text-slate-600">
-              PRDD's work combines chemistry, process development, engineering and practical implementation, with an emphasis on creating useful outcomes from environmental challenges.
+              CST's work combines chemistry, process development, engineering and practical implementation, with an emphasis on creating useful outcomes from environmental challenges.
             </p>
           </div>
 
@@ -246,7 +246,7 @@ export const TechnologiesPage: React.FC<TechnologiesPageProps> = ({ onNavigate }
             <span className="text-[#2F6F9F] font-light">of Development.</span>
           </h2>
           <p className="mt-4 text-base text-slate-600 font-normal">
-            PRDD develops environmental processes across four primary areas of focus, targeting complex industrial emissions, water recovery, and advanced materials.
+            CST develops environmental processes across four primary areas of focus, targeting complex industrial emissions, water recovery, and advanced materials.
           </p>
         </div>
 
@@ -366,7 +366,7 @@ export const TechnologiesPage: React.FC<TechnologiesPageProps> = ({ onNavigate }
                 <span className="text-[#89B3D3] font-light">Challenge Exists in Isolation.</span>
               </h2>
               <p className="text-base sm:text-lg text-slate-300 font-normal leading-relaxed">
-                PRDD's technology areas can intersect where an application involves multiple pollutants, useful process byproducts or opportunities for material development.
+                CST's technology areas can intersect where an application involves multiple pollutants, useful process byproducts or opportunities for material development.
               </p>
             </div>
 
@@ -395,7 +395,7 @@ export const TechnologiesPage: React.FC<TechnologiesPageProps> = ({ onNavigate }
                   <span>CORE METHODOLOGY</span>
                 </div>
                 <div className="font-display text-xl sm:text-2xl font-bold text-white tracking-wide">
-                  PRDD PROCESS DEVELOPMENT
+                  CST PROCESS DEVELOPMENT
                 </div>
               </div>
 
@@ -476,21 +476,21 @@ export const TechnologiesPage: React.FC<TechnologiesPageProps> = ({ onNavigate }
 
             {/* Explanatory Note */}
             <div className="mt-8 pt-6 border-t border-[#2F6F9F]/30 text-center text-xs font-mono text-slate-400 max-w-3xl mx-auto">
-              Technology relationships depend on the specific application. This diagram represents PRDD's broader development portfolio and does not imply that every technology is combined in every project.
+              Technology relationships depend on the specific application. This diagram represents CST's broader development portfolio and does not imply that every technology is combined in every project.
             </div>
           </div>
         </div>
       </section>
 
       {/* ==================================================
-          SECTION 6: HOW PRDD DEVELOPS TECHNOLOGY (THE PRDD APPROACH)
+          SECTION 6: HOW CST DEVELOPS TECHNOLOGY (THE CST APPROACH)
       ================================================== */}
       <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-[1440px] mx-auto border-t border-[#DCE8EF]">
         <div className="space-y-8">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[#123A63] mb-3">
               <span className="w-1.5 h-1.5 rounded-full bg-[#6D9F45]" />
-              <span>THE PRDD APPROACH</span>
+              <span>THE CST APPROACH</span>
             </div>
 
             <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#123A63]">
@@ -499,7 +499,7 @@ export const TechnologiesPage: React.FC<TechnologiesPageProps> = ({ onNavigate }
             </h2>
 
             <p className="mt-4 text-base sm:text-lg text-slate-600 font-normal leading-relaxed">
-              PRDD's work combines scientific process development with practical engineering and implementation experience.
+              CST's work combines scientific process development with practical engineering and implementation experience.
             </p>
           </div>
 
@@ -570,15 +570,15 @@ export const TechnologiesPage: React.FC<TechnologiesPageProps> = ({ onNavigate }
 
             <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#123A63] leading-[1.12]">
               Where Others See a Waste Stream,<br />
-              <span className="text-[#2F6F9F] font-light">PRDD Looks for a Useful Outcome.</span>
+              <span className="text-[#2F6F9F] font-light">CST Looks for a Useful Outcome.</span>
             </h2>
 
             <div className="text-base sm:text-lg text-[#20262B] leading-relaxed space-y-4 font-normal">
               <p>
-                A recurring theme in PRDD's technology development is the potential to move beyond pollutant removal and toward useful products, materials or other practical outcomes.
+                A recurring theme in CST's technology development is the potential to move beyond pollutant removal and toward useful products, materials or other practical outcomes.
               </p>
               <p className="text-slate-600">
-                This philosophy is particularly visible in PRDD's CO₂ capture and emissions-treatment work.
+                This philosophy is particularly visible in CST's CO₂ capture and emissions-treatment work.
               </p>
             </div>
 
@@ -623,7 +623,7 @@ export const TechnologiesPage: React.FC<TechnologiesPageProps> = ({ onNavigate }
 
               <div className="text-base sm:text-lg text-[#20262B] leading-relaxed space-y-4 font-normal">
                 <p>
-                  PRDD President Dr. Robert Richardson combines a background as a Ph.D. chemist with experience as a Licensed General Contractor.
+                  CST President Dr. Robert Richardson combines a background as a Ph.D. chemist with experience as a Licensed General Contractor.
                 </p>
                 <p className="text-slate-600">
                   His work spans environmental process development, multidisciplinary research, industrial testing and practical project implementation.
@@ -646,7 +646,7 @@ export const TechnologiesPage: React.FC<TechnologiesPageProps> = ({ onNavigate }
               <div className="relative rounded-2xl overflow-hidden border border-[#DCE8EF] shadow-md bg-[#071B2D] aspect-[4/5] max-w-sm mx-auto">
                 <PrddImage
                   src={PRDD_IMAGES.founder}
-                  alt="Dr. Robert Richardson - President of PRDD"
+                  alt="Dr. Robert Richardson - President of CST"
                   className="w-full h-full object-cover object-top filter saturate-90 brightness-95"
                   loading="lazy"
                 />
@@ -683,7 +683,7 @@ export const TechnologiesPage: React.FC<TechnologiesPageProps> = ({ onNavigate }
               Technology Development Grounded in Real-World Projects.
             </h2>
             <p className="mt-4 text-base sm:text-lg text-slate-600 font-normal leading-relaxed">
-              PRDD's broader project experience includes environmental process, emissions-control, testing and engineering work associated with industrial and municipal organizations.
+              CST's broader project experience includes environmental process, emissions-control, testing and engineering work associated with industrial and municipal organizations.
             </p>
           </div>
 
@@ -789,7 +789,7 @@ export const TechnologiesPage: React.FC<TechnologiesPageProps> = ({ onNavigate }
                   ROCK CANYON OIL
                 </h3>
                 <p className="text-sm text-[#20262B] leading-relaxed">
-                  CO₂ capture work associated with secondary oil recovery, with tertiary oil recovery and carbon-credit considerations documented in PRDD's project history.
+                  CO₂ capture work associated with secondary oil recovery, with tertiary oil recovery and carbon-credit considerations documented in CST's project history.
                 </p>
               </div>
               <div className="mt-6 pt-4 border-t border-[#DCE8EF] text-xs font-mono text-slate-500">
@@ -934,7 +934,7 @@ export const TechnologiesPage: React.FC<TechnologiesPageProps> = ({ onNavigate }
             </h2>
 
             <p className="text-base sm:text-lg text-slate-200 font-normal leading-relaxed mb-8 max-w-2xl">
-              Talk with PRDD about your industrial emissions, water-treatment, materials-development or environmental process challenge.
+              Talk with CST about your industrial emissions, water-treatment, materials-development or environmental process challenge.
             </p>
 
             <div className="flex flex-wrap items-center gap-4 mb-10">

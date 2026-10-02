@@ -17,7 +17,7 @@ interface PageCTAProps {
 export const PageCTA: React.FC<PageCTAProps> = ({
   eyebrow = 'START A CONVERSATION',
   title = 'Discuss Your Environmental or Process Challenge',
-  description = 'Whether evaluating point-source capture, effluent remediation, or circular byproduct integration, PRDD engineering can review your specifications.',
+  description = 'Whether evaluating point-source capture, effluent remediation, or circular byproduct integration, CST engineering can review your specifications.',
   buttonText = 'START PROJECT DISCUSSION →',
   onAction,
   secondaryAction

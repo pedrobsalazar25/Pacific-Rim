@@ -34,7 +34,7 @@ export const FounderDetailPage: React.FC<FounderDetailPageProps> = ({ onNavigate
   // Update document title and meta description for SEO
   useEffect(() => {
     const prevTitle = document.title;
-    document.title = 'Dr. Robert Richardson | President of PRDD';
+    document.title = 'Dr. Robert Richardson | President of CST';
 
     const metaDesc = document.querySelector('meta[name="description"]');
     const prevDesc = metaDesc ? metaDesc.getAttribute('content') : '';
@@ -122,7 +122,7 @@ export const FounderDetailPage: React.FC<FounderDetailPageProps> = ({ onNavigate
                 <div className="w-36 sm:w-44 lg:w-52 overflow-hidden border-2 border-[#2F6F9F]/60 bg-[#0c263f] p-1.5 shadow-2xl">
                   <PrddImage
                     src="/images/prdd/people/prdd-founder-portrait.jpg"
-                    alt="Dr. Robert Richardson, President of PRDD"
+                    alt="Dr. Robert Richardson, President of CST"
                     priority
                     className="w-full h-auto aspect-[4/5] object-cover object-top filter saturate-95 brightness-95"
                   />
@@ -299,7 +299,7 @@ export const FounderDetailPage: React.FC<FounderDetailPageProps> = ({ onNavigate
                   Dr. Richardson's combination of scientific training and Licensed General Contractor experience supports his ability to translate scientific and engineering requirements into practical language for contractors and implementation teams.
                 </p>
                 <p className="text-slate-600">
-                  This connection between process science and field implementation is a recurring theme in PRDD's working approach.
+                  This connection between process science and field implementation is a recurring theme in CST's working approach.
                 </p>
               </div>
             </div>
@@ -583,7 +583,7 @@ export const FounderDetailPage: React.FC<FounderDetailPageProps> = ({ onNavigate
               onClick={() => onNavigate('/technologies')}
               className="inline-flex items-center gap-2 px-6 py-3.5 bg-[#123A63] border border-[#2F6F9F] hover:bg-[#2F6F9F] hover:border-[#DCE8EF] text-white text-xs font-mono font-semibold uppercase tracking-wider transition-colors cursor-pointer"
             >
-              <span>EXPLORE PRDD TECHNOLOGIES</span>
+              <span>EXPLORE CST TECHNOLOGIES</span>
               <ArrowRight className="w-4 h-4 text-[#6D9F45]" />
             </button>
           </div>
@@ -827,7 +827,7 @@ export const FounderDetailPage: React.FC<FounderDetailPageProps> = ({ onNavigate
         </div>
 
         <div className="mt-8 text-base text-[#20262B] leading-relaxed max-w-3xl">
-          PRDD's development approach connects scientific requirements with the practical work needed to evaluate, engineer and implement an environmental process.
+          CST's development approach connects scientific requirements with the practical work needed to evaluate, engineer and implement an environmental process.
         </div>
       </section>
 
@@ -841,13 +841,13 @@ export const FounderDetailPage: React.FC<FounderDetailPageProps> = ({ onNavigate
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[#123A63] mb-3">
               <span className="w-1.5 h-1.5 rounded-full bg-[#6D9F45]" />
-              <span>PRDD TECHNOLOGY PORTFOLIO</span>
+              <span>CST TECHNOLOGY PORTFOLIO</span>
             </div>
             <h3 className="font-display text-2xl sm:text-4xl font-bold text-[#123A63] mb-2">
               Technical Development Across Four Primary Areas.
             </h3>
             <p className="text-xs font-mono text-slate-500">
-              These pages present PRDD's current technology areas. The profile above summarizes selected technical development documented in Dr. Richardson's resume.
+              These pages present CST's current technology areas. The profile above summarizes selected technical development documented in Dr. Richardson's resume.
             </p>
           </div>
 
@@ -945,7 +945,7 @@ export const FounderDetailPage: React.FC<FounderDetailPageProps> = ({ onNavigate
           </p>
 
           <div className="p-4 sm:p-5 bg-[#FFFDF5] border border-[#DCE8EF] text-xs font-mono text-slate-600 leading-relaxed">
-            The organizations shown represent selected historical PRDD project experience and should not be interpreted as current customer relationships or endorsements.
+            The organizations shown represent selected historical CST project experience and should not be interpreted as current customer relationships or endorsements.
           </div>
 
           <div className="pt-2">
@@ -1005,7 +1005,7 @@ export const FounderDetailPage: React.FC<FounderDetailPageProps> = ({ onNavigate
             </h2>
 
             <p className="text-base sm:text-lg text-slate-200 font-normal leading-relaxed mb-8 max-w-2xl">
-              Talk with Dr. Richardson and PRDD about the pollutant, process stream, water challenge, material opportunity or environmental problem you are working to address.
+              Talk with Dr. Richardson and CST about the pollutant, process stream, water challenge, material opportunity or environmental problem you are working to address.
             </p>
 
             <div className="flex flex-wrap items-center gap-4 mb-10">
@@ -1014,7 +1014,7 @@ export const FounderDetailPage: React.FC<FounderDetailPageProps> = ({ onNavigate
                 onClick={() => onNavigate('/contact', 'Technical Discussion')}
                 className="inline-flex items-center gap-2.5 px-8 py-4 bg-[#123A63] border border-[#2F6F9F] hover:bg-[#2F6F9F] hover:border-[#DCE8EF] text-white text-xs font-mono font-semibold tracking-wider uppercase transition-all duration-200 active:scale-95 shadow-xl shadow-black/40 cursor-pointer"
               >
-                <span>CONTACT PRDD</span>
+                <span>CONTACT CST</span>
                 <ArrowRight className="w-4 h-4 text-[#6D9F45]" />
               </button>
             </div>

@@ -45,7 +45,7 @@ export const ProcessDiagram: React.FC<ProcessDiagramProps> = ({
         </div>
         <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#123A63] border border-[#2F6F9F] text-xs font-mono text-[#DCE8EF]">
           <span className="w-1.5 h-1.5 rounded-full bg-[#6D9F45]" />
-          <span>PRDD PROCESS ARCHITECTURE</span>
+          <span>CST PROCESS ARCHITECTURE</span>
         </div>
       </div>
 

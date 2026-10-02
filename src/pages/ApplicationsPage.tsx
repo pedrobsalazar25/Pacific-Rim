@@ -30,14 +30,14 @@ export const ApplicationsPage: React.FC<ApplicationsPageProps> = ({ onNavigate }
   // Update document title and meta description for SEO
   useEffect(() => {
     const prevTitle = document.title;
-    document.title = 'Environmental Applications | PRDD';
+    document.title = 'Environmental Applications | CST';
 
     const metaDesc = document.querySelector('meta[name="description"]');
     const prevDesc = metaDesc ? metaDesc.getAttribute('content') : '';
     if (metaDesc) {
       metaDesc.setAttribute(
         'content',
-        'Explore PRDD application areas spanning industrial emissions, water and wastewater, concrete and materials, and resource recovery.'
+        'Explore CST application areas spanning industrial emissions, water and wastewater, concrete and materials, and resource recovery.'
       );
     }
 
@@ -67,7 +67,7 @@ export const ApplicationsPage: React.FC<ApplicationsPageProps> = ({ onNavigate }
       category: 'INDUSTRIAL EMISSIONS',
       headline: 'Addressing Complex Industrial Air Emissions.',
       description:
-        "PRDD's emissions-related work includes process development addressing carbon dioxide, nitrogen oxides, sulfur oxides and other challenging industrial air-quality problems.",
+        "CST's emissions-related work includes process development addressing carbon dioxide, nitrogen oxides, sulfur oxides and other challenging industrial air-quality problems.",
       route: '/applications/industrial-emissions',
       cta: 'EXPLORE INDUSTRIAL EMISSIONS →',
       image: '/images/prdd/applications/prdd-application-emissions.jpg',
@@ -84,7 +84,7 @@ export const ApplicationsPage: React.FC<ApplicationsPageProps> = ({ onNavigate }
       category: 'WATER & WASTEWATER',
       headline: 'Developing Processes Around Water Challenges.',
       description:
-        "PRDD's documented work includes water-treatment process development as well as broader environmental engineering experience in municipal water, wastewater and sanitation environments.",
+        "CST's documented work includes water-treatment process development as well as broader environmental engineering experience in municipal water, wastewater and sanitation environments.",
       route: '/applications/water-wastewater',
       cta: 'EXPLORE WATER & WASTEWATER →',
       image: '/images/prdd/applications/prdd-application-water.jpg',
@@ -100,7 +100,7 @@ export const ApplicationsPage: React.FC<ApplicationsPageProps> = ({ onNavigate }
       category: 'CONCRETE & MATERIALS',
       headline: 'Connecting Process Chemistry With Material Applications.',
       description:
-        "PRDD's materials-development work includes approaches involving concrete, geopolymers, CO₂-derived products and high-surface-area polymer concrete.",
+        "CST's materials-development work includes approaches involving concrete, geopolymers, CO₂-derived products and high-surface-area polymer concrete.",
       route: '/applications/concrete-materials',
       cta: 'EXPLORE CONCRETE & MATERIALS →',
       image: '/images/prdd/applications/prdd-application-materials.jpg',
@@ -117,7 +117,7 @@ export const ApplicationsPage: React.FC<ApplicationsPageProps> = ({ onNavigate }
       category: 'RESOURCE RECOVERY',
       headline: 'Looking Beyond Waste Treatment.',
       description:
-        "A recurring theme in PRDD's environmental process development is the potential to convert pollutants or process streams into useful products or materials where technically appropriate.",
+        "A recurring theme in CST's environmental process development is the potential to convert pollutants or process streams into useful products or materials where technically appropriate.",
       route: '/applications/resource-recovery',
       cta: 'EXPLORE RESOURCE RECOVERY →',
       image: '/images/prdd/applications/prdd-application-recovery.jpg',
@@ -128,7 +128,7 @@ export const ApplicationsPage: React.FC<ApplicationsPageProps> = ({ onNavigate }
         { label: 'NOx & SOx Abatement', route: '/technologies/nox-sox' },
         { label: 'Advanced Materials', route: '/technologies/advanced-materials' }
       ],
-      relevantTechNote: 'Relevant PRDD technology areas may include:',
+      relevantTechNote: 'Relevant CST technology areas may include:',
       prefillTopic: 'Resource Recovery'
     }
   ];
@@ -161,7 +161,7 @@ export const ApplicationsPage: React.FC<ApplicationsPageProps> = ({ onNavigate }
             </div>
             <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#123A63]/80 border border-[#2F6F9F]/60 rounded-full text-xs font-mono tracking-widest text-[#DCE8EF] uppercase backdrop-blur-sm">
               <span className="w-1.5 h-1.5 rounded-full bg-[#6D9F45]" />
-              <span>PRDD APPLICATIONS</span>
+              <span>CST APPLICATIONS</span>
             </div>
           </div>
 
@@ -177,7 +177,7 @@ export const ApplicationsPage: React.FC<ApplicationsPageProps> = ({ onNavigate }
             <div className="mt-8 sm:mt-12 pt-8 border-t border-white/15 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-end">
               <div className="lg:col-span-7">
                 <p className="text-base sm:text-lg text-slate-200 font-normal leading-relaxed max-w-2xl drop-shadow">
-                  PRDD applies chemistry, process development and practical engineering to environmental challenges involving industrial emissions, water, materials and resource recovery.
+                  CST applies chemistry, process development and practical engineering to environmental challenges involving industrial emissions, water, materials and resource recovery.
                 </p>
               </div>
 
@@ -222,10 +222,10 @@ export const ApplicationsPage: React.FC<ApplicationsPageProps> = ({ onNavigate }
 
           <div className="text-base sm:text-xl text-[#20262B] leading-relaxed space-y-4 font-normal pt-2 max-w-3xl mx-auto">
             <p>
-              PRDD's approach to environmental process development begins by understanding the specific pollutant stream, water challenge, material opportunity or operating environment.
+              CST's approach to environmental process development begins by understanding the specific pollutant stream, water challenge, material opportunity or operating environment.
             </p>
             <p className="text-slate-600">
-              From there, PRDD evaluates how its technology development and engineering experience may apply to the challenge.
+              From there, CST evaluates how its technology development and engineering experience may apply to the challenge.
             </p>
           </div>
 
@@ -323,10 +323,10 @@ export const ApplicationsPage: React.FC<ApplicationsPageProps> = ({ onNavigate }
                     {app.description}
                   </p>
 
-                  {/* Relevant PRDD Technology Section */}
+                  {/* Relevant CST Technology Section */}
                   <div className="p-4 bg-[#F7F7F3] border border-[#DCE8EF] rounded-xl mb-6">
                     <div className="text-[11px] font-mono uppercase tracking-wider text-slate-500 mb-2.5">
-                      {app.relevantTechNote || 'Relevant PRDD technology areas:'}
+                      {app.relevantTechNote || 'Relevant CST technology areas:'}
                     </div>
                     <div className="flex flex-col sm:flex-row flex-wrap gap-2">
                       {app.relevantTechs.map((tech, tIdx) => (
@@ -388,7 +388,7 @@ export const ApplicationsPage: React.FC<ApplicationsPageProps> = ({ onNavigate }
                 <span className="text-[#89B3D3] font-light">to Technology.</span>
               </h2>
               <p className="text-base sm:text-lg text-slate-300 font-normal leading-relaxed">
-                Connect your environmental or operating challenge to the relevant PRDD technology areas.
+                Connect your environmental or operating challenge to the relevant CST technology areas.
               </p>
             </div>
 
@@ -522,7 +522,7 @@ export const ApplicationsPage: React.FC<ApplicationsPageProps> = ({ onNavigate }
                     RELEVANT TECHNOLOGY DIRECTION
                   </div>
                   <div className="text-xs sm:text-sm font-mono text-white">
-                    <span>APPLICATION-SPECIFIC PRDD PROCESS DEVELOPMENT</span>
+                    <span>APPLICATION-SPECIFIC CST PROCESS DEVELOPMENT</span>
                   </div>
                 </div>
               </div>
@@ -557,7 +557,7 @@ export const ApplicationsPage: React.FC<ApplicationsPageProps> = ({ onNavigate }
               Experience Beyond the Laboratory.
             </h2>
             <p className="mt-4 text-base sm:text-lg text-slate-600 font-normal leading-relaxed">
-              PRDD's environmental work has included process development, testing, emissions control and engineering activities in industrial and municipal operating environments.
+              CST's environmental work has included process development, testing, emissions control and engineering activities in industrial and municipal operating environments.
             </p>
           </div>
 
@@ -573,7 +573,7 @@ export const ApplicationsPage: React.FC<ApplicationsPageProps> = ({ onNavigate }
                   SEMICONDUCTOR MANUFACTURING
                 </h3>
                 <p className="text-xs sm:text-sm text-[#20262B] leading-relaxed">
-                  Historical PRDD work includes NOx and amine abatement associated with Intel facilities in Arizona and Oregon.
+                  Historical CST work includes NOx and amine abatement associated with Intel facilities in Arizona and Oregon.
                 </p>
               </div>
               <div className="mt-6 pt-4 border-t border-[#DCE8EF] text-xs font-mono text-slate-500">
@@ -591,7 +591,7 @@ export const ApplicationsPage: React.FC<ApplicationsPageProps> = ({ onNavigate }
                   AEROSPACE / MARITIME OPERATIONS
                 </h3>
                 <p className="text-xs sm:text-sm text-[#20262B] leading-relaxed">
-                  Historical PRDD work for Sea Launch / Boeing included treatment of toxic and explosive gases associated with a moving platform environment.
+                  Historical CST work for Sea Launch / Boeing included treatment of toxic and explosive gases associated with a moving platform environment.
                 </p>
               </div>
               <div className="mt-6 pt-4 border-t border-[#DCE8EF] text-xs font-mono text-slate-500">
@@ -609,7 +609,7 @@ export const ApplicationsPage: React.FC<ApplicationsPageProps> = ({ onNavigate }
                   MUNICIPAL SANITATION
                 </h3>
                 <p className="text-xs sm:text-sm text-[#20262B] leading-relaxed">
-                  PRDD project experience includes work associated with Hampton Roads Sanitation, Orange County Sanitation District, City of Oceanside and Metro Biosolids Facility in San Diego.
+                  CST project experience includes work associated with Hampton Roads Sanitation, Orange County Sanitation District, City of Oceanside and Metro Biosolids Facility in San Diego.
                 </p>
               </div>
               <div className="mt-6 pt-4 border-t border-[#DCE8EF] text-xs font-mono text-slate-500">
@@ -627,7 +627,7 @@ export const ApplicationsPage: React.FC<ApplicationsPageProps> = ({ onNavigate }
                   OIL RECOVERY
                 </h3>
                 <p className="text-xs sm:text-sm text-[#20262B] leading-relaxed">
-                  PRDD project history includes CO₂ capture work associated with secondary oil recovery at Rock Canyon Oil, with tertiary oil recovery and carbon-credit considerations documented in the project history.
+                  CST project history includes CO₂ capture work associated with secondary oil recovery at Rock Canyon Oil, with tertiary oil recovery and carbon-credit considerations documented in the project history.
                 </p>
               </div>
               <div className="mt-6 pt-4 border-t border-[#DCE8EF] text-xs font-mono text-slate-500">
@@ -650,7 +650,7 @@ export const ApplicationsPage: React.FC<ApplicationsPageProps> = ({ onNavigate }
       </section>
 
       {/* ==================================================
-          SECTION 7: HOW PRDD APPROACHES AN APPLICATION (4 STAGES)
+          SECTION 7: HOW CST APPROACHES AN APPLICATION (4 STAGES)
       ================================================== */}
       <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-[1440px] mx-auto border-t border-[#DCE8EF]">
         <div className="space-y-8">
@@ -666,7 +666,7 @@ export const ApplicationsPage: React.FC<ApplicationsPageProps> = ({ onNavigate }
             </h2>
 
             <p className="mt-4 text-base sm:text-lg text-slate-600 font-normal leading-relaxed">
-              PRDD evaluates each challenge from the ground up, starting with stream characterization and operating parameters.
+              CST evaluates each challenge from the ground up, starting with stream characterization and operating parameters.
             </p>
           </div>
 
@@ -692,7 +692,7 @@ export const ApplicationsPage: React.FC<ApplicationsPageProps> = ({ onNavigate }
                 EVALUATE
               </h3>
               <p className="text-sm text-[#20262B] leading-relaxed">
-                Determine which PRDD technology or process-development approach may be relevant.
+                Determine which CST technology or process-development approach may be relevant.
               </p>
             </div>
 
@@ -747,7 +747,7 @@ export const ApplicationsPage: React.FC<ApplicationsPageProps> = ({ onNavigate }
               </h2>
 
               <p className="text-base sm:text-lg text-[#20262B] leading-relaxed font-normal">
-                PRDD's technology portfolio spans CO₂ capture and repurposing, NOx and SOx abatement, advanced water treatment and advanced materials.
+                CST's technology portfolio spans CO₂ capture and repurposing, NOx and SOx abatement, advanced water treatment and advanced materials.
               </p>
 
               <div className="pt-2">
@@ -944,7 +944,7 @@ export const ApplicationsPage: React.FC<ApplicationsPageProps> = ({ onNavigate }
             </h2>
 
             <p className="text-base sm:text-lg text-slate-200 font-normal leading-relaxed mb-8 max-w-2xl">
-              Talk with PRDD about the process stream, pollutant, water challenge, material opportunity or environmental problem you are working to address.
+              Talk with CST about the process stream, pollutant, water challenge, material opportunity or environmental problem you are working to address.
             </p>
 
             <div className="flex flex-wrap items-center gap-4 mb-10">

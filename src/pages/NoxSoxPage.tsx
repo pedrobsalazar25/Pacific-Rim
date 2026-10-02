@@ -28,14 +28,14 @@ export const NoxSoxPage: React.FC<NoxSoxPageProps> = ({ onNavigate }) => {
   // Update document title and meta description for SEO
   useEffect(() => {
     const prevTitle = document.title;
-    document.title = 'NOx & SOx Abatement Technology | PRDD';
+    document.title = 'NOx & SOx Abatement Technology | CST';
 
     const metaDesc = document.querySelector('meta[name="description"]');
     const prevDesc = metaDesc ? metaDesc.getAttribute('content') : '';
     if (metaDesc) {
       metaDesc.setAttribute(
         'content',
-        "Explore PRDD's environmental process-development approaches for NOx, SOx and industrial air-emissions treatment."
+        "Explore CST's environmental process-development approaches for NOx, SOx and industrial air-emissions treatment."
       );
     }
 
@@ -129,7 +129,7 @@ export const NoxSoxPage: React.FC<NoxSoxPageProps> = ({ onNavigate }) => {
             <div className="mt-8 sm:mt-12 pt-8 border-t border-white/15 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-end">
               <div className="lg:col-span-7">
                 <p className="text-base sm:text-lg text-slate-200 font-normal leading-relaxed max-w-2xl drop-shadow">
-                  PRDD has developed environmental processes for the treatment of NOx, SOx and related industrial air pollutants, including approaches designed to convert captured pollutants into useful chemical products.
+                  CST has developed environmental processes for the treatment of NOx, SOx and related industrial air pollutants, including approaches designed to convert captured pollutants into useful chemical products.
                 </p>
               </div>
 
@@ -202,7 +202,7 @@ export const NoxSoxPage: React.FC<NoxSoxPageProps> = ({ onNavigate }) => {
 
               <div className="text-base sm:text-lg text-[#20262B] leading-relaxed space-y-4 font-normal pt-2">
                 <p>
-                  PRDD's work in emissions treatment extends beyond conventional pollutant removal.
+                  CST's work in emissions treatment extends beyond conventional pollutant removal.
                 </p>
                 <p>
                   The company's process-development work includes approaches for treating nitrogen oxides and sulfur oxides and, in certain processes, converting captured pollutants into useful chemical products.
@@ -228,7 +228,7 @@ export const NoxSoxPage: React.FC<NoxSoxPageProps> = ({ onNavigate }) => {
             <div id="technology-approach" className="space-y-8 pt-4">
               <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[#123A63]">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#6D9F45]" />
-                <span>PRDD PROCESS DEVELOPMENT</span>
+                <span>CST PROCESS DEVELOPMENT</span>
               </div>
 
               <h2 className="font-display text-3xl sm:text-4xl font-bold tracking-tight text-[#123A63]">
@@ -238,10 +238,10 @@ export const NoxSoxPage: React.FC<NoxSoxPageProps> = ({ onNavigate }) => {
 
               <div className="text-base sm:text-lg text-[#20262B] leading-relaxed space-y-4 font-normal">
                 <p>
-                  PRDD has developed multiple environmental processes addressing nitrogen oxides, sulfur oxides and related industrial emissions.
+                  CST has developed multiple environmental processes addressing nitrogen oxides, sulfur oxides and related industrial emissions.
                 </p>
                 <p>
-                  The processes described in PRDD's technical background use different chemical approaches depending on the pollutant and application.
+                  The processes described in CST's technical background use different chemical approaches depending on the pollutant and application.
                 </p>
                 <p className="font-semibold text-[#123A63]">
                   Because these represent distinct process-development approaches, they should not be presented as a single universal reaction pathway.
@@ -331,14 +331,14 @@ export const NoxSoxPage: React.FC<NoxSoxPageProps> = ({ onNavigate }) => {
                     <ArrowDown className="w-4 h-4 text-[#2F6F9F]" />
                   </div>
 
-                  {/* Step 3: PRDD Process Development */}
+                  {/* Step 3: CST Process Development */}
                   <div className="bg-[#103252] border-2 border-[#2F6F9F] p-6 rounded-xl text-center shadow-xl shadow-[#071B2D]">
                     <div className="inline-flex items-center gap-1.5 text-[10px] font-mono uppercase tracking-widest text-[#89B3D3] mb-1.5">
                       <span className="w-1.5 h-1.5 rounded-full bg-[#6D9F45]" />
                       <span>ENGINEERED METHODOLOGY</span>
                     </div>
                     <div className="font-display text-base sm:text-lg font-bold text-white tracking-wide">
-                      PRDD PROCESS DEVELOPMENT
+                      CST PROCESS DEVELOPMENT
                     </div>
                   </div>
 
@@ -377,7 +377,7 @@ export const NoxSoxPage: React.FC<NoxSoxPageProps> = ({ onNavigate }) => {
 
                 {/* Caption Requirement */}
                 <div className="mt-8 pt-6 border-t border-[#2F6F9F]/30 text-center text-xs font-mono text-slate-400">
-                  Conceptual technology overview. Specific process chemistry varies by application and PRDD process.
+                  Conceptual technology overview. Specific process chemistry varies by application and CST process.
                 </div>
               </div>
             </div>
@@ -395,7 +395,7 @@ export const NoxSoxPage: React.FC<NoxSoxPageProps> = ({ onNavigate }) => {
               </h2>
 
               <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-normal">
-                PRDD technical background includes multiple documented approaches addressing nitrogen oxides, sulfur oxides and related pollutants. These represent distinct process-development pathways evaluated for specific industrial applications:
+                CST technical background includes multiple documented approaches addressing nitrogen oxides, sulfur oxides and related pollutants. These represent distinct process-development pathways evaluated for specific industrial applications:
               </p>
 
               {/* Four Distinct Approach Blocks — Visually separate, NOT connected into one reaction */}
@@ -411,7 +411,7 @@ export const NoxSoxPage: React.FC<NoxSoxPageProps> = ({ onNavigate }) => {
                       NOx &amp; SOx Treatment
                     </h3>
                     <p className="text-sm text-[#20262B] leading-relaxed">
-                      PRDD documentation describes a process using chlorine dioxide for the treatment of NOx and SOx, with captured pollutants converted into mineral acids.
+                      CST documentation describes a process using chlorine dioxide for the treatment of NOx and SOx, with captured pollutants converted into mineral acids.
                     </p>
                   </div>
                   <div className="mt-6 pt-4 border-t border-[#DCE8EF] flex items-center justify-between text-xs font-mono text-slate-500">
@@ -431,7 +431,7 @@ export const NoxSoxPage: React.FC<NoxSoxPageProps> = ({ onNavigate }) => {
                       NOx Treatment
                     </h3>
                     <p className="text-sm text-[#20262B] leading-relaxed">
-                      PRDD documentation describes an approach using hydrogen peroxide and a metal-organic fabric for NOx treatment, with nitric acid identified as a resulting product.
+                      CST documentation describes an approach using hydrogen peroxide and a metal-organic fabric for NOx treatment, with nitric acid identified as a resulting product.
                     </p>
                   </div>
                   <div className="mt-6 pt-4 border-t border-[#DCE8EF] flex items-center justify-between text-xs font-mono text-slate-500">
@@ -451,7 +451,7 @@ export const NoxSoxPage: React.FC<NoxSoxPageProps> = ({ onNavigate }) => {
                       Combined Pollutant Treatment
                     </h3>
                     <p className="text-sm text-[#20262B] leading-relaxed">
-                      PRDD documentation also describes a process addressing NO₂, NO, SO₂ and CO₂ using hypochlorite, a promoter and controlled pH conditions.
+                      CST documentation also describes a process addressing NO₂, NO, SO₂ and CO₂ using hypochlorite, a promoter and controlled pH conditions.
                     </p>
                   </div>
                   <div className="mt-6 pt-4 border-t border-[#DCE8EF] flex items-center justify-between text-xs font-mono text-slate-500">
@@ -471,7 +471,7 @@ export const NoxSoxPage: React.FC<NoxSoxPageProps> = ({ onNavigate }) => {
                       NOx Mineralization
                     </h3>
                     <p className="text-sm text-[#20262B] leading-relaxed">
-                      Another documented PRDD approach addresses NOx using hydrogen peroxide and metal hydroxides to mineralize captured nitrogen oxides.
+                      Another documented CST approach addresses NOx using hydrogen peroxide and metal hydroxides to mineralize captured nitrogen oxides.
                     </p>
                   </div>
                   <div className="mt-6 pt-4 border-t border-[#DCE8EF] flex items-center justify-between text-xs font-mono text-slate-500">
@@ -531,7 +531,7 @@ export const NoxSoxPage: React.FC<NoxSoxPageProps> = ({ onNavigate }) => {
 
               <div className="text-base sm:text-lg text-[#20262B] leading-relaxed space-y-4 font-normal">
                 <p>
-                  Several PRDD emissions-treatment approaches are designed not only to address pollutants but also to convert captured compounds into useful chemical products.
+                  Several CST emissions-treatment approaches are designed not only to address pollutants but also to convert captured compounds into useful chemical products.
                 </p>
               </div>
 
@@ -552,7 +552,7 @@ export const NoxSoxPage: React.FC<NoxSoxPageProps> = ({ onNavigate }) => {
                       NITRIC ACID
                     </h3>
                     <p className="text-sm sm:text-base text-[#20262B] leading-relaxed">
-                      Identified in PRDD documentation as a product from a documented NOx treatment approach.
+                      Identified in CST documentation as a product from a documented NOx treatment approach.
                     </p>
                   </div>
                 </div>
@@ -572,7 +572,7 @@ export const NoxSoxPage: React.FC<NoxSoxPageProps> = ({ onNavigate }) => {
                       MINERAL ACIDS
                     </h3>
                     <p className="text-sm sm:text-base text-[#20262B] leading-relaxed">
-                      Identified in PRDD documentation as products associated with a documented NOx and SOx treatment approach.
+                      Identified in CST documentation as products associated with a documented NOx and SOx treatment approach.
                     </p>
                   </div>
                 </div>
@@ -593,7 +593,7 @@ export const NoxSoxPage: React.FC<NoxSoxPageProps> = ({ onNavigate }) => {
 
               <div className="text-base sm:text-lg text-[#20262B] leading-relaxed space-y-4 font-normal">
                 <p>
-                  PRDD's emissions-control work has included the development and application of treatment approaches for challenging industrial air quality problems.
+                  CST's emissions-control work has included the development and application of treatment approaches for challenging industrial air quality problems.
                 </p>
                 <p>
                   The company's broader project experience includes emissions-control and air-quality work in semiconductor manufacturing and other industrial environments.
@@ -633,7 +633,7 @@ export const NoxSoxPage: React.FC<NoxSoxPageProps> = ({ onNavigate }) => {
                 </h3>
 
                 <p className="text-base text-[#20262B] leading-relaxed mb-6">
-                  PRDD developed novel NOx and amine abatement approaches associated with Intel facilities in Arizona and Oregon.
+                  CST developed novel NOx and amine abatement approaches associated with Intel facilities in Arizona and Oregon.
                 </p>
 
                 <button
@@ -659,10 +659,10 @@ export const NoxSoxPage: React.FC<NoxSoxPageProps> = ({ onNavigate }) => {
 
                 <div className="text-base text-slate-300 leading-relaxed space-y-4 mb-6">
                   <p>
-                    PRDD has also evaluated NOx capture alongside its CO₂ Capture &amp; Repurpose technology in an industrial energy application.
+                    CST has also evaluated NOx capture alongside its CO₂ Capture &amp; Repurpose technology in an industrial energy application.
                   </p>
                   <p>
-                    This illustrates the potential for PRDD technologies to be considered together when an emissions stream contains multiple pollutants.
+                    This illustrates the potential for CST technologies to be considered together when an emissions stream contains multiple pollutants.
                   </p>
                 </div>
 
@@ -745,7 +745,7 @@ export const NoxSoxPage: React.FC<NoxSoxPageProps> = ({ onNavigate }) => {
             <div className="pt-8 border-t border-[#DCE8EF]">
               <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[#123A63] mb-6">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#6D9F45]" />
-                <span>RELATED PRDD TECHNOLOGIES</span>
+                <span>RELATED CST TECHNOLOGIES</span>
               </div>
               <h3 className="font-display text-2xl sm:text-3xl font-bold text-[#123A63] mb-8">
                 A Broader Environmental Technology Platform.
@@ -828,7 +828,7 @@ export const NoxSoxPage: React.FC<NoxSoxPageProps> = ({ onNavigate }) => {
                     PROCESS DEVELOPMENT
                   </div>
                   <div className="font-semibold text-[#123A63]">
-                    Multiple PRDD approaches
+                    Multiple CST approaches
                   </div>
                 </div>
 
@@ -858,7 +858,7 @@ export const NoxSoxPage: React.FC<NoxSoxPageProps> = ({ onNavigate }) => {
               <div className="absolute inset-0">
                 <PrddImage
                   src={PRDD_IMAGES.approachLab}
-                  alt="PRDD engineering dialogue"
+                  alt="CST engineering dialogue"
                   className="w-full h-full object-cover object-center filter saturate-50 brightness-40"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#071B2D] via-[#071B2D]/85 to-[#071B2D]/60" />
@@ -896,7 +896,7 @@ export const NoxSoxPage: React.FC<NoxSoxPageProps> = ({ onNavigate }) => {
                   onClick={() => onNavigate('/contact', 'NOx & SOx Abatement')}
                   className="w-full inline-flex items-center justify-center gap-2 py-3.5 px-4 bg-[#2F6F9F] hover:bg-[#123A63] text-white text-xs font-mono font-semibold uppercase tracking-wider rounded-xl transition-all duration-200 border border-white/20 cursor-pointer shadow-lg"
                 >
-                  <span>CONTACT PRDD</span>
+                  <span>CONTACT CST</span>
                   <ArrowRight className="w-3.5 h-3.5" />
                 </button>
               </div>
@@ -909,7 +909,7 @@ export const NoxSoxPage: React.FC<NoxSoxPageProps> = ({ onNavigate }) => {
 
       {/* ==================================================
           SECTION 14: LARGE CLOSING CTA
-          Wide rounded rectangular CTA in PRDD Deep Navy / Industrial Blue
+          Wide rounded rectangular CTA in CST Deep Navy / Industrial Blue
       ================================================== */}
       <section className="px-4 sm:px-6 lg:px-8 max-w-[1440px] mx-auto py-12 sm:py-20">
         <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden bg-gradient-to-r from-[#071B2D] via-[#0b243d] to-[#123A63] border border-[#2F6F9F]/40 p-8 sm:p-14 lg:p-20 text-center shadow-2xl">
@@ -929,7 +929,7 @@ export const NoxSoxPage: React.FC<NoxSoxPageProps> = ({ onNavigate }) => {
             </h2>
 
             <p className="text-base sm:text-lg text-slate-300 leading-relaxed mb-8 max-w-2xl mx-auto">
-              Talk with PRDD about NOx, SOx or an industrial air-emissions treatment challenge.
+              Talk with CST about NOx, SOx or an industrial air-emissions treatment challenge.
             </p>
 
             <button

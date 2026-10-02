@@ -148,7 +148,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({
             {/* Eyebrow */}
             <div className="inline-flex items-center gap-2.5 text-xs sm:text-sm font-mono tracking-[0.2em] uppercase text-[#DCE8EF] font-semibold mb-6">
               <span className="w-2.5 h-0.5 bg-[#6D9F45]" />
-              <span>CONTACT PRDD</span>
+              <span>CONTACT CST</span>
             </div>
 
             {/* Headline */}
@@ -161,7 +161,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({
 
             {/* Supporting Copy */}
             <p className="text-base sm:text-xl text-slate-200 font-normal leading-relaxed max-w-2xl">
-              Whether you're facing an emissions, water treatment, process engineering, or environmental technology challenge, start a conversation with PRDD.
+              Whether you're facing an emissions, water treatment, process engineering, or environmental technology challenge, start a conversation with CST.
             </p>
           </div>
         </div>
@@ -189,7 +189,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                   Tell Us What<br />You're Working On.
                 </h2>
                 <p className="text-sm sm:text-base text-slate-300 leading-relaxed max-w-xl">
-                  Describe your project, environmental challenge, or technology interest. PRDD can review the information and determine the appropriate next step.
+                  Describe your project, environmental challenge, or technology interest. CST can review the information and determine the appropriate next step.
                 </p>
               </div>
 
@@ -207,11 +207,11 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                       Thank You, {formData.firstName}.
                     </h3>
                     <p className="text-sm text-slate-300 max-w-md mx-auto leading-relaxed">
-                      Your inquiry details regarding <strong className="text-[#DCE8EF]">{formData.areaOfInterest}</strong> are prepared. To send directly to PRDD engineering leadership, you can dispatch via your email client or contact Dr. Richardson directly:
+                      Your inquiry details regarding <strong className="text-[#DCE8EF]">{formData.areaOfInterest}</strong> are prepared. To send directly to CST engineering leadership, you can dispatch via your email client or contact Dr. Richardson directly:
                     </p>
                     <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-3">
                       <a
-                        href={`mailto:robert@prdd.net?subject=${encodeURIComponent(`PRDD Inquiry: ${formData.areaOfInterest} (${formData.company || formData.firstName + ' ' + formData.lastName})`)}&body=${encodeURIComponent(`Name: ${formData.firstName} ${formData.lastName}\nCompany: ${formData.company}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nIndustry: ${formData.industry}\nArea of Interest: ${formData.areaOfInterest}\nPreferred Contact: ${formData.preferredContact}\n\nProject Challenge / Specifications:\n${formData.challenge}`)}`}
+                        href={`mailto:robert@prdd.net?subject=${encodeURIComponent(`CST Inquiry: ${formData.areaOfInterest} (${formData.company || formData.firstName + ' ' + formData.lastName})`)}&body=${encodeURIComponent(`Name: ${formData.firstName} ${formData.lastName}\nCompany: ${formData.company}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nIndustry: ${formData.industry}\nArea of Interest: ${formData.areaOfInterest}\nPreferred Contact: ${formData.preferredContact}\n\nProject Challenge / Specifications:\n${formData.challenge}`)}`}
                         className="inline-flex items-center justify-center gap-2 px-6 py-3.5 text-xs font-mono font-semibold uppercase tracking-wider text-white bg-[#123A63] border border-[#2F6F9F] hover:bg-[#2F6F9F] hover:border-[#DCE8EF] transition-all cursor-pointer shadow-md shadow-[#071B2D] rounded-xl"
                       >
                         <Mail className="w-4 h-4 text-[#6D9F45]" />
@@ -754,7 +754,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({
       </section>
 
       {/* ==================================================
-          6. CLOSING CTA (Premium dark PRDD navy closing section)
+          6. CLOSING CTA (Premium dark CST navy closing section)
           ================================================== */}
       <section className="relative py-20 sm:py-28 bg-[#071B2D] text-white border-t border-[#2F6F9F]/20 tech-grid-pattern text-center overflow-hidden">
         <div className="max-w-4xl mx-auto px-6 sm:px-8 relative z-10">
@@ -769,7 +769,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({
           </h2>
 
           <p className="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed mb-10 font-normal">
-            PRDD specializes in approaching environmental challenges from a combination of scientific, engineering and practical implementation perspectives.
+            CST specializes in approaching environmental challenges from a combination of scientific, engineering and practical implementation perspectives.
           </p>
 
           <button

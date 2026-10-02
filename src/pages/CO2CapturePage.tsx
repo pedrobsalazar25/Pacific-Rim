@@ -29,14 +29,14 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
   // Update document title and meta description for SEO
   useEffect(() => {
     const prevTitle = document.title;
-    document.title = 'CO₂ Capture & Repurposing Technology | PRDD';
+    document.title = 'CO₂ Capture & Repurposing Technology | CST';
 
     const metaDesc = document.querySelector('meta[name="description"]');
     const prevDesc = metaDesc ? metaDesc.getAttribute('content') : '';
     if (metaDesc) {
       metaDesc.setAttribute(
         'content',
-        "Learn about PRDD's CO₂ Capture & Repurpose technology, designed to capture industrial carbon dioxide and convert it into useful chemical products."
+        "Learn about CST's CO₂ Capture & Repurpose technology, designed to capture industrial carbon dioxide and convert it into useful chemical products."
       );
     }
 
@@ -130,7 +130,7 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
             <div className="mt-8 sm:mt-12 pt-8 border-t border-white/15 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-end">
               <div className="lg:col-span-7">
                 <p className="text-base sm:text-lg text-slate-200 font-normal leading-relaxed max-w-2xl drop-shadow">
-                  PRDD has developed a patented CO₂ Capture &amp; Repurpose process designed to capture carbon dioxide and convert it into commercially useful products.
+                  CST has developed a patented CO₂ Capture &amp; Repurpose process designed to capture carbon dioxide and convert it into commercially useful products.
                 </p>
               </div>
 
@@ -206,10 +206,10 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
                   Conventional carbon capture is often discussed primarily in terms of capturing and storing CO₂.
                 </p>
                 <p className="font-semibold text-[#123A63]">
-                  PRDD's approach is different.
+                  CST's approach is different.
                 </p>
                 <p>
-                  The PRDD CO₂ Capture &amp; Repurpose process is designed to capture carbon dioxide and convert it into useful chemical products, creating a pathway from industrial emissions to materials with commercial applications.
+                  The CST CO₂ Capture &amp; Repurpose process is designed to capture carbon dioxide and convert it into useful chemical products, creating a pathway from industrial emissions to materials with commercial applications.
                 </p>
               </div>
 
@@ -261,14 +261,14 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
                     <ArrowDown className="w-4 h-4 text-[#2F6F9F] -mt-1" />
                   </div>
 
-                  {/* Step 2: PRDD Process */}
+                  {/* Step 2: CST Process */}
                   <div className="bg-[#103252] border border-[#2F6F9F] p-6 text-center shadow-xl shadow-[#071B2D]">
                     <div className="inline-flex items-center gap-1.5 text-[10px] font-mono uppercase tracking-widest text-[#89B3D3] mb-1.5">
                       <span className="w-1.5 h-1.5 rounded-none bg-[#6D9F45]" />
-                      <span>STAGE 02 · PRDD PROCESS ARCHITECTURE</span>
+                      <span>STAGE 02 · CST PROCESS ARCHITECTURE</span>
                     </div>
                     <div className="font-display text-base sm:text-lg font-bold text-white tracking-wide">
-                      PRDD CO₂ CAPTURE &amp; REPURPOSE PROCESS
+                      CST CO₂ CAPTURE &amp; REPURPOSE PROCESS
                     </div>
                   </div>
 
@@ -339,7 +339,7 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
 
                   {/* Diagram Caption */}
                   <div className="mt-6 text-center text-xs font-mono text-slate-400">
-                    Conceptual process overview. Detailed process chemistry and engineering are proprietary to PRDD.
+                    Conceptual process overview. Detailed process chemistry and engineering are proprietary to CST.
                   </div>
                 </div>
               </div>
@@ -372,7 +372,7 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
                       SODIUM CARBONATE
                     </h3>
                     <p className="text-sm sm:text-base text-[#20262B] leading-relaxed">
-                      The PRDD process can convert captured CO₂ into sodium carbonate, a commercially useful chemical product.
+                      The CST process can convert captured CO₂ into sodium carbonate, a commercially useful chemical product.
                     </p>
                   </div>
                 </div>
@@ -412,7 +412,7 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
                       HYDROCHLORIC ACID
                     </h3>
                     <p className="text-sm sm:text-base text-[#20262B] leading-relaxed">
-                      Hydrochloric acid is another product identified in PRDD's CO₂ Capture &amp; Repurpose process.
+                      Hydrochloric acid is another product identified in CST's CO₂ Capture &amp; Repurpose process.
                     </p>
                   </div>
                 </div>
@@ -432,7 +432,7 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
                       Calcium Carbonate
                     </h3>
                     <p className="text-sm sm:text-base text-[#20262B] leading-relaxed">
-                      PRDD documentation also identifies calcium carbonate as a material that can be produced from sodium carbonate.
+                      CST documentation also identifies calcium carbonate as a material that can be produced from sodium carbonate.
                     </p>
                   </div>
                 </div>
@@ -478,7 +478,7 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
             <div className="space-y-8 pt-6">
               <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[#123A63]">
                 <span className="w-1.5 h-1.5 rounded-none bg-[#6D9F45]" />
-                <span>THE PRDD APPROACH</span>
+                <span>THE CST APPROACH</span>
               </div>
 
               <h2 className="font-display text-3xl sm:text-4xl font-bold tracking-tight text-[#123A63]">
@@ -488,7 +488,7 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
 
               <div className="text-base sm:text-lg text-[#20262B] leading-relaxed space-y-4 font-normal">
                 <p>
-                  PRDD's process is designed around more than capturing carbon dioxide.
+                  CST's process is designed around more than capturing carbon dioxide.
                 </p>
                 <p>
                   By converting captured CO₂ into useful products, the process approaches an emissions stream as a potential resource rather than solely as a material requiring disposal or long-term storage.
@@ -517,7 +517,7 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
                     Proprietary Process
                   </h3>
                   <p className="text-xs sm:text-sm text-[#20262B] leading-relaxed">
-                    Use PRDD's proprietary process to convert captured CO₂.
+                    Use CST's proprietary process to convert captured CO₂.
                   </p>
                 </div>
 
@@ -547,7 +547,7 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
               </h2>
 
               <p className="text-base sm:text-lg text-[#20262B] leading-relaxed">
-                PRDD's CO₂ Capture &amp; Repurpose technology is being developed for industrial applications where carbon dioxide is present in an emissions stream and where capture can be integrated with an engineered process.
+                CST's CO₂ Capture &amp; Repurpose technology is being developed for industrial applications where carbon dioxide is present in an emissions stream and where capture can be integrated with an engineered process.
               </p>
 
               {/* Understated Technical Integration Pathway */}
@@ -560,7 +560,7 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
                   <span className="text-[#2F6F9F]">→</span>
                   <span className="bg-[#F7F7F3] px-3 py-1.5 border border-[#DCE8EF]">CO₂ STREAM</span>
                   <span className="text-[#2F6F9F]">→</span>
-                  <span className="bg-[#123A63] text-white px-3 py-1.5">PRDD PROCESS</span>
+                  <span className="bg-[#123A63] text-white px-3 py-1.5">CST PROCESS</span>
                   <span className="text-[#2F6F9F]">→</span>
                   <span className="bg-[#F7F7F3] px-3 py-1.5 border border-[#6D9F45] text-[#123A63] font-semibold">PRODUCTS</span>
                 </div>
@@ -595,7 +595,7 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
 
                 <div className="text-base text-slate-300 leading-relaxed space-y-4 mb-6">
                   <p>
-                    PRDD has evaluated the application of its CO₂ Capture &amp; Repurpose technology alongside NOx capture for industrial emissions treatment.
+                    CST has evaluated the application of its CO₂ Capture &amp; Repurpose technology alongside NOx capture for industrial emissions treatment.
                   </p>
                   <p>
                     The technology documentation includes a biomass gasification application in which CO₂ capture and NOx treatment were evaluated together.
@@ -701,7 +701,7 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
                 </h3>
                 <div className="text-base text-[#20262B] leading-relaxed space-y-4">
                   <p>
-                    The PRDD CO₂ Capture &amp; Repurpose process is being developed around the conversion of captured carbon dioxide into products with potential commercial value.
+                    The CST CO₂ Capture &amp; Repurpose process is being developed around the conversion of captured carbon dioxide into products with potential commercial value.
                   </p>
                   <p>
                     This approach connects environmental treatment with resource recovery and commercialization.
@@ -719,7 +719,7 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
                   Evaluated in an Industrial Energy Application.
                 </h3>
                 <p className="text-base text-[#20262B] leading-relaxed mb-6">
-                  PRDD documentation describes an application of the CO₂ Capture &amp; Repurpose process developed in connection with a biomass gasification facility, including consideration of both CO₂ and NOx emissions treatment.
+                  CST documentation describes an application of the CO₂ Capture &amp; Repurpose process developed in connection with a biomass gasification facility, including consideration of both CO₂ and NOx emissions treatment.
                 </p>
                 <button
                   type="button"
@@ -736,7 +736,7 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
             <div className="pt-8 border-t border-[#DCE8EF]">
               <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[#123A63] mb-6">
                 <span className="w-1.5 h-1.5 rounded-none bg-[#6D9F45]" />
-                <span>RELATED PRDD TECHNOLOGIES</span>
+                <span>RELATED CST TECHNOLOGIES</span>
               </div>
               <h3 className="font-display text-2xl sm:text-3xl font-bold text-[#123A63] mb-8">
                 A Broader Environmental Technology Platform.
@@ -850,7 +850,7 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
               <div className="absolute inset-0">
                 <PrddImage
                   src={PRDD_IMAGES.approachLab}
-                  alt="PRDD engineering dialogue"
+                  alt="CST engineering dialogue"
                   className="w-full h-full object-cover object-center filter saturate-50 brightness-40"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#071B2D] via-[#071B2D]/85 to-[#071B2D]/60" />
@@ -888,7 +888,7 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
                   onClick={() => onNavigate('/contact', 'CO₂ Capture & Repurposing')}
                   className="w-full inline-flex items-center justify-center gap-2 py-3.5 px-4 bg-[#2F6F9F] hover:bg-[#123A63] text-white text-xs font-mono font-semibold uppercase tracking-wider rounded-xl transition-all duration-200 border border-white/20 cursor-pointer shadow-lg"
                 >
-                  <span>CONTACT PRDD</span>
+                  <span>CONTACT CST</span>
                   <ArrowRight className="w-3.5 h-3.5" />
                 </button>
               </div>
@@ -901,7 +901,7 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
 
       {/* ==================================================
           SECTION 15: LARGE CLOSING CTA (AERION BANNER RHYTHM)
-          Wide rounded rectangular CTA in PRDD Deep Navy / Industrial Blue
+          Wide rounded rectangular CTA in CST Deep Navy / Industrial Blue
       ================================================== */}
       <section className="px-4 sm:px-6 lg:px-8 max-w-[1440px] mx-auto py-12 sm:py-20">
         <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden bg-gradient-to-r from-[#071B2D] via-[#0b243d] to-[#123A63] border border-[#2F6F9F]/40 p-8 sm:p-14 lg:p-20 text-center shadow-2xl">
@@ -921,7 +921,7 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
             </h2>
 
             <p className="text-base sm:text-lg text-slate-300 leading-relaxed mb-8 max-w-2xl mx-auto">
-              Talk with PRDD about an industrial CO₂ stream, emissions challenge or potential application for CO₂ Capture &amp; Repurposing.
+              Talk with CST about an industrial CO₂ stream, emissions challenge or potential application for CO₂ Capture &amp; Repurposing.
             </p>
 
             <button
