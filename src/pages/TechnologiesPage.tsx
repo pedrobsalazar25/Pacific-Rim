@@ -174,7 +174,7 @@ export const TechnologiesPage: React.FC<TechnologiesPageProps> = ({ onNavigate }
                 <button
                   type="button"
                   onClick={handleScrollToTechnologies}
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 py-3.5 bg-[#123A63] border border-[#2F6F9F] hover:bg-[#2F6F9F] hover:border-white text-white text-xs font-mono font-semibold tracking-wider uppercase rounded-xl transition-all duration-200 active:scale-95 shadow-xl shadow-black/40 cursor-pointer"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 bg-gradient-to-r from-[#0084CD] to-[#123A63] border border-[#009EE3]/40 hover:from-[#009EE3] hover:to-[#0084CD] text-white text-xs font-sans font-bold tracking-wider uppercase rounded-full transition-all duration-300 active:scale-95 shadow-xl shadow-[#0084CD]/20 hover:shadow-2xl hover:-translate-y-0.5 cursor-pointer"
                 >
                   <span>EXPLORE TECHNOLOGIES</span>
                   <ArrowDown className="w-4 h-4 text-[#89B3D3]" />
@@ -183,7 +183,7 @@ export const TechnologiesPage: React.FC<TechnologiesPageProps> = ({ onNavigate }
                 <button
                   type="button"
                   onClick={() => onNavigate('/contact', 'Technology Inquiries')}
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3.5 bg-black/40 backdrop-blur-md border border-white/20 hover:border-white text-slate-200 hover:text-white text-xs font-mono uppercase tracking-wider rounded-xl transition-colors cursor-pointer"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 bg-[#0c263f]/80 backdrop-blur-md border border-white/20 hover:border-[#0084CD] text-slate-200 hover:text-white text-xs font-sans font-semibold uppercase tracking-wider rounded-full transition-all duration-300 hover:-translate-y-0.5 cursor-pointer"
                 >
                   <span>DISCUSS YOUR APPLICATION</span>
                   <ArrowRight className="w-3.5 h-3.5 text-[#6D9F45]" />
@@ -325,7 +325,7 @@ export const TechnologiesPage: React.FC<TechnologiesPageProps> = ({ onNavigate }
                       <button
                         type="button"
                         onClick={() => onNavigate(tech.route)}
-                        className="inline-flex items-center gap-2.5 px-6 py-3.5 bg-[#123A63] border border-[#2F6F9F] hover:bg-[#2F6F9F] hover:border-white text-white text-xs font-mono font-semibold tracking-wider uppercase rounded-xl transition-all duration-200 active:scale-95 shadow-md shadow-black/10 cursor-pointer"
+                        className="inline-flex items-center gap-2.5 px-7 py-3.5 bg-gradient-to-r from-[#0084CD] to-[#123A63] border border-[#009EE3]/40 hover:from-[#009EE3] hover:to-[#0084CD] text-white text-xs font-sans font-bold tracking-wider uppercase rounded-full transition-all duration-300 active:scale-95 shadow-lg hover:shadow-xl hover:-translate-y-0.5 cursor-pointer"
                       >
                         <span>{tech.cta}</span>
                       </button>
@@ -588,15 +588,15 @@ export const TechnologiesPage: React.FC<TechnologiesPageProps> = ({ onNavigate }
                 CORE TECHNICAL PHILOSOPHY
               </div>
               <div className="flex flex-wrap items-center gap-2 sm:gap-4 font-mono text-sm sm:text-base font-bold text-[#123A63]">
-                <span className="px-3.5 py-1.5 bg-[#F7F7F3] border border-[#DCE8EF] rounded-lg">CAPTURE</span>
+                <span className="px-4 py-1.5 bg-[#F7F7F3] border border-[#DCE8EF] rounded-full">CAPTURE</span>
                 <span className="text-[#2F6F9F]">·</span>
-                <span className="px-3.5 py-1.5 bg-[#F7F7F3] border border-[#DCE8EF] rounded-lg">TREAT</span>
+                <span className="px-4 py-1.5 bg-[#F7F7F3] border border-[#DCE8EF] rounded-full">TREAT</span>
                 <span className="text-[#2F6F9F]">·</span>
-                <span className="px-3.5 py-1.5 bg-[#F7F7F3] border border-[#DCE8EF] rounded-lg">CONVERT</span>
+                <span className="px-4 py-1.5 bg-[#F7F7F3] border border-[#DCE8EF] rounded-full">CONVERT</span>
                 <span className="text-[#2F6F9F]">·</span>
-                <span className="px-3.5 py-1.5 bg-[#F7F7F3] border border-[#DCE8EF] rounded-lg">RECOVER</span>
+                <span className="px-4 py-1.5 bg-[#F7F7F3] border border-[#DCE8EF] rounded-full">RECOVER</span>
                 <span className="text-[#2F6F9F]">·</span>
-                <span className="px-3.5 py-1.5 bg-[#123A63] text-white rounded-lg">REPURPOSE</span>
+                <span className="px-4 py-1.5 bg-gradient-to-r from-[#0084CD] to-[#123A63] text-white rounded-full shadow-sm">REPURPOSE</span>
               </div>
             </div>
           </div>
@@ -634,10 +634,12 @@ export const TechnologiesPage: React.FC<TechnologiesPageProps> = ({ onNavigate }
                 <button
                   type="button"
                   onClick={() => onNavigate('/about/robert-richardson')}
-                  className="inline-flex items-center gap-2.5 px-6 py-3.5 bg-[#123A63] border border-[#2F6F9F] hover:bg-[#2F6F9F] hover:border-white text-white text-xs font-mono font-semibold tracking-wider uppercase rounded-xl transition-colors cursor-pointer shadow-sm"
+                  className="inline-flex items-center gap-3 px-7 py-3.5 bg-gradient-to-r from-[#0084CD] to-[#123A63] border border-[#009EE3]/40 hover:from-[#009EE3] hover:to-[#0084CD] text-white text-xs font-sans font-bold tracking-wider uppercase rounded-full transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5 cursor-pointer shadow-md"
                 >
                   <span>MEET DR. ROBERT RICHARDSON</span>
-                  <ArrowRight className="w-4 h-4 text-[#6D9F45]" />
+                  <span className="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center -mr-1">
+                    <ArrowRight className="w-3.5 h-3.5 text-white" />
+                  </span>
                 </button>
               </div>
             </div>
@@ -802,10 +804,10 @@ export const TechnologiesPage: React.FC<TechnologiesPageProps> = ({ onNavigate }
             <button
               type="button"
               onClick={() => onNavigate('/projects')}
-              className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-[#123A63] hover:text-[#2F6F9F] font-semibold transition-colors cursor-pointer"
+              className="inline-flex items-center gap-2 px-6 py-2.5 bg-white border border-[#DCE8EF] hover:border-[#0084CD] text-xs font-sans uppercase tracking-wider text-[#123A63] hover:text-[#0084CD] font-bold rounded-full transition-all duration-200 shadow-sm hover:shadow-md cursor-pointer"
             >
-              <span>VIEW PROJECT EXPERIENCE</span>
-              <ArrowRight className="w-4 h-4 text-[#2F6F9F]" />
+              <span>VIEW ALL PROJECTS</span>
+              <ArrowRight className="w-3.5 h-3.5 text-[#0084CD]" />
             </button>
           </div>
         </div>
@@ -816,7 +818,7 @@ export const TechnologiesPage: React.FC<TechnologiesPageProps> = ({ onNavigate }
           Compact, clean navigational section before final CTA
       ================================================== */}
       <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-[1440px] mx-auto border-t border-[#DCE8EF]">
-        <div className="bg-[#071B2D] text-white rounded-2xl sm:rounded-3xl p-8 sm:p-10 lg:p-12 border border-[#2F6F9F]/30 shadow-xl">
+        <div className="bg-[#071B2D] text-white rounded-3xl p-8 sm:p-10 lg:p-12 border border-[#2F6F9F]/30 shadow-xl">
           <div className="max-w-2xl mb-8">
             <div className="text-[10px] font-mono uppercase tracking-widest text-[#89B3D3] mb-2">
               NAVIGATION PORTAL
@@ -830,76 +832,84 @@ export const TechnologiesPage: React.FC<TechnologiesPageProps> = ({ onNavigate }
             {/* Route 1 */}
             <div
               onClick={() => onNavigate('/technologies/co2-capture')}
-              className="p-5 bg-[#0c263f] border border-[#2F6F9F]/40 rounded-xl hover:border-white transition-all cursor-pointer group flex flex-col justify-between"
+              className="p-6 bg-[#0c263f] border border-[#2F6F9F]/40 hover:border-[#0084CD] rounded-2xl transition-all cursor-pointer group flex flex-col justify-between shadow-md hover:shadow-xl hover:-translate-y-1"
             >
               <div>
                 <div className="text-[10px] font-mono uppercase tracking-wider text-[#89B3D3] mb-1">
                   CARBON DIOXIDE
                 </div>
-                <div className="font-display text-base font-bold text-white group-hover:text-[#89B3D3] transition-colors">
+                <div className="font-display text-base font-bold text-white group-hover:text-[#38BDF8] transition-colors">
                   CO₂ Capture &amp; Repurposing
                 </div>
               </div>
-              <div className="mt-4 flex items-center gap-1.5 text-xs font-mono text-slate-300 group-hover:text-white pt-2 border-t border-white/10">
+              <div className="mt-4 flex items-center justify-between text-xs font-mono text-slate-300 group-hover:text-white pt-2 border-t border-white/10">
                 <span>Explore Detail</span>
-                <ArrowRight className="w-3.5 h-3.5 text-[#6D9F45]" />
+                <span className="w-6 h-6 rounded-full bg-[#123A63] group-hover:bg-[#0084CD] flex items-center justify-center transition-colors">
+                  <ArrowRight className="w-3 h-3 text-white" />
+                </span>
               </div>
             </div>
 
             {/* Route 2 */}
             <div
               onClick={() => onNavigate('/technologies/nox-sox')}
-              className="p-5 bg-[#0c263f] border border-[#2F6F9F]/40 rounded-xl hover:border-white transition-all cursor-pointer group flex flex-col justify-between"
+              className="p-6 bg-[#0c263f] border border-[#2F6F9F]/40 hover:border-[#0084CD] rounded-2xl transition-all cursor-pointer group flex flex-col justify-between shadow-md hover:shadow-xl hover:-translate-y-1"
             >
               <div>
                 <div className="text-[10px] font-mono uppercase tracking-wider text-[#89B3D3] mb-1">
                   AIR EMISSIONS
                 </div>
-                <div className="font-display text-base font-bold text-white group-hover:text-[#89B3D3] transition-colors">
+                <div className="font-display text-base font-bold text-white group-hover:text-[#38BDF8] transition-colors">
                   NOx &amp; SOx Abatement
                 </div>
               </div>
-              <div className="mt-4 flex items-center gap-1.5 text-xs font-mono text-slate-300 group-hover:text-white pt-2 border-t border-white/10">
+              <div className="mt-4 flex items-center justify-between text-xs font-mono text-slate-300 group-hover:text-white pt-2 border-t border-white/10">
                 <span>Explore Detail</span>
-                <ArrowRight className="w-3.5 h-3.5 text-[#6D9F45]" />
+                <span className="w-6 h-6 rounded-full bg-[#123A63] group-hover:bg-[#0084CD] flex items-center justify-center transition-colors">
+                  <ArrowRight className="w-3 h-3 text-white" />
+                </span>
               </div>
             </div>
 
             {/* Route 3 */}
             <div
               onClick={() => onNavigate('/technologies/water-treatment')}
-              className="p-5 bg-[#0c263f] border border-[#2F6F9F]/40 rounded-xl hover:border-white transition-all cursor-pointer group flex flex-col justify-between"
+              className="p-6 bg-[#0c263f] border border-[#2F6F9F]/40 hover:border-[#0084CD] rounded-2xl transition-all cursor-pointer group flex flex-col justify-between shadow-md hover:shadow-xl hover:-translate-y-1"
             >
               <div>
                 <div className="text-[10px] font-mono uppercase tracking-wider text-[#89B3D3] mb-1">
                   WATER
                 </div>
-                <div className="font-display text-base font-bold text-white group-hover:text-[#89B3D3] transition-colors">
+                <div className="font-display text-base font-bold text-white group-hover:text-[#38BDF8] transition-colors">
                   Advanced Water Treatment
                 </div>
               </div>
-              <div className="mt-4 flex items-center gap-1.5 text-xs font-mono text-slate-300 group-hover:text-white pt-2 border-t border-white/10">
+              <div className="mt-4 flex items-center justify-between text-xs font-mono text-slate-300 group-hover:text-white pt-2 border-t border-white/10">
                 <span>Explore Detail</span>
-                <ArrowRight className="w-3.5 h-3.5 text-[#6D9F45]" />
+                <span className="w-6 h-6 rounded-full bg-[#123A63] group-hover:bg-[#0084CD] flex items-center justify-center transition-colors">
+                  <ArrowRight className="w-3 h-3 text-white" />
+                </span>
               </div>
             </div>
 
             {/* Route 4 */}
             <div
               onClick={() => onNavigate('/technologies/advanced-materials')}
-              className="p-5 bg-[#0c263f] border border-[#2F6F9F]/40 rounded-xl hover:border-white transition-all cursor-pointer group flex flex-col justify-between"
+              className="p-6 bg-[#0c263f] border border-[#2F6F9F]/40 hover:border-[#0084CD] rounded-2xl transition-all cursor-pointer group flex flex-col justify-between shadow-md hover:shadow-xl hover:-translate-y-1"
             >
               <div>
                 <div className="text-[10px] font-mono uppercase tracking-wider text-[#89B3D3] mb-1">
                   MATERIALS
                 </div>
-                <div className="font-display text-base font-bold text-white group-hover:text-[#89B3D3] transition-colors">
+                <div className="font-display text-base font-bold text-white group-hover:text-[#38BDF8] transition-colors">
                   Advanced Materials
                 </div>
               </div>
-              <div className="mt-4 flex items-center gap-1.5 text-xs font-mono text-slate-300 group-hover:text-white pt-2 border-t border-white/10">
+              <div className="mt-4 flex items-center justify-between text-xs font-mono text-slate-300 group-hover:text-white pt-2 border-t border-white/10">
                 <span>Explore Detail</span>
-                <ArrowRight className="w-3.5 h-3.5 text-[#6D9F45]" />
+                <span className="w-6 h-6 rounded-full bg-[#123A63] group-hover:bg-[#0084CD] flex items-center justify-center transition-colors">
+                  <ArrowRight className="w-3 h-3 text-white" />
+                </span>
               </div>
             </div>
           </div>
@@ -910,7 +920,7 @@ export const TechnologiesPage: React.FC<TechnologiesPageProps> = ({ onNavigate }
           SECTION 11: FINAL CTA
       ================================================== */}
       <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-[1440px] mx-auto">
-        <div className="rounded-2xl sm:rounded-3xl border border-[#2F6F9F]/30 bg-[#071B2D] text-white p-8 sm:p-12 lg:p-16 shadow-2xl relative overflow-hidden">
+        <div className="rounded-3xl border border-[#2F6F9F]/30 bg-[#071B2D] text-white p-8 sm:p-12 lg:p-16 shadow-2xl relative overflow-hidden">
           <div className="absolute inset-0">
             <PrddImage
               src={PRDD_IMAGES.finalCta}
@@ -941,10 +951,12 @@ export const TechnologiesPage: React.FC<TechnologiesPageProps> = ({ onNavigate }
               <button
                 type="button"
                 onClick={() => onNavigate('/contact', 'Technology Inquiries')}
-                className="inline-flex items-center gap-2.5 px-8 py-4 bg-[#123A63] border border-[#2F6F9F] hover:bg-[#2F6F9F] hover:border-white text-white text-xs font-mono font-semibold tracking-wider uppercase rounded-xl transition-all duration-200 active:scale-95 shadow-xl shadow-black/40 cursor-pointer"
+                className="inline-flex items-center gap-3 px-9 py-4 bg-gradient-to-r from-[#0084CD] to-[#123A63] border border-[#009EE3]/40 hover:from-[#009EE3] hover:to-[#0084CD] text-white text-xs font-sans font-bold tracking-wider uppercase rounded-full transition-all duration-300 active:scale-95 shadow-xl shadow-[#0084CD]/25 hover:shadow-2xl hover:-translate-y-0.5 cursor-pointer"
               >
                 <span>DISCUSS YOUR APPLICATION</span>
-                <ArrowRight className="w-4 h-4 text-[#6D9F45]" />
+                <span className="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center -mr-1">
+                  <ArrowRight className="w-3.5 h-3.5 text-white" />
+                </span>
               </button>
             </div>
 

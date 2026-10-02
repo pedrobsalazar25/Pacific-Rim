@@ -91,7 +91,7 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
           SECTION 1: HERO — ARCHITECTURAL EDITORIAL OPENING
       ================================================== */}
       <section className="pt-28 sm:pt-32 pb-8 sm:pb-12 px-4 sm:px-6 lg:px-8 max-w-[1440px] mx-auto">
-        <div className="relative overflow-hidden min-h-[560px] sm:min-h-[640px] lg:min-h-[700px] flex flex-col justify-between p-6 sm:p-10 lg:p-16 shadow-2xl border border-[#2F6F9F]/30">
+        <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden min-h-[560px] sm:min-h-[640px] lg:min-h-[700px] flex flex-col justify-between p-6 sm:p-10 lg:p-16 shadow-2xl border border-[#2F6F9F]/30">
           {/* Photographic Background with Deep Navy Industrial Gradient Overlay */}
           <div className="absolute inset-0 bg-[#071B2D]">
             <PrddImage
@@ -112,7 +112,7 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
               <Breadcrumbs items={breadcrumbs} className="text-white/80" />
             </div>
             <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#123A63]/80 border border-[#2F6F9F]/60 text-xs font-mono tracking-widest text-[#DCE8EF] uppercase backdrop-blur-sm">
-              <span className="w-1.5 h-1.5 rounded-none bg-[#6D9F45]" />
+              <span className="w-1.5 h-1.5 rounded-full bg-[#6D9F45] shadow-[0_0_6px_#6D9F45]" />
               <span>CO₂ CAPTURE &amp; REPURPOSING</span>
             </div>
           </div>
@@ -171,7 +171,7 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
           <div className="lg:col-span-8 space-y-16 sm:space-y-24">
             
             {/* Supporting Image A: Large Top Process Facility Visual */}
-            <div className="overflow-hidden border border-[#DCE8EF] shadow-md bg-[#071B2D] relative group">
+            <div className="rounded-2xl sm:rounded-3xl overflow-hidden border border-[#DCE8EF] shadow-md bg-[#071B2D] relative group">
               <div className="aspect-[16/9] w-full overflow-hidden relative">
                 <PrddImage
                   src={PRDD_IMAGES.co2Capture}
@@ -182,7 +182,7 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
               </div>
               <div className="p-4 sm:p-5 bg-white border-t border-[#DCE8EF] flex items-center justify-between text-xs font-mono text-[#20262B]">
                 <span className="flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-none bg-[#6D9F45]" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#6D9F45] shadow-[0_0_6px_#6D9F45]" />
                   <span className="font-semibold text-[#123A63]">INDUSTRIAL CO₂ SOURCE / PROCESSING FACILITY</span>
                 </span>
                 <span className="text-slate-500">[ PROCESS CONTEXT ]</span>
@@ -192,7 +192,7 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
             {/* Introduction Article Section */}
             <div className="space-y-6">
               <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[#123A63]">
-                <span className="w-1.5 h-1.5 rounded-none bg-[#6D9F45]" />
+                <span className="w-1.5 h-1.5 rounded-full bg-[#6D9F45] shadow-[0_0_6px_#6D9F45]" />
                 <span>A DIFFERENT APPROACH TO CARBON CAPTURE</span>
               </div>
 
@@ -214,7 +214,7 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
               </div>
 
               {/* Large Technical Highlight Statement */}
-              <div className="my-8 p-6 sm:p-8 bg-white border border-[#DCE8EF] shadow-sm">
+              <div className="my-8 p-6 sm:p-8 bg-white border border-[#DCE8EF] rounded-2xl shadow-sm">
                 <div className="text-[11px] font-mono uppercase tracking-widest text-[#2F6F9F] mb-3">
                   CORE TECHNICAL PHILOSOPHY
                 </div>
@@ -229,13 +229,13 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
             </div>
 
             {/* Large Process Visualization (Signature Element) */}
-            <div id="process-overview" className="border border-[#2F6F9F]/40 bg-[#071B2D] text-white p-6 sm:p-10 lg:p-12 shadow-xl relative overflow-hidden">
+            <div id="process-overview" className="border border-[#2F6F9F]/40 bg-[#071B2D] text-white p-6 sm:p-10 lg:p-12 rounded-2xl sm:rounded-3xl shadow-xl relative overflow-hidden">
               <div className="absolute inset-0 tech-grid-pattern opacity-15 pointer-events-none" />
 
               <div className="relative">
                 <div className="max-w-2xl mb-8">
                   <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[#89B3D3] mb-2">
-                    <span className="w-1.5 h-1.5 rounded-none bg-[#6D9F45]" />
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#6D9F45] shadow-[0_0_6px_#6D9F45]" />
                     <span>PROCESS OVERVIEW</span>
                   </div>
                   <h3 className="font-display text-2xl sm:text-3xl font-bold text-white tracking-tight">
@@ -246,7 +246,7 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
                 {/* Conceptual Process Architecture Flow */}
                 <div className="space-y-4 max-w-2xl mx-auto my-8">
                   {/* Step 1: Industrial Source */}
-                  <div className="bg-[#0b243d] border border-[#2F6F9F]/40 p-5 text-center shadow-md">
+                  <div className="bg-[#0b243d] border border-[#2F6F9F]/40 p-5 text-center rounded-2xl shadow-md">
                     <div className="text-[10px] font-mono uppercase tracking-widest text-[#89B3D3] mb-1">
                       STAGE 01 · INPUT STREAM
                     </div>
@@ -262,9 +262,9 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
                   </div>
 
                   {/* Step 2: CST Process */}
-                  <div className="bg-[#103252] border border-[#2F6F9F] p-6 text-center shadow-xl shadow-[#071B2D]">
+                  <div className="bg-[#103252] border border-[#2F6F9F] p-6 text-center rounded-2xl shadow-xl shadow-[#071B2D]">
                     <div className="inline-flex items-center gap-1.5 text-[10px] font-mono uppercase tracking-widest text-[#89B3D3] mb-1.5">
-                      <span className="w-1.5 h-1.5 rounded-none bg-[#6D9F45]" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#6D9F45] shadow-[0_0_6px_#6D9F45]" />
                       <span>STAGE 02 · CST PROCESS ARCHITECTURE</span>
                     </div>
                     <div className="font-display text-base sm:text-lg font-bold text-white tracking-wide">
@@ -279,7 +279,7 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
                   </div>
 
                   {/* Step 3: Useful Products Header */}
-                  <div className="bg-[#0b243d] border border-[#2F6F9F]/40 p-4 text-center">
+                  <div className="bg-[#0b243d] border border-[#2F6F9F]/40 p-4 text-center rounded-2xl">
                     <div className="text-[10px] font-mono uppercase tracking-widest text-[#89B3D3] mb-0.5">
                       STAGE 03 · OUTPUT RECOVERY
                     </div>
@@ -292,7 +292,7 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
                 {/* Three Verified Branching Outputs */}
                 <div className="mt-8 pt-8 border-t border-[#2F6F9F]/30">
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                    <div className="bg-[#0c263f] border border-[#2F6F9F]/40 p-5 shadow-sm">
+                    <div className="bg-[#0c263f] border border-[#2F6F9F]/40 p-5 rounded-2xl shadow-sm">
                       <div className="text-[10px] font-mono uppercase text-[#89B3D3] mb-1">
                         OUTPUT 01
                       </div>
@@ -304,7 +304,7 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
                       </div>
                     </div>
 
-                    <div className="bg-[#0c263f] border border-[#2F6F9F]/40 p-5 shadow-sm">
+                    <div className="bg-[#0c263f] border border-[#2F6F9F]/40 p-5 rounded-2xl shadow-sm">
                       <div className="text-[10px] font-mono uppercase text-[#89B3D3] mb-1">
                         OUTPUT 02
                       </div>
@@ -316,7 +316,7 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
                       </div>
                     </div>
 
-                    <div className="bg-[#0c263f] border border-[#2F6F9F]/40 p-5 shadow-sm">
+                    <div className="bg-[#0c263f] border border-[#2F6F9F]/40 p-5 rounded-2xl shadow-sm">
                       <div className="text-[10px] font-mono uppercase text-[#89B3D3] mb-1">
                         OUTPUT 03
                       </div>
@@ -331,7 +331,7 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
 
                   {/* Secondary Note: Calcium Carbonate */}
                   <div className="mt-5 p-4 bg-[#123A63]/40 border border-[#2F6F9F]/40 text-xs font-mono text-[#DCE8EF] flex items-center gap-2.5">
-                    <span className="w-1.5 h-1.5 rounded-none bg-[#6D9F45] shrink-0" />
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#6D9F45] shadow-[0_0_6px_#6D9F45] shrink-0" />
                     <span>
                       ADDITIONAL MATERIAL PATHWAY: Calcium carbonate (CaCO₃) can also be produced from sodium carbonate.
                     </span>
@@ -442,7 +442,7 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
             {/* Supporting Imagery Pair (Like Aerion's Two-Image Spread) */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {/* Supporting Image B */}
-              <div className="overflow-hidden border border-[#DCE8EF] bg-[#071B2D] shadow-md group">
+              <div className="rounded-2xl overflow-hidden border border-[#DCE8EF] bg-[#071B2D] shadow-md group">
                 <div className="aspect-[4/3] w-full overflow-hidden relative">
                   <PrddImage
                     src={PRDD_IMAGES.approachLab}
@@ -458,7 +458,7 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
               </div>
 
               {/* Supporting Image C */}
-              <div className="overflow-hidden border border-[#DCE8EF] bg-[#071B2D] shadow-md group">
+              <div className="rounded-2xl overflow-hidden border border-[#DCE8EF] bg-[#071B2D] shadow-md group">
                 <div className="aspect-[4/3] w-full overflow-hidden relative">
                   <PrddImage
                     src={PRDD_IMAGES.advancedMaterials}
@@ -477,7 +477,7 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
             {/* Why Repurpose CO₂? (Integrated Editorial Flow) */}
             <div className="space-y-8 pt-6">
               <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[#123A63]">
-                <span className="w-1.5 h-1.5 rounded-none bg-[#6D9F45]" />
+                <span className="w-1.5 h-1.5 rounded-full bg-[#6D9F45] shadow-[0_0_6px_#6D9F45]" />
                 <span>THE CST APPROACH</span>
               </div>
 
@@ -497,7 +497,7 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
 
               {/* Three Conceptual Pillars (Connected Linework) */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
-                <div className="p-6 bg-white border border-[#DCE8EF] shadow-sm relative">
+                <div className="p-6 bg-white border border-[#DCE8EF] rounded-2xl shadow-sm relative">
                   <div className="text-xs font-mono font-bold text-[#123A63] uppercase mb-2">
                     01 · CAPTURE
                   </div>
@@ -509,7 +509,7 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
                   </p>
                 </div>
 
-                <div className="p-6 bg-white border border-[#DCE8EF] shadow-sm relative">
+                <div className="p-6 bg-white border border-[#DCE8EF] rounded-2xl shadow-sm relative">
                   <div className="text-xs font-mono font-bold text-[#123A63] uppercase mb-2">
                     02 · CONVERT
                   </div>
@@ -521,7 +521,7 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
                   </p>
                 </div>
 
-                <div className="p-6 bg-white border border-[#DCE8EF] shadow-sm relative">
+                <div className="p-6 bg-white border border-[#DCE8EF] rounded-2xl shadow-sm relative">
                   <div className="text-xs font-mono font-bold text-[#6D9F45] uppercase mb-2">
                     03 · REPURPOSE
                   </div>
@@ -538,7 +538,7 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
             {/* Application Context & CO₂ + NOx Integration */}
             <div className="space-y-8 pt-6">
               <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[#123A63]">
-                <span className="w-1.5 h-1.5 rounded-none bg-[#6D9F45]" />
+                <span className="w-1.5 h-1.5 rounded-full bg-[#6D9F45] shadow-[0_0_6px_#6D9F45]" />
                 <span>INDUSTRIAL APPLICATION</span>
               </div>
 
@@ -551,7 +551,7 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
               </p>
 
               {/* Understated Technical Integration Pathway */}
-              <div className="p-6 bg-white border border-[#DCE8EF] shadow-sm">
+              <div className="p-6 bg-white border border-[#DCE8EF] rounded-2xl shadow-sm">
                 <div className="text-[11px] font-mono uppercase tracking-widest text-slate-500 mb-3">
                   INTEGRATION PATHWAY
                 </div>
@@ -567,7 +567,7 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
               </div>
 
               {/* Supporting Image D: Industrial emissions/process environment */}
-              <div className="overflow-hidden border border-[#DCE8EF] bg-[#071B2D] shadow-md group">
+              <div className="rounded-2xl overflow-hidden border border-[#DCE8EF] bg-[#071B2D] shadow-md group">
                 <div className="aspect-[16/9] w-full overflow-hidden relative">
                   <PrddImage
                     src={PRDD_IMAGES.finalCta}
@@ -583,9 +583,9 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
               </div>
 
               {/* CO₂ + NOx Integration Block */}
-              <div className="p-8 bg-[#071B2D] text-white border border-[#2F6F9F]/30 shadow-lg">
+              <div className="p-8 bg-[#071B2D] text-white border border-[#2F6F9F]/30 rounded-2xl sm:rounded-3xl shadow-lg">
                 <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[#89B3D3] mb-3">
-                  <span className="w-1.5 h-1.5 rounded-none bg-[#6D9F45]" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#6D9F45] shadow-[0_0_6px_#6D9F45]" />
                   <span>INTEGRATED EMISSIONS CONTROL</span>
                 </div>
 
@@ -616,7 +616,7 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
             {/* Implementation Path (Clean Numerical Sequence inspired by Aerion stats) */}
             <div className="space-y-8 pt-6">
               <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[#123A63]">
-                <span className="w-1.5 h-1.5 rounded-none bg-[#6D9F45]" />
+                <span className="w-1.5 h-1.5 rounded-full bg-[#6D9F45] shadow-[0_0_6px_#6D9F45]" />
                 <span>FROM TECHNOLOGY TO IMPLEMENTATION</span>
               </div>
 
@@ -691,9 +691,9 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
             {/* Commercialization + Development Experience */}
             <div className="space-y-10 pt-6">
               {/* Commercialization */}
-              <div className="p-8 bg-white border border-[#DCE8EF] shadow-sm">
+              <div className="p-8 bg-white border border-[#DCE8EF] rounded-2xl sm:rounded-3xl shadow-sm">
                 <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[#123A63] mb-3">
-                  <span className="w-1.5 h-1.5 rounded-none bg-[#6D9F45]" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#6D9F45] shadow-[0_0_6px_#6D9F45]" />
                   <span>COMMERCIALIZATION</span>
                 </div>
                 <h3 className="font-display text-2xl sm:text-3xl font-bold text-[#123A63] mb-4">
@@ -710,9 +710,9 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
               </div>
 
               {/* Development Experience */}
-              <div className="p-8 bg-white border border-[#DCE8EF] shadow-sm">
+              <div className="p-8 bg-white border border-[#DCE8EF] rounded-2xl sm:rounded-3xl shadow-sm">
                 <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[#123A63] mb-3">
-                  <span className="w-1.5 h-1.5 rounded-none bg-[#6D9F45]" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#6D9F45] shadow-[0_0_6px_#6D9F45]" />
                   <span>DEVELOPMENT EXPERIENCE</span>
                 </div>
                 <h3 className="font-display text-2xl sm:text-3xl font-bold text-[#123A63] mb-4">
@@ -735,7 +735,7 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
             {/* Related Technologies (Understated) */}
             <div className="pt-8 border-t border-[#DCE8EF]">
               <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[#123A63] mb-6">
-                <span className="w-1.5 h-1.5 rounded-none bg-[#6D9F45]" />
+                <span className="w-1.5 h-1.5 rounded-full bg-[#6D9F45] shadow-[0_0_6px_#6D9F45]" />
                 <span>RELATED CST TECHNOLOGIES</span>
               </div>
               <h3 className="font-display text-2xl sm:text-3xl font-bold text-[#123A63] mb-8">
@@ -747,7 +747,7 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
                   <div
                     key={idx}
                     onClick={() => onNavigate(item.route)}
-                    className="p-6 bg-white border border-[#DCE8EF] shadow-sm hover:border-[#2F6F9F] transition-all cursor-pointer group flex flex-col justify-between"
+                    className="p-6 bg-white border border-[#DCE8EF] rounded-2xl shadow-sm hover:border-[#0084CD] hover:shadow-xl hover:-translate-y-1 transition-all cursor-pointer group flex flex-col justify-between"
                   >
                     <div>
                       <div className="text-[11px] font-mono text-[#2F6F9F] uppercase mb-2">
@@ -886,7 +886,7 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
                 <button
                   type="button"
                   onClick={() => onNavigate('/contact', 'CO₂ Capture & Repurposing')}
-                  className="w-full inline-flex items-center justify-center gap-2 py-3.5 px-4 bg-[#2F6F9F] hover:bg-[#123A63] text-white text-xs font-mono font-semibold uppercase tracking-wider rounded-xl transition-all duration-200 border border-white/20 cursor-pointer shadow-lg"
+                  className="w-full inline-flex items-center justify-center gap-2 py-3.5 px-6 bg-gradient-to-r from-[#0084CD] to-[#123A63] hover:from-[#009EE3] hover:to-[#0084CD] text-white text-xs font-sans font-bold uppercase tracking-wider rounded-full transition-all duration-300 border border-[#009EE3]/40 cursor-pointer shadow-lg hover:shadow-xl hover:-translate-y-0.5"
                 >
                   <span>CONTACT CST</span>
                   <ArrowRight className="w-3.5 h-3.5" />
@@ -927,7 +927,7 @@ export const CO2CapturePage: React.FC<CO2CapturePageProps> = ({ onNavigate }) =>
             <button
               type="button"
               onClick={() => onNavigate('/contact', 'CO₂ Capture & Repurposing')}
-              className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-[#2F6F9F] hover:bg-[#123A63] text-white text-xs font-mono font-semibold tracking-wider uppercase rounded-xl transition-all duration-200 active:scale-95 shadow-xl border border-white/20 cursor-pointer"
+              className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-[#0084CD] to-[#123A63] hover:from-[#009EE3] hover:to-[#0084CD] text-white text-xs font-sans font-bold tracking-wider uppercase rounded-full transition-all duration-300 active:scale-95 shadow-xl border border-[#009EE3]/40 cursor-pointer hover:shadow-2xl hover:-translate-y-0.5"
             >
               <span>DISCUSS YOUR PROJECT</span>
               <ArrowRight className="w-4 h-4 text-[#6D9F45]" />

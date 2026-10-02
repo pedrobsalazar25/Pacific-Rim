@@ -69,7 +69,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
           SECTION 2: HERO — EDITORIAL COMPANY OPENING
       ================================================== */}
       <section className="pt-28 sm:pt-32 pb-8 sm:pb-12 px-4 sm:px-6 lg:px-8 max-w-[1440px] mx-auto">
-        <div className="relative overflow-hidden min-h-[560px] sm:min-h-[640px] lg:min-h-[700px] flex flex-col justify-between p-6 sm:p-10 lg:p-16 shadow-2xl border border-[#2F6F9F]/30">
+        <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden min-h-[560px] sm:min-h-[640px] lg:min-h-[700px] flex flex-col justify-between p-6 sm:p-10 lg:p-16 shadow-2xl border border-[#2F6F9F]/30">
           {/* Photographic Background with Deep Navy Scrim */}
           <div className="absolute inset-0 bg-[#071B2D]">
             <PrddImage
@@ -116,7 +116,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                 <button
                   type="button"
                   onClick={handleScrollToOverview}
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-[#123A63] border border-[#2F6F9F] hover:bg-[#2F6F9F] hover:border-[#DCE8EF] text-white text-xs font-mono font-semibold tracking-wider uppercase transition-all duration-200 active:scale-95 shadow-xl shadow-black/40 cursor-pointer"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 bg-gradient-to-r from-[#0084CD] to-[#123A63] border border-[#009EE3]/40 hover:from-[#009EE3] hover:to-[#0084CD] text-white text-xs font-sans font-bold tracking-wider uppercase rounded-full transition-all duration-300 active:scale-95 shadow-xl shadow-[#0084CD]/20 hover:shadow-2xl hover:-translate-y-0.5 cursor-pointer"
                 >
                   <span>EXPLORE CST</span>
                   <ArrowDown className="w-4 h-4 text-[#89B3D3]" />
@@ -125,7 +125,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                 <button
                   type="button"
                   onClick={() => onNavigate('/contact', 'General Inquiry')}
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-5 py-3.5 bg-black/40 backdrop-blur-md border border-white/20 hover:border-white text-slate-200 hover:text-white text-xs font-mono uppercase tracking-wider transition-colors cursor-pointer"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 bg-[#0c263f]/80 backdrop-blur-md border border-white/20 hover:border-[#0084CD] text-slate-200 hover:text-white text-xs font-sans font-semibold uppercase tracking-wider rounded-full transition-all duration-300 hover:-translate-y-0.5 cursor-pointer"
                 >
                   <span>DISCUSS YOUR CHALLENGE</span>
                   <ArrowRight className="w-3.5 h-3.5 text-[#6D9F45]" />
@@ -170,7 +170,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
             </div>
 
             {/* Highlight Statement */}
-            <div className="my-8 p-6 sm:p-8 bg-white border border-[#DCE8EF] shadow-sm">
+            <div className="my-8 p-6 sm:p-8 bg-white border border-[#DCE8EF] rounded-2xl shadow-sm">
               <div className="text-[11px] font-mono uppercase tracking-widest text-[#2F6F9F] mb-3">
                 INTEGRATED APPROACH
               </div>
@@ -186,7 +186,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
             </div>
 
             {/* Supporting Image Card */}
-            <div className="overflow-hidden border border-[#DCE8EF] shadow-md bg-[#071B2D] relative group">
+            <div className="rounded-2xl sm:rounded-3xl overflow-hidden border border-[#DCE8EF] shadow-md bg-[#071B2D] relative group">
               <div className="aspect-[16/9] w-full overflow-hidden relative">
                 <PrddImage
                   src={PRDD_IMAGES.approachLab}
@@ -207,7 +207,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
 
           {/* Right Column: Company Information Sidebar (Section 4) */}
           <div className="lg:col-span-4 space-y-6 lg:sticky lg:top-28">
-            <div className="bg-white border border-[#DCE8EF] p-6 sm:p-8 shadow-sm">
+            <div className="bg-white border border-[#DCE8EF] p-6 sm:p-8 rounded-2xl sm:rounded-3xl shadow-sm">
               <div className="font-display text-base sm:text-lg font-bold text-[#123A63] mb-6 pb-4 border-b border-[#DCE8EF] flex items-center justify-between">
                 <span>Company Information</span>
                 <Building2 className="w-4 h-4 text-[#2F6F9F]" />
@@ -374,7 +374,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
           SECTION 6: TURNING ENVIRONMENTAL PROBLEMS INTO OPPORTUNITIES
       ================================================== */}
       <section className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-[1440px] mx-auto">
-        <div className="p-8 sm:p-12 lg:p-16 bg-[#071B2D] text-white border border-[#2F6F9F]/30 shadow-xl relative overflow-hidden">
+        <div className="p-8 sm:p-12 lg:p-16 bg-[#071B2D] text-white border border-[#2F6F9F]/30 rounded-2xl sm:rounded-3xl shadow-xl relative overflow-hidden">
           <div className="absolute inset-0 tech-grid-pattern opacity-15 pointer-events-none" />
 
           <div className="relative max-w-3xl space-y-6">
@@ -398,18 +398,18 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
             </div>
 
             {/* Supporting Statement / Progression */}
-            <div className="my-8 p-6 bg-[#0c263f] border border-[#2F6F9F]/50">
+            <div className="my-8 p-6 bg-[#0c263f] border border-[#2F6F9F]/50 rounded-2xl">
               <div className="text-[10px] font-mono uppercase tracking-widest text-[#89B3D3] mb-3">
                 OPPORTUNITY TRANSLATION
               </div>
               <div className="space-y-3 font-mono text-xs sm:text-sm text-center">
-                <div className="p-3 bg-[#071B2D] border border-white/10 text-slate-200 font-bold">
+                <div className="p-3 bg-[#071B2D] border border-white/10 text-slate-200 font-bold rounded-xl">
                   ENVIRONMENTAL CHALLENGE
                 </div>
                 <div className="flex justify-center text-[#2F6F9F]">
                   <ArrowDown className="w-4 h-4" />
                 </div>
-                <div className="p-3 bg-[#071B2D] border border-white/10 text-slate-200 font-bold">
+                <div className="p-3 bg-[#071B2D] border border-white/10 text-slate-200 font-bold rounded-xl">
                   PROCESS DEVELOPMENT
                 </div>
                 <div className="flex justify-center text-[#2F6F9F]">
@@ -439,7 +439,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
           SECTION 7: SCIENCE + PRACTICAL ENGINEERING
       ================================================== */}
       <section className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-[1440px] mx-auto border-t border-[#DCE8EF]">
-        <div className="p-8 sm:p-12 lg:p-14 bg-white border border-[#DCE8EF] shadow-sm space-y-6">
+        <div className="p-8 sm:p-12 lg:p-14 bg-white border border-[#DCE8EF] rounded-2xl sm:rounded-3xl shadow-sm space-y-6">
           <div className="flex flex-wrap items-center justify-between gap-3">
             <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[#123A63]">
               <span className="w-1.5 h-1.5 rounded-full bg-[#6D9F45]" />
@@ -842,22 +842,22 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
           {/* Restrained Progression */}
           <div className="pt-6 border-t border-white/10">
             <div className="grid grid-cols-1 sm:grid-cols-5 gap-4 items-center">
-              <div className="p-4 bg-[#0c263f] border border-[#2F6F9F]/40 text-center">
+              <div className="p-4 bg-[#0c263f] border border-[#2F6F9F]/40 text-center rounded-2xl">
                 <div className="text-[10px] font-mono text-[#89B3D3] mb-1">STAGE 01</div>
                 <div className="font-mono text-xs font-bold text-white">PROCESS DEVELOPMENT</div>
               </div>
 
-              <div className="p-4 bg-[#0c263f] border border-[#2F6F9F]/40 text-center">
+              <div className="p-4 bg-[#0c263f] border border-[#2F6F9F]/40 text-center rounded-2xl">
                 <div className="text-[10px] font-mono text-[#89B3D3] mb-1">STAGE 02</div>
                 <div className="font-mono text-xs font-bold text-white">EVALUATION &amp; TESTING</div>
               </div>
 
-              <div className="p-4 bg-[#0c263f] border border-[#2F6F9F]/40 text-center">
+              <div className="p-4 bg-[#0c263f] border border-[#2F6F9F]/40 text-center rounded-2xl">
                 <div className="text-[10px] font-mono text-[#89B3D3] mb-1">STAGE 03</div>
                 <div className="font-mono text-xs font-bold text-white">ENGINEERING</div>
               </div>
 
-              <div className="p-4 bg-[#0c263f] border border-[#2F6F9F]/40 text-center">
+              <div className="p-4 bg-[#0c263f] border border-[#2F6F9F]/40 text-center rounded-2xl">
                 <div className="text-[10px] font-mono text-[#89B3D3] mb-1">STAGE 04</div>
                 <div className="font-mono text-xs font-bold text-white">IMPLEMENTATION</div>
               </div>
@@ -875,12 +875,12 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
           SECTION 12: DR. ROBERT RICHARDSON FEATURE
       ================================================== */}
       <section className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-[1440px] mx-auto border-t border-[#DCE8EF]">
-        <div className="p-8 sm:p-12 lg:p-16 bg-white border border-[#DCE8EF] shadow-sm">
+        <div className="p-8 sm:p-12 lg:p-16 bg-white border border-[#DCE8EF] rounded-2xl sm:rounded-3xl shadow-sm">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-14 items-center">
             
             {/* Portrait Column */}
             <div className="lg:col-span-4">
-              <div className="overflow-hidden border border-[#DCE8EF] bg-[#071B2D] p-2 shadow-lg">
+              <div className="overflow-hidden border border-[#DCE8EF] bg-[#071B2D] p-2 rounded-2xl shadow-lg">
                 <PrddImage
                   src={PRDD_IMAGES.founder}
                   alt="Dr. Robert Richardson, President of CST"
@@ -950,7 +950,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
           SECTION 14: FINAL CTA
       ================================================== */}
       <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-[1440px] mx-auto">
-        <div className="border border-[#2F6F9F]/30 bg-[#071B2D] text-white p-8 sm:p-12 lg:p-16 shadow-2xl relative overflow-hidden">
+        <div className="border border-[#2F6F9F]/30 bg-[#071B2D] text-white p-8 sm:p-12 lg:p-16 rounded-2xl sm:rounded-3xl shadow-2xl relative overflow-hidden">
           <div className="absolute inset-0">
             <PrddImage
               src={PRDD_IMAGES.finalCta}

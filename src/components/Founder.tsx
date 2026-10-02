@@ -15,7 +15,7 @@ export const Founder: React.FC<FounderProps> = ({ onMeetFounder }) => {
           
           {/* Portrait Column */}
           <div className="lg:col-span-5 relative">
-            <div className="relative aspect-3/4 max-w-md mx-auto lg:max-w-none overflow-hidden bg-[#0c263f] border border-[#2F6F9F]/30 group">
+            <div className="relative aspect-3/4 max-w-md mx-auto lg:max-w-none overflow-hidden bg-[#0c263f] border border-[#2F6F9F]/30 rounded-3xl shadow-2xl group">
               <PrddImage
                 src={PRDD_IMAGES.founder}
                 alt="Dr. Robert Richardson - Founder & President of Clean Scrub Technologies"
@@ -25,7 +25,7 @@ export const Founder: React.FC<FounderProps> = ({ onMeetFounder }) => {
               <div className="absolute inset-0 bg-gradient-to-t from-[#071B2D] via-transparent to-transparent opacity-80" />
 
               {/* Founder Tag */}
-              <div className="absolute bottom-6 left-6 right-6 p-4 bg-[#0c263f]/95 border border-[#2F6F9F]/40 backdrop-blur-md">
+              <div className="absolute bottom-6 left-6 right-6 p-4 bg-[#0c263f]/95 border border-[#2F6F9F]/40 backdrop-blur-md rounded-2xl shadow-xl">
                 <div className="text-xs font-mono text-[#DCE8EF] uppercase tracking-widest mb-1 flex items-center gap-1.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#6D9F45]" />
                   Executive Leadership
@@ -40,7 +40,7 @@ export const Founder: React.FC<FounderProps> = ({ onMeetFounder }) => {
             </div>
 
             {/* Architectural frame accent in CST Blue */}
-            <div className="hidden lg:block absolute -top-4 -left-4 w-24 h-24 border-t-2 border-l-2 border-[#2F6F9F]/50 pointer-events-none" />
+            <div className="hidden lg:block absolute -top-4 -left-4 w-24 h-24 border-t-2 border-l-2 border-[#2F6F9F]/50 rounded-tl-2xl pointer-events-none" />
           </div>
 
           {/* Biography & Editorial Content */}
@@ -75,24 +75,24 @@ export const Founder: React.FC<FounderProps> = ({ onMeetFounder }) => {
 
             {/* Core Background Pillars */}
             <div className="mt-8 pt-6 border-t border-[#2F6F9F]/20 grid grid-cols-1 sm:grid-cols-3 gap-4 font-mono text-xs text-slate-300">
-              <div className="flex items-start gap-2.5 p-3 bg-[#0c263f] border border-[#2F6F9F]/20">
-                <GraduationCap className="w-4 h-4 text-[#2F6F9F] shrink-0 mt-0.5" />
+              <div className="flex items-start gap-2.5 p-3.5 bg-[#0c263f] border border-[#2F6F9F]/20 rounded-2xl hover:border-[#2F6F9F]/50 transition-all">
+                <GraduationCap className="w-4 h-4 text-[#38BDF8] shrink-0 mt-0.5" />
                 <div>
                   <span className="font-bold text-white block">Ph.D. Chemist</span>
                   <span className="text-[11px] text-slate-400">Scientific Process Development</span>
                 </div>
               </div>
 
-              <div className="flex items-start gap-2.5 p-3 bg-[#0c263f] border border-[#2F6F9F]/20">
-                <HardHat className="w-4 h-4 text-[#2F6F9F] shrink-0 mt-0.5" />
+              <div className="flex items-start gap-2.5 p-3.5 bg-[#0c263f] border border-[#2F6F9F]/20 rounded-2xl hover:border-[#2F6F9F]/50 transition-all">
+                <HardHat className="w-4 h-4 text-[#38BDF8] shrink-0 mt-0.5" />
                 <div>
                   <span className="font-bold text-white block">General Contractor</span>
                   <span className="text-[11px] text-slate-400">Practical Construction Knowledge</span>
                 </div>
               </div>
 
-              <div className="flex items-start gap-2.5 p-3 bg-[#0c263f] border border-[#2F6F9F]/20">
-                <Award className="w-4 h-4 text-[#2F6F9F] shrink-0 mt-0.5" />
+              <div className="flex items-start gap-2.5 p-3.5 bg-[#0c263f] border border-[#2F6F9F]/20 rounded-2xl hover:border-[#2F6F9F]/50 transition-all">
+                <Award className="w-4 h-4 text-[#38BDF8] shrink-0 mt-0.5" />
                 <div>
                   <span className="font-bold text-white block">Inventor</span>
                   <span className="text-[11px] text-slate-400">Patented Technologies</span>
@@ -100,15 +100,17 @@ export const Founder: React.FC<FounderProps> = ({ onMeetFounder }) => {
               </div>
             </div>
 
-            {/* CTA: Blue/Navy primary treatment */}
+            {/* CTA: Aerion Pill Button */}
             <div className="mt-10">
               <button
                 type="button"
                 onClick={onMeetFounder}
-                className="inline-flex items-center gap-3 px-8 py-4 text-xs sm:text-sm font-mono font-semibold tracking-wider uppercase text-white bg-[#123A63] border border-[#2F6F9F] hover:bg-[#2F6F9F] hover:border-[#DCE8EF] transition-all duration-200 cursor-pointer active:scale-98 shadow-lg shadow-[#071B2D]"
+                className="inline-flex items-center gap-3 px-8 py-4 text-xs sm:text-sm font-sans font-bold tracking-wider uppercase text-white bg-gradient-to-r from-[#0084CD] to-[#123A63] border border-[#009EE3]/40 hover:from-[#009EE3] hover:to-[#0084CD] rounded-full transition-all duration-300 cursor-pointer active:scale-98 shadow-xl shadow-[#0084CD]/20 hover:shadow-2xl hover:shadow-[#0084CD]/35 hover:-translate-y-0.5"
               >
                 <span>MEET DR. RICHARDSON</span>
-                <ArrowRight className="w-4 h-4 text-[#DCE8EF]" />
+                <span className="w-7 h-7 rounded-full bg-white/15 flex items-center justify-center -mr-1">
+                  <ArrowRight className="w-3.5 h-3.5 text-white" />
+                </span>
               </button>
             </div>
           </div>

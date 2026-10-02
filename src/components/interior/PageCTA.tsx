@@ -26,11 +26,11 @@ export const PageCTA: React.FC<PageCTAProps> = ({
     <section className="relative bg-[#071B2D] border-t border-[#2F6F9F]/30 py-20 sm:py-28 overflow-hidden">
       <div className="absolute inset-0 tech-grid-pattern opacity-20 pointer-events-none" />
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 relative">
-        <div className="bg-gradient-to-r from-[#0c263f] via-[#103252] to-[#0c263f] border border-[#2F6F9F]/40 p-8 sm:p-12 lg:p-16 shadow-2xl relative">
+        <div className="bg-gradient-to-r from-[#0c263f] via-[#103252] to-[#0c263f] border border-[#2F6F9F]/40 p-8 sm:p-12 lg:p-16 shadow-2xl relative rounded-3xl">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             <div className="lg:col-span-8">
               <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[#89B3D3] mb-4">
-                <span className="w-1.5 h-1.5 rounded-none bg-[#6D9F45]" />
+                <span className="w-1.5 h-1.5 rounded-full bg-[#6D9F45] shadow-[0_0_6px_#6D9F45]" />
                 <span>{eyebrow}</span>
               </div>
 

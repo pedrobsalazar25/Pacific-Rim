@@ -27,7 +27,7 @@ export const ProcessDiagram: React.FC<ProcessDiagramProps> = ({
 
   return (
     <div
-      className={`border p-6 sm:p-8 lg:p-10 ${
+      className={`border p-6 sm:p-8 lg:p-10 rounded-3xl ${
         isDark
           ? 'bg-[#091F35] border-[#2F6F9F]/35 tech-grid-pattern shadow-2xl'
           : 'bg-[#F7F7F3] border-[#2F6F9F]/30 shadow-lg'
@@ -43,7 +43,7 @@ export const ProcessDiagram: React.FC<ProcessDiagramProps> = ({
             {subtitle}
           </h3>
         </div>
-        <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#123A63] border border-[#2F6F9F] text-xs font-mono text-[#DCE8EF]">
+        <div className="inline-flex items-center gap-2 px-3.5 py-1 bg-[#123A63] border border-[#2F6F9F] rounded-full text-xs font-mono text-[#DCE8EF] shadow-sm">
           <span className="w-1.5 h-1.5 rounded-full bg-[#6D9F45]" />
           <span>CST PROCESS ARCHITECTURE</span>
         </div>
@@ -58,13 +58,13 @@ export const ProcessDiagram: React.FC<ProcessDiagramProps> = ({
           {steps.map((st, idx) => (
             <div
               key={idx}
-              className="relative bg-[#071B2D] border border-[#2F6F9F]/40 p-6 hover:border-[#2F6F9F] transition-all group flex flex-col justify-between shadow-lg"
+              className="relative bg-[#071B2D] border border-[#2F6F9F]/40 p-6 rounded-2xl hover:border-[#0084CD] hover:shadow-xl hover:-translate-y-1 transition-all group flex flex-col justify-between shadow-lg"
             >
               <div>
                 {/* Step Top Bar */}
                 <div className="flex items-center justify-between mb-4 pb-3 border-b border-white/10">
                   <div className="flex items-center gap-2">
-                    <span className="font-mono text-xs font-bold text-[#89B3D3] bg-[#123A63] px-2.5 py-1 border border-[#2F6F9F]/40">
+                    <span className="font-mono text-xs font-bold text-[#89B3D3] bg-[#123A63] px-2.5 py-1 border border-[#2F6F9F]/40 rounded-lg">
                       {st.step.startsWith('0') ? st.step : `0${st.step}`}
                     </span>
                     <span className="text-[10px] font-mono uppercase tracking-widest text-slate-400">
@@ -90,7 +90,7 @@ export const ProcessDiagram: React.FC<ProcessDiagramProps> = ({
               {/* Connecting arrow indicator for desktop */}
               {idx < steps.length - 1 && (
                 <div className="hidden lg:block absolute -right-3 top-1/2 -translate-y-1/2 z-10">
-                  <div className="w-6 h-6 bg-[#0c263f] border border-[#2F6F9F] flex items-center justify-center text-[#DCE8EF] shadow-md">
+                  <div className="w-6 h-6 rounded-full bg-[#0c263f] border border-[#2F6F9F] flex items-center justify-center text-[#DCE8EF] shadow-md">
                     <ChevronRight className="w-3.5 h-3.5 text-[#89B3D3]" />
                   </div>
                 </div>
@@ -102,7 +102,7 @@ export const ProcessDiagram: React.FC<ProcessDiagramProps> = ({
 
       {/* Commercial / Process Outputs Bar */}
       {outputs && outputs.length > 0 && (
-        <div className="mt-8 pt-6 border-t border-[#2F6F9F]/20 bg-[#071B2D]/80 border border-[#2F6F9F]/30 p-4 sm:p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+        <div className="mt-8 pt-6 border-t border-[#2F6F9F]/20 bg-[#071B2D]/80 border border-[#2F6F9F]/30 p-4 sm:p-5 rounded-2xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <div className="text-xs font-mono uppercase tracking-wider text-[#89B3D3] font-semibold">
             Process Yields &amp; Output Streams:
           </div>
@@ -110,7 +110,7 @@ export const ProcessDiagram: React.FC<ProcessDiagramProps> = ({
             {outputs.map((out, oIdx) => (
               <span
                 key={oIdx}
-                className="px-3 py-1 bg-[#123A63] border border-[#2F6F9F]/50 text-xs font-mono text-[#DCE8EF] flex items-center gap-1.5"
+                className="px-3 py-1 bg-[#123A63] border border-[#2F6F9F]/50 rounded-full text-xs font-mono text-[#DCE8EF] flex items-center gap-1.5 shadow-sm"
               >
                 <span className="w-1 h-1 rounded-full bg-[#6D9F45]" />
                 {out}

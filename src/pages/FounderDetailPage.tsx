@@ -72,7 +72,7 @@ export const FounderDetailPage: React.FC<FounderDetailPageProps> = ({ onNavigate
           SECTION 2: HERO — TECHNICAL FOUNDER OPENING
       ================================================== */}
       <section className="pt-28 sm:pt-32 pb-8 sm:pb-12 px-4 sm:px-6 lg:px-8 max-w-[1440px] mx-auto">
-        <div className="relative overflow-hidden min-h-[580px] sm:min-h-[640px] lg:min-h-[700px] flex flex-col justify-between p-6 sm:p-10 lg:p-16 shadow-2xl border border-[#2F6F9F]/30">
+        <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden min-h-[580px] sm:min-h-[640px] lg:min-h-[700px] flex flex-col justify-between p-6 sm:p-10 lg:p-16 shadow-2xl border border-[#2F6F9F]/30">
           {/* Photographic Background with Deep Navy Scrim */}
           <div className="absolute inset-0 bg-[#071B2D]">
             <PrddImage
@@ -119,7 +119,7 @@ export const FounderDetailPage: React.FC<FounderDetailPageProps> = ({ onNavigate
 
               {/* Founder Portrait In Hero */}
               <div className="lg:col-span-4 flex lg:justify-end">
-                <div className="w-36 sm:w-44 lg:w-52 overflow-hidden border-2 border-[#2F6F9F]/60 bg-[#0c263f] p-1.5 shadow-2xl">
+                <div className="w-36 sm:w-44 lg:w-52 overflow-hidden border-2 border-[#2F6F9F]/60 bg-[#0c263f] p-1.5 rounded-2xl shadow-2xl">
                   <PrddImage
                     src="/images/prdd/people/prdd-founder-portrait.jpg"
                     alt="Dr. Robert Richardson, President of CST"
@@ -145,7 +145,7 @@ export const FounderDetailPage: React.FC<FounderDetailPageProps> = ({ onNavigate
                 <button
                   type="button"
                   onClick={handleScrollToOverview}
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-[#123A63] border border-[#2F6F9F] hover:bg-[#2F6F9F] hover:border-[#DCE8EF] text-white text-xs font-mono font-semibold tracking-wider uppercase transition-all duration-200 active:scale-95 shadow-xl shadow-black/40 cursor-pointer"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 bg-gradient-to-r from-[#0084CD] to-[#123A63] border border-[#009EE3]/40 hover:from-[#009EE3] hover:to-[#0084CD] text-white text-xs font-sans font-bold tracking-wider uppercase rounded-full transition-all duration-300 active:scale-95 shadow-xl shadow-[#0084CD]/20 hover:shadow-2xl hover:-translate-y-0.5 cursor-pointer"
                 >
                   <span>EXPLORE HIS WORK</span>
                   <ArrowDown className="w-4 h-4 text-[#89B3D3]" />
@@ -154,7 +154,7 @@ export const FounderDetailPage: React.FC<FounderDetailPageProps> = ({ onNavigate
                 <button
                   type="button"
                   onClick={() => onNavigate('/contact', 'Technical Discussion')}
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-5 py-3.5 bg-black/40 backdrop-blur-md border border-white/20 hover:border-white text-slate-200 hover:text-white text-xs font-mono uppercase tracking-wider transition-colors cursor-pointer"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 bg-[#0c263f]/80 backdrop-blur-md border border-white/20 hover:border-[#0084CD] text-slate-200 hover:text-white text-xs font-sans font-semibold uppercase tracking-wider rounded-full transition-all duration-300 hover:-translate-y-0.5 cursor-pointer"
                 >
                   <span>DISCUSS A TECHNICAL CHALLENGE</span>
                   <ArrowRight className="w-3.5 h-3.5 text-[#6D9F45]" />
@@ -199,7 +199,7 @@ export const FounderDetailPage: React.FC<FounderDetailPageProps> = ({ onNavigate
             </div>
 
             {/* Highlight Statement */}
-            <div className="my-8 p-6 sm:p-8 bg-white border border-[#DCE8EF] shadow-sm">
+            <div className="my-8 p-6 sm:p-8 bg-white border border-[#DCE8EF] rounded-2xl shadow-sm">
               <div className="text-[11px] font-mono uppercase tracking-widest text-[#2F6F9F] mb-3">
                 INTEGRATED WORKING PERSPECTIVE
               </div>
@@ -217,7 +217,7 @@ export const FounderDetailPage: React.FC<FounderDetailPageProps> = ({ onNavigate
             {/* ==================================================
                 SECTION 5: EDUCATION
             ================================================== */}
-            <div className="p-8 sm:p-10 bg-white border border-[#DCE8EF] shadow-sm space-y-6">
+            <div className="p-8 sm:p-10 bg-white border border-[#DCE8EF] rounded-2xl sm:rounded-3xl shadow-sm space-y-6">
               <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[#123A63]">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#6D9F45]" />
                 <span>EDUCATION</span>
@@ -261,7 +261,7 @@ export const FounderDetailPage: React.FC<FounderDetailPageProps> = ({ onNavigate
             {/* ==================================================
                 SECTION 9: RESEARCH & DEVELOPMENT EXPERIENCE
             ================================================== */}
-            <div className="p-8 sm:p-10 bg-white border border-[#DCE8EF] shadow-sm space-y-6">
+            <div className="p-8 sm:p-10 bg-white border border-[#DCE8EF] rounded-2xl sm:rounded-3xl shadow-sm space-y-6">
               <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[#123A63]">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#6D9F45]" />
                 <span>PROCESS DEVELOPMENT</span>
@@ -284,7 +284,7 @@ export const FounderDetailPage: React.FC<FounderDetailPageProps> = ({ onNavigate
             {/* ==================================================
                 SECTION 10: SCIENTIST + LICENSED GENERAL CONTRACTOR
             ================================================== */}
-            <div className="p-8 sm:p-10 bg-white border border-[#DCE8EF] shadow-sm space-y-6">
+            <div className="p-8 sm:p-10 bg-white border border-[#DCE8EF] rounded-2xl sm:rounded-3xl shadow-sm space-y-6">
               <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[#123A63]">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#6D9F45]" />
                 <span>SCIENCE + CONSTRUCTION PERSPECTIVE</span>
@@ -307,7 +307,7 @@ export const FounderDetailPage: React.FC<FounderDetailPageProps> = ({ onNavigate
 
           {/* Right Column: Profile Information Sidebar (Section 4) */}
           <div className="lg:col-span-4 space-y-6 lg:sticky lg:top-28">
-            <div className="bg-white border border-[#DCE8EF] p-6 sm:p-8 shadow-sm">
+            <div className="bg-white border border-[#DCE8EF] p-6 sm:p-8 rounded-2xl sm:rounded-3xl shadow-sm">
               <div className="font-display text-base sm:text-lg font-bold text-[#123A63] mb-6 pb-4 border-b border-[#DCE8EF] flex items-center justify-between">
                 <span>Profile</span>
                 <FlaskConical className="w-4 h-4 text-[#2F6F9F]" />
@@ -388,7 +388,7 @@ export const FounderDetailPage: React.FC<FounderDetailPageProps> = ({ onNavigate
             </div>
 
             {/* Direct Consultation Card */}
-            <div className="p-6 bg-[#071B2D] border border-[#2F6F9F]/40 text-white shadow-xl">
+            <div className="p-6 bg-[#071B2D] border border-[#2F6F9F]/40 text-white rounded-2xl shadow-xl">
               <h4 className="font-display text-base font-bold mb-2">
                 Technical Discussion
               </h4>
@@ -432,7 +432,7 @@ export const FounderDetailPage: React.FC<FounderDetailPageProps> = ({ onNavigate
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Area 01 */}
-          <div className="p-6 sm:p-8 bg-white border border-[#DCE8EF] shadow-sm space-y-3">
+          <div className="p-6 sm:p-8 bg-white border border-[#DCE8EF] rounded-2xl shadow-sm space-y-3">
             <span className="font-display text-2xl font-bold text-[#123A63] block">01</span>
             <h3 className="font-mono text-xs font-bold uppercase text-[#123A63] tracking-wider">
               SEAWATER TREATMENT
@@ -443,7 +443,7 @@ export const FounderDetailPage: React.FC<FounderDetailPageProps> = ({ onNavigate
           </div>
 
           {/* Area 02 */}
-          <div className="p-6 sm:p-8 bg-white border border-[#DCE8EF] shadow-sm space-y-3">
+          <div className="p-6 sm:p-8 bg-white border border-[#DCE8EF] rounded-2xl shadow-sm space-y-3">
             <span className="font-display text-2xl font-bold text-[#123A63] block">02</span>
             <h3 className="font-mono text-xs font-bold uppercase text-[#123A63] tracking-wider">
               CO₂ CAPTURE &amp; REPURPOSING
@@ -454,7 +454,7 @@ export const FounderDetailPage: React.FC<FounderDetailPageProps> = ({ onNavigate
           </div>
 
           {/* Area 03 */}
-          <div className="p-6 sm:p-8 bg-white border border-[#DCE8EF] shadow-sm space-y-3">
+          <div className="p-6 sm:p-8 bg-white border border-[#DCE8EF] rounded-2xl shadow-sm space-y-3">
             <span className="font-display text-2xl font-bold text-[#123A63] block">03</span>
             <h3 className="font-mono text-xs font-bold uppercase text-[#123A63] tracking-wider">
               NOx &amp; SOx ABATEMENT
@@ -465,7 +465,7 @@ export const FounderDetailPage: React.FC<FounderDetailPageProps> = ({ onNavigate
           </div>
 
           {/* Area 04 */}
-          <div className="p-6 sm:p-8 bg-white border border-[#DCE8EF] shadow-sm space-y-3">
+          <div className="p-6 sm:p-8 bg-white border border-[#DCE8EF] rounded-2xl shadow-sm space-y-3">
             <span className="font-display text-2xl font-bold text-[#123A63] block">04</span>
             <h3 className="font-mono text-xs font-bold uppercase text-[#123A63] tracking-wider">
               WATER RECLAMATION
@@ -476,7 +476,7 @@ export const FounderDetailPage: React.FC<FounderDetailPageProps> = ({ onNavigate
           </div>
 
           {/* Area 05 */}
-          <div className="p-6 sm:p-8 bg-white border border-[#DCE8EF] shadow-sm space-y-3">
+          <div className="p-6 sm:p-8 bg-white border border-[#DCE8EF] rounded-2xl shadow-sm space-y-3">
             <span className="font-display text-2xl font-bold text-[#123A63] block">05</span>
             <h3 className="font-mono text-xs font-bold uppercase text-[#123A63] tracking-wider">
               CONCRETE &amp; MATERIALS
@@ -487,7 +487,7 @@ export const FounderDetailPage: React.FC<FounderDetailPageProps> = ({ onNavigate
           </div>
 
           {/* Area 06 */}
-          <div className="p-6 sm:p-8 bg-white border border-[#DCE8EF] shadow-sm space-y-3">
+          <div className="p-6 sm:p-8 bg-white border border-[#DCE8EF] rounded-2xl shadow-sm space-y-3">
             <span className="font-display text-2xl font-bold text-[#123A63] block">06</span>
             <h3 className="font-mono text-xs font-bold uppercase text-[#123A63] tracking-wider">
               BALLAST WATER
@@ -517,34 +517,34 @@ export const FounderDetailPage: React.FC<FounderDetailPageProps> = ({ onNavigate
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4 border-t border-white/10 font-mono text-xs">
-            <div className="p-4 bg-[#0c263f] border border-[#2F6F9F]/40 text-slate-200">
+            <div className="p-4 bg-[#0c263f] border border-[#2F6F9F]/40 text-slate-200 rounded-xl">
               SEAWATER → POTABLE WATER
             </div>
-            <div className="p-4 bg-[#0c263f] border border-[#2F6F9F]/40 text-slate-200">
+            <div className="p-4 bg-[#0c263f] border border-[#2F6F9F]/40 text-slate-200 rounded-xl">
               CO₂ → IDENTIFIED CARBONATE PRODUCTS
             </div>
-            <div className="p-4 bg-[#0c263f] border border-[#2F6F9F]/40 text-slate-200">
+            <div className="p-4 bg-[#0c263f] border border-[#2F6F9F]/40 text-slate-200 rounded-xl">
               NOx / SOx → MINERAL ACID PRODUCT PATHS
             </div>
-            <div className="p-4 bg-[#0c263f] border border-[#2F6F9F]/40 text-slate-200">
+            <div className="p-4 bg-[#0c263f] border border-[#2F6F9F]/40 text-slate-200 rounded-xl">
               WATER RECLAMATION → FORWARD OSMOSIS + CHEMICAL FORCED PRECIPITATION
             </div>
-            <div className="p-4 bg-[#0c263f] border border-[#2F6F9F]/40 text-slate-200">
+            <div className="p-4 bg-[#0c263f] border border-[#2F6F9F]/40 text-slate-200 rounded-xl">
               CO₂-DERIVED PRODUCTS → CONCRETE / GEOPOLYMER MATERIAL DEVELOPMENT
             </div>
-            <div className="p-4 bg-[#0c263f] border border-[#2F6F9F]/40 text-slate-200">
+            <div className="p-4 bg-[#0c263f] border border-[#2F6F9F]/40 text-slate-200 rounded-xl">
               HIGH-SURFACE-AREA POLYMER CONCRETE
             </div>
-            <div className="p-4 bg-[#0c263f] border border-[#2F6F9F]/40 text-slate-200">
+            <div className="p-4 bg-[#0c263f] border border-[#2F6F9F]/40 text-slate-200 rounded-xl">
               BALLAST WATER TREATMENT
             </div>
-            <div className="p-4 bg-[#0c263f] border border-[#2F6F9F]/40 text-slate-200">
+            <div className="p-4 bg-[#0c263f] border border-[#2F6F9F]/40 text-slate-200 rounded-xl">
               NOx ABATEMENT → H₂O₂ + METAL-ORGANIC FABRIC
             </div>
-            <div className="p-4 bg-[#0c263f] border border-[#2F6F9F]/40 text-slate-200">
+            <div className="p-4 bg-[#0c263f] border border-[#2F6F9F]/40 text-slate-200 rounded-xl">
               MULTI-POLLUTANT EXHAUST PROCESS DEVELOPMENT
             </div>
-            <div className="p-4 bg-[#0c263f] border border-[#2F6F9F]/40 text-slate-200">
+            <div className="p-4 bg-[#0c263f] border border-[#2F6F9F]/40 text-slate-200 rounded-xl">
               NOx MINERALIZATION USING H₂O₂ + METAL HYDROXIDES
             </div>
           </div>
@@ -559,7 +559,7 @@ export const FounderDetailPage: React.FC<FounderDetailPageProps> = ({ onNavigate
           SECTION 8: TECHNOLOGY & INVENTION CONTEXT
       ================================================== */}
       <section className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-[1440px] mx-auto border-t border-[#DCE8EF]">
-        <div className="p-8 sm:p-12 lg:p-14 bg-white border border-[#DCE8EF] shadow-sm space-y-6">
+        <div className="p-8 sm:p-12 lg:p-14 bg-white border border-[#DCE8EF] rounded-2xl sm:rounded-3xl shadow-sm space-y-6">
           <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[#123A63]">
             <span className="w-1.5 h-1.5 rounded-full bg-[#6D9F45]" />
             <span>PATENT-RELATED DEVELOPMENT</span>
@@ -607,7 +607,7 @@ export const FounderDetailPage: React.FC<FounderDetailPageProps> = ({ onNavigate
         </div>
 
         {/* Featured Project: Intel (Section 11) */}
-        <div className="p-8 sm:p-10 bg-white border border-[#DCE8EF] shadow-sm space-y-4">
+        <div className="p-8 sm:p-10 bg-white border border-[#DCE8EF] rounded-2xl sm:rounded-3xl shadow-sm space-y-4">
           <div className="flex flex-wrap items-center justify-between gap-3">
             <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#F7F7F3] border border-[#DCE8EF] text-xs font-mono font-bold text-[#123A63] uppercase">
               SELECTED PROJECT EXPERIENCE
@@ -647,7 +647,7 @@ export const FounderDetailPage: React.FC<FounderDetailPageProps> = ({ onNavigate
         </div>
 
         {/* Featured Project: Jabil (Section 12) */}
-        <div className="p-8 sm:p-10 bg-white border border-[#DCE8EF] shadow-sm space-y-4">
+        <div className="p-8 sm:p-10 bg-white border border-[#DCE8EF] rounded-2xl sm:rounded-3xl shadow-sm space-y-4">
           <div className="flex flex-wrap items-center justify-between gap-3">
             <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#F7F7F3] border border-[#DCE8EF] text-xs font-mono font-bold text-[#123A63] uppercase">
               INDUSTRIAL AIR QUALITY
@@ -667,7 +667,7 @@ export const FounderDetailPage: React.FC<FounderDetailPageProps> = ({ onNavigate
         </div>
 
         {/* Municipal & Sanitation Experience (Section 13) */}
-        <div className="p-8 sm:p-10 bg-white border border-[#DCE8EF] shadow-sm space-y-6">
+        <div className="p-8 sm:p-10 bg-white border border-[#DCE8EF] rounded-2xl sm:rounded-3xl shadow-sm space-y-6">
           <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[#123A63]">
             <span className="w-1.5 h-1.5 rounded-full bg-[#6D9F45]" />
             <span>MUNICIPAL &amp; SANITATION EXPERIENCE</span>
@@ -723,7 +723,7 @@ export const FounderDetailPage: React.FC<FounderDetailPageProps> = ({ onNavigate
         </div>
 
         {/* Specialized Operating Environment: Sea Launch / Boeing (Section 14) */}
-        <div className="p-8 sm:p-10 bg-white border border-[#DCE8EF] shadow-sm space-y-4">
+        <div className="p-8 sm:p-10 bg-white border border-[#DCE8EF] rounded-2xl sm:rounded-3xl shadow-sm space-y-4">
           <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#F7F7F3] border border-[#DCE8EF] text-xs font-mono font-bold text-[#123A63] uppercase">
             SPECIALIZED ENVIRONMENT
           </div>
@@ -738,7 +738,7 @@ export const FounderDetailPage: React.FC<FounderDetailPageProps> = ({ onNavigate
         </div>
 
         {/* Resource Recovery Experience: Rock Canyon Oil (Section 15) */}
-        <div className="p-8 sm:p-10 bg-white border border-[#DCE8EF] shadow-sm space-y-4">
+        <div className="p-8 sm:p-10 bg-white border border-[#DCE8EF] rounded-2xl sm:rounded-3xl shadow-sm space-y-4">
           <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#F7F7F3] border border-[#DCE8EF] text-xs font-mono font-bold text-[#6D9F45] uppercase">
             CO₂ / RESOURCE RECOVERY
           </div>
@@ -789,7 +789,7 @@ export const FounderDetailPage: React.FC<FounderDetailPageProps> = ({ onNavigate
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div className="p-6 bg-white border border-[#DCE8EF] shadow-sm text-center space-y-2">
+          <div className="p-6 bg-white border border-[#DCE8EF] rounded-2xl shadow-sm text-center space-y-2">
             <div className="w-10 h-10 bg-[#F7F7F3] border border-[#DCE8EF] flex items-center justify-center mx-auto text-[#123A63]">
               <FlaskConical className="w-5 h-5 text-[#2F6F9F]" />
             </div>
@@ -798,7 +798,7 @@ export const FounderDetailPage: React.FC<FounderDetailPageProps> = ({ onNavigate
             </h3>
           </div>
 
-          <div className="p-6 bg-white border border-[#DCE8EF] shadow-sm text-center space-y-2">
+          <div className="p-6 bg-white border border-[#DCE8EF] rounded-2xl shadow-sm text-center space-y-2">
             <div className="w-10 h-10 bg-[#F7F7F3] border border-[#DCE8EF] flex items-center justify-center mx-auto text-[#123A63]">
               <Cog className="w-5 h-5 text-[#2F6F9F]" />
             </div>
@@ -807,7 +807,7 @@ export const FounderDetailPage: React.FC<FounderDetailPageProps> = ({ onNavigate
             </h3>
           </div>
 
-          <div className="p-6 bg-white border border-[#DCE8EF] shadow-sm text-center space-y-2">
+          <div className="p-6 bg-white border border-[#DCE8EF] rounded-2xl shadow-sm text-center space-y-2">
             <div className="w-10 h-10 bg-[#F7F7F3] border border-[#DCE8EF] flex items-center justify-center mx-auto text-[#123A63]">
               <Compass className="w-5 h-5 text-[#2F6F9F]" />
             </div>
@@ -816,7 +816,7 @@ export const FounderDetailPage: React.FC<FounderDetailPageProps> = ({ onNavigate
             </h3>
           </div>
 
-          <div className="p-6 bg-white border border-[#DCE8EF] shadow-sm text-center space-y-2">
+          <div className="p-6 bg-white border border-[#DCE8EF] rounded-2xl shadow-sm text-center space-y-2">
             <div className="w-10 h-10 bg-[#F7F7F3] border border-[#DCE8EF] flex items-center justify-center mx-auto text-[#123A63]">
               <Wrench className="w-5 h-5 text-[#6D9F45]" />
             </div>
@@ -837,7 +837,7 @@ export const FounderDetailPage: React.FC<FounderDetailPageProps> = ({ onNavigate
       <section className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-[1440px] mx-auto border-t border-[#DCE8EF] space-y-16">
         
         {/* Section 17: Technologies Connection */}
-        <div className="p-8 sm:p-12 bg-white border border-[#DCE8EF] shadow-sm space-y-8">
+        <div className="p-8 sm:p-12 bg-white border border-[#DCE8EF] rounded-2xl sm:rounded-3xl shadow-sm space-y-8">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[#123A63] mb-3">
               <span className="w-1.5 h-1.5 rounded-full bg-[#6D9F45]" />
@@ -930,7 +930,7 @@ export const FounderDetailPage: React.FC<FounderDetailPageProps> = ({ onNavigate
         </div>
 
         {/* Section 18: Project Experience Connection */}
-        <div className="p-8 sm:p-12 bg-white border border-[#DCE8EF] shadow-sm space-y-6">
+        <div className="p-8 sm:p-12 bg-white border border-[#DCE8EF] rounded-2xl sm:rounded-3xl shadow-sm space-y-6">
           <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-[#123A63]">
             <span className="w-1.5 h-1.5 rounded-full bg-[#6D9F45]" />
             <span>HISTORICAL EXPERIENCE</span>
@@ -967,7 +967,7 @@ export const FounderDetailPage: React.FC<FounderDetailPageProps> = ({ onNavigate
           Restrained Editorial Idea (NOT a quote)
       ================================================== */}
       <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-[1440px] mx-auto">
-        <div className="p-8 sm:p-12 bg-[#F7F7F3] border-l-4 border-[#2F6F9F] border border-[#DCE8EF] max-w-4xl mx-auto shadow-sm">
+        <div className="p-8 sm:p-12 bg-[#F7F7F3] border-l-4 border-[#2F6F9F] border border-[#DCE8EF] rounded-2xl max-w-4xl mx-auto shadow-sm">
           <div className="text-[11px] font-mono uppercase tracking-widest text-[#2F6F9F] mb-3">
             EDITORIAL PERSPECTIVE
           </div>
@@ -981,7 +981,7 @@ export const FounderDetailPage: React.FC<FounderDetailPageProps> = ({ onNavigate
           SECTION 20: FINAL CTA
       ================================================== */}
       <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-[1440px] mx-auto">
-        <div className="border border-[#2F6F9F]/30 bg-[#071B2D] text-white p-8 sm:p-12 lg:p-16 shadow-2xl relative overflow-hidden">
+        <div className="border border-[#2F6F9F]/30 bg-[#071B2D] text-white p-8 sm:p-12 lg:p-16 rounded-2xl sm:rounded-3xl shadow-2xl relative overflow-hidden">
           <div className="absolute inset-0">
             <PrddImage
               src={PRDD_IMAGES.finalCta}

@@ -24,8 +24,9 @@ export const Introduction: React.FC<IntroductionProps> = () => {
             </p>
 
             <div className="mt-8 pt-8 border-t border-[#DCE8EF]">
-              <div className="p-5 bg-white/90 border border-[#DCE8EF] text-[#20262B] shadow-sm">
-                <span className="text-[11px] font-mono uppercase tracking-wider text-[#123A63] font-bold block mb-1">
+              <div className="p-6 bg-white/95 border border-[#DCE8EF] text-[#20262B] rounded-2xl shadow-md hover:shadow-lg transition-all">
+                <span className="text-[11px] font-mono uppercase tracking-wider text-[#123A63] font-bold block mb-1.5 flex items-center gap-1.5">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#6D9F45]" />
                   CORE METHODOLOGY
                 </span>
                 <p className="text-xs text-[#20262B]/80 leading-relaxed">

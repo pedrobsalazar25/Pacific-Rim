@@ -148,10 +148,10 @@ export default function App() {
                     <button
                       type="button"
                       onClick={() => handleNavigate('/technologies')}
-                      className="inline-flex items-center gap-2 text-xs font-mono tracking-wider uppercase text-[#DCE8EF] hover:text-[#89B3D3] transition-colors group cursor-pointer"
+                      className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-sans font-semibold tracking-wider uppercase text-[#DCE8EF] hover:text-white bg-[#123A63]/60 hover:bg-[#0084CD] border border-[#2F6F9F]/50 transition-all duration-200 group cursor-pointer shadow-sm"
                     >
                       <span>View All Technologies</span>
-                      <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                      <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
                     </button>
                   </div>
                 </div>
@@ -161,23 +161,25 @@ export default function App() {
                     <div
                       key={tech.id}
                       onClick={() => handleNavigate(`/technologies/${tech.id}`)}
-                      className="group bg-[#0c263f] border border-[#2F6F9F]/30 hover:border-[#2F6F9F] transition-all duration-300 overflow-hidden cursor-pointer flex flex-col justify-between"
+                      className="group bg-[#0c263f] border border-[#2F6F9F]/30 hover:border-[#0084CD]/70 rounded-3xl shadow-xl shadow-black/25 hover:shadow-2xl hover:shadow-[#0084CD]/15 hover:-translate-y-1.5 transition-all duration-300 overflow-hidden cursor-pointer flex flex-col justify-between"
                     >
-                      <div className="relative aspect-16/10 overflow-hidden bg-[#071B2D]">
-                        <PrddImage
-                          src={tech.image}
-                          alt={tech.title}
-                          className="w-full h-full object-cover object-center group-hover:scale-103 transition-transform duration-700 filter brightness-90 contrast-105"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-[#0c263f] via-transparent to-transparent" />
-                        <div className="absolute top-4 left-4 px-3 py-1 bg-[#071B2D]/85 border border-[#2F6F9F]/60 text-xs font-mono text-[#DCE8EF]">
-                          {tech.number}
+                      <div className="p-3 pb-0">
+                        <div className="relative aspect-16/10 rounded-2xl overflow-hidden bg-[#071B2D]">
+                          <PrddImage
+                            src={tech.image}
+                            alt={tech.title}
+                            className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 filter brightness-90 contrast-105"
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-[#0c263f] via-transparent to-transparent opacity-60" />
+                          <div className="absolute top-4 left-4 px-3.5 py-1 rounded-full bg-[#071B2D]/90 backdrop-blur-md border border-[#2F6F9F]/60 text-xs font-mono font-semibold text-[#DCE8EF] shadow-md">
+                            TECH {tech.number}
+                          </div>
                         </div>
                       </div>
 
-                      <div className="p-8 flex-1 flex flex-col justify-between">
+                      <div className="p-7 sm:p-8 flex-1 flex flex-col justify-between">
                         <div>
-                          <h3 className="font-display text-xl sm:text-2xl font-bold text-white group-hover:text-[#89B3D3] transition-colors mb-3">
+                          <h3 className="font-display text-xl sm:text-2xl font-bold text-white group-hover:text-[#38BDF8] transition-colors mb-3">
                             {tech.title}
                           </h3>
                           <p className="text-sm text-slate-300 leading-relaxed mb-6 font-normal">
@@ -185,14 +187,14 @@ export default function App() {
                           </p>
 
                           <div className="mb-6 pt-4 border-t border-[#2F6F9F]/20">
-                            <span className="text-[11px] font-mono uppercase tracking-wider text-[#89B3D3] block mb-2">
+                            <span className="text-[11px] font-mono uppercase tracking-wider text-[#89B3D3] block mb-2.5">
                               Commercial Outputs
                             </span>
                             <div className="flex flex-wrap gap-2">
                               {tech.commercialOutputs.slice(0, 3).map((output, idx) => (
                                 <span
                                   key={idx}
-                                  className="text-xs font-mono px-2.5 py-1 bg-[#071B2D] border border-[#2F6F9F]/40 text-[#DCE8EF]"
+                                  className="text-xs font-sans px-3 py-1 rounded-full bg-[#071B2D] border border-[#2F6F9F]/40 text-[#DCE8EF]"
                                 >
                                   {output}
                                 </span>
@@ -201,9 +203,11 @@ export default function App() {
                           </div>
                         </div>
 
-                        <div className="pt-4 border-t border-[#2F6F9F]/20 flex items-center justify-between text-xs font-mono text-[#DCE8EF] group-hover:text-white">
+                        <div className="pt-4 border-t border-[#2F6F9F]/20 flex items-center justify-between text-xs font-semibold text-[#DCE8EF] group-hover:text-white">
                           <span>Explore Technology Specification</span>
-                          <ArrowRight className="w-4 h-4 group-hover:translate-x-1.5 transition-transform text-[#89B3D3]" />
+                          <span className="w-9 h-9 rounded-full bg-[#123A63] border border-[#2F6F9F]/40 group-hover:bg-[#0084CD] group-hover:border-[#0084CD] text-white flex items-center justify-center transition-all duration-300 shadow-md">
+                            <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -229,10 +233,10 @@ export default function App() {
                     <button
                       type="button"
                       onClick={() => handleNavigate('/applications')}
-                      className="inline-flex items-center gap-2 text-xs font-mono tracking-wider uppercase text-[#123A63] hover:text-[#2F6F9F] transition-colors group cursor-pointer"
+                      className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-sans font-semibold tracking-wider uppercase text-[#123A63] hover:text-white bg-white hover:bg-[#0084CD] border border-slate-300/80 hover:border-[#0084CD] transition-all duration-200 group cursor-pointer shadow-sm"
                     >
                       <span>Explore All Applications</span>
-                      <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                      <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
                     </button>
                   </div>
                 </div>
@@ -242,22 +246,24 @@ export default function App() {
                     <div
                       key={app.id}
                       onClick={() => handleNavigate(`/applications/${app.id}`)}
-                      className="p-6 bg-white border border-[#DCE8EF] hover:border-[#2F6F9F] transition-all cursor-pointer group flex flex-col justify-between shadow-sm"
+                      className="p-7 bg-white rounded-3xl border border-slate-200/80 hover:border-[#0084CD] shadow-lg shadow-slate-200/50 hover:shadow-2xl hover:shadow-[#0084CD]/15 hover:-translate-y-1.5 transition-all duration-300 cursor-pointer group flex flex-col justify-between"
                     >
                       <div>
-                        <div className="text-[11px] font-mono text-[#2F6F9F] uppercase mb-2">
+                        <span className="inline-block px-3 py-1 rounded-full bg-sky-50 text-[#0084CD] text-[11px] font-mono font-bold uppercase mb-3">
                           AREA {app.number}
-                        </div>
-                        <h3 className="font-display text-lg font-bold text-[#123A63] group-hover:text-[#2F6F9F] transition-colors mb-3">
+                        </span>
+                        <h3 className="font-display text-lg font-bold text-[#123A63] group-hover:text-[#0084CD] transition-colors mb-3">
                           {app.title}
                         </h3>
-                        <p className="text-xs text-[#20262B]/80 leading-relaxed mb-6">
+                        <p className="text-xs text-[#20262B]/80 leading-relaxed mb-6 font-normal">
                           {app.summary}
                         </p>
                       </div>
-                      <div className="pt-3 border-t border-[#DCE8EF] flex items-center justify-between text-xs font-mono text-[#123A63] group-hover:text-[#2F6F9F]">
+                      <div className="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-[#123A63] group-hover:text-[#0084CD]">
                         <span>View Sector Detail</span>
-                        <ChevronRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                        <span className="w-8 h-8 rounded-full bg-slate-100 group-hover:bg-[#0084CD] group-hover:text-white flex items-center justify-center transition-all duration-300">
+                          <ChevronRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
+                        </span>
                       </div>
                     </div>
                   ))}

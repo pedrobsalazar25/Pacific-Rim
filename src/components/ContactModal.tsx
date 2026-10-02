@@ -80,7 +80,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({
       className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 overflow-y-auto bg-black/85 backdrop-blur-md"
     >
       <div
-        className="relative w-full max-w-2xl bg-[#071B2D] border border-[#2F6F9F]/30 text-white shadow-2xl overflow-hidden tech-grid-pattern my-8 max-h-[92vh] flex flex-col"
+        className="relative w-full max-w-2xl bg-[#071B2D] border border-[#2F6F9F]/30 text-white shadow-2xl overflow-hidden tech-grid-pattern my-8 max-h-[92vh] flex flex-col rounded-3xl"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
@@ -97,7 +97,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({
           <button
             type="button"
             onClick={onClose}
-            className="p-2 text-slate-400 hover:text-white hover:bg-white/10 transition-colors focus:outline-none"
+            className="p-2 text-slate-400 hover:text-white hover:bg-white/10 rounded-full transition-colors focus:outline-none"
             aria-label="Close dialog"
           >
             <X className="w-5 h-5" />
@@ -121,7 +121,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({
                 <button
                   type="button"
                   onClick={handleReset}
-                  className="px-8 py-3 text-xs font-mono uppercase font-semibold text-white bg-[#123A63] border border-[#2F6F9F] hover:bg-[#2F6F9F] hover:border-[#DCE8EF] transition-all shadow-md shadow-[#071B2D]"
+                  className="px-8 py-3 text-xs font-mono uppercase font-semibold text-white bg-gradient-to-r from-[#0084CD] to-[#123A63] border border-[#009EE3]/40 hover:from-[#009EE3] hover:to-[#0084CD] rounded-full transition-all shadow-md shadow-[#071B2D]"
                 >
                   Return to Website
                 </button>
@@ -144,7 +144,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     placeholder="Your Full Name"
-                    className={`w-full px-3 py-2.5 bg-[#0c263f] border text-xs text-white placeholder-slate-400 focus:outline-none focus:border-[#2F6F9F] ${
+                    className={`w-full px-3 py-2.5 bg-[#0c263f] border text-xs text-white placeholder-slate-400 rounded-xl focus:outline-none focus:border-[#2F6F9F] ${
                       errors.name ? 'border-red-500' : 'border-[#2F6F9F]/30'
                     }`}
                   />
@@ -164,7 +164,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({
                     value={formData.organization}
                     onChange={(e) => setFormData({ ...formData, organization: e.target.value })}
                     placeholder="Company or Organization"
-                    className={`w-full px-3 py-2.5 bg-[#0c263f] border text-xs text-white placeholder-slate-400 focus:outline-none focus:border-[#2F6F9F] ${
+                    className={`w-full px-3 py-2.5 bg-[#0c263f] border text-xs text-white placeholder-slate-400 rounded-xl focus:outline-none focus:border-[#2F6F9F] ${
                       errors.organization ? 'border-red-500' : 'border-[#2F6F9F]/30'
                     }`}
                   />
@@ -187,7 +187,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     placeholder="name@company.com"
-                    className={`w-full px-3 py-2.5 bg-[#0c263f] border text-xs text-white placeholder-slate-400 focus:outline-none focus:border-[#2F6F9F] ${
+                    className={`w-full px-3 py-2.5 bg-[#0c263f] border text-xs text-white placeholder-slate-400 rounded-xl focus:outline-none focus:border-[#2F6F9F] ${
                       errors.email ? 'border-red-500' : 'border-[#2F6F9F]/30'
                     }`}
                   />
@@ -207,7 +207,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                     placeholder="+1 (555) 000-0000"
-                    className="w-full px-3 py-2.5 bg-[#0c263f] border border-[#2F6F9F]/30 text-xs text-white placeholder-slate-400 focus:outline-none focus:border-[#2F6F9F]"
+                    className="w-full px-3 py-2.5 bg-[#0c263f] border border-[#2F6F9F]/30 text-xs text-white placeholder-slate-400 rounded-xl focus:outline-none focus:border-[#2F6F9F]"
                   />
                 </div>
               </div>
@@ -223,7 +223,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({
                     value={formData.industry}
                     onChange={(e) => setFormData({ ...formData, industry: e.target.value })}
                     placeholder="e.g. Chemical, Power, Municipal"
-                    className="w-full px-3 py-2.5 bg-[#0c263f] border border-[#2F6F9F]/30 text-xs text-white placeholder-slate-400 focus:outline-none focus:border-[#2F6F9F]"
+                    className="w-full px-3 py-2.5 bg-[#0c263f] border border-[#2F6F9F]/30 text-xs text-white placeholder-slate-400 rounded-xl focus:outline-none focus:border-[#2F6F9F]"
                   />
                 </div>
 
@@ -234,7 +234,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({
                   <select
                     value={formData.challengeType}
                     onChange={(e) => setFormData({ ...formData, challengeType: e.target.value })}
-                    className="w-full px-3 py-2.5 bg-[#0c263f] border border-[#2F6F9F]/30 text-xs text-white focus:outline-none focus:border-[#2F6F9F]"
+                    className="w-full px-3 py-2.5 bg-[#0c263f] border border-[#2F6F9F]/30 text-xs text-white rounded-xl focus:outline-none focus:border-[#2F6F9F] cursor-pointer"
                   >
                     <option value="CO2 Capture & Repurposing">CO₂ Capture &amp; Repurposing</option>
                     <option value="NOx & SOx Abatement">NOx &amp; SOx Abatement</option>
@@ -286,7 +286,7 @@ export const ContactModal: React.FC<ContactModalProps> = ({
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   placeholder="Describe your environmental challenge or project requirements..."
-                  className={`w-full px-3 py-2 bg-[#0c263f] border text-xs text-white placeholder-slate-400 focus:outline-none focus:border-[#2F6F9F] ${
+                  className={`w-full px-3 py-2 bg-[#0c263f] border text-xs text-white placeholder-slate-400 rounded-xl focus:outline-none focus:border-[#2F6F9F] ${
                     errors.message ? 'border-red-500' : 'border-[#2F6F9F]/30'
                   }`}
                 />
@@ -306,21 +306,21 @@ export const ContactModal: React.FC<ContactModalProps> = ({
                   <button
                     type="button"
                     onClick={onClose}
-                    className="px-4 py-2 text-xs font-mono uppercase text-slate-400 hover:text-white"
+                    className="px-4 py-2 text-xs font-mono uppercase text-slate-400 hover:text-white rounded-full hover:bg-white/5 transition-colors"
                   >
                     Cancel
                   </button>
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="inline-flex items-center gap-2 px-6 py-2.5 text-xs font-mono font-bold uppercase tracking-wider text-white bg-[#123A63] border border-[#2F6F9F] hover:bg-[#2F6F9F] hover:border-[#DCE8EF] transition-all disabled:opacity-50 shadow-md shadow-[#071B2D]"
+                    className="inline-flex items-center gap-2 px-6 py-2.5 text-xs font-sans font-bold uppercase tracking-wider text-white bg-gradient-to-r from-[#0084CD] to-[#123A63] border border-[#009EE3]/40 hover:from-[#009EE3] hover:to-[#0084CD] rounded-full transition-all duration-300 disabled:opacity-50 shadow-md shadow-[#071B2D] hover:shadow-lg hover:-translate-y-0.5"
                   >
                     {isSubmitting ? (
                       <span>SENDING...</span>
                     ) : (
                       <>
                         <span>DISCUSS YOUR PROJECT</span>
-                        <Send className="w-3.5 h-3.5 text-[#DCE8EF]" />
+                        <Send className="w-3.5 h-3.5 text-white" />
                       </>
                     )}
                   </button>

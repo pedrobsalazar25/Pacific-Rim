@@ -78,29 +78,32 @@
   }
 }
 
-/* Normalized Architectural Button Styles */
+/* Normalized Modern Aerion-Style Button Styles */
 .btn-primary {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.75rem;
-  padding: 0.875rem 1.75rem;
-  background-color: var(--prdd-navy);
-  border: 1px solid var(--prdd-blue);
+  padding: 0.875rem 2rem;
+  background: linear-gradient(135deg, #0084CD 0%, #123A63 100%);
+  border: 1px solid rgba(0, 158, 227, 0.45);
+  border-radius: 9999px;
   color: #ffffff;
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
-  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-  box-shadow: 0 4px 16px rgba(7, 27, 45, 0.4);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 8px 24px rgba(0, 132, 205, 0.25);
   cursor: pointer;
 }
 .btn-primary:hover {
-  background-color: var(--prdd-blue);
-  border-color: var(--prdd-steel-blue);
+  background: linear-gradient(135deg, #009EE3 0%, #0084CD 100%);
+  border-color: #DCE8EF;
   color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(0, 132, 205, 0.4);
 }
 .btn-primary:active {
   transform: scale(0.98);
@@ -111,22 +114,27 @@
   align-items: center;
   justify-content: center;
   gap: 0.625rem;
-  padding: 0.8125rem 1.5rem;
-  background-color: rgba(7, 27, 45, 0.6);
-  border: 1px solid rgba(220, 232, 239, 0.3);
-  color: #cbd5e1;
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  font-weight: 500;
-  letter-spacing: 0.06em;
+  padding: 0.8125rem 1.85rem;
+  background-color: rgba(12, 38, 63, 0.8);
+  border: 1px solid rgba(220, 232, 239, 0.25);
+  border-radius: 9999px;
+  color: #DCE8EF;
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
-  backdrop-filter: blur(8px);
-  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  backdrop-filter: blur(12px);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
 .btn-secondary:hover {
-  border-color: #ffffff;
+  background-color: rgba(18, 58, 99, 0.95);
+  border-color: rgba(0, 158, 227, 0.6);
   color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 132, 205, 0.2);
 }
 .btn-secondary:active {
   transform: scale(0.98);
@@ -137,23 +145,26 @@
   align-items: center;
   justify-content: center;
   gap: 0.75rem;
-  padding: 0.875rem 1.75rem;
-  background-color: var(--prdd-navy);
-  border: 1px solid var(--prdd-navy);
+  padding: 0.875rem 2rem;
+  background: linear-gradient(135deg, #0084CD 0%, #123A63 100%);
+  border: 1px solid rgba(0, 132, 205, 0.3);
+  border-radius: 9999px;
   color: #ffffff;
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
-  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-  box-shadow: 0 2px 8px rgba(18, 58, 99, 0.15);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 8px 20px rgba(0, 132, 205, 0.25);
   cursor: pointer;
 }
 .btn-light-primary:hover {
-  background-color: var(--prdd-blue);
-  border-color: var(--prdd-blue);
+  background: linear-gradient(135deg, #009EE3 0%, #0084CD 100%);
+  border-color: #0084CD;
   color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(0, 132, 205, 0.35);
 }
 
 .btn-light-secondary {
@@ -161,22 +172,47 @@
   align-items: center;
   justify-content: center;
   gap: 0.625rem;
-  padding: 0.8125rem 1.5rem;
+  padding: 0.8125rem 1.85rem;
   background-color: #ffffff;
-  border: 1px solid #DCE8EF;
+  border: 1px solid #CBD5E1;
+  border-radius: 9999px;
   color: var(--prdd-navy);
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
   font-weight: 600;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
-  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
   cursor: pointer;
 }
 .btn-light-secondary:hover {
-  border-color: var(--prdd-blue);
-  color: var(--prdd-blue);
+  border-color: #0084CD;
+  color: #0084CD;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 132, 205, 0.15);
 }
+
+/* Aerion Green Energy Theme Signature Rounded Card Classes */
+.aerion-card {
+  border-radius: 1.5rem; /* 24px */
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.aerion-card:hover {
+  transform: translateY(-3px);
+}
+
+.aerion-input {
+  border-radius: 0.75rem; /* 12px rounded corners */
+  transition: all 0.2s ease;
+}
+
+.aerion-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 132, 205, 0.2);
+}
+
 
 

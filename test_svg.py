@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 100" fill="none" aria-label="Clean Scrub Technologies Logo">
+svg_content = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 100" fill="none" aria-label="Clean Scrub Technologies Logo">
   <defs>
     <linearGradient id="cstBlueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#0090D8" />
@@ -118,4 +118,8 @@
     lengthAdjust="spacing"
     fill="#43A047"
   >TECHNOLOGIES</text>
-</svg>
+</svg>'''
+
+with open('public/images/clean-scrub-logo.svg', 'w') as f:
+    f.write(svg_content)
+print("Updated public/images/clean-scrub-logo.svg")

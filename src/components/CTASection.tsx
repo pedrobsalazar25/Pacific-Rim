@@ -50,15 +50,17 @@ export const CTASection: React.FC<CTASectionProps> = ({ onDiscussProject }) => {
           Talk with CST about your emissions, water treatment, process engineering or environmental technology requirements.
         </p>
 
-        {/* Primary CTA - CST Navy / Blue treatment */}
+        {/* Primary CTA - Aerion Pill Button */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
           <button
             type="button"
             onClick={onDiscussProject}
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-10 py-5 text-xs sm:text-sm font-mono font-bold tracking-wider uppercase text-white bg-[#123A63] border border-[#2F6F9F] hover:bg-[#2F6F9F] hover:border-[#DCE8EF] transition-all duration-200 shadow-2xl shadow-[#071B2D] cursor-pointer active:scale-98"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-10 py-5 text-xs sm:text-sm font-sans font-bold tracking-wider uppercase text-white bg-gradient-to-r from-[#0084CD] to-[#123A63] border border-[#009EE3]/50 hover:from-[#009EE3] hover:to-[#0084CD] rounded-full transition-all duration-300 shadow-2xl shadow-[#0084CD]/30 hover:shadow-cyan-500/40 hover:-translate-y-1 cursor-pointer active:scale-98"
           >
             <span>DISCUSS YOUR PROJECT</span>
-            <ArrowRight className="w-4 h-4 text-[#DCE8EF]" />
+            <span className="w-8 h-8 rounded-full bg-white/15 flex items-center justify-center -mr-2">
+              <ArrowRight className="w-4 h-4 text-white" />
+            </span>
           </button>
         </div>
 

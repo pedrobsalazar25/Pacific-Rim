@@ -39,7 +39,7 @@ export const RelatedContent: React.FC<RelatedContentProps> = ({
           <div
             key={idx}
             onClick={() => onNavigate(item.route)}
-            className="p-6 bg-white border border-[#DCE8EF] shadow-sm hover:border-[#2F6F9F] transition-all cursor-pointer group flex flex-col justify-between"
+            className="p-6 bg-white border border-[#DCE8EF] rounded-2xl shadow-sm hover:border-[#0084CD] hover:shadow-xl hover:-translate-y-1 transition-all cursor-pointer group flex flex-col justify-between"
           >
             <div>
               {item.tag && (

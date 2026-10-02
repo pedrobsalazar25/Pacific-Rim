@@ -36,7 +36,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreTechnologies, onAboutPrdd }
         <div className="max-w-4xl">
           {/* Eyebrow / Small Technical Qualifier (Zero-pill clean typography) */}
           <div className="inline-flex items-center gap-3 text-xs sm:text-sm font-mono tracking-[0.2em] uppercase text-[#DCE8EF] mb-6">
-            <span className="w-2 h-2 rounded-none bg-[#6D9F45]" />
+            <span className="w-2 h-2 rounded-full bg-[#6D9F45] shadow-[0_0_6px_#6D9F45]" />
             <span>CLEAN SCRUB TECHNOLOGIES</span>
             <span className="text-[#2F6F9F] font-normal">/</span>
             <span className="text-slate-300 hidden sm:inline">ENVIRONMENTAL TECHNOLOGY & INDUSTRIAL SOLUTIONS</span>
@@ -55,54 +55,69 @@ export const Hero: React.FC<HeroProps> = ({ onExploreTechnologies, onAboutPrdd }
             CST develops and commercializes patented environmental technologies that transform complex industrial pollutants into useful, commercially viable products.
           </p>
 
-          {/* Primary & Secondary CTAs - Blue/Navy primary treatment */}
+          {/* Primary & Secondary CTAs - Aerion-style Pill Buttons */}
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 sm:gap-6 pt-2">
             <button
               type="button"
               onClick={onExploreTechnologies}
-              className="inline-flex items-center justify-center gap-3 px-8 py-4 text-xs sm:text-sm font-mono font-semibold tracking-wider uppercase text-white bg-[#123A63] border border-[#2F6F9F] hover:bg-[#2F6F9F] hover:border-[#DCE8EF] transition-all duration-200 shadow-xl shadow-[#071B2D]/80 cursor-pointer active:scale-98"
+              className="inline-flex items-center justify-center gap-3 px-8 py-4 text-xs sm:text-sm font-sans font-bold tracking-wider uppercase text-white bg-gradient-to-r from-[#0084CD] to-[#123A63] border border-[#009EE3]/40 hover:from-[#009EE3] hover:to-[#0084CD] rounded-full shadow-xl shadow-[#0084CD]/25 hover:shadow-2xl hover:shadow-[#0084CD]/40 hover:-translate-y-0.5 transition-all duration-300 cursor-pointer active:scale-98"
             >
               <span>EXPLORE OUR TECHNOLOGIES</span>
-              <ArrowDown className="w-4 h-4 text-[#DCE8EF]" />
+              <span className="w-8 h-8 rounded-full bg-white/15 flex items-center justify-center -mr-2">
+                <ArrowDown className="w-4 h-4 text-white" />
+              </span>
             </button>
 
             <button
               type="button"
               onClick={onAboutPrdd}
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 text-xs sm:text-sm font-mono font-semibold tracking-wider uppercase text-[#DCE8EF] hover:text-white bg-[#0c263f]/80 hover:bg-[#123A63] border border-[#2F6F9F]/40 hover:border-[#2F6F9F] transition-all duration-200 cursor-pointer active:scale-98"
+              className="inline-flex items-center justify-center gap-3 px-8 py-4 text-xs sm:text-sm font-sans font-semibold tracking-wider uppercase text-[#DCE8EF] hover:text-white bg-[#0c263f]/80 hover:bg-[#123A63] border border-white/20 hover:border-[#0084CD] rounded-full shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 cursor-pointer active:scale-98 backdrop-blur-md"
             >
               <span>ABOUT CST</span>
-              <ArrowUpRight className="w-4 h-4 text-[#2F6F9F]" />
+              <span className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center -mr-2">
+                <ArrowUpRight className="w-4 h-4 text-[#38BDF8]" />
+              </span>
             </button>
           </div>
 
-          {/* Quick Technology Reference Markers */}
-          <div className="mt-14 sm:mt-18 pt-8 border-t border-white/10 grid grid-cols-2 md:grid-cols-4 gap-6 text-slate-400 text-xs font-mono">
-            <div className="flex items-center gap-2.5">
-              <Layers className="w-4 h-4 text-[#2F6F9F] shrink-0" />
+          {/* Quick Technology Reference Markers - Rounded Floating Cards */}
+          <div className="mt-14 sm:mt-18 pt-8 border-t border-white/10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-slate-300 text-xs font-sans">
+            <div className="flex items-center gap-3 p-3.5 rounded-2xl bg-[#0c263f]/75 border border-[#2F6F9F]/30 backdrop-blur-md shadow-lg hover:border-[#0084CD]/60 hover:-translate-y-0.5 transition-all">
+              <div className="w-10 h-10 rounded-xl bg-[#123A63]/80 border border-[#2F6F9F]/40 flex items-center justify-center shrink-0">
+                <Layers className="w-5 h-5 text-[#38BDF8]" />
+              </div>
               <div>
-                <span className="block text-white font-medium">CO₂ Capture</span>
+                <span className="block text-white font-semibold">CO₂ Capture</span>
                 <span className="text-[11px] text-slate-400">Carbonates &amp; Bicarbonates</span>
               </div>
             </div>
-            <div className="flex items-center gap-2.5">
-              <Flame className="w-4 h-4 text-[#2F6F9F] shrink-0" />
+
+            <div className="flex items-center gap-3 p-3.5 rounded-2xl bg-[#0c263f]/75 border border-[#2F6F9F]/30 backdrop-blur-md shadow-lg hover:border-[#0084CD]/60 hover:-translate-y-0.5 transition-all">
+              <div className="w-10 h-10 rounded-xl bg-[#123A63]/80 border border-[#2F6F9F]/40 flex items-center justify-center shrink-0">
+                <Flame className="w-5 h-5 text-[#38BDF8]" />
+              </div>
               <div>
-                <span className="block text-white font-medium">NOx &amp; SOx</span>
+                <span className="block text-white font-semibold">NOx &amp; SOx</span>
                 <span className="text-[11px] text-slate-400">Combustion Emissions</span>
               </div>
             </div>
-            <div className="flex items-center gap-2.5">
-              <Droplets className="w-4 h-4 text-[#2F6F9F] shrink-0" />
+
+            <div className="flex items-center gap-3 p-3.5 rounded-2xl bg-[#0c263f]/75 border border-[#2F6F9F]/30 backdrop-blur-md shadow-lg hover:border-[#0084CD]/60 hover:-translate-y-0.5 transition-all">
+              <div className="w-10 h-10 rounded-xl bg-[#123A63]/80 border border-[#2F6F9F]/40 flex items-center justify-center shrink-0">
+                <Droplets className="w-5 h-5 text-[#38BDF8]" />
+              </div>
               <div>
-                <span className="block text-white font-medium">Advanced Water</span>
+                <span className="block text-white font-semibold">Advanced Water</span>
                 <span className="text-[11px] text-slate-400">Treatment &amp; Desalination</span>
               </div>
             </div>
-            <div className="flex items-center gap-2.5">
-              <ShieldCheck className="w-4 h-4 text-[#2F6F9F] shrink-0" />
+
+            <div className="flex items-center gap-3 p-3.5 rounded-2xl bg-[#0c263f]/75 border border-[#2F6F9F]/30 backdrop-blur-md shadow-lg hover:border-[#0084CD]/60 hover:-translate-y-0.5 transition-all">
+              <div className="w-10 h-10 rounded-xl bg-[#123A63]/80 border border-[#2F6F9F]/40 flex items-center justify-center shrink-0">
+                <ShieldCheck className="w-5 h-5 text-[#38BDF8]" />
+              </div>
               <div>
-                <span className="block text-white font-medium">Advanced Materials</span>
+                <span className="block text-white font-semibold">Advanced Materials</span>
                 <span className="text-[11px] text-slate-400">Concrete &amp; Geopolymers</span>
               </div>
             </div>

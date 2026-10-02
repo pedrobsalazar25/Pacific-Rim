@@ -20,7 +20,7 @@ export const QuoteBlock: React.FC<QuoteBlockProps> = ({
 
   return (
     <div
-      className={`relative p-8 sm:p-10 border my-8 ${
+      className={`relative p-8 sm:p-10 border my-8 rounded-3xl ${
         isDark
           ? 'bg-[#0b243d] border-[#2F6F9F]/40 text-white shadow-xl'
           : 'bg-[#F7F7F3] border-[#2F6F9F]/30 text-[#20262B] shadow-md'

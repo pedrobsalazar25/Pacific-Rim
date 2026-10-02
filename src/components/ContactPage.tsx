@@ -182,7 +182,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({
             <div className="lg:col-span-7">
               <div className="mb-10">
                 <div className="inline-flex items-center gap-2 text-xs font-mono tracking-[0.2em] uppercase text-[#89B3D3] font-semibold mb-3">
-                  <span className="w-2 h-2 rounded-none bg-[#6D9F45]" />
+                  <span className="w-2 h-2 rounded-full bg-[#6D9F45] shadow-[0_0_6px_#6D9F45]" />
                   <span>START A CONVERSATION</span>
                 </div>
                 <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-white leading-[1.1] mb-4">
@@ -194,7 +194,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({
               </div>
 
               {/* Form Container */}
-              <div className="bg-[#0c263f] border border-[#2F6F9F]/30 p-6 sm:p-10 shadow-2xl shadow-[#071B2D]">
+              <div className="bg-[#0c263f] border border-[#2F6F9F]/30 p-6 sm:p-10 rounded-3xl shadow-2xl shadow-[#071B2D]">
                 {isSubmitted ? (
                   <div className="py-12 px-4 text-center space-y-5">
                     <div className="w-16 h-16 mx-auto rounded-full bg-[#123A63] border border-[#2F6F9F] flex items-center justify-center text-[#6D9F45] shadow-lg shadow-[#071B2D]">
@@ -261,7 +261,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                           placeholder="First name"
                           aria-invalid={errors.firstName ? 'true' : 'false'}
                           aria-describedby={errors.firstName ? 'firstName-error' : undefined}
-                          className={`w-full px-4 py-3 bg-[#071B2D] border text-sm text-white placeholder-slate-500 rounded-none focus:outline-none transition-colors ${
+                          className={`w-full px-4 py-3 bg-[#071B2D] border text-sm text-white placeholder-slate-500 rounded-xl focus:outline-none transition-colors ${
                             errors.firstName
                               ? 'border-rose-500/80 focus:border-rose-400'
                               : 'border-[#2F6F9F]/30 focus:border-[#2F6F9F]'
@@ -295,7 +295,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                           placeholder="Last name"
                           aria-invalid={errors.lastName ? 'true' : 'false'}
                           aria-describedby={errors.lastName ? 'lastName-error' : undefined}
-                          className={`w-full px-4 py-3 bg-[#071B2D] border text-sm text-white placeholder-slate-500 rounded-none focus:outline-none transition-colors ${
+                          className={`w-full px-4 py-3 bg-[#071B2D] border text-sm text-white placeholder-slate-500 rounded-xl focus:outline-none transition-colors ${
                             errors.lastName
                               ? 'border-rose-500/80 focus:border-rose-400'
                               : 'border-[#2F6F9F]/30 focus:border-[#2F6F9F]'
@@ -328,7 +328,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                           setFormData({ ...formData, company: e.target.value })
                         }
                         placeholder="Company or entity name"
-                        className="w-full px-4 py-3 bg-[#071B2D] border border-[#2F6F9F]/30 text-sm text-white placeholder-slate-500 rounded-none focus:outline-none focus:border-[#2F6F9F] transition-colors"
+                        className="w-full px-4 py-3 bg-[#071B2D] border border-[#2F6F9F]/30 text-sm text-white placeholder-slate-500 rounded-xl focus:outline-none focus:border-[#2F6F9F] transition-colors"
                       />
                     </div>
 
@@ -354,7 +354,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                           placeholder="name@organization.com"
                           aria-invalid={errors.email ? 'true' : 'false'}
                           aria-describedby={errors.email ? 'email-error' : undefined}
-                          className={`w-full px-4 py-3 bg-[#071B2D] border text-sm text-white placeholder-slate-500 rounded-none focus:outline-none transition-colors ${
+                          className={`w-full px-4 py-3 bg-[#071B2D] border text-sm text-white placeholder-slate-500 rounded-xl focus:outline-none transition-colors ${
                             errors.email
                               ? 'border-rose-500/80 focus:border-rose-400'
                               : 'border-[#2F6F9F]/30 focus:border-[#2F6F9F]'
@@ -385,7 +385,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                             setFormData({ ...formData, phone: e.target.value })
                           }
                           placeholder="+1 (555) 000-0000"
-                          className="w-full px-4 py-3 bg-[#071B2D] border border-[#2F6F9F]/30 text-sm text-white placeholder-slate-500 rounded-none focus:outline-none focus:border-[#2F6F9F] transition-colors"
+                          className="w-full px-4 py-3 bg-[#071B2D] border border-[#2F6F9F]/30 text-sm text-white placeholder-slate-500 rounded-xl focus:outline-none focus:border-[#2F6F9F] transition-colors"
                         />
                       </div>
                     </div>
@@ -405,7 +405,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                           onChange={(e) =>
                             setFormData({ ...formData, industry: e.target.value })
                           }
-                          className="w-full px-4 py-3 bg-[#071B2D] border border-[#2F6F9F]/30 text-sm text-white rounded-none focus:outline-none focus:border-[#2F6F9F] transition-colors cursor-pointer"
+                          className="w-full px-4 py-3 bg-[#071B2D] border border-[#2F6F9F]/30 text-sm text-white rounded-xl focus:outline-none focus:border-[#2F6F9F] transition-colors cursor-pointer"
                         >
                           <option value="Industrial / Manufacturing">Industrial / Manufacturing</option>
                           <option value="Energy">Energy</option>
@@ -431,7 +431,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                           onChange={(e) =>
                             setFormData({ ...formData, areaOfInterest: e.target.value })
                           }
-                          className="w-full px-4 py-3 bg-[#071B2D] border border-[#2F6F9F]/30 text-sm text-white rounded-none focus:outline-none focus:border-[#2F6F9F] transition-colors cursor-pointer"
+                          className="w-full px-4 py-3 bg-[#071B2D] border border-[#2F6F9F]/30 text-sm text-white rounded-xl focus:outline-none focus:border-[#2F6F9F] transition-colors cursor-pointer"
                         >
                           <option value="CO₂ Capture & Repurposing">CO₂ Capture &amp; Repurposing</option>
                           <option value="NOx & SOx Abatement">NOx &amp; SOx Abatement</option>
@@ -464,7 +464,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                         placeholder="Tell us about the problem, process, emissions stream, project, or technology you're interested in discussing."
                         aria-invalid={errors.challenge ? 'true' : 'false'}
                         aria-describedby={errors.challenge ? 'challenge-error' : undefined}
-                        className={`w-full px-4 py-3 bg-[#071B2D] border text-sm text-white placeholder-slate-500 rounded-none focus:outline-none transition-colors leading-relaxed ${
+                        className={`w-full px-4 py-3 bg-[#071B2D] border text-sm text-white placeholder-slate-500 rounded-xl focus:outline-none transition-colors leading-relaxed ${
                           errors.challenge
                             ? 'border-rose-500/80 focus:border-rose-400'
                             : 'border-[#2F6F9F]/30 focus:border-[#2F6F9F]'
@@ -522,14 +522,16 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                       <button
                         type="submit"
                         disabled={isSubmitting}
-                        className="inline-flex items-center justify-center gap-3 px-8 py-4 text-xs sm:text-sm font-mono font-bold tracking-wider uppercase text-white bg-[#123A63] border border-[#2F6F9F] hover:bg-[#2F6F9F] hover:border-[#DCE8EF] transition-all duration-200 shadow-xl shadow-[#071B2D] cursor-pointer active:scale-98 disabled:opacity-50"
+                        className="inline-flex items-center justify-center gap-3 px-8 py-4 text-xs sm:text-sm font-sans font-bold tracking-wider uppercase text-white bg-gradient-to-r from-[#0084CD] to-[#123A63] border border-[#009EE3]/40 hover:from-[#009EE3] hover:to-[#0084CD] rounded-full transition-all duration-300 shadow-xl shadow-[#0084CD]/25 hover:shadow-2xl hover:shadow-[#0084CD]/40 hover:-translate-y-0.5 cursor-pointer active:scale-98 disabled:opacity-50"
                       >
                         {isSubmitting ? (
                           <span>RECORDING INQUIRY...</span>
                         ) : (
                           <>
                             <span>SUBMIT INQUIRY</span>
-                            <ArrowRight className="w-4 h-4 text-[#DCE8EF]" />
+                            <span className="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center -mr-1">
+                              <ArrowRight className="w-3.5 h-3.5 text-white" />
+                            </span>
                           </>
                         )}
                       </button>
@@ -543,7 +545,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({
             <div className="lg:col-span-5 space-y-8">
               
               {/* Card 1: Direct Contact Information */}
-              <div className="bg-[#0c263f] border border-[#2F6F9F]/30 p-6 sm:p-8 shadow-xl shadow-[#071B2D]">
+              <div className="bg-[#0c263f] border border-[#2F6F9F]/30 p-6 sm:p-8 rounded-3xl shadow-xl shadow-[#071B2D]">
                 <div className="inline-flex items-center gap-2 text-xs font-mono tracking-[0.2em] uppercase text-[#89B3D3] font-semibold mb-3">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#6D9F45]" />
                   <span>DIRECT CONTACT</span>
@@ -624,9 +626,9 @@ export const ContactPage: React.FC<ContactPageProps> = ({
               </div>
 
               {/* Card 2: Contact Robert Richardson */}
-              <div className="bg-[#0c263f] border border-[#2F6F9F]/30 p-6 sm:p-8 shadow-xl shadow-[#071B2D]">
+              <div className="bg-[#0c263f] border border-[#2F6F9F]/30 p-6 sm:p-8 rounded-3xl shadow-xl shadow-[#071B2D]">
                 <div className="flex items-start gap-4 mb-5">
-                  <div className="w-20 h-24 shrink-0 overflow-hidden bg-[#071B2D] border border-[#2F6F9F]/40 shadow-inner">
+                  <div className="w-20 h-24 shrink-0 overflow-hidden bg-[#071B2D] border border-[#2F6F9F]/40 rounded-2xl shadow-inner">
                     <PrddImage
                       src={PRDD_IMAGES.founder}
                       alt="Dr. Robert Richardson - President of Clean Scrub Technologies"
@@ -655,10 +657,10 @@ export const ContactPage: React.FC<ContactPageProps> = ({
                 <div className="pt-4 border-t border-[#2F6F9F]/20">
                   <a
                     href="mailto:robert@prdd.net"
-                    className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 text-xs font-mono font-bold uppercase tracking-wider text-white bg-[#123A63] border border-[#2F6F9F] hover:bg-[#2F6F9F] hover:border-[#DCE8EF] transition-all shadow-md shadow-[#071B2D]"
+                    className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 text-xs font-sans font-bold uppercase tracking-wider text-white bg-gradient-to-r from-[#0084CD] to-[#123A63] border border-[#009EE3]/40 hover:from-[#009EE3] hover:to-[#0084CD] rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5"
                   >
                     <span>EMAIL DR. RICHARDSON</span>
-                    <ArrowRight className="w-3.5 h-3.5 text-[#DCE8EF]" />
+                    <ArrowRight className="w-3.5 h-3.5 text-white" />
                   </a>
                 </div>
               </div>
@@ -687,8 +689,8 @@ export const ContactPage: React.FC<ContactPageProps> = ({
           {/* 4 Categories Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             {/* 1. EMISSIONS */}
-            <div className="p-6 bg-white/80 border border-[#DCE8EF] shadow-sm hover:border-[#2F6F9F]/50 transition-colors">
-              <div className="w-10 h-10 rounded bg-[#123A63]/10 border border-[#123A63]/20 flex items-center justify-center text-[#123A63] mb-4">
+            <div className="p-6 bg-white/90 border border-[#DCE8EF] rounded-2xl shadow-md hover:shadow-xl hover:border-[#0084CD] hover:-translate-y-1 transition-all">
+              <div className="w-10 h-10 rounded-xl bg-[#123A63]/10 border border-[#123A63]/20 flex items-center justify-center text-[#0084CD] mb-4">
                 <Wind className="w-5 h-5" />
               </div>
               <div className="text-xs font-mono uppercase tracking-widest text-[#2F6F9F] mb-1 font-bold">
@@ -703,8 +705,8 @@ export const ContactPage: React.FC<ContactPageProps> = ({
             </div>
 
             {/* 2. WATER */}
-            <div className="p-6 bg-white/80 border border-[#DCE8EF] shadow-sm hover:border-[#2F6F9F]/50 transition-colors">
-              <div className="w-10 h-10 rounded bg-[#123A63]/10 border border-[#123A63]/20 flex items-center justify-center text-[#123A63] mb-4">
+            <div className="p-6 bg-white/90 border border-[#DCE8EF] rounded-2xl shadow-md hover:shadow-xl hover:border-[#0084CD] hover:-translate-y-1 transition-all">
+              <div className="w-10 h-10 rounded-xl bg-[#123A63]/10 border border-[#123A63]/20 flex items-center justify-center text-[#0084CD] mb-4">
                 <Droplets className="w-5 h-5" />
               </div>
               <div className="text-xs font-mono uppercase tracking-widest text-[#2F6F9F] mb-1 font-bold">
@@ -719,8 +721,8 @@ export const ContactPage: React.FC<ContactPageProps> = ({
             </div>
 
             {/* 3. MATERIALS */}
-            <div className="p-6 bg-white/80 border border-[#DCE8EF] shadow-sm hover:border-[#2F6F9F]/50 transition-colors">
-              <div className="w-10 h-10 rounded bg-[#123A63]/10 border border-[#123A63]/20 flex items-center justify-center text-[#123A63] mb-4">
+            <div className="p-6 bg-white/90 border border-[#DCE8EF] rounded-2xl shadow-md hover:shadow-xl hover:border-[#0084CD] hover:-translate-y-1 transition-all">
+              <div className="w-10 h-10 rounded-xl bg-[#123A63]/10 border border-[#123A63]/20 flex items-center justify-center text-[#0084CD] mb-4">
                 <Layers className="w-5 h-5" />
               </div>
               <div className="text-xs font-mono uppercase tracking-widest text-[#2F6F9F] mb-1 font-bold">
@@ -735,8 +737,8 @@ export const ContactPage: React.FC<ContactPageProps> = ({
             </div>
 
             {/* 4. TECHNOLOGY */}
-            <div className="p-6 bg-white/80 border border-[#DCE8EF] shadow-sm hover:border-[#2F6F9F]/50 transition-colors">
-              <div className="w-10 h-10 rounded bg-[#123A63]/10 border border-[#123A63]/20 flex items-center justify-center text-[#123A63] mb-4">
+            <div className="p-6 bg-white/90 border border-[#DCE8EF] rounded-2xl shadow-md hover:shadow-xl hover:border-[#0084CD] hover:-translate-y-1 transition-all">
+              <div className="w-10 h-10 rounded-xl bg-[#123A63]/10 border border-[#123A63]/20 flex items-center justify-center text-[#0084CD] mb-4">
                 <Cpu className="w-5 h-5" />
               </div>
               <div className="text-xs font-mono uppercase tracking-widest text-[#2F6F9F] mb-1 font-bold">
@@ -775,10 +777,12 @@ export const ContactPage: React.FC<ContactPageProps> = ({
           <button
             type="button"
             onClick={scrollToFormAndFocus}
-            className="inline-flex items-center justify-center gap-3 px-10 py-5 text-xs sm:text-sm font-mono font-bold tracking-wider uppercase text-white bg-[#123A63] border border-[#2F6F9F] hover:bg-[#2F6F9F] hover:border-[#DCE8EF] transition-all duration-200 shadow-2xl shadow-[#071B2D] cursor-pointer active:scale-98"
+            className="inline-flex items-center justify-center gap-3 px-10 py-5 text-xs sm:text-sm font-sans font-bold tracking-wider uppercase text-white bg-gradient-to-r from-[#0084CD] to-[#123A63] border border-[#009EE3]/40 hover:from-[#009EE3] hover:to-[#0084CD] rounded-full transition-all duration-300 shadow-2xl shadow-[#0084CD]/25 hover:shadow-2xl hover:shadow-[#0084CD]/40 hover:-translate-y-0.5 cursor-pointer active:scale-98"
           >
             <span>START A CONVERSATION</span>
-            <ArrowRight className="w-4 h-4 text-[#DCE8EF]" />
+            <span className="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center -mr-1">
+              <ArrowRight className="w-3.5 h-3.5 text-white" />
+            </span>
           </button>
         </div>
       </section>

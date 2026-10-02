@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowUp, Mail, Phone, MapPin, Globe, ArrowRight } from 'lucide-react';
 import { TECHNOLOGIES_DATA, APPLICATIONS_DATA, TechnologyItem } from '../data/prddData';
+import { CleanScrubLogo } from './CleanScrubLogo';
 
 interface FooterProps {
   onOpenContact: () => void;
@@ -39,18 +40,8 @@ export const Footer: React.FC<FooterProps> = ({
           
           {/* Brand Info (2 columns on large screens) */}
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-8 h-8 bg-[#123A63] border border-[#2F6F9F]/60 flex items-center justify-center text-xs font-mono font-bold text-[#DCE8EF]">
-                CST
-              </div>
-              <div className="flex flex-col">
-                <span className="font-display text-lg font-bold tracking-tight text-white">
-                  CLEAN SCRUB
-                </span>
-                <span className="text-[10px] tracking-[0.18em] uppercase text-[#DCE8EF]/70 -mt-1 font-mono">
-                  TECHNOLOGIES
-                </span>
-              </div>
+            <div className="mb-6">
+              <CleanScrubLogo />
             </div>
 
             <p className="text-xs sm:text-sm text-slate-300 max-w-sm leading-relaxed mb-6 font-normal">
@@ -203,9 +194,10 @@ export const Footer: React.FC<FooterProps> = ({
                 <button
                   type="button"
                   onClick={() => handleRouteClick('/contact')}
-                  className="w-full py-2.5 px-3 text-center text-[11px] uppercase tracking-wider font-mono font-semibold bg-[#123A63] hover:bg-[#2F6F9F] border border-[#2F6F9F] hover:border-[#DCE8EF] text-[#DCE8EF] hover:text-white transition-all shadow-md shadow-[#071B2D] cursor-pointer"
+                  className="w-full py-2.5 px-4 text-center text-xs uppercase tracking-wider font-sans font-bold bg-gradient-to-r from-[#0084CD] to-[#123A63] hover:from-[#009EE3] hover:to-[#0084CD] border border-[#009EE3]/40 text-white rounded-full transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5 cursor-pointer flex items-center justify-center gap-2"
                 >
-                  START A CONVERSATION →
+                  <span>START A CONVERSATION</span>
+                  <ArrowRight className="w-3.5 h-3.5" />
                 </button>
               </div>
             </div>

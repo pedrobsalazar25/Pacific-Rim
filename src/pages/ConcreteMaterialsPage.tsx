@@ -131,7 +131,7 @@ export const ConcreteMaterialsPage: React.FC<ConcreteMaterialsPageProps> = ({ on
                 <button
                   type="button"
                   onClick={() => onNavigate('/contact', 'Concrete & Materials')}
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 py-3.5 bg-[#123A63] border border-[#2F6F9F] hover:bg-[#2F6F9F] hover:border-white text-white text-xs font-mono font-semibold tracking-wider uppercase rounded-xl transition-all duration-200 active:scale-95 shadow-xl shadow-black/40 cursor-pointer"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 bg-gradient-to-r from-[#0084CD] to-[#123A63] border border-[#009EE3]/40 hover:from-[#009EE3] hover:to-[#0084CD] text-white text-xs font-sans font-bold tracking-wider uppercase rounded-full transition-all duration-300 active:scale-95 shadow-xl shadow-[#0084CD]/20 hover:shadow-2xl hover:-translate-y-0.5 cursor-pointer"
                 >
                   <span>DISCUSS YOUR MATERIALS CHALLENGE</span>
                   <ArrowRight className="w-4 h-4 text-[#6D9F45]" />
@@ -140,7 +140,7 @@ export const ConcreteMaterialsPage: React.FC<ConcreteMaterialsPageProps> = ({ on
                 <button
                   type="button"
                   onClick={handleScrollToOverview}
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3.5 bg-black/40 backdrop-blur-md border border-white/20 hover:border-white text-slate-200 hover:text-white text-xs font-mono uppercase tracking-wider rounded-xl transition-colors cursor-pointer"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 bg-[#0c263f]/80 backdrop-blur-md border border-white/20 hover:border-[#0084CD] text-slate-200 hover:text-white text-xs font-sans font-semibold uppercase tracking-wider rounded-full transition-all duration-300 hover:-translate-y-0.5 cursor-pointer"
                 >
                   <span>EXPLORE THE APPLICATION</span>
                   <ArrowDown className="w-3.5 h-3.5 text-[#89B3D3]" />

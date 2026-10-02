@@ -2,143 +2,126 @@ import React from 'react';
 
 interface CleanScrubLogoProps {
   className?: string;
+  showWordmark?: boolean;
+  emblemOnly?: boolean;
 }
 
 export const CleanScrubLogo: React.FC<CleanScrubLogoProps> = ({
-  className = 'h-9 w-auto'
+  className = '',
+  showWordmark = true,
+  emblemOnly = false,
 }) => {
   return (
-    <svg
-      viewBox="0 0 460 100"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className={`select-none ${className}`}
-      aria-label="Clean Scrub Technologies"
-      role="img"
-    >
-      <defs>
-        {/* Blue Water Droplet Gradient */}
-        <linearGradient id="cstBlueGrad" x1="10%" y1="0%" x2="80%" y2="100%">
-          <stop offset="0%" stopColor="#009CDC" />
-          <stop offset="45%" stopColor="#0084CD" />
-          <stop offset="100%" stopColor="#005B9A" />
-        </linearGradient>
-
-        {/* Green Eco Leaf Gradient */}
-        <linearGradient id="cstGreenGrad" x1="15%" y1="10%" x2="85%" y2="95%">
-          <stop offset="0%" stopColor="#54BA26" />
-          <stop offset="50%" stopColor="#43A047" />
-          <stop offset="100%" stopColor="#2E881B" />
-        </linearGradient>
-
-        {/* Subtle Drop Shadow for High Contrast on Dark Backgrounds */}
-        <filter id="cstShadow" x="-15%" y="-15%" width="130%" height="130%" filterUnits="userSpaceOnUse">
-          <feDropShadow dx="0" dy="1" stdDeviation="1.5" floodColor="#000000" floodOpacity="0.3" />
-        </filter>
-      </defs>
-
-      {/* Emblem: Droplet + White Leaf + Eco Arc */}
-      <g filter="url(#cstShadow)" transform="translate(6, 2)">
-        {/* Blue Droplet (Apex and Left Arc) */}
-        <path
-          d="M 44 4
-             C 41 10, 26 24, 16 40
-             C 6 56, 6 70, 11 80
-             C 16 88, 24 93, 34 94
-             C 26 89, 21 80, 20 68
-             C 19 56, 24 45, 31 35
-             C 36 28, 41 18, 44 4 Z"
-          fill="url(#cstBlueGrad)"
-        />
-
-        {/* Main Blue Body */}
-        <path
-          d="M 44 4
-             C 32 18, 12 36, 10 56
-             C 8 72, 18 88, 33 93
-             C 39 95, 45 94, 49 92
-             C 34 88, 25 77, 25 64
-             C 25 50, 32 39, 40 28
-             C 42 24, 43 14, 44 4 Z"
-          fill="url(#cstBlueGrad)"
-        />
-
-        {/* Green Leaf / Right Droplet Flank */}
-        <path
-          d="M 44 4
-             C 49 14, 57 24, 65 33
-             C 75 44, 84 56, 84 69
-             C 84 82, 75 92, 62 96
-             C 50 99, 37 96, 28 90
-             C 38 95, 50 95, 60 92
-             C 71 87, 78 77, 78 65
-             C 78 54, 71 43, 63 34
-             C 57 26, 49 16, 44 4 Z"
-          fill="url(#cstGreenGrad)"
-        />
-
-        {/* Green Fill Body */}
-        <path
-          d="M 50 35
-             C 63 47, 79 58, 79 71
-             C 79 82, 70 91, 57 95
-             C 46 98, 34 95, 27 88
-             C 37 93, 49 94, 58 91
-             C 68 86, 74 77, 74 66
-             C 74 56, 66 46, 56 38
-             C 53 36, 51 36, 50 35 Z"
-          fill="url(#cstGreenGrad)"
-        />
-
-        {/* Crisp White Inner Leaf Silhouette */}
-        <path
-          d="M 22 84
-             C 20 72, 25 59, 33 47
-             C 41 35, 52 25, 62 16
-             C 58 24, 50 35, 43 46
-             C 36 58, 31 71, 29 83
-             C 26 85, 23 85, 22 84 Z"
-          fill="#FFFFFF"
-        />
-        <path
-          d="M 24 81
-             C 23 71, 28 59, 35 49
-             C 42 39, 51 29, 60 21
-             C 56 28, 49 38, 43 48
-             C 37 58, 33 70, 31 80
-             C 28 82, 25 82, 24 81 Z"
-          fill="#FFFFFF"
-          opacity="0.95"
-        />
-      </g>
-
-      {/* Typography: Wordmark matching the uploaded logo */}
-      {/* Line 1: CLEAN SCRUB */}
-      <text
-        x="108"
-        y="53"
-        fontFamily="'Plus Jakarta Sans', 'Montserrat', 'Inter', -apple-system, sans-serif"
-        fontWeight="900"
-        fontSize="46"
-        letterSpacing="-0.02em"
-        fill="#0084CD"
+    <div className={`flex items-center gap-2.5 sm:gap-3 select-none ${className}`}>
+      {/* Authentic CST Water Droplet & Leaf Emblem */}
+      <svg
+        viewBox="0 0 100 100"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className="w-8 h-8 sm:w-9 sm:h-9 shrink-0 drop-shadow-md transition-transform duration-200 group-hover:scale-105"
+        aria-hidden="true"
       >
-        CLEAN SCRUB
-      </text>
+        <defs>
+          <linearGradient id="cstBlueGradIcon" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stopColor="#00A3E8" />
+            <stop offset="40%" stopColor="#0088CD" />
+            <stop offset="100%" stopColor="#006DAE" />
+          </linearGradient>
+          <linearGradient id="cstGreenGradIcon" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stopColor="#56C329" />
+            <stop offset="50%" stopColor="#43A047" />
+            <stop offset="100%" stopColor="#2E881B" />
+          </linearGradient>
+          <filter id="cstEmblemGlow" x="-20%" y="-20%" width="140%" height="140%">
+            <feDropShadow dx="0" dy="1.5" stdDeviation="2" floodColor="#000000" floodOpacity="0.4" />
+          </filter>
+        </defs>
 
-      {/* Line 2: TECHNOLOGIES */}
-      <text
-        x="109"
-        y="87"
-        fontFamily="'Plus Jakarta Sans', 'Montserrat', 'Inter', -apple-system, sans-serif"
-        fontWeight="700"
-        fontSize="28"
-        textLength="316"
-        lengthAdjust="spacing"
-        fill="#43A047"
-      >
-        TECHNOLOGIES
-      </text>
-    </svg>
+        <g filter="url(#cstEmblemGlow)">
+          {/* Blue Water Droplet Outer Shell & Body */}
+          <path
+            d="M 50 4
+               C 44 14, 14 42, 10 64
+               C 6 80, 18 94, 38 97
+               C 24 90, 18 78, 18 64
+               C 18 48, 30 30, 48 14
+               C 49 10, 50 6, 50 4 Z"
+            fill="url(#cstBlueGradIcon)"
+          />
+
+          {/* Blue Droplet Core & Leaf Stem/Vein */}
+          <path
+            d="M 50 4
+               C 46 12, 36 26, 32 40
+               C 28 54, 28 66, 34 80
+               C 38 88, 44 94, 50 96
+               C 42 90, 38 82, 38 70
+               C 38 56, 42 42, 48 26
+               C 49 18, 50 10, 50 4 Z"
+            fill="url(#cstBlueGradIcon)"
+          />
+
+          {/* Green Leaf Body (Right Droplet Side) */}
+          <path
+            d="M 50 4
+               C 56 14, 72 26, 80 40
+               C 90 54, 92 70, 88 84
+               C 84 94, 72 99, 54 99
+               C 42 99, 32 94, 28 88
+               C 38 94, 52 95, 66 90
+               C 80 84, 86 72, 86 58
+               C 86 44, 76 28, 64 16
+               C 58 10, 52 6, 50 4 Z"
+            fill="url(#cstGreenGradIcon)"
+          />
+
+          {/* Green Leaf Inner Field */}
+          <path
+            d="M 60 28
+               C 74 44, 84 56, 84 70
+               C 84 82, 74 92, 58 96
+               C 46 98, 36 94, 32 88
+               C 44 93, 58 92, 68 85
+               C 78 78, 80 66, 78 54
+               C 76 42, 68 32, 60 28 Z"
+            fill="url(#cstGreenGrad)"
+          />
+
+          {/* Left White Leaf Blade / Swoop */}
+          <path
+            d="M 24 84
+               C 20 72, 24 58, 32 46
+               C 40 34, 48 20, 50 12
+               C 48 20, 42 34, 36 48
+               C 30 62, 28 74, 30 84
+               C 28 85, 26 85, 24 84 Z"
+            fill="#FFFFFF"
+          />
+
+          {/* Right White Leaf Blade / Swoop */}
+          <path
+            d="M 32 86
+               C 32 74, 38 60, 48 48
+               C 58 36, 68 22, 72 14
+               C 66 22, 56 36, 48 48
+               C 40 60, 38 72, 38 82
+               C 36 85, 34 86, 32 86 Z"
+            fill="#FFFFFF"
+          />
+        </g>
+      </svg>
+
+      {/* Brand Wordmark matching uploaded logo */}
+      {showWordmark && !emblemOnly && (
+        <div className="flex flex-col justify-center leading-none">
+          <span className="font-display text-base sm:text-lg font-black tracking-[-0.01em] text-[#008CD7] group-hover:text-[#2BB7F6] transition-colors leading-[1.05]">
+            CLEAN SCRUB
+          </span>
+          <span className="font-sans text-[10px] sm:text-[11px] font-bold tracking-[0.28em] text-[#4BB532] group-hover:text-[#5FD843] transition-colors uppercase leading-[1.1] mt-0.5">
+            TECHNOLOGIES
+          </span>
+        </div>
+      )}
+    </div>
   );
 };
